@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="AnimeChanCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Conclution.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Error.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FilterChan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="SkillsSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

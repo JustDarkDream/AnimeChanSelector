@@ -1,0 +1,16 @@
+C:\Users\Nubik\source\repos\Semester3\Logic\bin\Debug\net8.0\Logic.deps.json
+C:\Users\Nubik\source\repos\Semester3\Logic\bin\Debug\net8.0\Logic.dll
+C:\Users\Nubik\source\repos\Semester3\Logic\bin\Debug\net8.0\Logic.pdb
+C:\Users\Nubik\source\repos\Semester3\Logic\bin\Debug\net8.0\Model.dll
+C:\Users\Nubik\source\repos\Semester3\Logic\bin\Debug\net8.0\Model.pdb
+C:\Users\Nubik\source\repos\Semester3\Logic\obj\Debug\net8.0\Logic.csproj.AssemblyReference.cache
+C:\Users\Nubik\source\repos\Semester3\Logic\obj\Debug\net8.0\Logic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nubik\source\repos\Semester3\Logic\obj\Debug\net8.0\Logic.AssemblyInfoInputs.cache
+C:\Users\Nubik\source\repos\Semester3\Logic\obj\Debug\net8.0\Logic.AssemblyInfo.cs
+C:\Users\Nubik\source\repos\Semester3\Logic\obj\Debug\net8.0\Logic.csproj.CoreCompileInputs.cache
+C:\Users\Nubik\source\repos\Semester3\Logic\obj\Debug\net8.0\Logic.sourcelink.json
+C:\Users\Nubik\source\repos\Semester3\Logic\obj\Debug\net8.0\Logic.csproj.Up2Date
+C:\Users\Nubik\source\repos\Semester3\Logic\obj\Debug\net8.0\Logic.dll
+C:\Users\Nubik\source\repos\Semester3\Logic\obj\Debug\net8.0\refint\Logic.dll
+C:\Users\Nubik\source\repos\Semester3\Logic\obj\Debug\net8.0\Logic.pdb
+C:\Users\Nubik\source\repos\Semester3\Logic\obj\Debug\net8.0\ref\Logic.dll
