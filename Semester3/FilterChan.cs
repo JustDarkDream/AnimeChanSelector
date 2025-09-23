@@ -41,16 +41,7 @@ namespace ViewForms
             }
         }
 
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ageValue_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
+        ///<summary>Вызывается при нажатии на кнопку сохранения. Сохраняем все данные фильтрации введенные пользователем</summary>
         private void saveFilter_Click(object sender, EventArgs e)
         {
             if (int.TryParse(ageFrom.Text, out int agefrom) && agefrom >= 0)
@@ -61,7 +52,7 @@ namespace ViewForms
                     {
                         if (int.TryParse(heightTo.Text, out int heightto) && heightto >= 0)
                         {
-                            if (int.TryParse(weightFrom.Text, out int weightfrom) && weightfrom >= 0)
+                            if (int.TryParse(weightFrom.Text, out int weightfrom) && weightfrom >= 0) //Проверка на корректность данных
                             {
                                 if (int.TryParse(weightTo.Text, out int weightto) && weightto >= 0)
                                 {
@@ -69,17 +60,17 @@ namespace ViewForms
                                     {
                                         if (int.TryParse(sizeTo.Text, out int sizeto) && sizeto >= 0)
                                         {
-                                            if (agefrom <= ageto)
+                                            if (agefrom < ageto)
                                             {
-                                                if (heightfrom <= heightto)
+                                                if (heightfrom < heightto)
                                                 {
-                                                    if (weightfrom <= weightto)
+                                                    if (weightfrom < weightto)
                                                     {
-                                                        if (sizefrom <= sizeto)
+                                                        if (sizefrom < sizeto)
                                                         {
                                                             List<Skills> skills = new List<Skills>();
 
-                                                            foreach (ListViewItem item in listView1.Items)
+                                                            foreach (ListViewItem item in listView1.Items) //Считывает информацию с ListView и закидывает в список
                                                             {
                                                                 if (item.Tag is Skills skill)
                                                                 {
@@ -87,7 +78,7 @@ namespace ViewForms
                                                                 }
                                                             }
                                                             logic.FilterAnimeChanList(agefrom, ageto, heightfrom, heightto, weightfrom, weightto, sizefrom, sizeto, skills, checkBox1.Checked);
-                                                            this.DialogResult = DialogResult.OK;
+                                                            this.DialogResult = DialogResult.OK; //Сообщаем, что изменения мы сохраняем
                                                             Close();
                                                         }
                                                         else
@@ -163,29 +154,30 @@ namespace ViewForms
             }
         }
 
+        ///<summary>Вызывается при нажатии на кнопку редактора скиллов. Открывает форму редакторов скиллов и сохраняет изменения</summary>
         private void skillsSettung_Click(object sender, EventArgs e)
         {
             List<Skills> skills = new List<Skills>();
 
-            foreach (ListViewItem item in listView1.Items)
+            foreach (ListViewItem item in listView1.Items) //Считывает информацию с ListView и закидывает в список
             {
-                if (item.Tag is Skills skill) // ← Правильно!
+                if (item.Tag is Skills skill)
                 {
                     skills.Add(skill);
                 }
             }
 
-            SkillsSetting skillsSetting = new SkillsSetting(skills);
+            SkillsSetting skillsSetting = new SkillsSetting(skills); //Создаём форму для редактирования навыков
 
             listView1.Items.Clear();
 
             skillsSetting.ShowDialog();
-            Debug.WriteLine(logic.LoadSkills().Count);
+            Debug.WriteLine(logic.LoadSkills().Count); //Подгружаем сохраненные навыки с той формы
 
-            foreach (Skills skill in logic.LoadSkills())
+            foreach (Skills skill in logic.LoadSkills()) //Отображаем в ListView сохраненные навыки с той формы
             {
-                ListViewItem newItem = new ListViewItem(skill.ToString()); // Используйте ToString()
-                newItem.Tag = skill; // Сохраняем enum значение в Tag
+                ListViewItem newItem = new ListViewItem(skill.ToString()); 
+                newItem.Tag = skill;
                 listView1.Items.Add(newItem);
             }
         }

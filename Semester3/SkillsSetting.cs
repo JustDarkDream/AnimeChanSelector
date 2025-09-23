@@ -22,11 +22,9 @@ namespace ViewForms
         {
             InitializeComponent();
 
-            //skillsComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            skillsComboBox.DataSource = Enum.GetValues(typeof(Skills)); //Загружаем в комбо бокс все возможные навыки
 
-            skillsComboBox.DataSource = Enum.GetValues(typeof(Skills));
-
-            foreach (var skill in skills)
+            foreach (var skill in skills) //Считывает информацию с списка навыков и закидываем в ListView
             {
                 ListViewItem item = new ListViewItem(skill.ToString());
 
@@ -35,63 +33,44 @@ namespace ViewForms
             }
         }
 
+        ///<summary>Вызывается при нажатии на кнопку удалении навыка. Удаляет навык из ListView</summary>
         private void deleteButton_Click(object sender, EventArgs e)
         {
-        //    ListViewItem item = skillsView.Items
-        //.Cast<ListViewItem>()
-        //.FirstOrDefault(item => item.Text.Equals(skillsComboBox.SelectedItem.ToString()));
-        //    if (item != null)
-        //    {
-
-        //        skillsView.Items.Remove(item);
-        //        item.Tag = skill;
-        //    }
-
-
             if (skillsComboBox.SelectedItem is Skills selectedSkill)
             {
-                var item = skillsView.Items
+                var item = skillsView.Items //Проверяет на наличие ListView этого элемента
                     .Cast<ListViewItem>()
                     .FirstOrDefault(i => i.Tag is Skills s && s.Equals(selectedSkill));
 
-                if (item != null)
+                if (item != null) //Если он есть
                 {
                     skillsView.Items.Remove(item);
                 }
             }
         }
 
+        ///<summary>Вызывается при нажатии на кнопку добавлении навыка. Добавляем навык в ListView</summary>
         private void addButton_Click(object sender, EventArgs e)
         {
-            //            ListViewItem item = skillsView.Items
-            //.Cast<ListViewItem>()
-            //.FirstOrDefault(item => item.Text.Equals(skillsComboBox.SelectedItem.ToString()));
-            //            if (item == null)
-            //            {
-
-            //                skillsView.Items.Add(skillsComboBox.SelectedItem.ToString());
-            //                item.Tag = skillsComboBox.SelectedItem;
-            //            }
             var existingItem = skillsView.Items
                 .Cast<ListViewItem>()
-                .FirstOrDefault(i => i.Text.Equals(skillsComboBox.SelectedItem.ToString()));
+                .FirstOrDefault(i => i.Text.Equals(skillsComboBox.SelectedItem.ToString())); //Проверяет на наличие ListView этого элемента
 
-            if (existingItem == null)
+            if (existingItem == null) //Если его  нет
             {
                 var selected = skillsComboBox.SelectedItem;
 
-                // Add возвращает ListViewItem — сохраняем его
                 ListViewItem newItem = skillsView.Items.Add(selected.ToString());
-                newItem.Tag = selected; // <-- теперь всё ок
+                newItem.Tag = selected;
             }
         }
 
+        ///<summary>Вызывается при нажатии на кнопку сохранении. Сохраняет все выбранные навыки</summary>
         private void saveButton_Click(object sender, EventArgs e)
         {
-            //this.DialogResult = DialogResult.OK;
 
             List<Skills> skills = new List<Skills>();
-            foreach (ListViewItem item in skillsView.Items)
+            foreach (ListViewItem item in skillsView.Items) //Считывает информацию с ListView и закидывает в список
             {
                 if (item.Tag is Skills skill)
                 {
@@ -100,17 +79,7 @@ namespace ViewForms
             }
 
             logic.SaveSkills(skills);
-            Debug.WriteLine($"Всего навыков: {skills.Count}");
-            foreach (Skills skill in skills)
-            {
-                Debug.WriteLine(skill);
-            }
             Close();
-        }
-
-        private void skillsComboBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

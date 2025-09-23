@@ -10,42 +10,61 @@ namespace Model
 {
     public class BourgeoisLogic
     {
-        static List<AnimeChan> animeChanList = new List<AnimeChan>() { };
+        static List<AnimeChan> animeChanList = new List<AnimeChan>() { }; 
         static List<Skills> skills = new List<Skills>();
-        static int temporaryID = 0;
-        static FilterStats filterStats = new FilterStats();
+        static int temporaryID = 0; //Айди, с помощью которого вычисляется нужная тянка
+        static FilterStats filterStats = new FilterStats(); //Сохраняет все введенные данные для фильтрации
         static List<AnimeChan> filterAnimeChanList = new List<AnimeChan>() { };
         static MainPerson mainPerson;
 
-        public List<AnimeChan> CreateAnimeChan()
+        ///<summary>Создает три НЕслучаных аниме-тянок</summary>
+        public void CreateAnimeChan()
         {
-            animeChanList.Add(new AnimeChan("Цукико", "Амано", 22, 1, 165, 53, 2, new List<Skills> { Skills.Cleaning, Skills.Cooking, Skills.Dancing }));
-            animeChanList.Add(new AnimeChan("Амане", "Хосино", 19, 2, 168, 51, 3, new List<Skills> { Skills.Music, Skills.Dancing, Skills.Singing }));
-            animeChanList.Add(new AnimeChan("Миюки", "Кирисава", 15, 3, 159, 57, 4, new List<Skills> { Skills.Jumping, Skills.FireballCast }));
-            return animeChanList;
+                animeChanList.Add(new AnimeChan("Цукико", "Амано", 22, 1, 165, 53, 2, new List<Skills> { Skills.Cleaning, Skills.Cooking, Skills.Dancing }));
+                animeChanList.Add(new AnimeChan("Амане", "Хосино", 19, 2, 168, 51, 3, new List<Skills> { Skills.Music, Skills.Dancing, Skills.Singing }));
+                animeChanList.Add(new AnimeChan("Миюки", "Кирисава", 15, 3, 159, 57, 4, new List<Skills> { Skills.Jumping, Skills.FireballCast }));
         }
 
+        ///<summary>Ищет в общем списке нужную тянку по её id</summary>
+        /// <param name="id">Айди, по которую ищется тянка</param>
+        /// <returns>Возвращает найденную тянку (или же null, если ничего не нашел)</returns>
         public AnimeChan FindForId(int id)
         {
             AnimeChan animeChan = animeChanList.Where(f => f.Id == id).FirstOrDefault();
+            if (animeChan == null)
+            {
+                return null;
+            }
             return animeChan;
         }
 
+        ///<summary>Сохраняет список навыков</summary>
+        /// <param name="list">Список навыков, который сохраняет</param>
         public void SaveSkills(List<Skills> list)
         {
             skills = list;
         }
 
+        ///<summary>Загружает список навыков</summary>
+        /// <returns>Возвращает список навыков, который был сохранен ранее</returns>
         public List<Skills> LoadSkills()
         {
             return skills;
         }
 
+        ///<summary>Добавляет новую тянку в общий список</summary>
+        /// <param name="firstName">Имя тянки</param>
+        /// <param name="lastName">Фамилия тянки</param>
+        /// <param name="age">Возраст тянки</param>
+        /// <param name="height">Рост тянки</param>
+        /// <param name="weight">Вес тянки</param>
+        /// <param name="size">Размер у тянки</param>
+        /// <param name="skills">Навыки тянки</param>
         public void AddAnimeChan(string firstName, string lastName, int age, int height, int weight, int size, List<Skills> skills)
         {
             int id = 1;
 
-            while (animeChanList.Where(x => x.Id == id).ToList().Count != 0)
+            while (animeChanList.Where(x => x.Id == id).ToList().Count != 0) //подбирает наименьший уникальный id
             {
                 Debug.WriteLine((animeChanList.Where(x => x.Id == id).ToList().Count != 0));
                 id++;
@@ -55,11 +74,22 @@ namespace Model
             animeChanList.Add(new AnimeChan(firstName, lastName, age, id, height, weight, size, skills));
         }
 
+        ///<summary>Удаляет аниме тянку</summary>
+        /// <param name="id">Айди, по которому удаляется тянка</param>
         public void DeleteAnimeChan(int id)
         {
             animeChanList.Remove(animeChanList.Where(f => f.Id == id).FirstOrDefault());
         }
 
+        ///<summary>Сохраняет изменения характеристик тянки</summary>
+        /// <param name="firstName">Имя тянки</param>
+        /// <param name="lastName">Фамилия тянки</param>
+        /// <param name="age">Возраст тянки</param>
+        /// <param name="height">Рост тянки</param>
+        /// <param name="weight">Вес тянки</param>
+        /// <param name="size">Размер у тянки</param>
+        /// <param name="skills">Навыки тянки</param>
+        /// <param name="id">Айди тянки, у которой и сохранятся изменения</param>
         public void SaveChangeAnimeChan(string firstName, string lastName, int age, int height, int weight, int size, List<Skills> skills, int id)
         {
             AnimeChan animeChan = FindForId(id);
@@ -73,21 +103,38 @@ namespace Model
             temporaryID = animeChan.Id;
         }
 
+        ///<summary>Загружает сохраненный айди</summary>
+        /// <returns>Возвращает сохраненный айди ранее</returns>
         public int LoadId()
         {
             return temporaryID;
         }
 
+        ///<summary>Сохраняет айди</summary>
+        /// <param name="id">Айди, который сохранится в временный</param>
         public void SaveId(int id)
         {
             temporaryID = id;
         }
 
+        ///<summary>Загружает данные фильтрации</summary>
+        /// <returns>Возвращает все данные фильтрации</returns>
         public FilterStats LoadFilterStats()
         {
             return filterStats;
         }
 
+        ///<summary>Изменяет отфильтрованный список аниме тянок</summary>
+        /// <param name="ageFrom">Возраст ОТ</param>
+        /// <param name="ageTo">Возраст ДО</param>
+        /// <param name="heightFrom">Рост ОТ</param>
+        /// <param name="heightTo">Рост ДО</param>
+        /// <param name="weightFrom">Вес ОТ</param>
+        /// <param name="weightTo">Вес ДО</param>
+        /// <param name="sizeFrom">Размер ОТ</param>
+        /// <param name="sizeTo">Размер ДО</param>
+        /// <param name="skills">Навыки тянки</param>
+        /// <param name="isСonsiderAll">Учитывать ли все навыки или хотя бы один</param>
         public void FilterAnimeChanList(int ageFrom, int ageTo, int heightFrom, int heightTo, int weightFrom, int weightTo, int sizeFrom, int sizeTo, List<Skills> skills, bool isСonsiderAll)
         {
             filterStats.AgeFrom = ageFrom;
@@ -101,32 +148,36 @@ namespace Model
             filterStats.Skills = skills;
             filterStats.isСonsiderAll = isСonsiderAll;
 
-            List<AnimeChan> fAnimeChanList = animeChanList.Where(a => a.Age >= ageFrom && a.Age <= ageTo &&
+            List<AnimeChan> fAnimeChanList = animeChanList.Where(a => a.Age >= ageFrom && a.Age <= ageTo && //Фильтруется по всем данным, кроме данных из списка
             a.Height >= heightFrom && a.Age <= heightTo &&
             a.Weight >= weightFrom && a.Weight <= weightTo &&
             a.Size >= sizeFrom && a.Size <= sizeTo).ToList();
             if (skills.Count != 0)
             {
-                if (isСonsiderAll)
+                if (isСonsiderAll) //Отфильтровать дополнительно, чтобы тянка включала все нужные навыки
                 {
                     filterAnimeChanList = fAnimeChanList.Where(a => a.Skills.All(s => skills.Contains(s))).ToList();
                 }
-                else
+                else //Отфильтровать дополнительно, чтобы тянка включала хотя бы один нужным навык
                 {
                     filterAnimeChanList = fAnimeChanList.Where(a => a.Skills.Any(s => skills.Contains(s))).ToList();
                 }
             }
             else
             {
-                filterAnimeChanList = fAnimeChanList;
+                filterAnimeChanList = fAnimeChanList; //Не отфильтровывает дополнительно, если список навыков пуст
             }
         }
 
+        ///<summary>Загружает отфильтрованный список аниме тянок</summary>
+        /// <returns>Возвращает отфильтрованный список аниме тянок</returns>
         public List<AnimeChan> LoadFilterAnimeChanList()
         {
             return filterAnimeChanList;
         }
 
+        ///<summary>Загружает полный список аниме тянок, сбрасывая фильтрацию</summary>
+        /// <returns>Возвращает полный список аниме тянок</returns>
         public List<AnimeChan> LoadAnimeChanList()
         {
             filterStats.AgeFrom = 0;
@@ -142,15 +193,26 @@ namespace Model
 
             return animeChanList;
         }
+
+        ///<summary>Сохраняет данные пользователя</summary>
+        /// <param name="firstName">Имя пользователя</param>
+        /// <param name="lastName">Фамилия пользователя</param>
+        /// <param name="age">Возраст пользователя</param>
+        /// <param name="height">Рост пользователя</param>
+        /// <param name="weight">Вес пользователя</param>
+        /// <param name="size">Размер у пользователя</param>
         public void SaveMainPerson(string firstName, string lastName, int age, int height, int weight, int size)
         {
             mainPerson = new MainPerson(firstName, lastName, age, height, weight, size);
         }
+
+        ///<summary>Создаёт рандомную аниме тянку</summary>
+        /// <returns>Возвращает новую сгенерированную аниме тянку</returns>
         public AnimeChan FindAnimeChan()
         {
             Random random = new Random();
 
-            string firstName = AnimeChanName.firstName[random.Next(0, AnimeChanName.firstName.Count)];
+            string firstName = AnimeChanName.firstName[random.Next(0, AnimeChanName.firstName.Count)]; //AnimeChanName содержит списки имен и фамилий для тянок
             string lastName = AnimeChanName.lastName[random.Next(0, AnimeChanName.lastName.Count)];
             int age = random.Next(15, 51);
             int height = random.Next(140, 201);
@@ -159,7 +221,7 @@ namespace Model
 
             int id = 1;
 
-            while (animeChanList.Where(x => x.Id == id).ToList().Count != 0)
+            while (animeChanList.Where(x => x.Id == id).ToList().Count != 0) //подбирает наименьший уникальный id
             {
                 Debug.WriteLine((animeChanList.Where(x => x.Id == id).ToList().Count != 0));
                 id++;
@@ -168,7 +230,7 @@ namespace Model
             List<Skills> skills = new List<Skills>();
             int count = random.Next(1, 6);
             Array enums = Enum.GetValues(typeof(Skills));
-            while (skills.Count < count)
+            while (skills.Count < count) //Добавляет в список навыков новой тянки случайные неповторяющиеся навыки
             {
                 Skills skillz = (Skills)enums.GetValue(random.Next(enums.Length));
                 if (!skills.Contains(skillz))
@@ -183,33 +245,42 @@ namespace Model
             return animeChan;
         }
 
+        ///<summary>Создаёт результат отношений с выбранной тянкой</summary>
+        /// <returns>Возвращает результат отношений с выбранной тянкой</returns>
         public string Conclution()
         {
-            int points = 0;
+            int points = 0; //Очки, от которых будет зависеть продолжительность встречи
 
-            string ageString = "";
-            string heightString = "";
-            string weightString = "";
-            string sizeString = "";
+            string ageString = ""; //Блок текста, связанный с возрастом
+            string heightString = ""; //Блок текста, связанный с ростом
+            string weightString = ""; //Блок текста, связанный с весом
+            string sizeString = ""; //Блок текста, связанный с размером
 
-            AnimeChan animeChan = animeChanList.Where(f => f.Id == temporaryID).FirstOrDefault();
+            AnimeChan animeChan = animeChanList.Where(f => f.Id == temporaryID).FirstOrDefault(); //Ищем тянку по сохраненному временному id
 
-            int agePoints = 25 - (int)Math.Abs((mainPerson.Age - animeChan.Age - 2) * 2.5);
+            int agePoints = 25 - (int)Math.Abs((mainPerson.Age - animeChan.Age - 2) * 2.5); //Очки за разницу в возрасте
+                                                                                            //(чем меньше разница - тем больше очков,
+                                                                                            //в идеале тянка должна быть на 2 года младше пользователя)
             if (agePoints < 0)
             {
                 agePoints = 0;
             }
-            int heightPoints = 25 - (int)Math.Abs((mainPerson.Height - animeChan.Height - 10) * 25/30);
+            int heightPoints = 25 - (int)Math.Abs((mainPerson.Height - animeChan.Height - 10) * 25/30); //Очки за разницу в росте
+                                                                                                        //(чем меньше разница - тем больше очков,
+                                                                                                        //в идеале тянка должна быть ниже пользователя на 10)
             if (heightPoints < 0)
             {
                 heightPoints = 0;
             }
-            int weightPoints = 25 - (int)Math.Abs((mainPerson.Weight - animeChan.Weight - 15));
+            int weightPoints = 25 - (int)Math.Abs((mainPerson.Weight - animeChan.Weight - 15)); //Очки за разницу в весе
+                                                                                                //(чем меньше разница - тем больше очков,
+                                                                                                //в идеале тянка должна легче пользователя на 15)
             if (weightPoints < 0)
             {
                 weightPoints = 0;
             }
-            int sizePoints = (mainPerson.Size - (animeChan.Size * 2) + 2) * 5;
+            int sizePoints = (mainPerson.Size - (animeChan.Size * 2) + 2) * 5; //Очки за разницу в размере
+                                                                               //(чем больше у пользователя - тем больше очков)
             if (sizePoints < 0)
             {
                 sizePoints = 0;
@@ -219,6 +290,7 @@ namespace Model
                 sizePoints = 25;
             }
 
+            //Все возможные тексты, зависящие от набранных очков за каждый критерий
             if (agePoints <= 5)
             {
                 ageString = "Ваша разница в возрасте слишком высока! Прохожие вас видят разные поколения. Самый старший из вас чувствует себя педофилом, за что стыдно...";
@@ -326,12 +398,12 @@ namespace Model
                 sizeString = "Ваша разница в размере идеальна! Вы чувствуете, что вы идеально подходите друг другу в этом плане. Вам приносит это безумное удовольствие и не у кого из вас нет комплексов по этому поводу!";
             }
 
-            points = agePoints + heightPoints + weightPoints + sizePoints;
-            double years = Math.Pow(points / 100.0, 3) * 50;
+            points = agePoints + heightPoints + weightPoints + sizePoints; //Суммируем в общее значение
+            double years = Math.Pow(points / 100.0, 3) * 50; //Конвертируем очки в годы
 
             string yearsStr = "";
             int count = -1;
-            foreach (char x in years.ToString())
+            foreach (char x in years.ToString()) //Сокращаем дробное значение у переменной years до двух запятой
             {
                 yearsStr += x;
                 
@@ -352,7 +424,7 @@ namespace Model
             }
 
 
-            string str = "ВЫ ВСТРЕЧАЛИСЬ ЦЕЛЫХ " + yearsStr + " лет!\n\n\n\n" + ageString + "\n\n" + heightString + "\n\n" + weightString;
+            string str = "ВЫ ВСТРЕЧАЛИСЬ ЦЕЛЫХ " + yearsStr + " лет!\n\n\n\n" + ageString + "\n\n" + heightString + "\n\n" + weightString; //Клепаем результат в один огромным текст
             if (mainPerson.Age >= 16 && animeChan.Age >= 16)
             {
                 str += "\n\n" + sizeString;

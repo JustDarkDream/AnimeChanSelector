@@ -1,6 +1,4 @@
-﻿using Logic;
-
-namespace ViewForms
+﻿namespace ViewForms
 {
     partial class Form1
     {

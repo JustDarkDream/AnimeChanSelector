@@ -41,7 +41,6 @@
             label1.Size = new Size(204, 54);
             label1.TabIndex = 0;
             label1.Text = "ОШИБКА!";
-            label1.Click += label1_Click;
             // 
             // label2
             // 

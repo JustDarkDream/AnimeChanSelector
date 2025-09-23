@@ -104,7 +104,6 @@
             ageFrom.Size = new Size(174, 29);
             ageFrom.TabIndex = 7;
             ageFrom.Text = "0";
-            ageFrom.TextChanged += ageValue_TextChanged;
             // 
             // label5
             // 
@@ -115,7 +114,6 @@
             label5.TabIndex = 8;
             label5.Text = "От";
             label5.TextAlign = ContentAlignment.MiddleCenter;
-            label5.Click += label5_Click;
             // 
             // label6
             // 

@@ -44,7 +44,6 @@
             skillsComboBox.Name = "skillsComboBox";
             skillsComboBox.Size = new Size(536, 23);
             skillsComboBox.TabIndex = 0;
-            skillsComboBox.SelectedIndexChanged += skillsComboBox_SelectedIndexChanged;
             // 
             // label1
             // 

@@ -27,11 +27,12 @@ namespace ViewForms
             sizeValue.Text = "";
         }
 
+        ///<summary>Вызывается при нажатии на кнопку зарегестрироваться. Регистрирует пользователя в специальный класс (MainPerson)</summary>
         private void saveChanges_Click(object sender, EventArgs e)
         {
             if (int.TryParse(ageValue.Text, out int age) && age >= 0)
             {
-                if (int.TryParse(heightValue.Text, out int height) && height >= 0)
+                if (int.TryParse(heightValue.Text, out int height) && height >= 0) //Проверка на корректность данных
                 {
                     if (int.TryParse(weightValue.Text, out int weight) && weight >= 0)
                     {
@@ -42,7 +43,7 @@ namespace ViewForms
                                 if (lastName.Text.Length > 0)
                                 {
                                     logic.SaveMainPerson(firstName.Text, lastName.Text, age, height, weight, size);
-                                    this.DialogResult = DialogResult.OK;
+                                    this.DialogResult = DialogResult.OK; //Сообщаем, что изменения мы сохраняем
                                     Close();
                                 }
                                 else

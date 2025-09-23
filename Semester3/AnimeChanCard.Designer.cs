@@ -53,7 +53,6 @@
             firstName.Size = new Size(493, 34);
             firstName.TabIndex = 0;
             firstName.Text = "label1";
-            firstName.Click += label1_Click;
             // 
             // label2
             // 
@@ -84,7 +83,6 @@
             label1.TabIndex = 3;
             label1.Text = "Навыки";
             label1.TextAlign = ContentAlignment.MiddleCenter;
-            label1.Click += label1_Click_1;
             // 
             // listView1
             // 
@@ -114,7 +112,6 @@
             ageValue.Size = new Size(414, 29);
             ageValue.TabIndex = 6;
             ageValue.Text = "0";
-            ageValue.Click += height_Click;
             // 
             // heightValue
             // 
