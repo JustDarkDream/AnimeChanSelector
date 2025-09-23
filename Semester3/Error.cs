@@ -17,10 +17,5 @@ namespace ViewForms
             InitializeComponent();
             label2.Text = str;
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

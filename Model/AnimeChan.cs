@@ -15,7 +15,7 @@
 
         public List<Skills> Skills { get; internal set; } = new List<Skills>();
 
-        public AnimeChan(string firstName, string lastName, int age, int id, int height, int weight, int size, List<Skills> skills)
+        internal AnimeChan(string firstName, string lastName, int age, int id, int height, int weight, int size, List<Skills> skills)
         {
             FirstName = firstName;
             LastName = lastName;
