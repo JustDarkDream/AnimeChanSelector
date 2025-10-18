@@ -37,7 +37,7 @@ namespace ViewForms
 
             foreach (var skill in animeChan.Skills) //Перечисляет навыки тянки
             {
-                ListViewItem item = new ListViewItem(skill.ToString());
+                ListViewItem item = new ListViewItem(skill.Name);
                 item.Tag = skill;
 
                 listView1.Items.Add(item);
@@ -94,13 +94,13 @@ namespace ViewForms
         ///<summary>Вызывается при нажатии на кнопку редактора скиллов. Открывает форму редакторов скиллов и сохраняет изменения</summary>
         private void skillsSettung_Click(object sender, EventArgs e)
         {
-            List<Skills> skills = new List<Skills>();
+            List<Skill> skills = new List<Skill>();
 
             foreach (ListViewItem item in listView1.Items) //Считывает информацию с ListView и закидывает в список
             {
-                if (item.Tag is Skills skill)
+                if (item.Tag is Skill skill3)
                 {
-                    skills.Add(skill);
+                    skills.Add(skill3);
                 }
             }
 
@@ -109,12 +109,18 @@ namespace ViewForms
             listView1.Items.Clear(); 
 
             skillsSetting.ShowDialog();
-            Debug.WriteLine(logic.LoadSkills().Count); //Подгружаем сохраненные навыки с той формы
 
-            foreach (Skills skill in logic.LoadSkills()) //Отображаем в ListView сохраненные навыки с той формы
+            skills.Clear();
+
+            foreach (Skill skill in logic.LoadSkills())
             {
-                ListViewItem newItem = new ListViewItem(skill.ToString());
-                newItem.Tag = skill;
+                skills.Add(skill);
+            }
+
+            foreach (Skill skill2 in skills) //Отображаем в ListView сохраненные навыки с той формы
+            {
+                ListViewItem newItem = new ListViewItem(skill2.Name);
+                newItem.Tag = skill2;
                 listView1.Items.Add(newItem);
             }
         }
@@ -135,11 +141,11 @@ namespace ViewForms
                                 {
                                     if (lastName.Text.Length > 0)
                                     {
-                                        List<Skills> skills = new List<Skills>();
+                                        List<Skill> skills = new List<Skill>();
 
                                         foreach (ListViewItem item in listView1.Items) //Считывает информацию с ListView и закидывает в список
                                         {
-                                            if (item.Tag is Skills skill)
+                                            if (item.Tag is Skill skill)
                                             {
                                                 skills.Add(skill);
                                             }
@@ -201,11 +207,11 @@ namespace ViewForms
                             {
                                 if (lastName.Text.Length > 0)
                                 {
-                                    List<Skills> skills = new List<Skills>();
+                                    List<Skill> skills = new List<Skill>();
 
                                     foreach (ListViewItem item in listView1.Items) //Считывает информацию с ListView и закидывает в список
                                     {
-                                        if (item.Tag is Skills skill)
+                                        if (item.Tag is Skill skill)
                                         {
                                             skills.Add(skill);
                                         }

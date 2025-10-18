@@ -18,7 +18,7 @@ namespace ViewForms
 
         BourgeoisLogic logic = new BourgeoisLogic();
 
-        public SkillsSetting(List<Skills> skills)
+        public SkillsSetting(List<Skill> skills)
         {
             InitializeComponent();
 
@@ -26,7 +26,7 @@ namespace ViewForms
 
             foreach (var skill in skills) //Считывает информацию с списка навыков и закидываем в ListView
             {
-                ListViewItem item = new ListViewItem(skill.ToString());
+                ListViewItem item = new ListViewItem(skill.Name);
 
                 skillsView.Items.Add(item);
                 item.Tag = skill;
@@ -36,15 +36,33 @@ namespace ViewForms
         ///<summary>Вызывается при нажатии на кнопку удалении навыка. Удаляет навык из ListView</summary>
         private void deleteButton_Click(object sender, EventArgs e)
         {
-            if (skillsComboBox.SelectedItem is Skills selectedSkill)
-            {
-                var item = skillsView.Items //Проверяет на наличие ListView этого элемента
-                    .Cast<ListViewItem>()
-                    .FirstOrDefault(i => i.Tag is Skills s && s.Equals(selectedSkill));
+            //if (skillsComboBox.SelectedItem is Skill selectedSkill)
+            //{
+            //    var item = skillsView.Items //Проверяет на наличие ListView этого элемента
+            //        .Cast<ListViewItem>()
+            //        .FirstOrDefault(i => i.Tag is Skill s && s.Equals(selectedSkill));
 
-                if (item != null) //Если он есть
+            //    if (item != null) //Если он есть
+            //    {
+            //        skillsView.Items.Remove(item);
+            //    }
+            //}
+
+            if (skillsComboBox.SelectedItem is Skills selected)
+            {
+                // Проверяем, нет ли уже такого навыка
+                var existingItem = skillsView.Items
+                    .Cast<ListViewItem>()
+                    .FirstOrDefault(i => i.Text.Equals(selected.ToString()));
+
+                if (existingItem != null)
                 {
-                    skillsView.Items.Remove(item);
+                    Skill newSkill = new Skill
+                    {
+                        Name = selected.ToString()
+                    };
+
+                    skillsView.Items.Remove(existingItem);
                 }
             }
         }
@@ -52,16 +70,23 @@ namespace ViewForms
         ///<summary>Вызывается при нажатии на кнопку добавлении навыка. Добавляем навык в ListView</summary>
         private void addButton_Click(object sender, EventArgs e)
         {
-            var existingItem = skillsView.Items
-                .Cast<ListViewItem>()
-                .FirstOrDefault(i => i.Text.Equals(skillsComboBox.SelectedItem.ToString())); //Проверяет на наличие ListView этого элемента
-
-            if (existingItem == null) //Если его  нет
+            if (skillsComboBox.SelectedItem is Skills selected)
             {
-                var selected = skillsComboBox.SelectedItem;
+                // Проверяем, нет ли уже такого навыка
+                var existingItem = skillsView.Items
+                    .Cast<ListViewItem>()
+                    .FirstOrDefault(i => i.Text.Equals(selected.ToString()));
 
-                ListViewItem newItem = skillsView.Items.Add(selected.ToString());
-                newItem.Tag = selected;
+                if (existingItem == null)
+                {
+                    Skill newSkill = new Skill
+                    {
+                        Name = selected.ToString()
+                    };
+
+                    ListViewItem newItem = skillsView.Items.Add(newSkill.Name);
+                    newItem.Tag = newSkill;
+                }
             }
         }
 
@@ -69,16 +94,19 @@ namespace ViewForms
         private void saveButton_Click(object sender, EventArgs e)
         {
 
-            List<Skills> skills = new List<Skills>();
+            List<Skill> skills = new List<Skill>();
             foreach (ListViewItem item in skillsView.Items) //Считывает информацию с ListView и закидывает в список
             {
-                if (item.Tag is Skills skill)
+                if (item.Tag is Skill skill)
                 {
                     skills.Add(skill);
                 }
             }
-
-            logic.SaveSkills(skills);
+            logic.ClearSkills();
+            foreach (Skill skill in skills)
+            {
+                logic.SaveSkills(skill); //Сохраняет навыки
+            }
             Close();
         }
     }

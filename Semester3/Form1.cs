@@ -2,6 +2,8 @@ using Model;
 using Microsoft.VisualBasic;
 using System.Data;
 using System.Linq;
+using DataAccessLayer;
+using System.Diagnostics;
 
 namespace ViewForms
 {
@@ -54,6 +56,14 @@ namespace ViewForms
             });
 
             logic.CreateAnimeChan();
+            //AnimeChan anime = logic.LoadAnimeChanList(0);
+            //int i = 0;
+            //while (anime != null)
+            //{
+            //    anime = logic.LoadAnimeChanList(i);
+            //    i++;
+            //    table.Rows.Add(anime.FirstName, anime.LastName, anime.Age, anime.Id);
+            //}
             foreach (var i in logic.LoadAnimeChanList())
             {
                 table.Rows.Add(i.FirstName, i.LastName, i.Age, i.Id);
@@ -166,6 +176,14 @@ namespace ViewForms
             if (filterChan.ShowDialog() == DialogResult.OK) //Если изменения сохранены, то очищает таблицу и загружает значения из отфильтрованного списка
             {
                 table.Rows.Clear();
+                //AnimeChan anime = logic.LoadFilterAnimeChanList(0);
+                //int i = 0;
+                //while (anime != null)
+                //{
+                //    anime = logic.LoadFilterAnimeChanList(i);
+                //    i++;
+                //    table.Rows.Add(anime.FirstName, anime.LastName, anime.Age, anime.Id);
+                //}
                 foreach (var i in logic.LoadFilterAnimeChanList())
                 {
                     table.Rows.Add(i.FirstName, i.LastName, i.Age, i.Id);
@@ -176,7 +194,18 @@ namespace ViewForms
         ///<summary>Вызывается при нажатии на кнопку удаления фильтрации. Приводит таблицу без фильтрации</summary>
         private void button1_Click_1(object sender, EventArgs e)
         {
+            logic.DestroyFilter();
             table.Rows.Clear();
+
+            //logic.LoadAnimeChanList();
+            //AnimeChan anime = logic.LoadAnimeChanList();
+            //int i = 0;
+            //while (anime != null)
+            //{
+            //    anime = logic.LoadAnimeChanList(i);
+            //    i++;
+            //    table.Rows.Add(anime.FirstName, anime.LastName, anime.Age, anime.Id);
+            //}
             foreach (var i in logic.LoadAnimeChanList()) //Загружает строки с аниме тянками из полного списка в таблицу
             {
                 table.Rows.Add(i.FirstName, i.LastName, i.Age, i.Id);

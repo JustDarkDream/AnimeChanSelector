@@ -47,7 +47,7 @@
             label1.Location = new Point(119, 9);
             label1.Name = "label1";
             label1.Size = new Size(347, 57);
-            label1.TabIndex = 0;
+            label1.TabIndex = 7;
             label1.Text = "Регистрация";
             label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
@@ -57,7 +57,7 @@
             lastName.Location = new Point(45, 182);
             lastName.Name = "lastName";
             lastName.Size = new Size(493, 34);
-            lastName.TabIndex = 20;
+            lastName.TabIndex = 1;
             lastName.Text = "label1";
             // 
             // sizeValue
@@ -66,7 +66,7 @@
             sizeValue.Location = new Point(112, 434);
             sizeValue.Name = "sizeValue";
             sizeValue.Size = new Size(414, 29);
-            sizeValue.TabIndex = 19;
+            sizeValue.TabIndex = 5;
             sizeValue.Text = "0";
             // 
             // weightValue
@@ -75,7 +75,7 @@
             weightValue.Location = new Point(84, 391);
             weightValue.Name = "weightValue";
             weightValue.Size = new Size(414, 29);
-            weightValue.TabIndex = 18;
+            weightValue.TabIndex = 4;
             weightValue.Text = "0";
             // 
             // heightValue
@@ -84,7 +84,7 @@
             heightValue.Location = new Point(88, 349);
             heightValue.Name = "heightValue";
             heightValue.Size = new Size(414, 29);
-            heightValue.TabIndex = 17;
+            heightValue.TabIndex = 3;
             heightValue.Text = "0";
             // 
             // ageValue
@@ -93,7 +93,7 @@
             ageValue.Location = new Point(112, 307);
             ageValue.Name = "ageValue";
             ageValue.Size = new Size(414, 29);
-            ageValue.TabIndex = 16;
+            ageValue.TabIndex = 2;
             ageValue.Text = "0";
             // 
             // characteristics
@@ -102,7 +102,7 @@
             characteristics.Location = new Point(45, 298);
             characteristics.Name = "characteristics";
             characteristics.Size = new Size(89, 172);
-            characteristics.TabIndex = 14;
+            characteristics.TabIndex = 10;
             characteristics.Text = "Возраст:\r\n\r\nРост:\r\n\r\nВес:\r\n\r\nРазмер:";
             characteristics.TextAlign = ContentAlignment.MiddleLeft;
             // 
@@ -112,7 +112,7 @@
             label3.Location = new Point(45, 257);
             label3.Name = "label3";
             label3.Size = new Size(493, 41);
-            label3.TabIndex = 13;
+            label3.TabIndex = 9;
             label3.Text = "Данные";
             label3.TextAlign = ContentAlignment.MiddleCenter;
             // 
@@ -122,7 +122,7 @@
             firstName.Location = new Point(45, 142);
             firstName.Name = "firstName";
             firstName.Size = new Size(493, 34);
-            firstName.TabIndex = 12;
+            firstName.TabIndex = 0;
             firstName.Text = "label1";
             // 
             // label2
@@ -131,7 +131,7 @@
             label2.Location = new Point(45, 98);
             label2.Name = "label2";
             label2.Size = new Size(493, 41);
-            label2.TabIndex = 21;
+            label2.TabIndex = 8;
             label2.Text = "Имя-Фамилия";
             label2.TextAlign = ContentAlignment.MiddleCenter;
             // 
@@ -141,7 +141,7 @@
             registrate.Location = new Point(45, 543);
             registrate.Name = "registrate";
             registrate.Size = new Size(493, 75);
-            registrate.TabIndex = 22;
+            registrate.TabIndex = 6;
             registrate.Text = "Зарегистрироваться";
             registrate.UseVisualStyleBackColor = true;
             registrate.Click += saveChanges_Click;

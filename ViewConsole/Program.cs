@@ -1,4 +1,5 @@
 ﻿using Model;
+using System.Diagnostics;
 using System.Security.Cryptography.X509Certificates;
 
 namespace ViewConsole
@@ -133,22 +134,37 @@ namespace ViewConsole
                 Console.WriteLine("".PadLeft(151, '_')); //Создаёт линию под названиями колонок
                 if (isFiltered)
                 {
-                    foreach (var i in logic.LoadFilterAnimeChanList())
+                    AnimeChan anime = logic.LoadFilterAnimeChanList(0);
+                    int i = 0;
+                    while (anime != null)
                     {
-                        Console.WriteLine("|| " + i.FirstName + "|| ".PadLeft(40 - i.FirstName.Length - 1, ' ') + i.LastName +
-                            "|| ".PadLeft(40 - i.LastName.Length - 5, ' ') + i.Age + "|| ".ToString().PadLeft(40 - i.Age.ToString().Length - 5, ' ') +
-                            i.Id + "|| ".ToString().PadLeft(40 - i.Id.ToString().Length, ' ')); //Пишет характеристики из отфильтрованного листа с Аниме Тян
-                        Console.WriteLine("".PadLeft(151, '_')); //Создаёт линию под характеристиками тян
+                        anime = logic.LoadFilterAnimeChanList(i);
+                        i++;
+                        if (anime != null)
+                        {
+                            Console.WriteLine("|| " + anime.FirstName + "|| ".PadLeft(40 - anime.FirstName.Length - 1, ' ') + anime.LastName +
+    "|| ".PadLeft(40 - anime.LastName.Length - 5, ' ') + anime.Age + "|| ".ToString().PadLeft(40 - anime.Age.ToString().Length - 5, ' ') +
+    anime.Id + "|| ".ToString().PadLeft(40 - anime.Id.ToString().Length, ' ')); //Пишет характеристики из отфильтрованного листа с Аниме Тян
+                            Console.WriteLine("".PadLeft(151, '_')); //Создаёт линию под характеристиками тян
+                        }
                     }
                 }
                 else
                 {
-                    foreach (var i in logic.LoadAnimeChanList())
+                    AnimeChan anime = logic.LoadAnimeChanList(0);
+                    int i = 0;
+                    while (anime != null)
                     {
-                        Console.WriteLine("|| " + i.FirstName + "|| ".PadLeft(40 - i.FirstName.Length - 1, ' ') + i.LastName +
-                            "|| ".PadLeft(40 - i.LastName.Length - 5, ' ') + i.Age + "|| ".ToString().PadLeft(40 - i.Age.ToString().Length - 5, ' ') +
-                            i.Id + "|| ".ToString().PadLeft(40 - i.Id.ToString().Length, ' ')); //Пишет характеристики из листа с Аниме Тян
-                        Console.WriteLine("".PadLeft(151, '_')); //Создаёт линию под характеристиками тян
+                        anime = logic.LoadAnimeChanList(i);
+                        i++;
+                        if  (anime != null)
+                        {
+                            Console.WriteLine("|| " + anime.FirstName + "|| ".PadLeft(40 - anime.FirstName.Length - 1, ' ') + anime.LastName +
+"|| ".PadLeft(40 - anime.LastName.Length - 5, ' ') + anime.Age + "|| ".ToString().PadLeft(40 - anime.Age.ToString().Length - 5, ' ') +
+anime.Id + "|| ".ToString().PadLeft(40 - anime.Id.ToString().Length, ' ')); //Пишет характеристики из отфильтрованного листа с Аниме Тян
+                            Console.WriteLine("".PadLeft(151, '_')); //Создаёт линию под характеристиками тян
+                        }
+
                     }
                 }
                 Console.WriteLine("\n1. Создать Тян");
@@ -234,6 +250,7 @@ namespace ViewConsole
                             break;
                         case 7://Убирает фильтрацию таблицы с тянками
                             isFiltered = false;
+                            logic.DestroyFilter();
                             Console.WriteLine("\nФильтр отключен!");
                             break;
                         default:
@@ -397,7 +414,13 @@ namespace ViewConsole
                     {
                         case 1: //Позволяет пользователю изменить содержание списка с элементами Skills
                             ChooseSkills(skills);
-                            skills = logic.LoadSkills();
+                            Skills skill = Skills.Cooking;
+                            int i = 0;
+                            while (skill != null)
+                            {
+                                skills.Add(logic.LoadSkills(i));
+                                i++;
+                            }
                             break;
                         case 2: //Завершает создание/редактирование тянки
                             Console.WriteLine("\nСохранение прошло успешно!");
@@ -521,7 +544,11 @@ namespace ViewConsole
                 }
                 Console.ReadKey();
             }
-            logic.SaveSkills(skills); //Сохраняет навыки
+
+            foreach(Skills skill in skills)
+            {
+                logic.SaveSkills(skill); //Сохраняет навыки
+            }
         }
 
         ///<summary>Показывает параметры Тянки, с которой пользователь может встречаться</summary>
@@ -609,6 +636,7 @@ namespace ViewConsole
             int weightTo = -1;
             int sizeFrom = -1;
             int sizeTo = -1;
+            string result = "";
 
             int skillsChange = -1; //Сохраняет выбор человека по поводу редактирования навыков
 
@@ -625,8 +653,13 @@ namespace ViewConsole
                 }
                 else
                 {
-
-                    if (!(int.TryParse(Console.ReadLine(), out ageFrom) && ageFrom >= 0))//Если пользователь ввёл некорректное значение
+                    result = Console.ReadLine();
+                    if (result == "")
+                    {
+                        Console.WriteLine("\nОкей, сохраню");
+                        break;
+                    }
+                    if (!(int.TryParse(result, out ageFrom) && ageFrom >= 0))//Если пользователь ввёл некорректное значение
                     {
                         ageFrom = -1;
                         Console.WriteLine("\nВведено некорректное значение в \"Возраст От\". Введите неотрицательно число");
@@ -641,8 +674,13 @@ namespace ViewConsole
                 }
                 else
                 {
-
-                    if (!(int.TryParse(Console.ReadLine(), out ageTo) && ageTo >= 0))//Если пользователь ввёл некорректное значение
+                    result = Console.ReadLine();
+                    if (result == "")
+                    {
+                        Console.WriteLine("\nОкей, сохраню");
+                        break;
+                    }
+                    if (!(int.TryParse(result, out ageTo) && ageTo >= 0))//Если пользователь ввёл некорректное значение
                         {
                         ageTo = -1;
                         Console.WriteLine("\nВведено некорректное значение в \"Возраст До\". Введите неотрицательно число");
@@ -664,8 +702,13 @@ namespace ViewConsole
                 }
                 else
                 {
-
-                    if (!(int.TryParse(Console.ReadLine(), out heightFrom) && heightFrom >= 0))//Если пользователь ввёл некорректное значение
+                    result = Console.ReadLine();
+                    if (result == "")
+                    {
+                        Console.WriteLine("\nОкей, сохраню");
+                        break;
+                    }
+                    if (!(int.TryParse(result, out heightFrom) && heightFrom >= 0))//Если пользователь ввёл некорректное значение
                     {
                         heightFrom = -1;
                         Console.WriteLine("\nВведено некорректное значение в \"Рост От\". Введите неотрицательно число");
@@ -680,8 +723,13 @@ namespace ViewConsole
                 }
                 else
                 {
-
-                    if (!(int.TryParse(Console.ReadLine(), out heightTo) && heightTo >= 0))//Если пользователь ввёл некорректное значение
+                    result = Console.ReadLine();
+                    if (result == "")
+                    {
+                        Console.WriteLine("\nОкей, сохраню");
+                        break;
+                    }
+                    if (!(int.TryParse(result, out heightTo) && heightTo >= 0))//Если пользователь ввёл некорректное значение
                     {
                         heightTo = -1;
                         Console.WriteLine("\nВведено некорректное значение в \"Рост До\". Введите неотрицательно число");
@@ -703,8 +751,13 @@ namespace ViewConsole
                 }
                 else
                 {
-
-                    if (!(int.TryParse(Console.ReadLine(), out weightFrom) && weightFrom >= 0))//Если пользователь ввёл некорректное значение
+                    result = Console.ReadLine();
+                    if (result == "")
+                    {
+                        Console.WriteLine("\nОкей, сохраню");
+                        break;
+                    }
+                    if (!(int.TryParse(result, out weightFrom) && weightFrom >= 0))//Если пользователь ввёл некорректное значение
                     {
                         weightFrom = -1;
                         Console.WriteLine("\nВведено некорректное значение в \"Вес От\". Введите неотрицательно число");
@@ -719,8 +772,13 @@ namespace ViewConsole
                 }
                 else
                 {
-
-                    if (!(int.TryParse(Console.ReadLine(), out weightTo) && weightTo >= 0))//Если пользователь ввёл некорректное значение
+                    result = Console.ReadLine();
+                    if (result == "")
+                    {
+                        Console.WriteLine("\nОкей, сохраню");
+                        break;
+                    }
+                    if (!(int.TryParse(result, out weightTo) && weightTo >= 0))//Если пользователь ввёл некорректное значение
                     {
                         weightTo = -1;
                         Console.WriteLine("\nВведено некорректное значение в \"Вес До\". Введите неотрицательно число");
@@ -742,8 +800,13 @@ namespace ViewConsole
                 }
                 else
                 {
-
-                    if (!(int.TryParse(Console.ReadLine(), out sizeFrom) && sizeFrom >= 0))//Если пользователь ввёл некорректное значение
+                    result = Console.ReadLine();
+                    if (result == "")
+                    {
+                        Console.WriteLine("\nОкей, сохраню");
+                        break;
+                    }
+                    if (!(int.TryParse(result, out sizeFrom) && sizeFrom >= 0))//Если пользователь ввёл некорректное значение
                     {
                         sizeFrom = -1;
                         Console.WriteLine("\nВведено некорректное значение в \"Размер От\". Введите неотрицательно число");
@@ -758,8 +821,13 @@ namespace ViewConsole
                 }
                 else
                 {
-
-                    if (!(int.TryParse(Console.ReadLine(), out sizeTo) && sizeTo >= 0))//Если пользователь ввёл некорректное значение
+                    result = Console.ReadLine();
+                    if (result == "")
+                    {
+                        Console.WriteLine("\nОкей, сохраню");
+                        break;
+                    }
+                    if (!(int.TryParse(result, out sizeTo) && sizeTo >= 0))//Если пользователь ввёл некорректное значение
                     {
                         sizeTo = -1;
                         Console.WriteLine("\nВведено некорректное значение в \"Размер До\". Введите неотрицательно число");
@@ -795,7 +863,13 @@ namespace ViewConsole
                         {
                             case 1: //Если пользователь выбрал редактировать навыки
                                 ChooseSkills(skills);
-                                skills = logic.LoadSkills();
+                                Skills skill = Skills.Cooking;
+                                int i = 0;
+                                while (skill != null)
+                                {
+                                    skills.Add(logic.LoadSkills(i));
+                                    i++;
+                                }
                                 skillsChange = -1;
                                 break;
                             case 2: //Если пользователь выбрал НЕТ
@@ -838,11 +912,47 @@ namespace ViewConsole
                         }
                     }
                     else
-                {
+                    {
                     Console.WriteLine("\nНекорректная запись. Введите число!");
-                }
+                    }
                     Console.ReadKey();
                 }
+            }
+            if (result == "")
+            {
+                if (ageFrom == -1)
+                {
+                    ageFrom = filterStats.AgeFrom;
+                }
+                if (ageTo == -1)
+                {
+                    ageTo = filterStats.AgeTo;
+                }
+                if (heightFrom == -1)
+                {
+                    heightFrom = filterStats.HeightFrom;
+                }
+                if (heightTo == -1)
+                {
+                    heightTo = filterStats.HeightTo;
+                }
+                if (weightFrom == -1)
+                {
+                    weightFrom = filterStats.WeightFrom;
+                }
+                if (weightTo == -1)
+                {
+                    weightTo = filterStats.WeightTo;
+                }
+                if (sizeFrom == -1)
+                {
+                    sizeFrom = filterStats.SizeFrom;
+                }
+                if (sizeTo == -1)
+                {
+                    sizeTo = filterStats.SizeTo;
+                }
+                logic.FilterAnimeChanList(ageFrom, ageTo, heightFrom, heightTo, weightFrom, weightTo, sizeFrom, sizeTo, skills, false);
             }
         }
     }

@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Model;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ScrollBar;
 
@@ -34,7 +35,7 @@ namespace ViewForms
 
             foreach (var skill in filterStats.Skills)
             {
-                ListViewItem item = new ListViewItem(skill.ToString());
+                ListViewItem item = new ListViewItem(skill.Name);
                 item.Tag = skill;
 
                 listView1.Items.Add(item);
@@ -68,11 +69,11 @@ namespace ViewForms
                                                     {
                                                         if (sizefrom < sizeto)
                                                         {
-                                                            List<Skills> skills = new List<Skills>();
+                                                            List<Skill> skills = new List<Skill>();
 
                                                             foreach (ListViewItem item in listView1.Items) //Считывает информацию с ListView и закидывает в список
                                                             {
-                                                                if (item.Tag is Skills skill)
+                                                                if (item.Tag is Skill skill)
                                                                 {
                                                                     skills.Add(skill);
                                                                 }
@@ -157,15 +158,17 @@ namespace ViewForms
         ///<summary>Вызывается при нажатии на кнопку редактора скиллов. Открывает форму редакторов скиллов и сохраняет изменения</summary>
         private void skillsSettung_Click(object sender, EventArgs e)
         {
-            List<Skills> skills = new List<Skills>();
+            List<Skill> skills = new List<Skill>();
 
             foreach (ListViewItem item in listView1.Items) //Считывает информацию с ListView и закидывает в список
             {
-                if (item.Tag is Skills skill)
+                if (item.Tag is Skill skill)
                 {
                     skills.Add(skill);
                 }
             }
+
+
 
             SkillsSetting skillsSetting = new SkillsSetting(skills); //Создаём форму для редактирования навыков
 
@@ -174,10 +177,41 @@ namespace ViewForms
             skillsSetting.ShowDialog();
             Debug.WriteLine(logic.LoadSkills().Count); //Подгружаем сохраненные навыки с той формы
 
-            foreach (Skills skill in logic.LoadSkills()) //Отображаем в ListView сохраненные навыки с той формы
+            //int i = 0;
+            //while (anime != null)
+            //{
+            //    anime = logic.LoadAnimeChanList(i);
+            //    i++;
+            //    table.Rows.Add(anime.FirstName, anime.LastName, anime.Age, anime.Id);
+            //}
+
+            //foreach (Skill skill in logic.LoadSkills()) //Отображаем в ListView сохраненные навыки с той формы
+            //{
+            //    ListViewItem newItem = new ListViewItem(skill.ToString()); 
+            //    newItem.Tag = skill;
+            //    listView1.Items.Add(newItem);
+            //}
+
+
+
+
+
+
+
+
+
+
+            skills.Clear();
+
+            foreach (Skill skill in logic.LoadSkills())
             {
-                ListViewItem newItem = new ListViewItem(skill.ToString()); 
-                newItem.Tag = skill;
+                skills.Add(skill);
+            }
+
+            foreach (Skill skill2 in skills) //Отображаем в ListView сохраненные навыки с той формы
+            {
+                ListViewItem newItem = new ListViewItem(skill2.Name);
+                newItem.Tag = skill2;
                 listView1.Items.Add(newItem);
             }
         }
