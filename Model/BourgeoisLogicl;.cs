@@ -16,7 +16,8 @@ namespace Model
     public class BourgeoisLogic
     {
         //static List<AnimeChan> animeChanList = new List<AnimeChan>() { }; 
-        readonly IRepository<AnimeChanRepo> animeChanList = new EntityRepository<AnimeChanRepo>(new DataContext());
+        //readonly IRepository<AnimeChanRepo> animeChanList = new EntityRepository<AnimeChanRepo>(new DataContext());
+        readonly IRepository<AnimeChanRepo> animeChanList = new DapperRepository<AnimeChanRepo>();
         static List<Skill> skills = new List<Skill>();
         static int temporaryID = 0; //Айди, с помощью которого вычисляется нужная тянка
         static FilterStats filterStats = new FilterStats(); //Сохраняет все введенные данные для фильтрации
@@ -29,6 +30,7 @@ namespace Model
         public void CreateAnimeChan()
         {
             animeChanList.DeleteAll();
+            Debug.WriteLine("dgzfkhb");
 
             var anime = new AnimeChanRepo()
             {
