@@ -156,37 +156,37 @@ namespace ViewForms
                                     }
                                     else
                                     {
-                                        Error error = new Error("Ничего не введено в строку \"Фамилия\". Введите что-нибудь");
+                                        ErrorForm error = new ErrorForm("Ничего не введено в строку \"Фамилия\". Введите что-нибудь");
                                         error.ShowDialog();
                                     }
                                 }
                                 else
                                 {
-                                    Error error = new Error("Ничего не введено в строку \"Имя\". Введите что-нибудь");
+                                    ErrorForm error = new ErrorForm("Ничего не введено в строку \"Имя\". Введите что-нибудь");
                                     error.ShowDialog();
                                 }
                             }
                             else
                             {
-                                Error error = new Error("Введено некорректное значение в \"Размер\". Введите неотрицательно число");
+                                ErrorForm error = new ErrorForm("Введено некорректное значение в \"Размер\". Введите неотрицательно число");
                                 error.ShowDialog();
                             }
                         }
                         else
                         {
-                            Error error = new Error("Введено некорректное значение в \"Вес\". Введите неотрицательно число");
+                            ErrorForm error = new ErrorForm("Введено некорректное значение в \"Вес\". Введите неотрицательно число");
                             error.ShowDialog();
                         }
                     }
                     else
                     {
-                        Error error = new Error("Введено некорректное значение в \"Рост\". Введите неотрицательно число");
+                        ErrorForm error = new ErrorForm("Введено некорректное значение в \"Рост\". Введите неотрицательно число");
                         error.ShowDialog();
                     }
                 }
                 else
                 {
-                    Error error = new Error("Введено некорректное значение в \"Возраст\". Введите неотрицательно число");
+                    ErrorForm error = new ErrorForm("Введено некорректное значение в \"Возраст\". Введите неотрицательно число");
                     error.ShowDialog();
                 }
             }
@@ -222,37 +222,37 @@ namespace ViewForms
                                 }
                                 else
                                 {
-                                    Error error = new Error("Ничего не введено в строку \"Фамилия\". Введите что-нибудь");
+                                    ErrorForm error = new ErrorForm("Ничего не введено в строку \"Фамилия\". Введите что-нибудь");
                                     error.ShowDialog();
                                 }
                             }
                             else
                             {
-                                Error error = new Error("Ничего не введено в строку \"Имя\". Введите что-нибудь");
+                                ErrorForm error = new ErrorForm("Ничего не введено в строку \"Имя\". Введите что-нибудь");
                                 error.ShowDialog();
                             }
                         }
                         else
                         {
-                            Error error = new Error("Введено некорректное значение в \"Размер\". Введите число");
+                            ErrorForm error = new ErrorForm("Введено некорректное значение в \"Размер\". Введите число");
                             error.ShowDialog();
                         }
                     }
                     else
                     {
-                        Error error = new Error("Введено некорректное значение в \"Вес\". Введите число");
+                        ErrorForm error = new ErrorForm("Введено некорректное значение в \"Вес\". Введите число");
                         error.ShowDialog();
                     }
                 }
                 else
                 {
-                    Error error = new Error("Введено некорректное значение в \"Рост\". Введите число");
+                    ErrorForm error = new ErrorForm("Введено некорректное значение в \"Рост\". Введите число");
                     error.ShowDialog();
                 }
             }
             else
             {
-                Error error = new Error("Введено некорректное значение в \"Возраст\". Введите число");
+                ErrorForm error = new ErrorForm("Введено некорректное значение в \"Возраст\". Введите число");
                 error.ShowDialog();
             }
         }

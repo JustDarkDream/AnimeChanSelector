@@ -2,7 +2,7 @@
 
 namespace DataAccessLayer
 {
-    public class AnimeChanRepo : IDoMainObject
+    public class AnimeChanRepo : IDomainObject
     {
         public string FirstName { get;  set; }
         public string LastName { get;  set; }

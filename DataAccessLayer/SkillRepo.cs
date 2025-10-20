@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer
 {
-    public class SkillRepo : IDoMainObject
+    public class SkillRepo : IDomainObject
     {
         public int Id { get; set; }
         public string Name { get; set; }

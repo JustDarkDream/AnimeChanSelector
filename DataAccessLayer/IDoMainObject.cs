@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer
 {
-    public interface IDoMainObject
+    public interface IDomainObject
     {
         int Id { get; set; }
     }

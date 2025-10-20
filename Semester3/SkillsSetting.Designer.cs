@@ -128,6 +128,7 @@
             Name = "SkillsSetting";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "SkillsSetting";
+            Load += SkillsSetting_Load;
             ResumeLayout(false);
         }
 

@@ -17,6 +17,15 @@ namespace Model
         public int Age { get; internal set; }
         public int Size { get; internal set; }
 
+        /// <summary>
+        /// Конструктор экземпляра класса MainPerson.
+        /// </summary>
+        /// <param name="firstName">Имя</param>
+        /// <param name="lastName">Фамилия</param>
+        /// <param name="age">Возраст</param>
+        /// <param name="height">Рост</param>
+        /// <param name="weight">Вес</param>
+        /// <param name="size">Размер (чего??)</param>
         public MainPerson(string firstName, string lastName, int age, int height, int weight, int size)
         {
             FirstName = firstName;

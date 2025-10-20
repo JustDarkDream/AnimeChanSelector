@@ -65,7 +65,6 @@
             dgwTabel.RowHeadersWidth = 72;
             dgwTabel.Size = new Size(1355, 507);
             dgwTabel.TabIndex = 0;
-            dgwTabel.CellContentClick += dataGridView1_CellContentClick;
             // 
             // lblName
             // 

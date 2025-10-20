@@ -7,7 +7,7 @@
     <Compile Update="Conclution.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Error.cs">
+    <Compile Update="ErrorForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FilterChan.cs">

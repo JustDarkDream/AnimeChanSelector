@@ -84,73 +84,73 @@ namespace ViewForms
                                                         }
                                                         else
                                                         {
-                                                            Error error = new Error("Значение \"Размер ОТ\" не может быть больше значения \"Размер ДО\"");
+                                                            ErrorForm error = new ErrorForm("Значение \"Размер ОТ\" не может быть больше значения \"Размер ДО\"");
                                                             error.ShowDialog();
                                                         }
                                                     }
                                                     else
                                                     {
-                                                        Error error = new Error("Значение \"Вес ОТ\" не может быть больше значения \"Вес ДО\"");
+                                                        ErrorForm error = new ErrorForm("Значение \"Вес ОТ\" не может быть больше значения \"Вес ДО\"");
                                                         error.ShowDialog();
                                                     }
                                                 }
                                                 else
                                                 {
-                                                    Error error = new Error("Значение \"Рост ОТ\" не может быть больше значения \"Рост ДО\"");
+                                                    ErrorForm error = new ErrorForm("Значение \"Рост ОТ\" не может быть больше значения \"Рост ДО\"");
                                                     error.ShowDialog();
                                                 }
                                             }
                                             else
                                             {
-                                                Error error = new Error("Значение \"Возраст ОТ\" не может быть больше значения \"Возраст ДО\"");
+                                                ErrorForm error = new ErrorForm("Значение \"Возраст ОТ\" не может быть больше значения \"Возраст ДО\"");
                                                 error.ShowDialog();
                                             }
                                         }
                                         else
                                         {
-                                            Error error = new Error("Введено некорректное значение в \"Размер ДО\". Введите неотрицательно число");
+                                            ErrorForm error = new ErrorForm("Введено некорректное значение в \"Размер ДО\". Введите неотрицательно число");
                                             error.ShowDialog();
                                         }
                                     }
                                     else
                                     {
-                                        Error error = new Error("Введено некорректное значение в \"Размер ОТ\". Введите неотрицательно число");
+                                        ErrorForm error = new ErrorForm("Введено некорректное значение в \"Размер ОТ\". Введите неотрицательно число");
                                         error.ShowDialog();
                                     }
                                 }
                                 else
                                 {
-                                    Error error = new Error("Введено некорректное значение в \"Вес ДО\". Введите неотрицательно число");
+                                    ErrorForm error = new ErrorForm("Введено некорректное значение в \"Вес ДО\". Введите неотрицательно число");
                                     error.ShowDialog();
                                 }
                             }
                             else
                             {
-                                Error error = new Error("Введено некорректное значение в \"Вес ОТ\". Введите неотрицательно число");
+                                ErrorForm error = new ErrorForm("Введено некорректное значение в \"Вес ОТ\". Введите неотрицательно число");
                                 error.ShowDialog();
                             }
                         }
                         else
                         {
-                            Error error = new Error("Введено некорректное значение в \"Рост ДО\". Введите неотрицательно число");
+                            ErrorForm error = new ErrorForm("Введено некорректное значение в \"Рост ДО\". Введите неотрицательно число");
                             error.ShowDialog();
                         }
                     }
                     else
                     {
-                        Error error = new Error("Введено некорректное значение в \"Рост ОТ\". Введите неотрицательно число");
+                        ErrorForm error = new ErrorForm("Введено некорректное значение в \"Рост ОТ\". Введите неотрицательно число");
                         error.ShowDialog();
                     }
                 }
                 else
                 {
-                    Error error = new Error("Введено некорректное значение в \"Возраст ДО\". Введите неотрицательно число");
+                    ErrorForm error = new ErrorForm("Введено некорректное значение в \"Возраст ДО\". Введите неотрицательно число");
                     error.ShowDialog();
                 }
             }
             else
             {
-                Error error = new Error("Введено некорректное значение в \"Возраст ОТ\". Введите неотрицательно число");
+                ErrorForm error = new ErrorForm("Введено некорректное значение в \"Возраст ОТ\". Введите неотрицательно число");
                 error.ShowDialog();
             }
         }

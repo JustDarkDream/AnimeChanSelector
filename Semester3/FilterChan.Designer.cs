@@ -305,7 +305,7 @@
             // checkBox1
             // 
             checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(3, 566);
+            checkBox1.Location = new Point(14, 566);
             checkBox1.Margin = new Padding(5, 6, 5, 6);
             checkBox1.Name = "checkBox1";
             checkBox1.Size = new Size(188, 34);
@@ -316,10 +316,10 @@
             // skillsSettung
             // 
             skillsSettung.Font = new Font("Segoe UI", 15F);
-            skillsSettung.Location = new Point(418, 616);
+            skillsSettung.Location = new Point(627, 612);
             skillsSettung.Margin = new Padding(5, 6, 5, 6);
             skillsSettung.Name = "skillsSettung";
-            skillsSettung.Size = new Size(415, 80);
+            skillsSettung.Size = new Size(403, 85);
             skillsSettung.TabIndex = 28;
             skillsSettung.Text = "Редактировать навыки";
             skillsSettung.UseVisualStyleBackColor = true;
@@ -358,6 +358,7 @@
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Margin = new Padding(5, 6, 5, 6);
             Name = "FilterChan";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "FilterChan";
             Load += FilterChan_Load;
             ResumeLayout(false);

@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace Model
 {
-    public class AnimeChan: IDoMainObject
+    public class AnimeChan: IDomainObject
     {
         public string FirstName { get; internal set; }
         public string LastName { get; internal set; }
@@ -21,6 +21,10 @@ namespace Model
 
         public AnimeChan() { }
 
+        /// <summary>
+        /// Конструктор сущности AnimeChan
+        /// </summary>
+        /// <param name="repo">Репозиторий полей записи AnimeChan из БД</param>
         public AnimeChan(DataAccessLayer.AnimeChanRepo repo)
         {
             FirstName = repo.FirstName;

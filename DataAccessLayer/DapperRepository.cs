@@ -6,7 +6,7 @@ using System.Linq;
 using Dapper;
 using DataAccessLayer;
 
-public class DapperRepository<T> : IRepository<T> where T : class, IDoMainObject, new()
+public class DapperRepository<T> : IRepository<T> where T : class, IDomainObject, new()
 {
     private readonly string connectionString = @"Server=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\DataAccessLayer\AnimeChanDataBase.mdf;Integrated Security = True";
 
@@ -193,7 +193,6 @@ public class DapperRepository<T> : IRepository<T> where T : class, IDoMainObject
                     }
                 }
             }
-
             return;
         }
 

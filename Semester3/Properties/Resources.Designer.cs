@@ -63,6 +63,16 @@ namespace ViewForms.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap angry {
+            get {
+                object obj = ResourceManager.GetObject("angry", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap imag1 {
             get {
                 object obj = ResourceManager.GetObject("imag1", resourceCulture);

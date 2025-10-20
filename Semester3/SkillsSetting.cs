@@ -18,6 +18,10 @@ namespace ViewForms
 
         BourgeoisLogic logic = new BourgeoisLogic();
 
+        /// <summary>
+        /// Конструктор формы "настройка скиллов".
+        /// </summary>
+        /// <param name="skills">Коллекция объектов класса Skill</param>
         public SkillsSetting(List<Skill> skills)
         {
             InitializeComponent();
@@ -36,17 +40,17 @@ namespace ViewForms
         ///<summary>Вызывается при нажатии на кнопку удалении навыка. Удаляет навык из ListView</summary>
         private void deleteButton_Click(object sender, EventArgs e)
         {
-            //if (skillsComboBox.SelectedItem is Skill selectedSkill)
-            //{
-            //    var item = skillsView.Items //Проверяет на наличие ListView этого элемента
-            //        .Cast<ListViewItem>()
-            //        .FirstOrDefault(i => i.Tag is Skill s && s.Equals(selectedSkill));
+            if (skillsComboBox.SelectedItem is Skill selectedSkill)
+            {
+                var item = skillsView.Items //Проверяет на наличие ListView этого элемента
+                    .Cast<ListViewItem>()
+                    .FirstOrDefault(i => i.Tag is Skill s && s.Equals(selectedSkill));
 
-            //    if (item != null) //Если он есть
-            //    {
-            //        skillsView.Items.Remove(item);
-            //    }
-            //}
+                if (item != null) //Если он есть
+                {
+                    skillsView.Items.Remove(item);
+                }
+            }
 
             if (skillsComboBox.SelectedItem is Skills selected)
             {
@@ -102,6 +106,11 @@ namespace ViewForms
                 logic.SaveSkills(skill); //Сохраняет навыки
             }
             Close();
+        }
+
+        private void SkillsSetting_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

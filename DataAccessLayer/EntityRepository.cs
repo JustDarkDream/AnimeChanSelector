@@ -8,7 +8,7 @@ using System.Diagnostics;
 
 namespace DataAccessLayer
 {
-    public class EntityRepository<T>: IRepository<T> where T: class, IDoMainObject, new()
+    public class EntityRepository<T>: IRepository<T> where T: class, IDomainObject, new()
     {
 
         private readonly DataContext _context;

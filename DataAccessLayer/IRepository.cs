@@ -2,7 +2,7 @@
 
 namespace DataAccessLayer
 {
-    public interface IRepository<T> where T : IDoMainObject, new()
+    public interface IRepository<T> where T : IDomainObject, new()
     {
         void Create(T entity);
         IEnumerable<T> ReadAll();

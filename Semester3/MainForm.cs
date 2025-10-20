@@ -89,12 +89,12 @@ namespace ViewForms
                 {
                     if (dgwTabel.SelectedRows.Count == 0)
                     {
-                        Error error = new Error("Выберите строку, чтобы показать характеристики Аниме-тян");
+                        ErrorForm error = new ErrorForm("Выберите строку, чтобы показать характеристики Аниме-тян");
                         error.ShowDialog();
                     }
                     else if (dgwTabel.SelectedRows.Count > 1)
                     {
-                        Error error = new Error("Выбрано слишком много. Выберите лишь одну строку");
+                        ErrorForm error = new ErrorForm("Выбрано слишком много. Выберите лишь одну строку");
                         error.ShowDialog();
                     }
                 }
@@ -126,12 +126,12 @@ namespace ViewForms
             {
                 if (dgwTabel.SelectedRows.Count == 0)
                 {
-                    Error error = new Error("Выберите строку, чтобы удалить Аниме-тян");
+                    ErrorForm error = new ErrorForm("Выберите строку, чтобы удалить Аниме-тян");
                     error.ShowDialog();
                 }
                 else if (dgwTabel.SelectedRows.Count > 1)
                 {
-                    Error error = new Error("Выбрано слишком много. Выберите лишь одну строку");
+                    ErrorForm error = new ErrorForm("Выбрано слишком много. Выберите лишь одну строку");
                     error.ShowDialog();
                 }
             }
@@ -158,12 +158,12 @@ namespace ViewForms
             {
                 if (dgwTabel.SelectedRows.Count == 0)
                 {
-                    Error error = new Error("Выберите строку, чтобы изменить характеристики Аниме-тян");
+                    ErrorForm error = new ErrorForm("Выберите строку, чтобы изменить характеристики Аниме-тян");
                     error.ShowDialog();
                 }
                 else if (dgwTabel.SelectedRows.Count > 1)
                 {
-                    Error error = new Error("Выбрано слишком много. Выберите лишь одну строку");
+                    ErrorForm error = new ErrorForm("Выбрано слишком много. Выберите лишь одну строку");
                     error.ShowDialog();
                 }
             }
@@ -219,6 +219,11 @@ namespace ViewForms
             table.Rows.Add(animeChan.FirstName, animeChan.LastName, animeChan.Age, animeChan.Id);
         }
 
+        /// <summary>
+        /// Событие изменения размеров формы
+        /// </summary>
+        /// <param name="sender">форма Mainform</param>
+        /// <param name="e">Контейнер аргументов события</param>
         private void MainForm_SizeChanged(object sender, EventArgs e)
         {
             float scaleFactor = (float)this.ClientSize.Width / 800f;
@@ -231,11 +236,6 @@ namespace ViewForms
             btnshowCard.Font = new Font("Segoe UI", 6f * scaleFactor, FontStyle.Regular);
             lblName.Font = new Font("Segoe UI", 7f * scaleFactor, FontStyle.Regular);
             dgwTabel.Font = new Font("Segoe UI", 5f * scaleFactor, FontStyle.Regular);
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
 
         private void MainForm_Load(object sender, EventArgs e)
