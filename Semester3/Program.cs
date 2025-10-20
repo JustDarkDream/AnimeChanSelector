@@ -15,7 +15,7 @@ namespace ViewForms
             Registration registration = new Registration();
             if (registration.ShowDialog() == DialogResult.OK)
             {
-                Form1 form1 = new Form1();
+                MainForm form1 = new MainForm();
                 if (form1.ShowDialog() == DialogResult.OK)
                 {
                     Application.Run(new Conclution());

@@ -1,6 +1,6 @@
 ﻿namespace ViewForms
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -44,18 +44,21 @@
             // 
             dataGridView1.AllowUserToAddRows = false;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(48, 64);
+            dataGridView1.Location = new Point(82, 128);
+            dataGridView1.Margin = new Padding(5, 6, 5, 6);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
-            dataGridView1.Size = new Size(686, 272);
+            dataGridView1.RowHeadersWidth = 72;
+            dataGridView1.Size = new Size(1176, 544);
             dataGridView1.TabIndex = 0;
             // 
             // label1
             // 
             label1.Font = new Font("Segoe UI", 20F);
-            label1.Location = new Point(252, 9);
+            label1.Location = new Point(432, 18);
+            label1.Margin = new Padding(5, 0, 5, 0);
             label1.Name = "label1";
-            label1.Size = new Size(250, 42);
+            label1.Size = new Size(460, 84);
             label1.TabIndex = 1;
             label1.Text = "Таблица с тянками";
             // 
@@ -63,9 +66,10 @@
             // 
             showCard.FlatStyle = FlatStyle.Flat;
             showCard.Font = new Font("Segoe UI", 14F);
-            showCard.Location = new Point(48, 477);
+            showCard.Location = new Point(82, 954);
+            showCard.Margin = new Padding(5, 6, 5, 6);
             showCard.Name = "showCard";
-            showCard.Size = new Size(138, 68);
+            showCard.Size = new Size(237, 136);
             showCard.TabIndex = 2;
             showCard.Text = "Показать Тян";
             showCard.UseVisualStyleBackColor = true;
@@ -75,9 +79,10 @@
             // 
             createChan.FlatStyle = FlatStyle.Flat;
             createChan.Font = new Font("Segoe UI", 14F);
-            createChan.Location = new Point(48, 370);
+            createChan.Location = new Point(82, 740);
+            createChan.Margin = new Padding(5, 6, 5, 6);
             createChan.Name = "createChan";
-            createChan.Size = new Size(138, 68);
+            createChan.Size = new Size(237, 136);
             createChan.TabIndex = 3;
             createChan.Text = "Создать Тян";
             createChan.UseVisualStyleBackColor = true;
@@ -87,9 +92,10 @@
             // 
             deleteChan.FlatStyle = FlatStyle.Flat;
             deleteChan.Font = new Font("Segoe UI", 14F);
-            deleteChan.Location = new Point(579, 370);
+            deleteChan.Location = new Point(993, 740);
+            deleteChan.Margin = new Padding(5, 6, 5, 6);
             deleteChan.Name = "deleteChan";
-            deleteChan.Size = new Size(155, 68);
+            deleteChan.Size = new Size(266, 136);
             deleteChan.TabIndex = 4;
             deleteChan.Text = "Удалить Тян";
             deleteChan.UseVisualStyleBackColor = true;
@@ -99,9 +105,10 @@
             // 
             SettingChan.FlatStyle = FlatStyle.Flat;
             SettingChan.Font = new Font("Segoe UI", 14F);
-            SettingChan.Location = new Point(397, 370);
+            SettingChan.Location = new Point(681, 740);
+            SettingChan.Margin = new Padding(5, 6, 5, 6);
             SettingChan.Name = "SettingChan";
-            SettingChan.Size = new Size(162, 68);
+            SettingChan.Size = new Size(278, 136);
             SettingChan.TabIndex = 5;
             SettingChan.Text = "Редактировать Тян";
             SettingChan.UseVisualStyleBackColor = true;
@@ -111,9 +118,10 @@
             // 
             filter.FlatStyle = FlatStyle.Flat;
             filter.Font = new Font("Segoe UI", 14F);
-            filter.Location = new Point(213, 477);
+            filter.Location = new Point(365, 954);
+            filter.Margin = new Padding(5, 6, 5, 6);
             filter.Name = "filter";
-            filter.Size = new Size(346, 68);
+            filter.Size = new Size(593, 136);
             filter.TabIndex = 6;
             filter.Text = "Отфильтровать";
             filter.UseVisualStyleBackColor = true;
@@ -123,9 +131,10 @@
             // 
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Segoe UI", 14F);
-            button1.Location = new Point(579, 477);
+            button1.Location = new Point(993, 954);
+            button1.Margin = new Padding(5, 6, 5, 6);
             button1.Name = "button1";
-            button1.Size = new Size(155, 68);
+            button1.Size = new Size(266, 136);
             button1.TabIndex = 7;
             button1.Text = "Убрать фильтр";
             button1.UseVisualStyleBackColor = true;
@@ -135,19 +144,20 @@
             // 
             findChan.FlatStyle = FlatStyle.Flat;
             findChan.Font = new Font("Segoe UI", 14F);
-            findChan.Location = new Point(213, 370);
+            findChan.Location = new Point(365, 740);
+            findChan.Margin = new Padding(5, 6, 5, 6);
             findChan.Name = "findChan";
-            findChan.Size = new Size(166, 68);
+            findChan.Size = new Size(285, 136);
             findChan.TabIndex = 8;
             findChan.Text = "Найти Тян";
             findChan.UseVisualStyleBackColor = true;
             findChan.Click += button2_Click;
             // 
-            // Form1
+            // MainForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(12F, 30F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 557);
+            ClientSize = new Size(1371, 1114);
             Controls.Add(findChan);
             Controls.Add(button1);
             Controls.Add(filter);
@@ -157,8 +167,9 @@
             Controls.Add(showCard);
             Controls.Add(label1);
             Controls.Add(dataGridView1);
-            Name = "Form1";
-            Text = "Form1";
+            Margin = new Padding(5, 6, 5, 6);
+            Name = "MainForm";
+            Text = "Подбор тянки";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }

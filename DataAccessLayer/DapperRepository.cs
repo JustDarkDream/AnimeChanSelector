@@ -8,7 +8,7 @@ using DataAccessLayer;
 
 public class DapperRepository<T> : IRepository<T> where T : class, IDoMainObject, new()
 {
-    private readonly string connectionString = @"Server=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Nubik\Documents\IloveGit\Semester3\DataAccessLayer\AnimeChanDataBase.mdf;Integrated Security = True";
+    private readonly string connectionString = @"Server=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\DataAccessLayer\AnimeChanDataBase.mdf;Integrated Security = True";
 
     private IDbConnection CreateConnection() => new SqlConnection(connectionString);
 
@@ -26,9 +26,9 @@ public class DapperRepository<T> : IRepository<T> where T : class, IDoMainObject
                     try
                     { //Добавляем тянку
                         const string sqlChan = @" 
-INSERT INTO AnimeChans (FirstName, LastName, Age, Height, Weight, Size)
-VALUES (@FirstName, @LastName, @Age, @Height, @Weight, @Size);
-SELECT CAST(SCOPE_IDENTITY() AS int);";
+                        INSERT INTO AnimeChans (FirstName, LastName, Age, Height, Weight, Size)
+                        VALUES (@FirstName, @LastName, @Age, @Height, @Weight, @Size);
+                        SELECT CAST(SCOPE_IDENTITY() AS int);";
 
                         chan.Id = conn.QuerySingle<int>(sqlChan, chan, tx); //Присваиваем id для тянки (экземплярам класса)
 
@@ -36,8 +36,8 @@ SELECT CAST(SCOPE_IDENTITY() AS int);";
                         {
                             //Добавляем её скиллы
                             const string sqlSkill = @"
-INSERT INTO Skills (Name, AnimeChanRepoId)
-VALUES (@Name, @AnimeChanRepoId);";
+                            INSERT INTO Skills (Name, AnimeChanRepoId)
+                            VALUES (@Name, @AnimeChanRepoId);";
 
                             foreach (var s in chan.Skills)
                             {
@@ -68,10 +68,10 @@ VALUES (@Name, @AnimeChanRepoId);";
         {
             //Выбирает тянку вместе с её скиллами
             const string sql = @" 
-SELECT a.Id, a.FirstName, a.LastName, a.Age, a.Height, a.Weight, a.Size,
-       s.Id, s.Name, s.AnimeChanRepoId
-FROM AnimeChans a
-LEFT JOIN Skills s ON s.AnimeChanRepoId = a.Id;";
+            SELECT a.Id, a.FirstName, a.LastName, a.Age, a.Height, a.Weight, a.Size,
+                   s.Id, s.Name, s.AnimeChanRepoId
+            FROM AnimeChans a
+            LEFT JOIN Skills s ON s.AnimeChanRepoId = a.Id;";
 
             using (var conn = CreateConnection())
             {
@@ -157,14 +157,14 @@ LEFT JOIN Skills s ON s.AnimeChanRepoId = a.Id;";
                     {
                         //Обновляем тянку
                         const string sqlUpdateChan = @"
-UPDATE AnimeChans
-SET FirstName = @FirstName,
-    LastName  = @LastName,
-    Age       = @Age,
-    Height    = @Height,
-    Weight    = @Weight,
-    Size      = @Size
-WHERE Id = @Id;";
+                        UPDATE AnimeChans
+                        SET FirstName = @FirstName,
+                            LastName  = @LastName,
+                            Age       = @Age,
+                            Height    = @Height,
+                            Weight    = @Weight,
+                            Size      = @Size
+                        WHERE Id = @Id;";
 
                         conn.Execute(sqlUpdateChan, chan, tx);
 
@@ -175,8 +175,8 @@ WHERE Id = @Id;";
                         if (chan.Skills != null && chan.Skills.Any())
                         {
                             const string sqlInsertSkill = @"
-INSERT INTO Skills (Name, AnimeChanRepoId)
-VALUES (@Name, @AnimeChanRepoId);";
+                            INSERT INTO Skills (Name, AnimeChanRepoId)
+                            VALUES (@Name, @AnimeChanRepoId);";
 
                             foreach (var s in chan.Skills)
                             {

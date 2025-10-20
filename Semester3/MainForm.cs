@@ -7,12 +7,12 @@ using System.Diagnostics;
 
 namespace ViewForms
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
 
         DataGridView table;
         BourgeoisLogic logic = new BourgeoisLogic();
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
 
