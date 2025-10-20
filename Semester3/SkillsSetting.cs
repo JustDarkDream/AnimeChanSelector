@@ -57,10 +57,7 @@ namespace ViewForms
 
                 if (existingItem != null)
                 {
-                    Skill newSkill = new Skill
-                    {
-                        Name = selected.ToString()
-                    };
+                    Skill newSkill = logic.CreateSkill(selected.ToString());
 
                     skillsView.Items.Remove(existingItem);
                 }
@@ -79,10 +76,7 @@ namespace ViewForms
 
                 if (existingItem == null)
                 {
-                    Skill newSkill = new Skill
-                    {
-                        Name = selected.ToString()
-                    };
+                    Skill newSkill = logic.CreateSkill(selected.ToString());
 
                     ListViewItem newItem = skillsView.Items.Add(newSkill.Name);
                     newItem.Tag = newSkill;

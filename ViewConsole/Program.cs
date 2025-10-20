@@ -134,36 +134,26 @@ namespace ViewConsole
                 Console.WriteLine("".PadLeft(151, '_')); //Создаёт линию под названиями колонок
                 if (isFiltered)
                 {
-                    AnimeChan anime = logic.LoadFilterAnimeChanList(0);
+                    List<AnimeChan> chan = logic.LoadFilterAnimeChanList();
                     int i = 0;
-                    while (anime != null)
+                    foreach (AnimeChan anime in chan)
                     {
-                        anime = logic.LoadFilterAnimeChanList(i);
-                        i++;
-                        if (anime != null)
-                        {
-                            Console.WriteLine("|| " + anime.FirstName + "|| ".PadLeft(40 - anime.FirstName.Length - 1, ' ') + anime.LastName +
-    "|| ".PadLeft(40 - anime.LastName.Length - 5, ' ') + anime.Age + "|| ".ToString().PadLeft(40 - anime.Age.ToString().Length - 5, ' ') +
-    anime.Id + "|| ".ToString().PadLeft(40 - anime.Id.ToString().Length, ' ')); //Пишет характеристики из отфильтрованного листа с Аниме Тян
-                            Console.WriteLine("".PadLeft(151, '_')); //Создаёт линию под характеристиками тян
-                        }
+                        Console.WriteLine("|| " + anime.FirstName + "|| ".PadLeft(40 - anime.FirstName.Length - 1, ' ') + anime.LastName +
+"|| ".PadLeft(40 - anime.LastName.Length - 5, ' ') + anime.Age + "|| ".ToString().PadLeft(40 - anime.Age.ToString().Length - 5, ' ') +
+anime.Id + "|| ".ToString().PadLeft(40 - anime.Id.ToString().Length, ' ')); //Пишет характеристики из отфильтрованного листа с Аниме Тян
+                        Console.WriteLine("".PadLeft(151, '_')); //Создаёт линию под характеристиками тян
                     }
                 }
                 else
                 {
-                    AnimeChan anime = logic.LoadAnimeChanList(0);
+                    List<AnimeChan> chan = logic.LoadAnimeChanList().ToList();
                     int i = 0;
-                    while (anime != null)
+                    foreach (AnimeChan anime in chan)
                     {
-                        anime = logic.LoadAnimeChanList(i);
-                        i++;
-                        if  (anime != null)
-                        {
-                            Console.WriteLine("|| " + anime.FirstName + "|| ".PadLeft(40 - anime.FirstName.Length - 1, ' ') + anime.LastName +
+                        Console.WriteLine("|| " + anime.FirstName + "|| ".PadLeft(40 - anime.FirstName.Length - 1, ' ') + anime.LastName +
 "|| ".PadLeft(40 - anime.LastName.Length - 5, ' ') + anime.Age + "|| ".ToString().PadLeft(40 - anime.Age.ToString().Length - 5, ' ') +
 anime.Id + "|| ".ToString().PadLeft(40 - anime.Id.ToString().Length, ' ')); //Пишет характеристики из отфильтрованного листа с Аниме Тян
-                            Console.WriteLine("".PadLeft(151, '_')); //Создаёт линию под характеристиками тян
-                        }
+                        Console.WriteLine("".PadLeft(151, '_')); //Создаёт линию под характеристиками тян
 
                     }
                 }
@@ -287,7 +277,7 @@ anime.Id + "|| ".ToString().PadLeft(40 - anime.Id.ToString().Length, ' ')); //П
             string sizeNameText = "Размер: ";
             string statusText = "Создай свою Аниме-Тян!\n";
 
-            List<Skills> skills = new List<Skills>();
+            List<Skill> skills = new List<Skill>();
             if (animeChan != null)
             {
                 skills = animeChan.Skills; //Подгружает скиллы для тянки
@@ -402,7 +392,7 @@ anime.Id + "|| ".ToString().PadLeft(40 - anime.Id.ToString().Length, ' ')); //П
                     {
                         Console.Write(", ");
                     }
-                    Console.Write(skills[i]);
+                    Console.Write(skills[i].Name);
                 }
                 Console.WriteLine("\n\nРедактировать Навыки?\n");
                 Console.WriteLine("1. Да");
@@ -414,13 +404,7 @@ anime.Id + "|| ".ToString().PadLeft(40 - anime.Id.ToString().Length, ' ')); //П
                     {
                         case 1: //Позволяет пользователю изменить содержание списка с элементами Skills
                             ChooseSkills(skills);
-                            Skills skill = Skills.Cooking;
-                            int i = 0;
-                            while (skill != null)
-                            {
-                                skills.Add(logic.LoadSkills(i));
-                                i++;
-                            }
+                            List<Skill> skill = logic.LoadSkills();
                             break;
                         case 2: //Завершает создание/редактирование тянки
                             Console.WriteLine("\nСохранение прошло успешно!");
@@ -452,7 +436,7 @@ anime.Id + "|| ".ToString().PadLeft(40 - anime.Id.ToString().Length, ' ')); //П
 
         ///<summary>Позволяет редактировать какой-либо список с элементами Skills</summary>
         /// <param name="skills">Сам список, который будет редактирован</param>
-        static void ChooseSkills(List<Skills> skills)
+        static void ChooseSkills(List<Skill> skills)
         {
             //-1 означает, что переменная не содержит подходящее значение
             int n = -1; //Выбор элемента Skills или выбор выхода
@@ -466,7 +450,7 @@ anime.Id + "|| ".ToString().PadLeft(40 - anime.Id.ToString().Length, ' ')); //П
                     {
                         Console.Write(", ");
                     }
-                    Console.Write(skills[i]);
+                    Console.Write(skills[i].Name);
                 }
                 Console.Write("\n\nВыберите навык (или выход): \n\n");
                 int k = 1; //Переменная для визуального оформления выбора
@@ -495,9 +479,10 @@ anime.Id + "|| ".ToString().PadLeft(40 - anime.Id.ToString().Length, ' ')); //П
                             switch (j)
                             {
                                 case 1: //Добавляет навык в список, если того навыка еще нет
-                                    if (!skills.Contains((Skills)Enum.GetValues(typeof(Skills)).GetValue(n - 1)))
-                                    {
-                                        skills.Add((Skills)Enum.GetValues(typeof(Skills)).GetValue(n - 1));
+                                    string skillName = ((Skills)Enum.GetValues(typeof(Skills)).GetValue(n - 1)).ToString();
+                                    if (!skills.Any(x => x.Name == skillName))
+                                        {
+                                        skills.Add(logic.CreateSkill(skillName));
                                         Console.WriteLine("\n\nНавык успешно добавлен!");
                                     }
                                     else
@@ -507,9 +492,12 @@ anime.Id + "|| ".ToString().PadLeft(40 - anime.Id.ToString().Length, ' ')); //П
                                     n = -1;
                                     break;
                                 case 2: //Удаляет навык из списка, если он в списке есть
-                                    if (skills.Contains((Skills)Enum.GetValues(typeof(Skills)).GetValue(n - 1)))
+                                    string skillName2 = ((Skills)Enum.GetValues(typeof(Skills)).GetValue(n - 1)).ToString();
+                                    var skillToRemove = skills.FirstOrDefault(x => x.Name == skillName2);
+
+                                    if (skillToRemove != null)
                                     {
-                                        skills.Remove((Skills)Enum.GetValues(typeof(Skills)).GetValue(n - 1));
+                                        skills.Remove(skillToRemove);
                                         Console.WriteLine("\n\nНавык успешно удален!");
                                     }
                                     else
@@ -545,7 +533,7 @@ anime.Id + "|| ".ToString().PadLeft(40 - anime.Id.ToString().Length, ' ')); //П
                 Console.ReadKey();
             }
 
-            foreach(Skills skill in skills)
+            foreach(Skill skill in skills)
             {
                 logic.SaveSkills(skill); //Сохраняет навыки
             }
@@ -561,7 +549,7 @@ anime.Id + "|| ".ToString().PadLeft(40 - anime.Id.ToString().Length, ' ')); //П
             int age = animeChan.Age;
             int height = animeChan.Height;
             int weight = animeChan.Weight;
-            List<Skills> skills = animeChan.Skills;
+            List<Skill> skills = animeChan.Skills;
             while (true)
             {
                 Console.Clear();
@@ -580,7 +568,7 @@ anime.Id + "|| ".ToString().PadLeft(40 - anime.Id.ToString().Length, ' ')); //П
                     {
                         Console.Write(", ");
                     }
-                    Console.Write(skills[i]);
+                    Console.Write(skills[i].Name);
                 }
                 Console.WriteLine("\n\nВыбрать её?\n");
                 Console.WriteLine("1. Да"); //Влюбиться или не?
@@ -640,7 +628,7 @@ anime.Id + "|| ".ToString().PadLeft(40 - anime.Id.ToString().Length, ' ')); //П
 
             int skillsChange = -1; //Сохраняет выбор человека по поводу редактирования навыков
 
-            List<Skills> skills = filterStats.Skills; //Загружает сохраненные навыки, которые пользователь выбрал ранее
+            List<Skill> skills = filterStats.Skills; //Загружает сохраненные навыки, которые пользователь выбрал ранее
 
             while (true)
             {
@@ -849,7 +837,7 @@ anime.Id + "|| ".ToString().PadLeft(40 - anime.Id.ToString().Length, ' ')); //П
                     {
                         Console.Write(", ");
                     }
-                    Console.Write(skills[i]);
+                    Console.Write(skills[i].Name);
                 }
                 Console.WriteLine("\n\nРедактировать Навыки?\n");
                 Console.WriteLine("1. Да");
@@ -863,13 +851,7 @@ anime.Id + "|| ".ToString().PadLeft(40 - anime.Id.ToString().Length, ' ')); //П
                         {
                             case 1: //Если пользователь выбрал редактировать навыки
                                 ChooseSkills(skills);
-                                Skills skill = Skills.Cooking;
-                                int i = 0;
-                                while (skill != null)
-                                {
-                                    skills.Add(logic.LoadSkills(i));
-                                    i++;
-                                }
+                                List<Skill> skill = logic.LoadSkills();
                                 skillsChange = -1;
                                 break;
                             case 2: //Если пользователь выбрал НЕТ
@@ -952,6 +934,7 @@ anime.Id + "|| ".ToString().PadLeft(40 - anime.Id.ToString().Length, ' ')); //П
                 {
                     sizeTo = filterStats.SizeTo;
                 }
+                isFiltered = true;
                 logic.FilterAnimeChanList(ageFrom, ageTo, heightFrom, heightTo, weightFrom, weightTo, sizeFrom, sizeTo, skills, false);
             }
         }

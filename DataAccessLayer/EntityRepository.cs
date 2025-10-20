@@ -19,12 +19,16 @@ namespace DataAccessLayer
             _context = context;
         }
 
+        ///<summary>Добавляет запись в БД </summary>
+        /// <param name="obj">объект, который добавится в БД</param>
         public void Create(T obj)
         {
             _context.Set<T>().Add(obj);
             _context.SaveChanges();
         }
 
+        ///<summary>Читает все записи в БД</summary>
+        /// <returns>Возвращает все записи из БД</returns>
         public IEnumerable<T> ReadAll()
         {
 
@@ -35,17 +39,17 @@ namespace DataAccessLayer
                     .Cast<T>()
                     .ToList();
             }
-
             return _context.Set<T>().ToList();
-
-            //return _context.Set<T>().ToList();
         }
 
+        ///<summary>Читает запись по id</summary>
+        /// <param name="id">id, по которому ищут нужный объект</param>
+        /// /// <returns>Возвращает нужную запись из БД</returns>
         public T ReadById(int id)
         {
             using (var context = new DataContext())
             {
-                // Если это AnimeChanRepo — подгружаем связанные Skills
+                // Если это AnimeChanRepo, то подгружаем связанные Skills
                 if (typeof(T) == typeof(AnimeChanRepo))
                 {
                     var repo = context.AnimeChans
@@ -62,34 +66,24 @@ namespace DataAccessLayer
                     .AsNoTracking()
                     .FirstOrDefault(e => e.Id == id);
             }
-            //return _context.Set<T>().Include("Skills").Where(o => o.Id == id).FirstOrDefault();
         }
 
+        ///<summary>Изменяет данные у записи </summary>
+        /// <param name="obj">объект с измененными свойствами</param>
         public void Update(T obj)
         {
-            //T origin = _context.Set<T>().Where(o => o.Id == obj.Id).FirstOrDefault();
-
-            //var properties = typeof(T).GetProperties();
-            //foreach (var prop in properties)
-            //{
-            //    if (prop.CanWrite)
-            //    {
-            //        var newValue = prop.GetValue(obj);
-            //        prop.SetValue(origin, newValue);
-            //    }
-            //}
-
-            //_context.SaveChanges();
             if (obj is AnimeChanRepo animeChanRepo)
             {
                 var existing = _context.AnimeChans
                     .Include(a => a.Skills)
                     .FirstOrDefault(a => a.Id == animeChanRepo.Id);
 
-                if (existing == null) return;
+                if (existing == null)
+                {
+                    return; 
+                }
 
-                // Простые поля
-                Debug.WriteLine("111");
+                // Обновляем все поля (кроме скилов)
                 existing.FirstName = animeChanRepo.FirstName;
                 existing.LastName = animeChanRepo.LastName;
                 existing.Age = animeChanRepo.Age;
@@ -97,13 +91,13 @@ namespace DataAccessLayer
                 existing.Weight = animeChanRepo.Weight;
                 existing.Size = animeChanRepo.Size;
 
-                // Обновляем навыки
+                // Обновляем скилы
                 foreach (var skill in animeChanRepo.Skills)
                 {
                     var existingSkill = existing.Skills.FirstOrDefault(s => s.Id == skill.Id);
                     if (existingSkill != null)
                     {
-                        // изменяем существующий
+                        // изменяем существующие
                         existingSkill.Name = skill.Name;
                     }
                     else
@@ -112,7 +106,7 @@ namespace DataAccessLayer
                         var newSkill = new SkillRepo
                         {
                             Name = skill.Name,
-                            AnimeChanRepoId = existing.Id // важно указать связь
+                            AnimeChanRepoId = existing.Id 
                         };
                         _context.Skills.Add(newSkill);
                         existing.Skills.Add(newSkill);
@@ -123,12 +117,15 @@ namespace DataAccessLayer
             }
         }
 
+        ///<summary>Удаляет запись в БД </summary>
+        /// <param name="obj">объект, который нужно удалить из БД</param>
         public void Delete(T obj)
         {
             _context.Set<T>().Remove(obj);
             _context.SaveChanges();
         }
 
+        ///<summary>Удаляет ВСЕ записи в БД </summary>
         public void DeleteAll()
         {    // Сначала удаляем все Skills
             var allSkills = _context.Skills.ToList();

@@ -14,35 +14,23 @@ namespace DataAccessLayer
         public DbSet<SkillRepo> Skills { get; set; }
 
 
-        //public DataContext(): base(@"LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Nubik\Documents\IloveGit\Semester3\DataAccessLayer\AnimeChansDB.mdf;Integrated Security = True") { }
-
-        //public EntityProjectRepository(DataContext context)
-        //{
-        //    _context = context;
-        //}
-
         public DataContext()
         {
             Database.EnsureCreated();
         }
 
+        ///<summary>Автоматически подключается к БД </summary>
+        /// <param name="optionsBuilder">помогает подключиться к БД</param>
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
             {
                 optionsBuilder.UseSqlServer(@"Server=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Nubik\Documents\IloveGit\Semester3\DataAccessLayer\AnimeChanDataBase.mdf;Integrated Security = True");
             }
-
-            //    if (!optionsBuilder.IsConfigured)
-            //    {
-            //        optionsBuilder.UseSqlServer(
-            //            @"Server=(localdb)\MSSQLLocalDB;Database=AnimeChanDB;Trusted_Connection=True;TrustServerCertificate=True;");
-            //    }
-            //}
-
-
         }
 
+        ///<summary>Настройка связи между таблицами </summary>
+        /// <param name="optionsBuilder">объект для настройки структуры моделей (таблицы, ключи и т.д.)</param>
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<AnimeChanRepo>()
