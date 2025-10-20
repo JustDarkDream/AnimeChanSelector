@@ -3,12 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Nubik\\Documents\\IloveGit\\Semester3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\nubik\\documents\\ilovegit\\semester3\\dataaccesslayer\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{46D11C99-9C65-4A5A-970B-D8395E90D07C}|ViewConsole\\ViewConsole.csproj|c:\\users\\nubik\\documents\\ilovegit\\semester3\\viewconsole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46D11C99-9C65-4A5A-970B-D8395E90D07C}|ViewConsole\\ViewConsole.csproj|solutionrelative:viewconsole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6BCE398-55B5-4595-8176-B292AB1819ED}|Model\\Model.csproj|c:\\users\\nubik\\documents\\ilovegit\\semester3\\model\\skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6BCE398-55B5-4595-8176-B292AB1819ED}|Model\\Model.csproj|solutionrelative:model\\skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6BCE398-55B5-4595-8176-B292AB1819ED}|Model\\Model.csproj|c:\\users\\nubik\\documents\\ilovegit\\semester3\\model\\bourgeoislogicl;.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6BCE398-55B5-4595-8176-B292AB1819ED}|Model\\Model.csproj|solutionrelative:model\\bourgeoislogicl;.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|c:\\users\\nubik\\documents\\ilovegit\\semester3\\semester3\\skillssetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|solutionrelative:semester3\\skillssetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\nubik\\documents\\ilovegit\\semester3\\dataaccesslayer\\dapperrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\dapperrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\nubik\\documents\\ilovegit\\semester3\\dataaccesslayer\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\nubik\\documents\\ilovegit\\semester3\\dataaccesslayer\\animechanrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,10 +51,6 @@
       "RelativeMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\skillrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6BCE398-55B5-4595-8176-B292AB1819ED}|Model\\Model.csproj|c:\\users\\nubik\\documents\\ilovegit\\semester3\\model\\bourgeoislogicl;.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6BCE398-55B5-4595-8176-B292AB1819ED}|Model\\Model.csproj|solutionrelative:model\\bourgeoislogicl;.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F6BCE398-55B5-4595-8176-B292AB1819ED}|Model\\Model.csproj|c:\\users\\nubik\\documents\\ilovegit\\semester3\\model\\model.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{F6BCE398-55B5-4595-8176-B292AB1819ED}|Model\\Model.csproj|solutionrelative:model\\model.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
@@ -57,10 +69,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{F6BCE398-55B5-4595-8176-B292AB1819ED}|Model\\Model.csproj|c:\\users\\nubik\\documents\\ilovegit\\semester3\\model\\filterstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F6BCE398-55B5-4595-8176-B292AB1819ED}|Model\\Model.csproj|solutionrelative:model\\filterstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46D11C99-9C65-4A5A-970B-D8395E90D07C}|ViewConsole\\ViewConsole.csproj|c:\\users\\nubik\\documents\\ilovegit\\semester3\\viewconsole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46D11C99-9C65-4A5A-970B-D8395E90D07C}|ViewConsole\\ViewConsole.csproj|solutionrelative:viewconsole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|c:\\users\\nubik\\documents\\ilovegit\\semester3\\semester3\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -93,16 +101,8 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_NUBIK_DOCUMENTS_ILOVEGIT_SEMESTER3_DATAACCESSLAYER_ANIMECHANDATABASE.MDF/True/SqlTable/dbo.Skills.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6BCE398-55B5-4595-8176-B292AB1819ED}|Model\\Model.csproj|c:\\users\\nubik\\documents\\ilovegit\\semester3\\model\\skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6BCE398-55B5-4595-8176-B292AB1819ED}|Model\\Model.csproj|solutionrelative:model\\skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F6BCE398-55B5-4595-8176-B292AB1819ED}|Model\\Model.csproj|c:\\users\\nubik\\documents\\ilovegit\\semester3\\model\\animechanname.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F6BCE398-55B5-4595-8176-B292AB1819ED}|Model\\Model.csproj|solutionrelative:model\\animechanname.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|c:\\users\\nubik\\documents\\ilovegit\\semester3\\semester3\\skillssetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|solutionrelative:semester3\\skillssetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|C:\\Users\\Nubik\\Documents\\IloveGit\\Semester3\\semester3\\skillssetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -152,50 +152,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DapperRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\Semester3\\DataAccessLayer\\DapperRepository.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\DapperRepository.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\Semester3\\DataAccessLayer\\DapperRepository.cs",
-              "RelativeToolTip": "DataAccessLayer\\DapperRepository.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-29T13:48:43.813Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "EnumSkillsRepo.cs",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\Semester3\\DataAccessLayer\\EnumSkillsRepo.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\EnumSkillsRepo.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\Semester3\\DataAccessLayer\\EnumSkillsRepo.cs",
-              "RelativeToolTip": "DataAccessLayer\\EnumSkillsRepo.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAiwAsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-12T14:28:04.899Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 2,
               "Title": "BourgeoisLogicl;.cs",
               "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\Semester3\\Model\\BourgeoisLogicl;.cs",
               "RelativeDocumentMoniker": "Model\\BourgeoisLogicl;.cs",
               "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\Semester3\\Model\\BourgeoisLogicl;.cs",
               "RelativeToolTip": "Model\\BourgeoisLogicl;.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAAgwD8AAABCAAAAAAAAAA==",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAjwEIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-22T10:38:22.513Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "AnimeChanRepo.cs",
               "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\Semester3\\DataAccessLayer\\AnimeChanRepo.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\AnimeChanRepo.cs",
@@ -203,12 +177,11 @@
               "RelativeToolTip": "DataAccessLayer\\AnimeChanRepo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-11T10:55:53.13Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-11T10:55:53.13Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "EntityRepository.cs",
               "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\Semester3\\DataAccessLayer\\EntityRepository.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\EntityRepository.cs",
@@ -216,12 +189,11 @@
               "RelativeToolTip": "DataAccessLayer\\EntityRepository.cs",
               "ViewState": "AgIAAHMAAAAAAAAAAAAcwIEAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-29T13:23:17.835Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-29T13:23:17.835Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "Model.csproj",
               "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\Semester3\\Model\\Model.csproj",
               "RelativeDocumentMoniker": "Model\\Model.csproj",
@@ -229,12 +201,11 @@
               "RelativeToolTip": "Model\\Model.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-12T14:28:24.73Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-12T14:28:24.73Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "SkillRepo.cs",
               "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\Semester3\\DataAccessLayer\\SkillRepo.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\SkillRepo.cs",
@@ -242,12 +213,11 @@
               "RelativeToolTip": "DataAccessLayer\\SkillRepo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-17T07:57:14.446Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-17T07:57:14.446Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "IRepository.cs",
               "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\Semester3\\DataAccessLayer\\IRepository.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\IRepository.cs",
@@ -255,12 +225,11 @@
               "RelativeToolTip": "DataAccessLayer\\IRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-29T10:37:28.351Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-29T10:37:28.351Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "IDoMainObject.cs",
               "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\Semester3\\DataAccessLayer\\IDoMainObject.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\IDoMainObject.cs",
@@ -268,25 +237,92 @@
               "RelativeToolTip": "DataAccessLayer\\IDoMainObject.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-29T14:01:32.296Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-29T14:01:32.296Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "DataContext.cs",
               "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\Semester3\\DataAccessLayer\\DataContext.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\DataContext.cs",
               "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\Semester3\\DataAccessLayer\\DataContext.cs",
               "RelativeToolTip": "DataAccessLayer\\DataContext.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwCgAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-12T13:54:32.385Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 1,
+              "Title": "Skill.cs",
+              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\Semester3\\Model\\Skill.cs",
+              "RelativeDocumentMoniker": "Model\\Skill.cs",
+              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\Semester3\\Model\\Skill.cs",
+              "RelativeToolTip": "Model\\Skill.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T07:54:44.241Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DapperRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\Semester3\\DataAccessLayer\\DapperRepository.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\DapperRepository.cs",
+              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\Semester3\\DataAccessLayer\\DapperRepository.cs",
+              "RelativeToolTip": "DataAccessLayer\\DapperRepository.cs",
+              "ViewState": "AgIAAJUAAAAAAAAAAADwv6MAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T13:48:43.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\Semester3\\ViewConsole\\Program.cs",
+              "RelativeDocumentMoniker": "ViewConsole\\Program.cs",
+              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\Semester3\\ViewConsole\\Program.cs",
+              "RelativeToolTip": "ViewConsole\\Program.cs",
+              "ViewState": "AgIAADUDAAAAAAAAAAAqwEcDAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T05:06:50.909Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SkillsSetting.cs",
+              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\Semester3\\Semester3\\SkillsSetting.cs",
+              "RelativeDocumentMoniker": "Semester3\\SkillsSetting.cs",
+              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\Semester3\\Semester3\\SkillsSetting.cs",
+              "RelativeToolTip": "Semester3\\SkillsSetting.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAiwE4AAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T18:04:56.54Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EnumSkillsRepo.cs",
+              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\Semester3\\DataAccessLayer\\EnumSkillsRepo.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\EnumSkillsRepo.cs",
+              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\Semester3\\DataAccessLayer\\EnumSkillsRepo.cs",
+              "RelativeToolTip": "DataAccessLayer\\EnumSkillsRepo.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAiwAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-12T14:28:04.899Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "AnimeChan.cs",
               "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\Semester3\\Model\\AnimeChan.cs",
               "RelativeDocumentMoniker": "Model\\AnimeChan.cs",
@@ -294,12 +330,11 @@
               "RelativeToolTip": "Model\\AnimeChan.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAqwBEAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T05:06:10.818Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-23T05:06:10.818Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "Saves.cs",
               "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\Semester3\\Model\\Saves.cs",
               "RelativeDocumentMoniker": "Model\\Saves.cs",
@@ -307,12 +342,11 @@
               "RelativeToolTip": "Model\\Saves.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T15:18:04.912Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-20T15:18:04.912Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "EnumSkills.cs",
               "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\Semester3\\Model\\EnumSkills.cs",
               "RelativeDocumentMoniker": "Model\\EnumSkills.cs",
@@ -320,12 +354,11 @@
               "RelativeToolTip": "Model\\EnumSkills.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAiwAoAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T05:06:16.264Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-23T05:06:16.264Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "FilterStats.cs",
               "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\Semester3\\Model\\FilterStats.cs",
               "RelativeDocumentMoniker": "Model\\FilterStats.cs",
@@ -333,21 +366,7 @@
               "RelativeToolTip": "Model\\FilterStats.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T05:06:20.999Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\Semester3\\ViewConsole\\Program.cs",
-              "RelativeDocumentMoniker": "ViewConsole\\Program.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\Semester3\\ViewConsole\\Program.cs",
-              "RelativeToolTip": "ViewConsole\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T05:06:50.909Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-23T05:06:20.999Z"
             },
             {
               "$type": "Document",
@@ -363,7 +382,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "FilterChan.cs",
               "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\Semester3\\Semester3\\FilterChan.cs",
               "RelativeDocumentMoniker": "Semester3\\FilterChan.cs",
@@ -387,10 +406,6 @@
               "WhenOpened": "2025-10-17T06:18:51.771Z"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 28,
               "Title": "AnimeChanCard.Designer.cs",
@@ -404,19 +419,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Skill.cs",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\Semester3\\Model\\Skill.cs",
-              "RelativeDocumentMoniker": "Model\\Skill.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\Semester3\\Model\\Skill.cs",
-              "RelativeToolTip": "Model\\Skill.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAgwB0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-17T07:54:44.241Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "dbo.Skills.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_NUBIK_DOCUMENTS_ILOVEGIT_SEMESTER3_DATAACCESSLAYER_ANIMECHANDATABASE.MDF/True/SqlTable/dbo.Skills.sql",
               "ToolTip": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_NUBIK_DOCUMENTS_ILOVEGIT_SEMESTER3_DATAACCESSLAYER_ANIMECHANDATABASE.MDF/True/SqlTable/dbo.Skills.sql",
@@ -425,7 +428,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "dbo.AnimeChans.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_NUBIK_DOCUMENTS_ILOVEGIT_SEMESTER3_DATAACCESSLAYER_ANIMECHANDATABASE.MDF/True/SqlTable/dbo.AnimeChans.sql",
               "ToolTip": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_NUBIK_DOCUMENTS_ILOVEGIT_SEMESTER3_DATAACCESSLAYER_ANIMECHANDATABASE.MDF/True/SqlTable/dbo.AnimeChans.sql",
@@ -434,7 +437,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "AnimeChanName.cs",
               "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\Semester3\\Model\\AnimeChanName.cs",
               "RelativeDocumentMoniker": "Model\\AnimeChanName.cs",
@@ -469,7 +472,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\Semester3\\Semester3\\Form1.cs",
               "RelativeDocumentMoniker": "Semester3\\Form1.cs",
@@ -494,7 +497,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "AnimeChanCard.cs",
               "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\Semester3\\Semester3\\AnimeChanCard.cs",
               "RelativeDocumentMoniker": "Semester3\\AnimeChanCard.cs",
@@ -519,19 +522,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "SkillsSetting.cs",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\Semester3\\Semester3\\SkillsSetting.cs",
-              "RelativeDocumentMoniker": "Semester3\\SkillsSetting.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\Semester3\\Semester3\\SkillsSetting.cs",
-              "RelativeToolTip": "Semester3\\SkillsSetting.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAuwD0AAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T18:04:56.54Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 35,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\Semester3\\Semester3\\Form1.Designer.cs",
@@ -544,7 +534,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "FilterChan.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\Semester3\\Semester3\\FilterChan.cs",
               "RelativeDocumentMoniker": "Semester3\\FilterChan.cs",
@@ -566,7 +556,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\Semester3\\Semester3\\Form1.cs",
               "RelativeDocumentMoniker": "Semester3\\Form1.cs",
@@ -577,7 +567,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "AnimeChanCard.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\Semester3\\Semester3\\AnimeChanCard.cs",
               "RelativeDocumentMoniker": "Semester3\\AnimeChanCard.cs",

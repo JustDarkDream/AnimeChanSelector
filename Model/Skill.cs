@@ -12,15 +12,15 @@ namespace Model
     public class Skill: IDoMainObject
     {
         public int Id { get; set; }
-        public string Name { get; set; }
-        public AnimeChanRepo AnimeChan { get; set; }
+        public string Name { get; internal set; }
+        public int AnimeChanId { get; internal set; }
 
         public Skill(DataAccessLayer.SkillRepo repo)
         {
 
             Id = repo.Id;
             Name = repo.Name;
-            AnimeChan = repo.AnimeChanRepo;
+            AnimeChanId = repo.AnimeChanRepoId;
         }
         public Skill()
         {

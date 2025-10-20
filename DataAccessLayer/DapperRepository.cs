@@ -98,8 +98,19 @@ LEFT JOIN Skills s ON s.AnimeChanRepoId = a.Id;";
 
                 return dict.Values.Cast<T>().ToList();
             }
+
+        }
+        //Для остальных
+        using (var conn2 = CreateConnection())
+        {
+            string tableName = typeof(T).Name;
+            tableName = tableName.Replace("Repo", "s");
+
+            string sql = $"SELECT * FROM {tableName}";
+            return conn2.Query<T>(sql).ToList();
         }
     }
+
 
     ///<summary>Читает запись по id</summary>
     /// <param name="id">id, по которому ищут нужный объект</param>

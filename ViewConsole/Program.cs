@@ -392,7 +392,7 @@ anime.Id + "|| ".ToString().PadLeft(40 - anime.Id.ToString().Length, ' ')); //П
                     {
                         Console.Write(", ");
                     }
-                    Console.Write(skills[i]);
+                    Console.Write(skills[i].Name);
                 }
                 Console.WriteLine("\n\nРедактировать Навыки?\n");
                 Console.WriteLine("1. Да");
@@ -450,7 +450,7 @@ anime.Id + "|| ".ToString().PadLeft(40 - anime.Id.ToString().Length, ' ')); //П
                     {
                         Console.Write(", ");
                     }
-                    Console.Write(skills[i]);
+                    Console.Write(skills[i].Name);
                 }
                 Console.Write("\n\nВыберите навык (или выход): \n\n");
                 int k = 1; //Переменная для визуального оформления выбора
@@ -482,7 +482,7 @@ anime.Id + "|| ".ToString().PadLeft(40 - anime.Id.ToString().Length, ' ')); //П
                                     string skillName = ((Skills)Enum.GetValues(typeof(Skills)).GetValue(n - 1)).ToString();
                                     if (!skills.Any(x => x.Name == skillName))
                                         {
-                                        skills.Add(new Skill { Name = skillName});
+                                        skills.Add(logic.CreateSkill(skillName));
                                         Console.WriteLine("\n\nНавык успешно добавлен!");
                                     }
                                     else
@@ -568,7 +568,7 @@ anime.Id + "|| ".ToString().PadLeft(40 - anime.Id.ToString().Length, ' ')); //П
                     {
                         Console.Write(", ");
                     }
-                    Console.Write(skills[i]);
+                    Console.Write(skills[i].Name);
                 }
                 Console.WriteLine("\n\nВыбрать её?\n");
                 Console.WriteLine("1. Да"); //Влюбиться или не?
@@ -837,7 +837,7 @@ anime.Id + "|| ".ToString().PadLeft(40 - anime.Id.ToString().Length, ' ')); //П
                     {
                         Console.Write(", ");
                     }
-                    Console.Write(skills[i]);
+                    Console.Write(skills[i].Name);
                 }
                 Console.WriteLine("\n\nРедактировать Навыки?\n");
                 Console.WriteLine("1. Да");

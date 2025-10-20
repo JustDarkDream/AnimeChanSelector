@@ -65,7 +65,6 @@ namespace Model
         /// <returns>Возвращает найденную тянку (или же null, если ничего не нашел)</returns>
         public AnimeChan FindForId(int id)
         {
-            //AnimeChan animeChan = animeChanList.Where(f => f.Id == id).FirstOrDefault();
 
             return new AnimeChan(repository.ReadById(id));
         }
@@ -121,7 +120,6 @@ namespace Model
         public void DeleteAnimeChan(int id)
         {
             repository.Delete(repository.ReadById(id));
-            //animeChanList.Remove(animeChanList.Where(f => f.Id == id).FirstOrDefault());
         }
 
         ///<summary>Сохраняет изменения характеристик тянки</summary>
@@ -246,15 +244,6 @@ namespace Model
         }).ToList()
     })
     .ToList();
-            //if (filterAnimeChanList.Count >= i + 1)
-            //{
-            //    return filterAnimeChanList[i];
-            //}
-            //else
-            //{
-            //    return null;
-            //}
-
         }
 
         ///<summary>Сбрасывает значения фильтра до первоначальных</summary>
@@ -276,17 +265,11 @@ namespace Model
             return repository.ReadAll()
     .Select(x => new AnimeChan(x))
     .ToList();
+        }
 
-            //return animeChanList.ReadAll();
-
-            //if (animeChanList.Count >= i + 1)
-            //{
-            //    return animeChanList[i];
-            //}
-            //else
-            //{
-            //    return null;
-            //}
+        public Skill CreateSkill(string name)
+        {
+            return new Skill { Name = name };
         }
 
         ///<summary>Сохраняет данные пользователя</summary>
