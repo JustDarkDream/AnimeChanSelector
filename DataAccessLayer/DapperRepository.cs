@@ -12,6 +12,8 @@ public class DapperRepository<T> : IRepository<T> where T : class, IDoMainObject
 
     private IDbConnection CreateConnection() => new SqlConnection(connectionString);
 
+    ///<summary>Добавляет запись в БД </summary>
+    /// <param name="entity">объект, который добавится в БД</param>
     public void Create(T entity)
     {
         if (entity is AnimeChanRepo chan)
@@ -22,32 +24,33 @@ public class DapperRepository<T> : IRepository<T> where T : class, IDoMainObject
                 using (var tx = conn.BeginTransaction())
                 {
                     try
-                    {
-                        const string sqlChan = @"
+                    { //Добавляем тянку
+                        const string sqlChan = @" 
 INSERT INTO AnimeChans (FirstName, LastName, Age, Height, Weight, Size)
 VALUES (@FirstName, @LastName, @Age, @Height, @Weight, @Size);
 SELECT CAST(SCOPE_IDENTITY() AS int);";
 
-                        chan.Id = conn.QuerySingle<int>(sqlChan, chan, tx);
+                        chan.Id = conn.QuerySingle<int>(sqlChan, chan, tx); //Присваиваем id для тянки (экземплярам класса)
 
                         if (chan.Skills != null && chan.Skills.Any())
                         {
+                            //Добавляем её скиллы
                             const string sqlSkill = @"
 INSERT INTO Skills (Name, AnimeChanRepoId)
 VALUES (@Name, @AnimeChanRepoId);";
 
                             foreach (var s in chan.Skills)
                             {
-                                s.AnimeChanRepoId = chan.Id;
+                                s.AnimeChanRepoId = chan.Id; //связываем скилл и тянку по id
                                 conn.Execute(sqlSkill, new { Name = s.Name, AnimeChanRepoId = s.AnimeChanRepoId }, tx);
                             }
                         }
 
-                        tx.Commit();
+                        tx.Commit(); //Если всё ок
                     }
                     catch
                     {
-                        tx.Rollback();
+                        tx.Rollback(); //Если не ок
                         throw;
                     }
                 }
@@ -55,15 +58,16 @@ VALUES (@Name, @AnimeChanRepoId);";
 
             return;
         }
-
-        throw new NotImplementedException($"Create not implemented for {typeof(T).Name}");
     }
 
+    ///<summary>Читает все записи в БД</summary>
+    /// <returns>Возвращает все записи из БД</returns>
     public IEnumerable<T> ReadAll()
     {
         if (typeof(T) == typeof(AnimeChanRepo))
         {
-            const string sql = @"
+            //Выбирает тянку вместе с её скиллами
+            const string sql = @" 
 SELECT a.Id, a.FirstName, a.LastName, a.Age, a.Height, a.Weight, a.Size,
        s.Id, s.Name, s.AnimeChanRepoId
 FROM AnimeChans a
@@ -95,14 +99,16 @@ LEFT JOIN Skills s ON s.AnimeChanRepoId = a.Id;";
                 return dict.Values.Cast<T>().ToList();
             }
         }
-
-        throw new NotImplementedException($"ReadAll not implemented for {typeof(T).Name}");
     }
 
+    ///<summary>Читает запись по id</summary>
+    /// <param name="id">id, по которому ищут нужный объект</param>
+    /// /// <returns>Возвращает нужную запись из БД</returns>
     public T ReadById(int id)
     {
         if (typeof(T) == typeof(AnimeChanRepo))
         {
+            //Выбирает тянку вместе с её скиллами
             const string sqlChan = @"SELECT * FROM AnimeChans WHERE Id = @Id;";
             const string sqlSkills = @"SELECT * FROM Skills WHERE AnimeChanRepoId = @Id;";
 
@@ -118,13 +124,15 @@ LEFT JOIN Skills s ON s.AnimeChanRepoId = a.Id;";
             }
         }
 
-        // Для других типов — простое поведение
+        // Это для этих там (для остальных)
         using (var conn = CreateConnection())
         {
             return conn.QuerySingleOrDefault<T>("SELECT * FROM " + typeof(T).Name + " WHERE Id = @Id", new { Id = id });
         }
     }
 
+    ///<summary>Изменяет данные у записи </summary>
+    /// <param name="obj">объект с измененными свойствами</param>
     public void Update(T entity)
     {
         if (entity is AnimeChanRepo chan)
@@ -136,6 +144,7 @@ LEFT JOIN Skills s ON s.AnimeChanRepoId = a.Id;";
                 {
                     try
                     {
+                        //Обновляем тянку
                         const string sqlUpdateChan = @"
 UPDATE AnimeChans
 SET FirstName = @FirstName,
@@ -148,7 +157,7 @@ WHERE Id = @Id;";
 
                         conn.Execute(sqlUpdateChan, chan, tx);
 
-                        // Удаляем старые скиллы и вставляем новые — это простой и надёжный подход
+                        // Обновляем скиллы (Удаляем старые скиллы и вставляем новые)
                         const string sqlDeleteSkills = @"DELETE FROM Skills WHERE AnimeChanRepoId = @Id;";
                         conn.Execute(sqlDeleteSkills, new { Id = chan.Id }, tx);
 
@@ -177,9 +186,10 @@ VALUES (@Name, @AnimeChanRepoId);";
             return;
         }
 
-        throw new NotImplementedException($"Update not implemented for {typeof(T).Name}");
     }
 
+    ///<summary>Удаляет запись в БД </summary>
+    /// <param name="obj">объект, который нужно удалить из БД</param>
     public void Delete(T entity)
     {
         if (entity == null) return;
@@ -193,6 +203,7 @@ VALUES (@Name, @AnimeChanRepoId);";
                 {
                     try
                     {
+                        //Находим нужную тянку, её скиллы и удаляем
                         const string sqlDeleteSkills = @"DELETE FROM Skills WHERE AnimeChanRepoId = @Id;";
                         const string sqlDeleteChan = @"DELETE FROM AnimeChans WHERE Id = @Id;";
 
@@ -212,13 +223,14 @@ VALUES (@Name, @AnimeChanRepoId);";
             return;
         }
 
-        // Для простых типов — удаление по Id (предполагая, что таблица названа по типу)
+        // Это для этих там (для остальных)
         using (var conn = CreateConnection())
         {
             conn.Execute($"DELETE FROM {typeof(T).Name} WHERE Id = @Id", new { Id = entity.Id });
         }
     }
 
+    ///<summary>Удаляет ВСЕ записи в БД </summary>
     public void DeleteAll()
     {
         if (typeof(T) == typeof(AnimeChanRepo))
@@ -230,6 +242,7 @@ VALUES (@Name, @AnimeChanRepoId);";
                 {
                     try
                     {
+                        //Хана всем тянкам и скиллам
                         conn.Execute("DELETE FROM Skills;", transaction: tx);
                         conn.Execute("DELETE FROM AnimeChans;", transaction: tx);
                         tx.Commit();
@@ -244,11 +257,10 @@ VALUES (@Name, @AnimeChanRepoId);";
             return;
         }
 
+        // Это для этих там (для остальных)
         using (var conn = CreateConnection())
         {
             conn.Execute($"DELETE FROM {typeof(T).Name};");
         }
     }
-
-    // Остальные методы интерфейса можно реализовать аналогично...
 }

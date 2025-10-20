@@ -21,17 +21,5 @@ namespace DataAccessLayer
         {
 
         }
-
-        //internal AnimeChan(string firstName, string lastName, int age, int id, int height, int weight, int size, List<Skills> skills)
-        //{
-        //    FirstName = firstName;
-        //    LastName = lastName;
-        //    Age = age;
-        //    Id = id;
-        //    Height = height;
-        //    Weight = weight;
-        //    Size = size;
-        //    Skills = skills;
-        //}
     }
 }

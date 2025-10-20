@@ -6,18 +6,18 @@ namespace Model
 {
     public class AnimeChan: IDoMainObject
     {
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public int Height { get; set; }
+        public string FirstName { get; internal set; }
+        public string LastName { get; internal set; }
+        public int Height { get; internal set; }
 
-        public int Weight { get; set; }
+        public int Weight { get; internal set; }
 
-        public int Age {  get; set; }
+        public int Age {  get; internal set; }
 
         public int Id { get; set; }
-        public int Size { get; set; }
+        public int Size { get; internal set; }
 
-        public List<Skill> Skills { get; set; } = new List<Skill>();
+        public List<Skill> Skills { get; internal set; } = new List<Skill>();
 
         public AnimeChan() { }
 
