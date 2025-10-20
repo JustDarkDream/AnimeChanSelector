@@ -23,7 +23,7 @@
       "RelativeMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|solutionrelative:semester3\\skillssetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|c:\\users\\sedmi\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430 (2)\\animechanselector\\semester3\\errorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430 (2)\\AnimeChanSelector\\semester3\\errorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|solutionrelative:semester3\\errorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -191,8 +191,7 @@
               "RelativeToolTip": "DataAccessLayer\\SkillRepo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-17T07:57:14.446Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-17T07:57:14.446Z"
             },
             {
               "$type": "Document",
@@ -204,8 +203,7 @@
               "RelativeToolTip": "Model\\EnumSkills.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAiwAoAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T05:06:16.264Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-23T05:06:16.264Z"
             },
             {
               "$type": "Document",
@@ -217,8 +215,7 @@
               "RelativeToolTip": "Model\\MainPerson.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T05:06:30.62Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-23T05:06:30.62Z"
             },
             {
               "$type": "Document",
@@ -230,8 +227,7 @@
               "RelativeToolTip": "Model\\Skill.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-17T07:54:44.241Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-17T07:54:44.241Z"
             },
             {
               "$type": "Document",
@@ -243,20 +239,19 @@
               "RelativeToolTip": "ViewConsole\\Program.cs",
               "ViewState": "AgIAAOkAAAAAAAAAAAAAAEcDAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T05:06:50.909Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-23T05:06:50.909Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "Title": "MainForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430 (2)\\AnimeChanSelector\\Semester3\\MainForm.cs",
               "RelativeDocumentMoniker": "Semester3\\MainForm.cs",
-              "ToolTip": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430 (2)\\AnimeChanSelector\\Semester3\\MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "RelativeToolTip": "Semester3\\MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "ToolTip": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430 (2)\\AnimeChanSelector\\Semester3\\MainForm.cs [Design]",
+              "RelativeToolTip": "Semester3\\MainForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-20T19:25:25.308Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -267,8 +262,7 @@
               "ToolTip": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430 (2)\\AnimeChanSelector\\Semester3\\FilterChan.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "RelativeToolTip": "Semester3\\FilterChan.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T16:04:41.281Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
+              "WhenOpened": "2025-10-18T16:04:41.281Z"
             },
             {
               "$type": "Document",
@@ -279,8 +273,7 @@
               "ToolTip": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430 (2)\\AnimeChanSelector\\Semester3\\SkillsSetting.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "RelativeToolTip": "Semester3\\SkillsSetting.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T18:04:55.052Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
+              "WhenOpened": "2025-09-22T18:04:55.052Z"
             },
             {
               "$type": "Document",
@@ -292,8 +285,7 @@
               "RelativeToolTip": "Semester3\\SkillsSetting.cs",
               "ViewState": "AgIAAEUAAAAAAAAAAAAiwDIAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T18:04:56.54Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-22T18:04:56.54Z"
             },
             {
               "$type": "Document",
@@ -305,8 +297,7 @@
               "RelativeToolTip": "Semester3\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-17T06:18:51.771Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-17T06:18:51.771Z"
             },
             {
               "$type": "Document",
@@ -330,8 +321,7 @@
               "ToolTip": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430 (2)\\AnimeChanSelector\\Semester3\\ErrorForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "RelativeToolTip": "Semester3\\ErrorForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T19:28:59.693Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
+              "WhenOpened": "2025-10-20T19:28:59.693Z"
             },
             {
               "$type": "Document",
@@ -343,8 +333,7 @@
               "RelativeToolTip": "Model\\AnimeChan.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T05:06:10.818Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-23T05:06:10.818Z"
             },
             {
               "$type": "Document",
@@ -356,8 +345,7 @@
               "RelativeToolTip": "Model\\BourgeoisLogic.cs",
               "ViewState": "AgIAAI4AAAAAAAAAAAAkwEIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T10:38:22.513Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-22T10:38:22.513Z"
             },
             {
               "$type": "Document",
@@ -369,8 +357,7 @@
               "RelativeToolTip": "Model\\AnimeChanName.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T05:06:11.97Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-23T05:06:11.97Z"
             },
             {
               "$type": "Document",
@@ -382,8 +369,7 @@
               "RelativeToolTip": "DataAccessLayer\\IRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-29T10:37:28.351Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-29T10:37:28.351Z"
             },
             {
               "$type": "Document",
@@ -395,8 +381,7 @@
               "RelativeToolTip": "DataAccessLayer\\EnumSkillsRepo.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAiwAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-12T14:28:04.899Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-12T14:28:04.899Z"
             },
             {
               "$type": "Document",
@@ -408,8 +393,7 @@
               "RelativeToolTip": "DataAccessLayer\\IDomainObject.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-29T14:01:32.296Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-29T14:01:32.296Z"
             },
             {
               "$type": "Document",
@@ -421,8 +405,7 @@
               "RelativeToolTip": "Model\\Saves.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T21:37:49.767Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-20T21:37:49.767Z"
             },
             {
               "$type": "Document",
@@ -434,8 +417,7 @@
               "RelativeToolTip": "DataAccessLayer\\EntityRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAIEAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-29T13:23:17.835Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-29T13:23:17.835Z"
             },
             {
               "$type": "Document",
@@ -447,8 +429,7 @@
               "RelativeToolTip": "DataAccessLayer\\DataContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-12T13:54:32.385Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-12T13:54:32.385Z"
             },
             {
               "$type": "Document",
@@ -460,8 +441,7 @@
               "RelativeToolTip": "DataAccessLayer\\DapperRepository.cs",
               "ViewState": "AgIAAOcAAAAAAAAAAAAQwMcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-29T13:48:43.813Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-29T13:48:43.813Z"
             },
             {
               "$type": "Document",
@@ -473,8 +453,7 @@
               "RelativeToolTip": "DataAccessLayer\\AnimeChanRepo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-11T10:55:53.13Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-11T10:55:53.13Z"
             },
             {
               "$type": "Document",
@@ -485,8 +464,7 @@
               "ToolTip": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430 (2)\\AnimeChanSelector\\Semester3\\AnimeChanCard.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "RelativeToolTip": "Semester3\\AnimeChanCard.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T18:08:32.128Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
+              "WhenOpened": "2025-09-22T18:08:32.128Z"
             },
             {
               "$type": "Document",
@@ -498,8 +476,7 @@
               "RelativeToolTip": "Semester3\\FilterChan.cs",
               "ViewState": "AgIAAJkAAAAAAAAAAAAiwMEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T05:42:19.598Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-16T05:42:19.598Z"
             },
             {
               "$type": "Document",
@@ -521,8 +498,7 @@
               "ToolTip": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430 (2)\\AnimeChanSelector\\Semester3\\Registration.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "RelativeToolTip": "Semester3\\Registration.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T05:41:34.219Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
+              "WhenOpened": "2025-09-23T05:41:34.219Z"
             },
             {
               "$type": "Document",
@@ -546,8 +522,7 @@
               "RelativeToolTip": "Semester3\\MainForm.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T20:23:40.022Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-20T20:23:40.022Z"
             },
             {
               "$type": "Document",
@@ -607,8 +582,7 @@
               "RelativeToolTip": "Semester3\\AnimeChanCard.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-17T07:34:21.302Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-17T07:34:21.302Z"
             },
             {
               "$type": "Document",
@@ -684,8 +658,7 @@
               "RelativeToolTip": "Semester3\\Registration.Designer.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAowBYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T05:41:42.022Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-23T05:41:42.022Z"
             },
             {
               "$type": "Document",
