@@ -82,5 +82,15 @@ namespace ViewForms
                 error.ShowDialog();
             }
         }
+
+        private void lastName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

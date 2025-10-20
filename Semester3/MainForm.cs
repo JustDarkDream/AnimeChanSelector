@@ -16,7 +16,7 @@ namespace ViewForms
         {
             InitializeComponent();
 
-            table = dataGridView1;
+            table = dgwTabel;
 
             CreateDataGridView();
         }
@@ -71,10 +71,10 @@ namespace ViewForms
         }
 
         ///<summary>Вызывается при нажатии на кнопку просмотра тянки. Позволяет выбрать тян, открывая для этого специальную форму</summary>
-        private void button1_Click(object sender, EventArgs e)
+        private void btnshowcard_Click(object sender, EventArgs e)
         {
             {
-                if (dataGridView1.CurrentRow != null && dataGridView1.SelectedRows.Count == 1) //Проверяет, выбрана ли лишь одна строка
+                if (dgwTabel.CurrentRow != null && dgwTabel.SelectedRows.Count == 1) //Проверяет, выбрана ли лишь одна строка
                 {
                     int id = Convert.ToInt32(table.CurrentRow.Cells["ColumnId"].Value); //Считываем значение id этой строки
 
@@ -87,12 +87,12 @@ namespace ViewForms
                 }
                 else
                 {
-                    if (dataGridView1.SelectedRows.Count == 0)
+                    if (dgwTabel.SelectedRows.Count == 0)
                     {
                         Error error = new Error("Выберите строку, чтобы показать характеристики Аниме-тян");
                         error.ShowDialog();
                     }
-                    else if (dataGridView1.SelectedRows.Count > 1)
+                    else if (dgwTabel.SelectedRows.Count > 1)
                     {
                         Error error = new Error("Выбрано слишком много. Выберите лишь одну строку");
                         error.ShowDialog();
@@ -102,7 +102,7 @@ namespace ViewForms
         }
 
         ///<summary>Вызывается при нажатии на кнопку создании тянки. Позволяет создать тянку, открывая для этого специальную форму</summary>
-        private void createChan_Click(object sender, EventArgs e)
+        private void btnCreateChan_Click(object sender, EventArgs e)
         {
             AnimeChanCard animeChanCard = new AnimeChanCard(); //Создаем новую форму
             if (animeChanCard.ShowDialog() == DialogResult.OK) //Если изменения сохранены, то добавляет в таблицу новую тян
@@ -113,9 +113,9 @@ namespace ViewForms
         }
 
         ///<summary>Вызывается при нажатии на кнопку удалении тянки. Позволяет удалить тянку из таблицы</summary>
-        private void deleteChan_Click(object sender, EventArgs e)
+        private void btnDeleteChan_Click(object sender, EventArgs e)
         {
-            if (dataGridView1.CurrentRow != null && dataGridView1.SelectedRows.Count == 1) //Проверяет, выбрана ли лишь одна строка
+            if (dgwTabel.CurrentRow != null && dgwTabel.SelectedRows.Count == 1) //Проверяет, выбрана ли лишь одна строка
             {
                 int id = Convert.ToInt32(table.CurrentRow.Cells["ColumnId"].Value); //Считываем значение id этой строки
 
@@ -124,12 +124,12 @@ namespace ViewForms
             }
             else
             {
-                if (dataGridView1.SelectedRows.Count == 0)
+                if (dgwTabel.SelectedRows.Count == 0)
                 {
                     Error error = new Error("Выберите строку, чтобы удалить Аниме-тян");
                     error.ShowDialog();
                 }
-                else if (dataGridView1.SelectedRows.Count > 1)
+                else if (dgwTabel.SelectedRows.Count > 1)
                 {
                     Error error = new Error("Выбрано слишком много. Выберите лишь одну строку");
                     error.ShowDialog();
@@ -138,9 +138,9 @@ namespace ViewForms
         }
 
         ///<summary>Вызывается при нажатии на кнопку редактирования тянки. Позволяет редактировать определенную тянку, открывая для этого специальную форму</summary>
-        private void SettingChan_Click(object sender, EventArgs e)
+        private void btnSettingChan_Click(object sender, EventArgs e)
         {
-            if (dataGridView1.CurrentRow != null && dataGridView1.SelectedRows.Count == 1) //Проверяет, выбрана ли лишь одна строка
+            if (dgwTabel.CurrentRow != null && dgwTabel.SelectedRows.Count == 1) //Проверяет, выбрана ли лишь одна строка
             {
                 int id = Convert.ToInt32(table.CurrentRow.Cells["ColumnId"].Value); //Считываем значение id этой строки
 
@@ -156,12 +156,12 @@ namespace ViewForms
             }
             else
             {
-                if (dataGridView1.SelectedRows.Count == 0)
+                if (dgwTabel.SelectedRows.Count == 0)
                 {
                     Error error = new Error("Выберите строку, чтобы изменить характеристики Аниме-тян");
                     error.ShowDialog();
                 }
-                else if (dataGridView1.SelectedRows.Count > 1)
+                else if (dgwTabel.SelectedRows.Count > 1)
                 {
                     Error error = new Error("Выбрано слишком много. Выберите лишь одну строку");
                     error.ShowDialog();
@@ -170,7 +170,7 @@ namespace ViewForms
         }
 
         ///<summary>Вызывается при нажатии на кнопку фильтрации. Фильтрует таблицу, открывая для этого специальную форму</summary>
-        private void filter_Click(object sender, EventArgs e)
+        private void btnfilter_Click(object sender, EventArgs e)
         {
             FilterChan filterChan = new FilterChan(); //Создаем новую форму
             if (filterChan.ShowDialog() == DialogResult.OK) //Если изменения сохранены, то очищает таблицу и загружает значения из отфильтрованного списка
@@ -192,7 +192,7 @@ namespace ViewForms
         }
 
         ///<summary>Вызывается при нажатии на кнопку удаления фильтрации. Приводит таблицу без фильтрации</summary>
-        private void button1_Click_1(object sender, EventArgs e)
+        private void btnFilterOff_Click(object sender, EventArgs e)
         {
             logic.DestroyFilter();
             table.Rows.Clear();
@@ -218,5 +218,30 @@ namespace ViewForms
             AnimeChan animeChan = logic.FindAnimeChan();
             table.Rows.Add(animeChan.FirstName, animeChan.LastName, animeChan.Age, animeChan.Id);
         }
+
+        private void MainForm_SizeChanged(object sender, EventArgs e)
+        {
+            float scaleFactor = (float)this.ClientSize.Width / 800f;
+            btncreateChan.Font = new Font("Segoe UI", 6f * scaleFactor, FontStyle.Regular);
+            btndeleteChan.Font = new Font("Segoe UI", 6f * scaleFactor, FontStyle.Regular);
+            btnfilter.Font = new Font("Segoe UI", 6f * scaleFactor, FontStyle.Regular);
+            btnFilterOff.Font = new Font("Segoe UI", 6f * scaleFactor, FontStyle.Regular);
+            btnfindChan.Font = new Font("Segoe UI", 6f * scaleFactor, FontStyle.Regular);
+            btnSettingChan.Font = new Font("Segoe UI", 6f * scaleFactor, FontStyle.Regular);
+            btnshowCard.Font = new Font("Segoe UI", 6f * scaleFactor, FontStyle.Regular);
+            lblName.Font = new Font("Segoe UI", 7f * scaleFactor, FontStyle.Regular);
+            dgwTabel.Font = new Font("Segoe UI", 5f * scaleFactor, FontStyle.Regular);
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

@@ -205,3 +205,4 @@ C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeC
 C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\obj\Debug\net8.0-windows\ViewForms.pdb
 C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\obj\Debug\net8.0-windows\ViewForms.genruntimeconfig.cache
 C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\obj\Debug\net8.0-windows\ref\ViewForms.dll
+C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\obj\Debug\net8.0-windows\ViewForms.Properties.Resources.resources

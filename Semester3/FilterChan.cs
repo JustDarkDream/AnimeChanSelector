@@ -193,14 +193,6 @@ namespace ViewForms
             //}
 
 
-
-
-
-
-
-
-
-
             skills.Clear();
 
             foreach (Skill skill in logic.LoadSkills())
@@ -214,6 +206,11 @@ namespace ViewForms
                 newItem.Tag = skill2;
                 listView1.Items.Add(newItem);
             }
+        }
+
+        private void FilterChan_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
