@@ -1,9 +1,5 @@
 using Model;
-using Microsoft.VisualBasic;
 using System.Data;
-using System.Linq;
-using DataAccessLayer;
-using System.Diagnostics;
 
 namespace ViewForms
 {
@@ -67,7 +63,8 @@ namespace ViewForms
             foreach (var i in logic.LoadAnimeChanList())
             {
                 table.Rows.Add(i.FirstName, i.LastName, i.Age, i.Id);
-            };
+            }
+            ;
         }
 
         ///<summary>Вызывается при нажатии на кнопку просмотра тянки. Позволяет выбрать тян, открывая для этого специальную форму</summary>
@@ -115,12 +112,12 @@ namespace ViewForms
         ///<summary>Вызывается при нажатии на кнопку удалении тянки. Позволяет удалить тянку из таблицы</summary>
         private void btnDeleteChan_Click(object sender, EventArgs e)
         {
-            if (dgwTabel.CurrentRow != null && dgwTabel.SelectedRows.Count == 1) //Проверяет, выбрана ли лишь одна строка
+            if (dgwTabel.CurrentRow != null && dgwTabel.SelectedRows.Count <= 1) //Проверяет, выбрана ли лишь одна строка
             {
                 int id = Convert.ToInt32(table.CurrentRow.Cells["ColumnId"].Value); //Считываем значение id этой строки
 
                 logic.DeleteAnimeChan(id); //Удаляет тян из общего списка
-                table.Rows.Remove(table.CurrentRow); //Удаляет тян из таблицы
+                table.Rows.Remove(table.Rows[table.CurrentCell.RowIndex]); //Удаляет тян из таблицы
             }
             else
             {
@@ -140,9 +137,9 @@ namespace ViewForms
         ///<summary>Вызывается при нажатии на кнопку редактирования тянки. Позволяет редактировать определенную тянку, открывая для этого специальную форму</summary>
         private void btnSettingChan_Click(object sender, EventArgs e)
         {
-            if (dgwTabel.CurrentRow != null && dgwTabel.SelectedRows.Count == 1) //Проверяет, выбрана ли лишь одна строка
+            if (dgwTabel.CurrentRow != null && dgwTabel.SelectedRows.Count <= 1) //Проверяет, выбрана ли лишь одна строка
             {
-                int id = Convert.ToInt32(table.CurrentRow.Cells["ColumnId"].Value); //Считываем значение id этой строки
+                int id = Convert.ToInt32(table.Rows[table.CurrentCell.RowIndex].Cells["ColumnId"].Value); //Считываем значение id этой строки
 
                 AnimeChanCard animeChanCard = new AnimeChanCard(logic.FindForId(id), true); //Создаем новую форму
                 if (animeChanCard.ShowDialog() == DialogResult.OK) //Если изменения сохранены, то находит нужную строку по id и обновляет её
@@ -176,18 +173,12 @@ namespace ViewForms
             if (filterChan.ShowDialog() == DialogResult.OK) //Если изменения сохранены, то очищает таблицу и загружает значения из отфильтрованного списка
             {
                 table.Rows.Clear();
-                //AnimeChan anime = logic.LoadFilterAnimeChanList(0);
-                //int i = 0;
-                //while (anime != null)
-                //{
-                //    anime = logic.LoadFilterAnimeChanList(i);
-                //    i++;
-                //    table.Rows.Add(anime.FirstName, anime.LastName, anime.Age, anime.Id);
-                //}
+              
                 foreach (var i in logic.LoadFilterAnimeChanList())
                 {
                     table.Rows.Add(i.FirstName, i.LastName, i.Age, i.Id);
-                };
+                }
+                ;
             }
         }
 
@@ -197,19 +188,11 @@ namespace ViewForms
             logic.DestroyFilter();
             table.Rows.Clear();
 
-            //logic.LoadAnimeChanList();
-            //AnimeChan anime = logic.LoadAnimeChanList();
-            //int i = 0;
-            //while (anime != null)
-            //{
-            //    anime = logic.LoadAnimeChanList(i);
-            //    i++;
-            //    table.Rows.Add(anime.FirstName, anime.LastName, anime.Age, anime.Id);
-            //}
             foreach (var i in logic.LoadAnimeChanList()) //Загружает строки с аниме тянками из полного списка в таблицу
             {
                 table.Rows.Add(i.FirstName, i.LastName, i.Age, i.Id);
-            };
+            }
+            ;
         }
 
         ///<summary>Вызывается при нажатии на кнопку нахождения тянки. Добавляет в таблицу новую сгенерированную тянку</summary>
@@ -226,16 +209,19 @@ namespace ViewForms
         /// <param name="e">Контейнер аргументов события</param>
         private void MainForm_SizeChanged(object sender, EventArgs e)
         {
-            float scaleFactor = (float)this.ClientSize.Width / 800f;
-            btncreateChan.Font = new Font("Segoe UI", 6f * scaleFactor, FontStyle.Regular);
-            btndeleteChan.Font = new Font("Segoe UI", 6f * scaleFactor, FontStyle.Regular);
-            btnfilter.Font = new Font("Segoe UI", 6f * scaleFactor, FontStyle.Regular);
-            btnFilterOff.Font = new Font("Segoe UI", 6f * scaleFactor, FontStyle.Regular);
-            btnfindChan.Font = new Font("Segoe UI", 6f * scaleFactor, FontStyle.Regular);
-            btnSettingChan.Font = new Font("Segoe UI", 6f * scaleFactor, FontStyle.Regular);
-            btnshowCard.Font = new Font("Segoe UI", 6f * scaleFactor, FontStyle.Regular);
-            lblName.Font = new Font("Segoe UI", 7f * scaleFactor, FontStyle.Regular);
-            dgwTabel.Font = new Font("Segoe UI", 5f * scaleFactor, FontStyle.Regular);
+            if (this.WindowState != FormWindowState.Minimized)
+            {
+                float scaleFactor = (float)this.ClientSize.Width / 800f;
+                btncreateChan.Font = new Font("Segoe UI", 7f * scaleFactor, FontStyle.Regular);
+                btndeleteChan.Font = new Font("Segoe UI", 7f * scaleFactor, FontStyle.Regular);
+                btnfilter.Font = new Font("Segoe UI", 7f * scaleFactor, FontStyle.Regular);
+                btnFilterOff.Font = new Font("Segoe UI", 7f * scaleFactor, FontStyle.Regular);
+                btnfindChan.Font = new Font("Segoe UI", 7f * scaleFactor, FontStyle.Regular);
+                btnSettingChan.Font = new Font("Segoe UI", 7f * scaleFactor, FontStyle.Regular);
+                btnshowCard.Font = new Font("Segoe UI", 7f * scaleFactor, FontStyle.Regular);
+                lblName.Font = new Font("Segoe UI", 7f * scaleFactor, FontStyle.Regular);
+                dgwTabel.Font = new Font("Segoe UI", 7f * scaleFactor, FontStyle.Regular);
+            }
         }
 
         private void MainForm_Load(object sender, EventArgs e)

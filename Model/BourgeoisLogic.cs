@@ -1,22 +1,12 @@
-﻿using Model;
-using System.Windows;
-using System.Linq;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Drawing;
-using DataAccessLayer;
-using System.Security.Cryptography.X509Certificates;
-using System.Reflection.Metadata;
-using Azure;
-using Microsoft.EntityFrameworkCore;
+﻿using DataAccessLayer;
 
 
 namespace Model
 {
     public class BourgeoisLogic
     {
-        //readonly IRepository<AnimeChanRepo> repository = new EntityRepository<AnimeChanRepo>(new DataContext());
-        readonly IRepository<AnimeChanRepo> repository = new DapperRepository<AnimeChanRepo>();
+        readonly IRepository<AnimeChanRepo> repository = new EntityRepository<AnimeChanRepo>(new DataContext());
+        //readonly IRepository<AnimeChanRepo> repository = new DapperRepository<AnimeChanRepo>();
 
         ///<summary>Создает три НЕслучаных аниме-тянок</summary>
         public void CreateAnimeChan()
@@ -31,7 +21,10 @@ namespace Model
                 Height = 165,
                 Weight = 53,
                 Size = 2,
-                Skills = new List<SkillRepo> { new SkillRepo { Name = Skills.Cleaning.ToString() }, new SkillRepo { Name = Skills.Cooking.ToString() }, new SkillRepo { Name = Skills.Dancing.ToString() } }
+                Skills = new List<SkillRepo> {
+                    new SkillRepo { Name = Skills.Cleaning.ToString() },
+                    new SkillRepo { Name = Skills.Cooking.ToString() },
+                    new SkillRepo { Name = Skills.Dancing.ToString() } }
             };
             repository.Create(anime);
 
@@ -43,7 +36,10 @@ namespace Model
                 Height = 168,
                 Weight = 51,
                 Size = 3,
-                Skills = new List<SkillRepo> { new SkillRepo { Name = DalSkills.Music.ToString() }, new SkillRepo { Name = DalSkills.Dancing.ToString() }, new SkillRepo { Name = DalSkills.Singing.ToString() } }
+                Skills = new List<SkillRepo> {
+                    new SkillRepo { Name = DalSkills.Music.ToString() },
+                    new SkillRepo { Name = DalSkills.Dancing.ToString() },
+                    new SkillRepo { Name = DalSkills.Singing.ToString() } }
             };
             repository.Create(anime);
 
@@ -55,7 +51,26 @@ namespace Model
                 Height = 159,
                 Weight = 57,
                 Size = 4,
-                Skills = new List<SkillRepo> { new SkillRepo { Name = DalSkills.Jumping.ToString() }, new SkillRepo { Name = DalSkills.FireballCast.ToString() } }
+                Skills = new List<SkillRepo> {
+                    new SkillRepo { Name = DalSkills.Jumping.ToString() },
+                    new SkillRepo { Name = DalSkills.FireballCast.ToString() } }
+            };
+            repository.Create(anime);
+
+            anime = new AnimeChanRepo()
+            {
+                FirstName = "Хатсунэ",
+                LastName = "Мику",
+                Age = 16,
+                Height = 158,
+                Weight = 42,
+                Size = 1,
+                Skills = new List<SkillRepo> {
+                new SkillRepo { Name = Skills.Singing.ToString() },
+                new SkillRepo { Name = Skills.Music.ToString() },
+                new SkillRepo { Name = Skills.Dancing.ToString() },
+                new SkillRepo { Name = Skills.Art.ToString() }
+    }
             };
             repository.Create(anime);
         }
@@ -107,7 +122,7 @@ namespace Model
                 Height = height,
                 Weight = weight,
                 Size = size,
-                Skills = skills.Select(x => new SkillRepo {Id = x.Id, Name = x.Name }).ToList()
+                Skills = skills.Select(x => new SkillRepo { Id = x.Id, Name = x.Name }).ToList()
 
             };
             repository.Create(anime);
@@ -179,7 +194,7 @@ namespace Model
         /// <param name="isСonsiderAll">Учитывать ли все навыки или хотя бы один</param>
         public void FilterAnimeChanList(int ageFrom, int ageTo, int heightFrom, int heightTo, int weightFrom, int weightTo, int sizeFrom, int sizeTo, List<Skill> skills, bool isСonsiderAll)
         {
-            List<AnimeChan> list= repository.ReadAll()
+            List<AnimeChan> list = repository.ReadAll()
     .Select(x => new AnimeChan(x))
     .ToList();
             Saves.filterStats.AgeFrom = ageFrom;
@@ -228,21 +243,21 @@ namespace Model
         public List<AnimeChan> LoadFilterAnimeChanList()
         {
             return Saves.filterAnimeChanList
-    .Select(a => new AnimeChan
-    {
-        Id = a.Id,
-        FirstName = a.FirstName,
-        LastName = a.LastName,
-        Age = a.Age,
-        Height = a.Height,
-        Weight = a.Weight,
-        Size = a.Size,
-        Skills = a.Skills.Select(s => new Skill
-        {
-            Id = s.Id,
-            Name = s.Name
-        }).ToList()
-    })
+                .Select(a => new AnimeChan
+                {
+                    Id = a.Id,
+                    FirstName = a.FirstName,
+                    LastName = a.LastName,
+                    Age = a.Age,
+                    Height = a.Height,
+                    Weight = a.Weight,
+                    Size = a.Size,
+                    Skills = a.Skills.Select(s => new Skill
+                    {
+                        Id = s.Id,
+                        Name = s.Name
+                    }).ToList()
+                })
     .ToList();
         }
 
@@ -263,8 +278,8 @@ namespace Model
         public IEnumerable<AnimeChan> LoadAnimeChanList()
         {
             return repository.ReadAll()
-    .Select(x => new AnimeChan(x))
-    .ToList();
+                .Select(x => new AnimeChan(x))
+                .ToList();
         }
 
         public Skill CreateSkill(string name)
@@ -344,28 +359,28 @@ namespace Model
             //AnimeChan animeChan = animeChanList.Where(f => f.Id == temporaryID).FirstOrDefault(); //Ищем тянку по сохраненному временному id
 
             int agePoints = 25 - (int)Math.Abs((Saves.mainPerson.Age - animeChan.Age - 2) * 2.5); //Очки за разницу в возрасте
-                                                                                            //(чем меньше разница - тем больше очков,
-                                                                                            //в идеале тянка должна быть на 2 года младше пользователя)
+                                                                                                  //(чем меньше разница - тем больше очков,
+                                                                                                  //в идеале тянка должна быть на 2 года младше пользователя)
             if (agePoints < 0)
             {
                 agePoints = 0;
             }
-            int heightPoints = 25 - (int)Math.Abs((Saves.mainPerson.Height - animeChan.Height - 10) * 25/30); //Очки за разницу в росте
-                                                                                                        //(чем меньше разница - тем больше очков,
-                                                                                                        //в идеале тянка должна быть ниже пользователя на 10)
+            int heightPoints = 25 - (int)Math.Abs((Saves.mainPerson.Height - animeChan.Height - 10) * 25 / 30); //Очки за разницу в росте
+                                                                                                                //(чем меньше разница - тем больше очков,
+                                                                                                                //в идеале тянка должна быть ниже пользователя на 10)
             if (heightPoints < 0)
             {
                 heightPoints = 0;
             }
             int weightPoints = 25 - (int)Math.Abs((Saves.mainPerson.Weight - animeChan.Weight - 15)); //Очки за разницу в весе
-                                                                                                //(чем меньше разница - тем больше очков,
-                                                                                                //в идеале тянка должна легче пользователя на 15)
+                                                                                                      //(чем меньше разница - тем больше очков,
+                                                                                                      //в идеале тянка должна легче пользователя на 15)
             if (weightPoints < 0)
             {
                 weightPoints = 0;
             }
             int sizePoints = (Saves.mainPerson.Size - (animeChan.Size * 2) + 2) * 5; //Очки за разницу в размере
-                                                                               //(чем больше у пользователя - тем больше очков)
+                                                                                     //(чем больше у пользователя - тем больше очков)
             if (sizePoints < 0)
             {
                 sizePoints = 0;
@@ -380,7 +395,7 @@ namespace Model
             {
                 ageString = "Ваша разница в возрасте слишком высока! Прохожие вас видят разные поколения. Самый старший из вас чувствует себя педофилом, за что стыдно...";
             }
-            else if(agePoints <= 10)
+            else if (agePoints <= 10)
             {
                 ageString = "Ваша разница в возрасте достаточно высока... Вам трудно найти общие темы для общения, но в принципе терпимо. " +
             "Иногда вы чувствуете, что живёте в разных эпохах: разные музыкальные вкусы, разные воспоминания из детства. " +
@@ -491,7 +506,7 @@ namespace Model
             foreach (char x in years.ToString()) //Сокращаем дробное значение у переменной years до двух запятой
             {
                 yearsStr += x;
-                
+
                 if (count >= 0)
                 {
                     count++;

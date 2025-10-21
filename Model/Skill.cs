@@ -1,15 +1,8 @@
-﻿using Azure;
-using DataAccessLayer;
-using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using DataAccessLayer;
 
 namespace Model
 {
-    public class Skill: IDomainObject
+    public class Skill : IDomainObject
     {
         public int Id { get; set; }
         public string Name { get; internal set; }

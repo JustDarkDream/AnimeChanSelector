@@ -1,24 +1,12 @@
-﻿using Microsoft.VisualBasic.Logging;
-using Model;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+﻿using Model;
 using System.Diagnostics;
-using System.Drawing;
-using System.Linq;
-using System.Security.Policy;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace ViewForms
 {
     public partial class AnimeChanCard : Form
     {
         BourgeoisLogic logic = new BourgeoisLogic();
-        int animeChanId = 0; 
+        int animeChanId = 0;
 
         public AnimeChanCard(AnimeChan animeChan, bool isEditable) //Вызывается, если пользователь хочет редактировать или посмотреть на тянку
         {
@@ -106,22 +94,24 @@ namespace ViewForms
 
             SkillsSetting skillsSetting = new SkillsSetting(skills); //Создаём форму для редактирования навыков
 
-            listView1.Items.Clear(); 
-
-            skillsSetting.ShowDialog();
-
-            skills.Clear();
-
-            foreach (Skill skill in logic.LoadSkills())
+            if (skillsSetting.ShowDialog() == DialogResult.OK)
             {
-                skills.Add(skill);
-            }
 
-            foreach (Skill skill2 in skills) //Отображаем в ListView сохраненные навыки с той формы
-            {
-                ListViewItem newItem = new ListViewItem(skill2.Name);
-                newItem.Tag = skill2;
-                listView1.Items.Add(newItem);
+                listView1.Items.Clear();
+
+                skills.Clear();
+
+                foreach (Skill skill in logic.LoadSkills())
+                {
+                    skills.Add(skill);
+                }
+
+                foreach (Skill skill2 in skills) //Отображаем в ListView сохраненные навыки с той формы
+                {
+                    ListViewItem newItem = new ListViewItem(skill2.Name);
+                    newItem.Tag = skill2;
+                    listView1.Items.Add(newItem);
+                }
             }
         }
 
@@ -263,6 +253,11 @@ namespace ViewForms
             logic.SaveId(animeChanId);
             this.DialogResult = DialogResult.OK; //Сообщаем, что изменения мы сохраняем
             Close();
+        }
+
+        private void AnimeChanCard_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

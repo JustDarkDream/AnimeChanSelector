@@ -40,29 +40,26 @@
             // skillsComboBox
             // 
             skillsComboBox.FormattingEnabled = true;
-            skillsComboBox.Location = new Point(84, 86);
-            skillsComboBox.Margin = new Padding(5, 6, 5, 6);
+            skillsComboBox.Location = new Point(49, 43);
             skillsComboBox.Name = "skillsComboBox";
-            skillsComboBox.Size = new Size(916, 38);
+            skillsComboBox.Size = new Size(536, 23);
             skillsComboBox.TabIndex = 0;
             // 
             // label1
             // 
             label1.Font = new Font("Segoe UI", 15F);
-            label1.Location = new Point(125, -2);
-            label1.Margin = new Padding(5, 0, 5, 0);
+            label1.Location = new Point(73, -1);
             label1.Name = "label1";
-            label1.Size = new Size(845, 82);
+            label1.Size = new Size(493, 41);
             label1.TabIndex = 2;
             label1.Text = "Выбери Навык";
             label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // skillsView
             // 
-            skillsView.Location = new Point(125, 252);
-            skillsView.Margin = new Padding(5, 6, 5, 6);
+            skillsView.Location = new Point(73, 126);
             skillsView.Name = "skillsView";
-            skillsView.Size = new Size(842, 254);
+            skillsView.Size = new Size(493, 129);
             skillsView.TabIndex = 6;
             skillsView.UseCompatibleStateImageBehavior = false;
             skillsView.View = View.List;
@@ -70,20 +67,18 @@
             // label2
             // 
             label2.Font = new Font("Segoe UI", 15F);
-            label2.Location = new Point(125, 156);
-            label2.Margin = new Padding(5, 0, 5, 0);
+            label2.Location = new Point(73, 78);
             label2.Name = "label2";
-            label2.Size = new Size(845, 90);
+            label2.Size = new Size(493, 45);
             label2.TabIndex = 5;
             label2.Text = "Навыки";
             label2.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // addButton
             // 
-            addButton.Location = new Point(21, 626);
-            addButton.Margin = new Padding(5, 6, 5, 6);
+            addButton.Location = new Point(12, 313);
             addButton.Name = "addButton";
-            addButton.Size = new Size(240, 132);
+            addButton.Size = new Size(140, 66);
             addButton.TabIndex = 7;
             addButton.Text = "Добавить";
             addButton.UseVisualStyleBackColor = true;
@@ -91,10 +86,9 @@
             // 
             // deleteButton
             // 
-            deleteButton.Location = new Point(429, 626);
-            deleteButton.Margin = new Padding(5, 6, 5, 6);
+            deleteButton.Location = new Point(250, 313);
             deleteButton.Name = "deleteButton";
-            deleteButton.Size = new Size(240, 132);
+            deleteButton.Size = new Size(140, 66);
             deleteButton.TabIndex = 8;
             deleteButton.Text = "Удалить";
             deleteButton.UseVisualStyleBackColor = true;
@@ -102,10 +96,9 @@
             // 
             // saveButton
             // 
-            saveButton.Location = new Point(828, 626);
-            saveButton.Margin = new Padding(5, 6, 5, 6);
+            saveButton.Location = new Point(483, 313);
             saveButton.Name = "saveButton";
-            saveButton.Size = new Size(240, 132);
+            saveButton.Size = new Size(140, 66);
             saveButton.TabIndex = 9;
             saveButton.Text = "Сохранить";
             saveButton.UseVisualStyleBackColor = true;
@@ -113,9 +106,10 @@
             // 
             // SkillsSetting
             // 
-            AutoScaleDimensions = new SizeF(12F, 30F);
+            AcceptButton = saveButton;
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1089, 782);
+            ClientSize = new Size(635, 391);
             Controls.Add(saveButton);
             Controls.Add(deleteButton);
             Controls.Add(addButton);
@@ -124,7 +118,6 @@
             Controls.Add(label1);
             Controls.Add(skillsComboBox);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
-            Margin = new Padding(5, 6, 5, 6);
             Name = "SkillsSetting";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "SkillsSetting";

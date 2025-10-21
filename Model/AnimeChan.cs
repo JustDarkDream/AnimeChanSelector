@@ -1,10 +1,8 @@
 ﻿using DataAccessLayer;
-using System.Drawing;
-using System.Linq;
 
 namespace Model
 {
-    public class AnimeChan: IDomainObject
+    public class AnimeChan : IDomainObject
     {
         public string FirstName { get; internal set; }
         public string LastName { get; internal set; }
@@ -12,7 +10,7 @@ namespace Model
 
         public int Weight { get; internal set; }
 
-        public int Age {  get; internal set; }
+        public int Age { get; internal set; }
 
         public int Id { get; set; }
         public int Size { get; internal set; }

@@ -1,208 +1,90 @@
-C:\Users\Nubik\source\repos\Semester3\Semester3\bin\Debug\net8.0-windows\ViewForms.exe
-C:\Users\Nubik\source\repos\Semester3\Semester3\bin\Debug\net8.0-windows\ViewForms.deps.json
-C:\Users\Nubik\source\repos\Semester3\Semester3\bin\Debug\net8.0-windows\ViewForms.runtimeconfig.json
-C:\Users\Nubik\source\repos\Semester3\Semester3\bin\Debug\net8.0-windows\ViewForms.dll
-C:\Users\Nubik\source\repos\Semester3\Semester3\bin\Debug\net8.0-windows\ViewForms.pdb
-C:\Users\Nubik\source\repos\Semester3\Semester3\bin\Debug\net8.0-windows\Logic.dll
-C:\Users\Nubik\source\repos\Semester3\Semester3\bin\Debug\net8.0-windows\Model.dll
-C:\Users\Nubik\source\repos\Semester3\Semester3\bin\Debug\net8.0-windows\Logic.pdb
-C:\Users\Nubik\source\repos\Semester3\Semester3\bin\Debug\net8.0-windows\Model.pdb
-C:\Users\Nubik\source\repos\Semester3\Semester3\obj\Debug\net8.0-windows\ViewForms.csproj.AssemblyReference.cache
-C:\Users\Nubik\source\repos\Semester3\Semester3\obj\Debug\net8.0-windows\ViewForms.AnimeChanCard.resources
-C:\Users\Nubik\source\repos\Semester3\Semester3\obj\Debug\net8.0-windows\ViewForms.Form1.resources
-C:\Users\Nubik\source\repos\Semester3\Semester3\obj\Debug\net8.0-windows\ViewForms.csproj.GenerateResource.cache
-C:\Users\Nubik\source\repos\Semester3\Semester3\obj\Debug\net8.0-windows\ViewForms.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Nubik\source\repos\Semester3\Semester3\obj\Debug\net8.0-windows\ViewForms.AssemblyInfoInputs.cache
-C:\Users\Nubik\source\repos\Semester3\Semester3\obj\Debug\net8.0-windows\ViewForms.AssemblyInfo.cs
-C:\Users\Nubik\source\repos\Semester3\Semester3\obj\Debug\net8.0-windows\ViewForms.csproj.CoreCompileInputs.cache
-C:\Users\Nubik\source\repos\Semester3\Semester3\obj\Debug\net8.0-windows\ViewForms.sourcelink.json
-C:\Users\Nubik\source\repos\Semester3\Semester3\obj\Debug\net8.0-windows\ViewForms.csproj.Up2Date
-C:\Users\Nubik\source\repos\Semester3\Semester3\obj\Debug\net8.0-windows\ViewForms.dll
-C:\Users\Nubik\source\repos\Semester3\Semester3\obj\Debug\net8.0-windows\refint\ViewForms.dll
-C:\Users\Nubik\source\repos\Semester3\Semester3\obj\Debug\net8.0-windows\ViewForms.pdb
-C:\Users\Nubik\source\repos\Semester3\Semester3\obj\Debug\net8.0-windows\ViewForms.genruntimeconfig.cache
-C:\Users\Nubik\source\repos\Semester3\Semester3\obj\Debug\net8.0-windows\ref\ViewForms.dll
-C:\Users\Nubik\source\repos\Semester3\Semester3\obj\Debug\net8.0-windows\ViewForms.SkillsSetting.resources
-C:\Users\Nubik\source\repos\Semester3\Semester3\obj\Debug\net8.0-windows\ViewForms.FilterChan.resources
-C:\Users\Nubik\source\repos\Semester3\Semester3\obj\Debug\net8.0-windows\ViewForms.Error.resources
-C:\Users\Nubik\source\repos\Semester3\Semester3\obj\Debug\net8.0-windows\ViewForms.Registration.resources
-C:\Users\Nubik\source\repos\Semester3\Semester3\obj\Debug\net8.0-windows\ViewForms.Conclution.resources
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\obj\Debug\net8.0-windows\ViewForms.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\obj\Debug\net8.0-windows\refint\ViewForms.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\obj\Debug\net8.0-windows\ViewForms.pdb
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\obj\Debug\net8.0-windows\ViewForms.csproj.AssemblyReference.cache
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\obj\Debug\net8.0-windows\ViewForms.AnimeChanCard.resources
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\obj\Debug\net8.0-windows\ViewForms.Conclution.resources
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\obj\Debug\net8.0-windows\ViewForms.Error.resources
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\obj\Debug\net8.0-windows\ViewForms.FilterChan.resources
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\obj\Debug\net8.0-windows\ViewForms.Form1.resources
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\obj\Debug\net8.0-windows\ViewForms.Registration.resources
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\obj\Debug\net8.0-windows\ViewForms.SkillsSetting.resources
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\obj\Debug\net8.0-windows\ViewForms.csproj.GenerateResource.cache
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\obj\Debug\net8.0-windows\ViewForms.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\obj\Debug\net8.0-windows\ViewForms.AssemblyInfoInputs.cache
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\obj\Debug\net8.0-windows\ViewForms.AssemblyInfo.cs
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\obj\Debug\net8.0-windows\ViewForms.csproj.CoreCompileInputs.cache
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\obj\Debug\net8.0-windows\ViewForms.sourcelink.json
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\ViewForms.exe
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\ViewForms.deps.json
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\ViewForms.runtimeconfig.json
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\ViewForms.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\ViewForms.pdb
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\Model.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\Model.pdb
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\obj\Debug\net8.0-windows\ViewForms.csproj.Up2Date
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\obj\Debug\net8.0-windows\ViewForms.genruntimeconfig.cache
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\obj\Debug\net8.0-windows\ref\ViewForms.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\Azure.Core.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\Azure.Identity.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\Dapper.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\Microsoft.Data.SqlClient.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Memory.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\Microsoft.Identity.Client.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Abstractions.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Logging.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Tokens.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\Microsoft.SqlServer.Server.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\System.ClientModel.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\System.Diagnostics.DiagnosticSource.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\System.Formats.Asn1.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\System.Memory.Data.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\System.Text.Encodings.Web.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\System.Text.Json.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\DataAccessLayer.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\DataAccessLayer.pdb
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\Microsoft.Bcl.Cryptography.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\System.Configuration.ConfigurationManager.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\System.Diagnostics.EventLog.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\System.Security.Cryptography.Pkcs.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\cs\Microsoft.Data.SqlClient.resources.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\de\Microsoft.Data.SqlClient.resources.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\es\Microsoft.Data.SqlClient.resources.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\fr\Microsoft.Data.SqlClient.resources.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\it\Microsoft.Data.SqlClient.resources.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\ja\Microsoft.Data.SqlClient.resources.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\ko\Microsoft.Data.SqlClient.resources.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\pl\Microsoft.Data.SqlClient.resources.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\pt-BR\Microsoft.Data.SqlClient.resources.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\ru\Microsoft.Data.SqlClient.resources.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\tr\Microsoft.Data.SqlClient.resources.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\zh-Hans\Microsoft.Data.SqlClient.resources.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\zh-Hant\Microsoft.Data.SqlClient.resources.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
-C:\Users\Nubik\Documents\IloveGit\Semester3\Semester3\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\ViewForms.exe
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\ViewForms.deps.json
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\ViewForms.runtimeconfig.json
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\ViewForms.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\ViewForms.pdb
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\Azure.Core.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\Azure.Identity.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\Dapper.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\Microsoft.Bcl.Cryptography.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\Microsoft.Data.SqlClient.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Memory.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\Microsoft.Identity.Client.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Abstractions.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Logging.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Tokens.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\Microsoft.SqlServer.Server.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\System.ClientModel.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\System.Configuration.ConfigurationManager.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\System.Diagnostics.DiagnosticSource.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\System.Diagnostics.EventLog.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\System.Formats.Asn1.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\System.Memory.Data.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\System.Security.Cryptography.Pkcs.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\System.Text.Encodings.Web.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\System.Text.Json.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\cs\Microsoft.Data.SqlClient.resources.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\de\Microsoft.Data.SqlClient.resources.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\es\Microsoft.Data.SqlClient.resources.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\fr\Microsoft.Data.SqlClient.resources.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\it\Microsoft.Data.SqlClient.resources.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\ja\Microsoft.Data.SqlClient.resources.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\ko\Microsoft.Data.SqlClient.resources.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\pl\Microsoft.Data.SqlClient.resources.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\pt-BR\Microsoft.Data.SqlClient.resources.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\ru\Microsoft.Data.SqlClient.resources.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\tr\Microsoft.Data.SqlClient.resources.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\zh-Hans\Microsoft.Data.SqlClient.resources.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\zh-Hant\Microsoft.Data.SqlClient.resources.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\DataAccessLayer.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\Model.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\Model.pdb
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\DataAccessLayer.pdb
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\obj\Debug\net8.0-windows\ViewForms.csproj.AssemblyReference.cache
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\obj\Debug\net8.0-windows\ViewForms.AnimeChanCard.resources
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\obj\Debug\net8.0-windows\ViewForms.Conclution.resources
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\obj\Debug\net8.0-windows\ViewForms.FilterChan.resources
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\obj\Debug\net8.0-windows\ViewForms.MainForm.resources
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\obj\Debug\net8.0-windows\ViewForms.Registration.resources
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\obj\Debug\net8.0-windows\ViewForms.SkillsSetting.resources
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\obj\Debug\net8.0-windows\ViewForms.csproj.GenerateResource.cache
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\obj\Debug\net8.0-windows\ViewForms.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\obj\Debug\net8.0-windows\ViewForms.AssemblyInfoInputs.cache
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\obj\Debug\net8.0-windows\ViewForms.AssemblyInfo.cs
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\obj\Debug\net8.0-windows\ViewForms.csproj.CoreCompileInputs.cache
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\obj\Debug\net8.0-windows\ViewForms.sourcelink.json
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\obj\Debug\net8.0-windows\ViewForms.csproj.Up2Date
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\obj\Debug\net8.0-windows\ViewForms.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\obj\Debug\net8.0-windows\refint\ViewForms.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\obj\Debug\net8.0-windows\ViewForms.pdb
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\obj\Debug\net8.0-windows\ViewForms.genruntimeconfig.cache
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\obj\Debug\net8.0-windows\ref\ViewForms.dll
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\obj\Debug\net8.0-windows\ViewForms.Properties.Resources.resources
-C:\Users\SeDMI\OneDrive\Рабочий стол\Новая папка (2)\AnimeChanSelector\Semester3\obj\Debug\net8.0-windows\ViewForms.ErrorForm.resources
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\ViewForms.exe
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\ViewForms.deps.json
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\ViewForms.runtimeconfig.json
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\ViewForms.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\ViewForms.pdb
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\Azure.Core.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\Azure.Identity.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\Dapper.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\Microsoft.Bcl.Cryptography.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\Microsoft.Data.SqlClient.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\Microsoft.Identity.Client.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\Microsoft.SqlServer.Server.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\System.ClientModel.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\System.Configuration.ConfigurationManager.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\System.Diagnostics.EventLog.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\System.Formats.Asn1.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\System.Memory.Data.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\System.Security.Cryptography.Pkcs.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\System.Text.Encodings.Web.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\System.Text.Json.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\cs\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\pl\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\tr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\DataAccessLayer.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\Model.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\Model.pdb
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\bin\Debug\net8.0-windows\DataAccessLayer.pdb
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\obj\Debug\net8.0-windows\ViewForms.csproj.AssemblyReference.cache
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\obj\Debug\net8.0-windows\ViewForms.AnimeChanCard.resources
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\obj\Debug\net8.0-windows\ViewForms.Conclution.resources
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\obj\Debug\net8.0-windows\ViewForms.ErrorForm.resources
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\obj\Debug\net8.0-windows\ViewForms.FilterChan.resources
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\obj\Debug\net8.0-windows\ViewForms.MainForm.resources
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\obj\Debug\net8.0-windows\ViewForms.Properties.Resources.resources
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\obj\Debug\net8.0-windows\ViewForms.Registration.resources
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\obj\Debug\net8.0-windows\ViewForms.SkillsSetting.resources
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\obj\Debug\net8.0-windows\ViewForms.csproj.GenerateResource.cache
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\obj\Debug\net8.0-windows\ViewForms.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\obj\Debug\net8.0-windows\ViewForms.AssemblyInfoInputs.cache
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\obj\Debug\net8.0-windows\ViewForms.AssemblyInfo.cs
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\obj\Debug\net8.0-windows\ViewForms.csproj.CoreCompileInputs.cache
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\obj\Debug\net8.0-windows\ViewForms.sourcelink.json
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\obj\Debug\net8.0-windows\ViewForms.csproj.Up2Date
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\obj\Debug\net8.0-windows\ViewForms.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\obj\Debug\net8.0-windows\refint\ViewForms.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\obj\Debug\net8.0-windows\ViewForms.pdb
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\obj\Debug\net8.0-windows\ViewForms.genruntimeconfig.cache
+C:\Users\Nubik\Documents\IloveGit\Chans\Semester3\obj\Debug\net8.0-windows\ref\ViewForms.dll

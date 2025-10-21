@@ -1,16 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+﻿using Model;
 using System.Diagnostics;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using Model;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.ScrollBar;
 
 namespace ViewForms
 {
@@ -158,6 +147,7 @@ namespace ViewForms
         ///<summary>Вызывается при нажатии на кнопку редактора скиллов. Открывает форму редакторов скиллов и сохраняет изменения</summary>
         private void skillsSettung_Click(object sender, EventArgs e)
         {
+
             List<Skill> skills = new List<Skill>();
 
             foreach (ListViewItem item in listView1.Items) //Считывает информацию с ListView и закидывает в список
@@ -172,39 +162,25 @@ namespace ViewForms
 
             SkillsSetting skillsSetting = new SkillsSetting(skills); //Создаём форму для редактирования навыков
 
-            listView1.Items.Clear();
-
-            skillsSetting.ShowDialog();
-            Debug.WriteLine(logic.LoadSkills().Count); //Подгружаем сохраненные навыки с той формы
-
-            //int i = 0;
-            //while (anime != null)
-            //{
-            //    anime = logic.LoadAnimeChanList(i);
-            //    i++;
-            //    table.Rows.Add(anime.FirstName, anime.LastName, anime.Age, anime.Id);
-            //}
-
-            //foreach (Skill skill in logic.LoadSkills()) //Отображаем в ListView сохраненные навыки с той формы
-            //{
-            //    ListViewItem newItem = new ListViewItem(skill.ToString()); 
-            //    newItem.Tag = skill;
-            //    listView1.Items.Add(newItem);
-            //}
-
-
-            skills.Clear();
-
-            foreach (Skill skill in logic.LoadSkills())
+            if (skillsSetting.ShowDialog() == DialogResult.OK)
             {
-                skills.Add(skill);
-            }
+                listView1.Items.Clear();
 
-            foreach (Skill skill2 in skills) //Отображаем в ListView сохраненные навыки с той формы
-            {
-                ListViewItem newItem = new ListViewItem(skill2.Name);
-                newItem.Tag = skill2;
-                listView1.Items.Add(newItem);
+                skillsSetting.ShowDialog();
+
+                skills.Clear();
+
+                foreach (Skill skill in logic.LoadSkills())
+                {
+                    skills.Add(skill);
+                }
+
+                foreach (Skill skill2 in skills) //Отображаем в ListView сохраненные навыки с той формы
+                {
+                    ListViewItem newItem = new ListViewItem(skill2.Name);
+                    newItem.Tag = skill2;
+                    listView1.Items.Add(newItem);
+                }
             }
         }
 
