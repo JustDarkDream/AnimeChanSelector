@@ -37,37 +37,37 @@ namespace ViewForms
                                 }
                                 else
                                 {
-                                    ErrorForm error = new ErrorForm("Ничего не введено в строку \"Фамилия\". Введите что-нибудь");
+                                    ErrorForm error = new ErrorForm("Ничего не введено в строку \"Фамилия\"");
                                     error.ShowDialog();
                                 }
                             }
                             else
                             {
-                                ErrorForm error = new ErrorForm("Ничего не введено в строку \"Имя\". Введите что-нибудь");
+                                ErrorForm error = new ErrorForm("Ничего не введено в строку \"Имя\"");
                                 error.ShowDialog();
                             }
                         }
                         else
                         {
-                            ErrorForm error = new ErrorForm("Введено некорректное значение в \"Размер\". Введите неотрицательно число");
+                            ErrorForm error = new ErrorForm("Введено некорректное значение в \"Размер\"");
                             error.ShowDialog();
                         }
                     }
                     else
                     {
-                        ErrorForm error = new ErrorForm("Введено некорректное значение в \"Вес\". Введите неотрицательно число");
+                        ErrorForm error = new ErrorForm("Введено некорректное значение в \"Вес\"");
                         error.ShowDialog();
                     }
                 }
                 else
                 {
-                    ErrorForm error = new ErrorForm("Введено некорректное значение в \"Рост\". Введите неотрицательно число");
+                    ErrorForm error = new ErrorForm("Введено некорректное значение в \"Рост\"");
                     error.ShowDialog();
                 }
             }
             else
             {
-                ErrorForm error = new ErrorForm("Введено некорректное значение в \"Возраст\". Введите неотрицательно число");
+                ErrorForm error = new ErrorForm("Введено некорректное значение в \"Возраст\"");
                 error.ShowDialog();
             }
         }

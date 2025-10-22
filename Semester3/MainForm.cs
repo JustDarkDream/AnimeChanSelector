@@ -53,14 +53,6 @@ namespace ViewForms
             });
 
             logic.CreateAnimeChan();
-            //AnimeChan anime = logic.LoadAnimeChanList(0);
-            //int i = 0;
-            //while (anime != null)
-            //{
-            //    anime = logic.LoadAnimeChanList(i);
-            //    i++;
-            //    table.Rows.Add(anime.FirstName, anime.LastName, anime.Age, anime.Id);
-            //}
             foreach (var i in logic.LoadAnimeChanList())
             {
                 table.Rows.Add(i.FirstName, i.LastName, i.Age, i.Id);
@@ -222,21 +214,26 @@ namespace ViewForms
                 btnshowCard.Font = new Font("Segoe UI", 7f * scaleFactor, FontStyle.Regular);
                 lblName.Font = new Font("Segoe UI", 7f * scaleFactor, FontStyle.Regular);
                 dgwTabel.Font = new Font("Segoe UI", 7f * scaleFactor, FontStyle.Regular);
-                label1.Font = new Font("Segoe UI", 4f * scaleFactor, FontStyle.Regular);
-                label2.Font = new Font("Segoe UI", 4f * scaleFactor, FontStyle.Regular);
-                label3.Font = new Font("Segoe UI", 4f * scaleFactor, FontStyle.Regular);
-                label4.Font = new Font("Segoe UI", 4f * scaleFactor, FontStyle.Regular);
-                label5.Font = new Font("Segoe UI", 4f * scaleFactor, FontStyle.Regular);
-                label6.Font = new Font("Segoe UI", 4f * scaleFactor, FontStyle.Regular);
-                lblAge.Font = new Font("Segoe UI", 4 * scaleFactor, FontStyle.Regular);
-                lblFirstName.Font = new Font("Segoe UI", 4f * scaleFactor, FontStyle.Regular);
-                lblHeight.Font = new Font("Segoe UI", 4f * scaleFactor, FontStyle.Regular);
-                lblLstName.Font = new Font("Segoe UI", 4f * scaleFactor, FontStyle.Regular);
-                lblSize.Font = new Font("Segoe UI", 4f * scaleFactor, FontStyle.Regular);
-                lblWeight.Font = new Font("Segoe UI", 4f * scaleFactor, FontStyle.Regular);
+                label1.Font = new Font("Segoe UI", 5f * scaleFactor, FontStyle.Regular);
+                label2.Font = new Font("Segoe UI", 5f * scaleFactor, FontStyle.Regular);
+                label3.Font = new Font("Segoe UI", 5f * scaleFactor, FontStyle.Regular);
+                label4.Font = new Font("Segoe UI", 5f * scaleFactor, FontStyle.Regular);
+                label5.Font = new Font("Segoe UI", 5f * scaleFactor, FontStyle.Regular);
+                label6.Font = new Font("Segoe UI", 5f * scaleFactor, FontStyle.Regular);
+                lblAge.Font = new Font("Segoe UI", 5f * scaleFactor, FontStyle.Regular);
+                lblFirstName.Font = new Font("Segoe UI", 5f * scaleFactor, FontStyle.Regular);
+                lblHeight.Font = new Font("Segoe UI", 5f * scaleFactor, FontStyle.Regular);
+                lblLstName.Font = new Font("Segoe UI", 5f * scaleFactor, FontStyle.Regular);
+                lblSize.Font = new Font("Segoe UI", 5f * scaleFactor, FontStyle.Regular);
+                lblWeight.Font = new Font("Segoe UI", 5f * scaleFactor, FontStyle.Regular);
             }
         }
 
+        /// <summary>
+        /// Событие загрузки формы
+        /// </summary>
+        /// <param name="sender">MainForm</param>
+        /// <param name="e">Контейнер аргументов события</param>
         private void MainForm_Load(object sender, EventArgs e)
         {
             MainPerson mainPerson = logic.GetMainPerson();

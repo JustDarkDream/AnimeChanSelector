@@ -45,11 +45,11 @@
             // 
             // label2
             // 
-            label2.Font = new Font("Segoe UI", 15F);
-            label2.Location = new Point(159, 116);
+            label2.Font = new Font("Segoe UI", 12F);
+            label2.Location = new Point(54, 118);
             label2.Margin = new Padding(5, 0, 5, 0);
             label2.Name = "label2";
-            label2.Size = new Size(570, 66);
+            label2.Size = new Size(760, 62);
             label2.TabIndex = 1;
             label2.Text = "label2";
             label2.TextAlign = ContentAlignment.MiddleCenter;

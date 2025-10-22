@@ -62,6 +62,7 @@
             lastName.Font = new Font("Segoe UI", 15F);
             lastName.Location = new Point(93, 452);
             lastName.Margin = new Padding(5, 6, 5, 6);
+            lastName.MaxLength = 20;
             lastName.Name = "lastName";
             lastName.Size = new Size(842, 54);
             lastName.TabIndex = 1;
@@ -73,6 +74,7 @@
             sizeValue.Font = new Font("Segoe UI", 12F);
             sizeValue.Location = new Point(192, 846);
             sizeValue.Margin = new Padding(5, 6, 5, 6);
+            sizeValue.MaxLength = 4;
             sizeValue.Name = "sizeValue";
             sizeValue.Size = new Size(707, 45);
             sizeValue.TabIndex = 5;
@@ -83,6 +85,7 @@
             weightValue.Font = new Font("Segoe UI", 12F);
             weightValue.Location = new Point(192, 764);
             weightValue.Margin = new Padding(5, 6, 5, 6);
+            weightValue.MaxLength = 4;
             weightValue.Name = "weightValue";
             weightValue.Size = new Size(707, 45);
             weightValue.TabIndex = 4;
@@ -93,6 +96,7 @@
             heightValue.Font = new Font("Segoe UI", 12F);
             heightValue.Location = new Point(192, 690);
             heightValue.Margin = new Padding(5, 6, 5, 6);
+            heightValue.MaxLength = 4;
             heightValue.Name = "heightValue";
             heightValue.Size = new Size(707, 45);
             heightValue.TabIndex = 3;
@@ -103,6 +107,7 @@
             ageValue.Font = new Font("Segoe UI", 12F);
             ageValue.Location = new Point(204, 618);
             ageValue.Margin = new Padding(5, 6, 5, 6);
+            ageValue.MaxLength = 4;
             ageValue.Name = "ageValue";
             ageValue.Size = new Size(707, 45);
             ageValue.TabIndex = 2;
@@ -135,6 +140,7 @@
             firstName.Font = new Font("Segoe UI", 15F);
             firstName.Location = new Point(93, 372);
             firstName.Margin = new Padding(5, 6, 5, 6);
+            firstName.MaxLength = 15;
             firstName.Name = "firstName";
             firstName.Size = new Size(842, 54);
             firstName.TabIndex = 0;

@@ -5,8 +5,8 @@ namespace Model
 {
     public class BourgeoisLogic
     {
-        readonly IRepository<AnimeChanRepo> repository = new EntityRepository<AnimeChanRepo>(new DataContext());
-        //readonly IRepository<AnimeChanRepo> repository = new DapperRepository<AnimeChanRepo>();
+        //readonly IRepository<AnimeChanRepo> repository = new EntityRepository<AnimeChanRepo>(new DataContext());
+        readonly IRepository<AnimeChanRepo> repository = new DapperRepository<AnimeChanRepo>();
 
         ///<summary>Создает три НЕслучаных аниме-тянок</summary>
         public void CreateAnimeChan()

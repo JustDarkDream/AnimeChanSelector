@@ -80,12 +80,12 @@
             dgwTabel.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCells;
             dgwTabel.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgwTabel.Dock = DockStyle.Fill;
-            dgwTabel.Location = new Point(5, 247);
+            dgwTabel.Location = new Point(5, 264);
             dgwTabel.Margin = new Padding(5, 6, 5, 6);
             dgwTabel.Name = "dgwTabel";
             dgwTabel.ReadOnly = true;
             dgwTabel.RowHeadersWidth = 72;
-            dgwTabel.Size = new Size(1355, 518);
+            dgwTabel.Size = new Size(1355, 501);
             dgwTabel.TabIndex = 0;
             // 
             // btncreateChan
@@ -272,8 +272,8 @@
             tableLayoutPanel3.Location = new Point(3, 3);
             tableLayoutPanel3.Name = "tableLayoutPanel3";
             tableLayoutPanel3.RowCount = 2;
-            tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 31.2581062F));
-            tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 68.74189F));
+            tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 33.4630356F));
+            tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 66.5369644F));
             tableLayoutPanel3.Size = new Size(1365, 771);
             tableLayoutPanel3.TabIndex = 2;
             // 
@@ -290,7 +290,7 @@
             tableLayoutPanel6.RowCount = 1;
             tableLayoutPanel6.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel6.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel6.Size = new Size(1359, 235);
+            tableLayoutPanel6.Size = new Size(1359, 252);
             tableLayoutPanel6.TabIndex = 1;
             tableLayoutPanel6.Paint += tableLayoutPanel6_Paint;
             // 
@@ -308,7 +308,7 @@
             tableLayoutPanel7.RowCount = 1;
             tableLayoutPanel7.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel7.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel7.Size = new Size(762, 229);
+            tableLayoutPanel7.Size = new Size(762, 246);
             tableLayoutPanel7.TabIndex = 3;
             tableLayoutPanel7.Paint += tableLayoutPanel7_Paint;
             // 
@@ -319,7 +319,7 @@
             pictureBox1.Image = Properties.Resources.McLovin;
             pictureBox1.Location = new Point(5, 5);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(238, 219);
+            pictureBox1.Size = new Size(238, 236);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;
@@ -345,13 +345,13 @@
             tableLayoutPanel8.Location = new Point(251, 5);
             tableLayoutPanel8.Name = "tableLayoutPanel8";
             tableLayoutPanel8.RowCount = 6;
-            tableLayoutPanel8.RowStyles.Add(new RowStyle());
-            tableLayoutPanel8.RowStyles.Add(new RowStyle());
-            tableLayoutPanel8.RowStyles.Add(new RowStyle());
-            tableLayoutPanel8.RowStyles.Add(new RowStyle());
-            tableLayoutPanel8.RowStyles.Add(new RowStyle());
-            tableLayoutPanel8.RowStyles.Add(new RowStyle());
-            tableLayoutPanel8.Size = new Size(506, 219);
+            tableLayoutPanel8.RowStyles.Add(new RowStyle(SizeType.Percent, 16.666666F));
+            tableLayoutPanel8.RowStyles.Add(new RowStyle(SizeType.Percent, 16.666666F));
+            tableLayoutPanel8.RowStyles.Add(new RowStyle(SizeType.Percent, 16.666666F));
+            tableLayoutPanel8.RowStyles.Add(new RowStyle(SizeType.Percent, 16.666666F));
+            tableLayoutPanel8.RowStyles.Add(new RowStyle(SizeType.Percent, 16.666666F));
+            tableLayoutPanel8.RowStyles.Add(new RowStyle(SizeType.Percent, 16.666666F));
+            tableLayoutPanel8.Size = new Size(506, 236);
             tableLayoutPanel8.TabIndex = 5;
             // 
             // label1
@@ -360,7 +360,7 @@
             label1.Dock = DockStyle.Fill;
             label1.Location = new Point(3, 0);
             label1.Name = "label1";
-            label1.Size = new Size(100, 30);
+            label1.Size = new Size(100, 39);
             label1.TabIndex = 0;
             label1.Text = "Имя";
             label1.TextAlign = ContentAlignment.MiddleCenter;
@@ -369,9 +369,9 @@
             // 
             label2.AutoSize = true;
             label2.Dock = DockStyle.Fill;
-            label2.Location = new Point(3, 30);
+            label2.Location = new Point(3, 39);
             label2.Name = "label2";
-            label2.Size = new Size(100, 30);
+            label2.Size = new Size(100, 39);
             label2.TabIndex = 1;
             label2.Text = "Фамилия";
             label2.TextAlign = ContentAlignment.MiddleCenter;
@@ -380,9 +380,9 @@
             // 
             label3.AutoSize = true;
             label3.Dock = DockStyle.Fill;
-            label3.Location = new Point(3, 60);
+            label3.Location = new Point(3, 78);
             label3.Name = "label3";
-            label3.Size = new Size(100, 30);
+            label3.Size = new Size(100, 39);
             label3.TabIndex = 2;
             label3.Text = "Возраст";
             label3.TextAlign = ContentAlignment.MiddleCenter;
@@ -391,9 +391,9 @@
             // 
             label4.AutoSize = true;
             label4.Dock = DockStyle.Fill;
-            label4.Location = new Point(3, 90);
+            label4.Location = new Point(3, 117);
             label4.Name = "label4";
-            label4.Size = new Size(100, 30);
+            label4.Size = new Size(100, 39);
             label4.TabIndex = 3;
             label4.Text = "Рост";
             label4.TextAlign = ContentAlignment.MiddleCenter;
@@ -402,9 +402,9 @@
             // 
             label5.AutoSize = true;
             label5.Dock = DockStyle.Fill;
-            label5.Location = new Point(3, 120);
+            label5.Location = new Point(3, 156);
             label5.Name = "label5";
-            label5.Size = new Size(100, 30);
+            label5.Size = new Size(100, 39);
             label5.TabIndex = 4;
             label5.Text = "Вес";
             label5.TextAlign = ContentAlignment.MiddleCenter;
@@ -413,9 +413,9 @@
             // 
             label6.AutoSize = true;
             label6.Dock = DockStyle.Fill;
-            label6.Location = new Point(3, 150);
+            label6.Location = new Point(3, 195);
             label6.Name = "label6";
-            label6.Size = new Size(100, 69);
+            label6.Size = new Size(100, 41);
             label6.TabIndex = 5;
             label6.Text = "Размер";
             label6.TextAlign = ContentAlignment.MiddleCenter;
@@ -426,7 +426,7 @@
             lblFirstName.Dock = DockStyle.Fill;
             lblFirstName.Location = new Point(109, 0);
             lblFirstName.Name = "lblFirstName";
-            lblFirstName.Size = new Size(394, 30);
+            lblFirstName.Size = new Size(394, 39);
             lblFirstName.TabIndex = 6;
             lblFirstName.Text = "label7";
             lblFirstName.TextAlign = ContentAlignment.MiddleCenter;
@@ -435,9 +435,9 @@
             // 
             lblLstName.AutoSize = true;
             lblLstName.Dock = DockStyle.Fill;
-            lblLstName.Location = new Point(109, 30);
+            lblLstName.Location = new Point(109, 39);
             lblLstName.Name = "lblLstName";
-            lblLstName.Size = new Size(394, 30);
+            lblLstName.Size = new Size(394, 39);
             lblLstName.TabIndex = 7;
             lblLstName.Text = "label8";
             lblLstName.TextAlign = ContentAlignment.MiddleCenter;
@@ -446,9 +446,9 @@
             // 
             lblAge.AutoSize = true;
             lblAge.Dock = DockStyle.Fill;
-            lblAge.Location = new Point(109, 60);
+            lblAge.Location = new Point(109, 78);
             lblAge.Name = "lblAge";
-            lblAge.Size = new Size(394, 30);
+            lblAge.Size = new Size(394, 39);
             lblAge.TabIndex = 8;
             lblAge.Text = "label9";
             lblAge.TextAlign = ContentAlignment.MiddleCenter;
@@ -457,9 +457,9 @@
             // 
             lblHeight.AutoSize = true;
             lblHeight.Dock = DockStyle.Fill;
-            lblHeight.Location = new Point(109, 90);
+            lblHeight.Location = new Point(109, 117);
             lblHeight.Name = "lblHeight";
-            lblHeight.Size = new Size(394, 30);
+            lblHeight.Size = new Size(394, 39);
             lblHeight.TabIndex = 9;
             lblHeight.Text = "label10";
             lblHeight.TextAlign = ContentAlignment.MiddleCenter;
@@ -468,9 +468,9 @@
             // 
             lblWeight.AutoSize = true;
             lblWeight.Dock = DockStyle.Fill;
-            lblWeight.Location = new Point(109, 120);
+            lblWeight.Location = new Point(109, 156);
             lblWeight.Name = "lblWeight";
-            lblWeight.Size = new Size(394, 30);
+            lblWeight.Size = new Size(394, 39);
             lblWeight.TabIndex = 10;
             lblWeight.Text = "label11";
             lblWeight.TextAlign = ContentAlignment.MiddleCenter;
@@ -479,9 +479,9 @@
             // 
             lblSize.AutoSize = true;
             lblSize.Dock = DockStyle.Fill;
-            lblSize.Location = new Point(109, 150);
+            lblSize.Location = new Point(109, 195);
             lblSize.Name = "lblSize";
-            lblSize.Size = new Size(394, 69);
+            lblSize.Size = new Size(394, 41);
             lblSize.TabIndex = 11;
             lblSize.Text = "label12";
             lblSize.TextAlign = ContentAlignment.MiddleCenter;
@@ -491,7 +491,7 @@
             lblName.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             lblName.AutoSize = true;
             lblName.Font = new Font("Segoe UI", 20F);
-            lblName.Location = new Point(5, 173);
+            lblName.Location = new Point(5, 190);
             lblName.Margin = new Padding(5, 0, 5, 0);
             lblName.Name = "lblName";
             lblName.Size = new Size(432, 62);
@@ -515,6 +515,7 @@
             Margin = new Padding(5, 6, 5, 6);
             MinimumSize = new Size(500, 500);
             Name = "MainForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Подбор тянки";
             Load += MainForm_Load;
             SizeChanged += MainForm_SizeChanged;
