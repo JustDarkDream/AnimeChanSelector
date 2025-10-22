@@ -2043,37 +2043,34 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Nubik\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\SeDMI\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nubik\\Documents\\IloveGit\\Chans\\Model\\Model.csproj",
+      "projectUniqueName": "C:\\Users\\SeDMI\\OneDrive\\Рабочий стол\\AnimeChanSelector\\Model\\Model.csproj",
       "projectName": "Model",
-      "projectPath": "C:\\Users\\Nubik\\Documents\\IloveGit\\Chans\\Model\\Model.csproj",
-      "packagesPath": "C:\\Users\\Nubik\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Nubik\\Documents\\IloveGit\\Chans\\Model\\obj\\",
+      "projectPath": "C:\\Users\\SeDMI\\OneDrive\\Рабочий стол\\AnimeChanSelector\\Model\\Model.csproj",
+      "packagesPath": "C:\\Users\\SeDMI\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\SeDMI\\OneDrive\\Рабочий стол\\AnimeChanSelector\\Model\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Nubik\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config"
+        "C:\\Users\\SeDMI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Nubik\\Documents\\IloveGit\\Chans\\DataAccessLayer\\DataAccessLayer.csproj": {
-              "projectPath": "C:\\Users\\Nubik\\Documents\\IloveGit\\Chans\\DataAccessLayer\\DataAccessLayer.csproj"
+            "C:\\Users\\SeDMI\\OneDrive\\Рабочий стол\\AnimeChanSelector\\DataAccessLayer\\DataAccessLayer.csproj": {
+              "projectPath": "C:\\Users\\SeDMI\\OneDrive\\Рабочий стол\\AnimeChanSelector\\DataAccessLayer\\DataAccessLayer.csproj"
             }
           }
         }
@@ -2087,8 +2084,7 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.300"
+      }
     },
     "frameworks": {
       "net8.0": {
@@ -2109,7 +2105,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

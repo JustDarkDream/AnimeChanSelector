@@ -72,12 +72,22 @@ namespace ViewForms
             }
         }
 
+        private void btnAutoInput_Click(object sender, EventArgs e)
+        {
+            this.firstName.Text = "Фогель";
+            this.lastName.Text = "Мактрахер";
+            this.ageValue.Text = "25";
+            this.sizeValue.Text = "15";
+            this.heightValue.Text = "171";
+            this.weightValue.Text = "46";
+        }
+
         private void lastName_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void Registration_Load(object sender, EventArgs e)
         {
 
         }

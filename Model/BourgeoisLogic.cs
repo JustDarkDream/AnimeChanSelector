@@ -343,6 +343,11 @@ namespace Model
             return new AnimeChan(animeChan);
         }
 
+        public MainPerson GetMainPerson()
+        {
+            return Saves.mainPerson;
+        }
+
         ///<summary>Создаёт результат отношений с выбранной тянкой</summary>
         /// <returns>Возвращает результат отношений с выбранной тянкой</returns>
         public string Conclution()

@@ -121,16 +121,19 @@
   <data name="image4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\image4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="image3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="imag1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imag1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="angry" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\angry.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="image2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\image2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="image3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\image3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="angry" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\angry.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="McLovin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\McLovin.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

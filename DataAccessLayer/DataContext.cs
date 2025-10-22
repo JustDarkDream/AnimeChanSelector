@@ -19,7 +19,7 @@ namespace DataAccessLayer
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer(@"Server=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Nubik\Documents\IloveGit\Chans\DataAccessLayer\AnimeChanDataBase.mdf;Integrated Security = True");
+                optionsBuilder.UseSqlServer(@"Server=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\SeDMI\OneDrive\Рабочий стол\AnimeChanSelector\DataAccessLayer\AnimeChanDataBase.mdf;Integrated Security = True");
             }
         }
 

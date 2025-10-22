@@ -1,5 +1,6 @@
 using Model;
 using System.Data;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace ViewForms
 {
@@ -71,7 +72,7 @@ namespace ViewForms
         private void btnshowcard_Click(object sender, EventArgs e)
         {
             {
-                if (dgwTabel.CurrentRow != null && dgwTabel.SelectedRows.Count == 1) //Проверяет, выбрана ли лишь одна строка
+                if (dgwTabel.CurrentRow != null && dgwTabel.SelectedRows.Count <= 1) //Проверяет, выбрана ли лишь одна строка
                 {
                     int id = Convert.ToInt32(table.CurrentRow.Cells["ColumnId"].Value); //Считываем значение id этой строки
 
@@ -173,7 +174,7 @@ namespace ViewForms
             if (filterChan.ShowDialog() == DialogResult.OK) //Если изменения сохранены, то очищает таблицу и загружает значения из отфильтрованного списка
             {
                 table.Rows.Clear();
-              
+
                 foreach (var i in logic.LoadFilterAnimeChanList())
                 {
                     table.Rows.Add(i.FirstName, i.LastName, i.Age, i.Id);
@@ -221,13 +222,40 @@ namespace ViewForms
                 btnshowCard.Font = new Font("Segoe UI", 7f * scaleFactor, FontStyle.Regular);
                 lblName.Font = new Font("Segoe UI", 7f * scaleFactor, FontStyle.Regular);
                 dgwTabel.Font = new Font("Segoe UI", 7f * scaleFactor, FontStyle.Regular);
+                label1.Font = new Font("Segoe UI", 4f * scaleFactor, FontStyle.Regular);
+                label2.Font = new Font("Segoe UI", 4f * scaleFactor, FontStyle.Regular);
+                label3.Font = new Font("Segoe UI", 4f * scaleFactor, FontStyle.Regular);
+                label4.Font = new Font("Segoe UI", 4f * scaleFactor, FontStyle.Regular);
+                label5.Font = new Font("Segoe UI", 4f * scaleFactor, FontStyle.Regular);
+                label6.Font = new Font("Segoe UI", 4f * scaleFactor, FontStyle.Regular);
+                lblAge.Font = new Font("Segoe UI", 4 * scaleFactor, FontStyle.Regular);
+                lblFirstName.Font = new Font("Segoe UI", 4f * scaleFactor, FontStyle.Regular);
+                lblHeight.Font = new Font("Segoe UI", 4f * scaleFactor, FontStyle.Regular);
+                lblLstName.Font = new Font("Segoe UI", 4f * scaleFactor, FontStyle.Regular);
+                lblSize.Font = new Font("Segoe UI", 4f * scaleFactor, FontStyle.Regular);
+                lblWeight.Font = new Font("Segoe UI", 4f * scaleFactor, FontStyle.Regular);
             }
         }
 
         private void MainForm_Load(object sender, EventArgs e)
         {
+            MainPerson mainPerson = logic.GetMainPerson();
+            this.lblFirstName.Text = mainPerson.FirstName;
+            this.lblLstName.Text = mainPerson.LastName;
+            this.lblAge.Text = mainPerson.Age.ToString();
+            this.lblHeight.Text = mainPerson.Height.ToString();
+            this.lblWeight.Text = mainPerson.Weight.ToString();
+            this.lblSize.Text = mainPerson.Size.ToString();
+        }
+
+        private void tableLayoutPanel7_Paint(object sender, PaintEventArgs e)
+        {
 
         }
 
+        private void tableLayoutPanel6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
