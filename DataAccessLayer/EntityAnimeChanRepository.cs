@@ -1,0 +1,115 @@
+﻿using Microsoft.EntityFrameworkCore;
+
+namespace DataAccessLayer
+{
+    public class EntityAnimeChanRepository : IRepository<AnimeChanRepo>
+    {
+
+        private readonly DataContext _context;
+
+
+        public EntityAnimeChanRepository(DataContext context)
+        {
+            _context = context;
+        }
+
+        ///<summary>Добавляет запись в БД </summary>
+        /// <param name="obj">объект, который добавится в БД</param>
+        public void Create(AnimeChanRepo obj)
+        {
+            _context.Set<AnimeChanRepo>().Add(obj);
+            _context.SaveChanges();
+        }
+
+        ///<summary>Читает все записи в БД</summary>
+        /// <returns>Возвращает все записи из БД</returns>
+        public IEnumerable<AnimeChanRepo> ReadAll()
+        {
+            return _context.Set<AnimeChanRepo>()
+                .Include(a => a.Skills)
+                .Cast<AnimeChanRepo>()
+                .ToList();
+
+        }
+
+        ///<summary>Читает запись по id</summary>
+        /// <param name="id">id, по которому ищут нужный объект</param>
+        /// /// <returns>Возвращает нужную запись из БД</returns>
+        public AnimeChanRepo ReadById(int id)
+        {
+            using (var context = new DataContext())
+            {
+                var repo = context.AnimeChans
+                    .Include(a => a.Skills)
+                    .AsNoTracking()
+                    .FirstOrDefault(a => a.Id == id);
+
+                return repo;
+
+            }
+        }
+
+        ///<summary>Изменяет данные у записи </summary>
+        /// <param name="obj">объект с измененными свойствами</param>
+        public void Update(AnimeChanRepo obj)
+        {
+
+            var existing = _context.AnimeChans
+                .Include(a => a.Skills)
+                .FirstOrDefault(a => a.Id == obj.Id);
+
+            if (existing == null)
+            {
+                return;
+            }
+
+            // Обновляем все поля (кроме скилов)
+            existing.FirstName = obj.FirstName;
+            existing.LastName = obj.LastName;
+            existing.Age = obj.Age;
+            existing.Height = obj.Height;
+            existing.Weight = obj.Weight;
+            existing.Size = obj.Size;
+
+            // Обновляем скилы
+            foreach (var skill in obj.Skills)
+            {
+                var existingSkill = existing.Skills.FirstOrDefault(s => s.Id == skill.Id);
+                if (existingSkill != null)
+                {
+                    // изменяем существующие
+                    existingSkill.Name = skill.Name;
+                }
+                else
+                {
+                    // добавляем новый, прикреплённый к контексту
+                    var newSkill = new SkillRepo
+                    {
+                        Name = skill.Name,
+                    };
+                    _context.Skills.Add(newSkill);
+                    existing.Skills.Add(newSkill);
+                }
+            }
+
+            _context.SaveChanges();
+        }
+
+        ///<summary>Удаляет запись в БД </summary>
+        /// <param name="obj">объект, который нужно удалить из БД</param>
+        public void Delete(AnimeChanRepo obj)
+        {
+            _context.Set<AnimeChanRepo>().Remove(obj);
+            _context.SaveChanges();
+        }
+
+        ///<summary>Удаляет ВСЕ записи в БД </summary>
+        public void DeleteAll()
+        {    
+            // Затем удаляем AnimeChansRepo
+            var allAnimeChans = _context.AnimeChans.ToList();
+            _context.AnimeChans.RemoveRange(allAnimeChans);
+            _context.SaveChanges(); // Сохраняем удаление AnimeChans
+        }
+    }
+}
