@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer
 {
-    public class ChanSkillRepository : IChanSkillRepository
+    public class DapperChanSkillRepository : IChanSkillRepository
     {
         private readonly string connectionString = @"Server=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\SeDMI\OneDrive\Рабочий стол\AnimeChanSelector\DataAccessLayer\AnimeChanDataBase.mdf;Integrated Security = True";
 

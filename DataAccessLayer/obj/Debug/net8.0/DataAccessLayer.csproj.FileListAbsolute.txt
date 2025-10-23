@@ -39,3 +39,5 @@ C:\Users\Nubik\Documents\IloveGit\AnimeChanSelector\DataAccessLayer\obj\Debug\ne
 C:\Users\Nubik\Documents\IloveGit\AnimeChanSelector\DataAccessLayer\obj\Debug\net8.0\ref\DataAccessLayer.dll
 C:\Users\Nubik\Documents\IloveGit\AnimeChanSelector\DataAccessLayer\bin\Debug\net8.0\DataAccessLayer.runtimeconfig.json
 C:\Users\Nubik\Documents\IloveGit\AnimeChanSelector\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.genruntimeconfig.cache
+C:\Users\SeDMI\OneDrive\Рабочий стол\AnimeChanSelector\DataAccessLayer\bin\Debug\net8.0\DataAccessLayer.runtimeconfig.json
+C:\Users\SeDMI\OneDrive\Рабочий стол\AnimeChanSelector\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.genruntimeconfig.cache

@@ -5,7 +5,7 @@ using System.Data;
 
 namespace DataAccessLayer
 {
-    public class SkillRepository : IRepository<SkillRepo>
+    public class DapperSkillRepository : IRepository<SkillRepo>
     {
         private readonly string connectionString = @"Server=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\SeDMI\OneDrive\Рабочий стол\AnimeChanSelector\DataAccessLayer\AnimeChanDataBase.mdf;Integrated Security = True";
 

@@ -26,7 +26,6 @@ namespace DataAccessLayer
         public IEnumerable<SkillRepo> ReadAll()
         {
 
-
             return _context.Set<SkillRepo>()
                 .Cast<SkillRepo>()
                 .ToList();
@@ -38,15 +37,13 @@ namespace DataAccessLayer
         /// /// <returns>Возвращает нужную запись из БД</returns>
         public SkillRepo ReadById(int id)
         {
-            using (var context = new DataContext())
-            {
-                var repo = context.Skills
-                    .AsNoTracking()
-                    .FirstOrDefault(a => a.Id == id);
 
-                return repo;
+            var repo = _context.Skills
+                .AsNoTracking()
+                .FirstOrDefault(a => a.Id == id);
 
-            }
+            return repo;
+
         }
 
         ///<summary>Изменяет данные у записи </summary>
@@ -54,31 +51,25 @@ namespace DataAccessLayer
         public void Update(SkillRepo obj)
         {
 
-            //var existing = _context.AnimeChans
-            //    .Include(a => a.Skills)
-            //    .FirstOrDefault(a => a.Id == animeChanRepo.Id);
+            //var existing = _context.Skills
+            //    .Include(a => a.AnimeChansRepo)
+            //    .FirstOrDefault(a => a.Id == obj.Id);
 
             //if (existing == null)
             //{
             //    return;
             //}
 
-            //// Обновляем все поля (кроме скилов)
-            //existing.FirstName = animeChanRepo.FirstName;
-            //existing.LastName = animeChanRepo.LastName;
-            //existing.Age = animeChanRepo.Age;
-            //existing.Height = animeChanRepo.Height;
-            //existing.Weight = animeChanRepo.Weight;
-            //existing.Size = animeChanRepo.Size;
+            //existing.Name = obj.Name;
 
             //// Обновляем скилы
-            //foreach (var skill in animeChanRepo.Skills)
+            //foreach (var chan in obj.AnimeChansRepo)
             //{
-            //    var existingSkill = existing.Skills.FirstOrDefault(s => s.Id == skill.Id);
-            //    if (existingSkill != null)
+            //    var existingChan = existing.AnimeChansRepo.FirstOrDefault(s => s.Id == chan.Id);
+            //    if (existingChan != null)
             //    {
             //        // изменяем существующие
-            //        existingSkill.Name = skill.Name;
+            //        existingChan.Name = chan.;
             //    }
             //    else
             //    {
@@ -108,7 +99,7 @@ namespace DataAccessLayer
         {    // Сначала удаляем все Skills
             var allSkills = _context.Skills.ToList();
             _context.Skills.RemoveRange(allSkills);
-            _context.SaveChanges(); // Сохраняем удаление Skills
+            _context.SaveChanges(); // Сохраняем изменения
         }
 
         public IEnumerable<SkillRepo> GetByNames(IEnumerable<string> names)

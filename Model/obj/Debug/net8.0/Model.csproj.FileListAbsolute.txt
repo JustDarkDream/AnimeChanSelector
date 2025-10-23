@@ -48,3 +48,5 @@ C:\Users\Nubik\Documents\IloveGit\AnimeChanSelector\Model\obj\Debug\net8.0\Model
 C:\Users\Nubik\Documents\IloveGit\AnimeChanSelector\Model\obj\Debug\net8.0\ref\Model.dll
 C:\Users\Nubik\Documents\IloveGit\AnimeChanSelector\Model\bin\Debug\net8.0\Model.runtimeconfig.json
 C:\Users\Nubik\Documents\IloveGit\AnimeChanSelector\Model\obj\Debug\net8.0\Model.genruntimeconfig.cache
+C:\Users\SeDMI\OneDrive\Рабочий стол\AnimeChanSelector\Model\bin\Debug\net8.0\Model.runtimeconfig.json
+C:\Users\SeDMI\OneDrive\Рабочий стол\AnimeChanSelector\Model\obj\Debug\net8.0\Model.genruntimeconfig.cache
