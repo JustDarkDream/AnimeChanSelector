@@ -6,12 +6,19 @@ namespace Model
     public class BourgeoisLogic
     {
         //readonly IRepository<AnimeChanRepo> repository = new EntityRepository<AnimeChanRepo>(new DataContext());
-        readonly IRepository<AnimeChanRepo> repository = new AnimeChanRepository();
+        //readonly IRepository<AnimeChanRepo> repository = new AnimeChanRepository();
+        readonly IUnitOfWork unitOfWork = new EntityUnitOfWork();
 
         ///<summary>Создает три НЕслучаных аниме-тянок</summary>
         public void CreateAnimeChan()
         {
-            repository.DeleteAll();
+            unitOfWork.AnimeChanRepos.DeleteAll();
+            unitOfWork.SkillRepos.DeleteAll();
+
+            foreach(Skills skill in Enum.GetValues(typeof(Skills)))
+            {
+                unitOfWork.SkillRepos.Create(new SkillRepo {Name = skill.ToString() });
+            }
 
             var anime = new AnimeChanRepo()
             {
@@ -21,12 +28,12 @@ namespace Model
                 Height = 165,
                 Weight = 53,
                 Size = 2,
-                Skills = new List<SkillRepo> {
-                    new SkillRepo { Name = Skills.Cleaning.ToString() },
-                    new SkillRepo { Name = Skills.Cooking.ToString() },
-                    new SkillRepo { Name = Skills.Dancing.ToString() } }
+                Skills = unitOfWork.SkillRepos.GetByNames(new[] {Skills.Cleaning.ToString(),
+                                                                 Skills.Cooking.ToString(),
+                                                                 Skills.Dancing.ToString()
+                                                                }).ToList()
             };
-            repository.Create(anime);
+            unitOfWork.AnimeChanRepos.Create(anime);
 
             anime = new AnimeChanRepo()
             {
@@ -36,12 +43,11 @@ namespace Model
                 Height = 168,
                 Weight = 51,
                 Size = 3,
-                Skills = new List<SkillRepo> {
-                    new SkillRepo { Name = DalSkills.Music.ToString() },
-                    new SkillRepo { Name = DalSkills.Dancing.ToString() },
-                    new SkillRepo { Name = DalSkills.Singing.ToString() } }
+                Skills = unitOfWork.SkillRepos.GetByNames(new[] {Skills.Cooking.ToString(),
+                                                                 Skills.Dancing.ToString()
+                                                                }).ToList()
             };
-            repository.Create(anime);
+            unitOfWork.AnimeChanRepos.Create(anime);
 
             anime = new AnimeChanRepo()
             {
@@ -51,11 +57,11 @@ namespace Model
                 Height = 159,
                 Weight = 57,
                 Size = 4,
-                Skills = new List<SkillRepo> {
-                    new SkillRepo { Name = DalSkills.Jumping.ToString() },
-                    new SkillRepo { Name = DalSkills.FireballCast.ToString() } }
+                Skills = unitOfWork.SkillRepos.GetByNames(new[] {Skills.Jumping.ToString(),
+                                                                 Skills.FireballCast.ToString()
+                                                                }).ToList()
             };
-            repository.Create(anime);
+            unitOfWork.AnimeChanRepos.Create(anime);
 
             anime = new AnimeChanRepo()
             {
@@ -65,14 +71,13 @@ namespace Model
                 Height = 158,
                 Weight = 42,
                 Size = 1,
-                Skills = new List<SkillRepo> {
-                new SkillRepo { Name = Skills.Singing.ToString() },
-                new SkillRepo { Name = Skills.Music.ToString() },
-                new SkillRepo { Name = Skills.Dancing.ToString() },
-                new SkillRepo { Name = Skills.Art.ToString() }
-    }
+                Skills = unitOfWork.SkillRepos.GetByNames(new[] {Skills.Singing.ToString(),
+                                                                 Skills.Music.ToString(),
+                                                                 Skills.Dancing.ToString(),
+                                                                 Skills.Art.ToString()
+                                                                }).ToList()
             };
-            repository.Create(anime);
+            unitOfWork.AnimeChanRepos.Create(anime);
         }
 
         ///<summary>Ищет в общем списке нужную тянку по её id</summary>
@@ -80,8 +85,7 @@ namespace Model
         /// <returns>Возвращает найденную тянку (или же null, если ничего не нашел)</returns>
         public AnimeChan FindForId(int id)
         {
-
-            return new AnimeChan(repository.ReadById(id));
+            return new AnimeChan(unitOfWork.AnimeChanRepos.ReadById(id));
         }
 
         ///<summary>Сохраняет список навыков</summary>
@@ -125,7 +129,7 @@ namespace Model
                 Skills = skills.Select(x => new SkillRepo { Id = x.Id, Name = x.Name }).ToList()
 
             };
-            repository.Create(anime);
+            //repository.Create(anime);
 
             Saves.temporaryID = anime.Id;
         }
@@ -134,7 +138,7 @@ namespace Model
         /// <param name="id">Айди, по которому удаляется тянка</param>
         public void DeleteAnimeChan(int id)
         {
-            repository.Delete(repository.ReadById(id));
+            //repository.Delete(repository.ReadById(id));
         }
 
         ///<summary>Сохраняет изменения характеристик тянки</summary>
@@ -148,7 +152,7 @@ namespace Model
         /// <param name="id">Айди тянки, у которой и сохранятся изменения</param>
         public void SaveChangeAnimeChan(string firstName, string lastName, int age, int height, int weight, int size, List<Skill> skills, int id)
         {
-            AnimeChanRepo animeChan = repository.ReadById(id);
+            AnimeChanRepo animeChan = unitOfWork.AnimeChanRepos.ReadById(id);
             animeChan.Age = age;
             animeChan.Height = height;
             animeChan.Weight = weight;
@@ -156,7 +160,7 @@ namespace Model
             animeChan.LastName = lastName;
             animeChan.Size = size;
             animeChan.Skills = skills.Select(x => new SkillRepo { Id = x.Id, Name = x.Name }).ToList();
-            repository.Update(animeChan);
+            unitOfWork.AnimeChanRepos.Update(animeChan);
             Saves.temporaryID = animeChan.Id;
         }
 
@@ -194,9 +198,9 @@ namespace Model
         /// <param name="isСonsiderAll">Учитывать ли все навыки или хотя бы один</param>
         public void FilterAnimeChanList(int ageFrom, int ageTo, int heightFrom, int heightTo, int weightFrom, int weightTo, int sizeFrom, int sizeTo, List<Skill> skills, bool isСonsiderAll)
         {
-            List<AnimeChan> list = repository.ReadAll()
-    .Select(x => new AnimeChan(x))
-    .ToList();
+            List<AnimeChan> list = unitOfWork.AnimeChanRepos.ReadAll()
+                                             .Select(x => new AnimeChan(x))
+                                             .ToList();
             Saves.filterStats.AgeFrom = ageFrom;
             Saves.filterStats.AgeTo = ageTo;
             Saves.filterStats.HeightFrom = heightFrom;
@@ -277,7 +281,7 @@ namespace Model
         }
         public IEnumerable<AnimeChan> LoadAnimeChanList()
         {
-            return repository.ReadAll()
+            return unitOfWork.AnimeChanRepos.ReadAll()
                 .Select(x => new AnimeChan(x))
                 .ToList();
         }
@@ -338,7 +342,7 @@ namespace Model
             };
 
 
-            repository.Create(animeChan);
+            //repository.Create(animeChan);
             //return animeChan;
             return new AnimeChan(animeChan);
         }
@@ -359,7 +363,7 @@ namespace Model
             string weightString = ""; //Блок текста, связанный с весом
             string sizeString = ""; //Блок текста, связанный с размером
 
-            AnimeChan animeChan = new AnimeChan(repository.ReadById(Saves.temporaryID));
+            AnimeChan animeChan = new AnimeChan(unitOfWork.AnimeChanRepos.ReadById(Saves.temporaryID));
 
             //AnimeChan animeChan = animeChanList.Where(f => f.Id == temporaryID).FirstOrDefault(); //Ищем тянку по сохраненному временному id
 
@@ -536,5 +540,5 @@ namespace Model
             }
             return str;
         }
-    }
+}
 }
