@@ -68,7 +68,7 @@ namespace ViewForms
                 {
                     int id = Convert.ToInt32(table.CurrentRow.Cells["ColumnId"].Value); //Считываем значение id этой строки
 
-                    AnimeChanCard animeChanCard = new AnimeChanCard(logic.FindForId(id), false); //Создаем новую форму
+                    AnimeChanCard animeChanCard = new AnimeChanCard(logic.FindById(id), false); //Создаем новую форму
                     if (animeChanCard.ShowDialog() == DialogResult.OK) //Если изменения сохранены, то закрывает эту форму и открывает итоговое окно
                     {
                         this.DialogResult = DialogResult.OK;
@@ -98,7 +98,7 @@ namespace ViewForms
             if (animeChanCard.ShowDialog() == DialogResult.OK) //Если изменения сохранены, то добавляет в таблицу новую тян
             {
                 int id = logic.LoadId();
-                table.Rows.Add(logic.FindForId(id).FirstName, logic.FindForId(id).LastName, logic.FindForId(id).Age, logic.FindForId(id).Id);
+                table.Rows.Add(logic.FindById(id).FirstName, logic.FindById(id).LastName, logic.FindById(id).Age, logic.FindById(id).Id);
             }
         }
 
@@ -134,14 +134,14 @@ namespace ViewForms
             {
                 int id = Convert.ToInt32(table.Rows[table.CurrentCell.RowIndex].Cells["ColumnId"].Value); //Считываем значение id этой строки
 
-                AnimeChanCard animeChanCard = new AnimeChanCard(logic.FindForId(id), true); //Создаем новую форму
+                AnimeChanCard animeChanCard = new AnimeChanCard(logic.FindById(id), true); //Создаем новую форму
                 if (animeChanCard.ShowDialog() == DialogResult.OK) //Если изменения сохранены, то находит нужную строку по id и обновляет её
                 {
                     DataGridViewRow foundRows = table.Rows.Cast<DataGridViewRow>()
                                                           .FirstOrDefault(row => Convert.ToInt32(row.Cells["ColumnId"].Value) == id);
-                    foundRows.Cells["ColumnFirstName"].Value = logic.FindForId(id).FirstName;
-                    foundRows.Cells["ColumnLastName"].Value = logic.FindForId(id).LastName;
-                    foundRows.Cells["ColumnAge"].Value = logic.FindForId(id).Age;
+                    foundRows.Cells["ColumnFirstName"].Value = logic.FindById(id).FirstName;
+                    foundRows.Cells["ColumnLastName"].Value = logic.FindById(id).LastName;
+                    foundRows.Cells["ColumnAge"].Value = logic.FindById(id).Age;
                 }
             }
             else

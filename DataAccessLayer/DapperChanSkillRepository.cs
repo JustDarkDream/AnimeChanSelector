@@ -12,13 +12,13 @@ namespace DataAccessLayer
 {
     public class DapperChanSkillRepository : IChanSkillRepository
     {
-        private readonly string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Nubik\Documents\IloveGit\AnimeChanSelector\DataAccessLayer\AnimeChanDataBase.mdf;Integrated Security=True";
+        private readonly string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\SeDMI\OneDrive\Рабочий стол\AnimeChanSelector\DataAccessLayer\AnimeChanDataBase.mdf;Integrated Security=True";
 
         private IDbConnection CreateConnection() => new SqlConnection(connectionString);
 
         public void AddSkillToChan(int chanId, int skillId)
         {
-            const string sql = "INSERT INTO SkillChans (ChanId, SkillId) VALUES (@chanId, @skillId)";
+            const string sql = "INSERT INTO SkillChans (AnimeChanRepoId, SkillId) VALUES (@chanId, @skillId)";
             using (var conn = CreateConnection())
             {
                 conn.Execute(sql, new { chanId, skillId });
@@ -27,7 +27,7 @@ namespace DataAccessLayer
 
             public void RemoveSkillFromChan(int chanId, int skillId)
         {
-            const string sql = "DELETE FROM ChanSkills WHERE ChanId = @chanId AND SkillId = @skillId";
+            const string sql = "DELETE FROM SkillChans WHERE ChanId = @chanId AND SkillId = @skillId";
             using (var conn = CreateConnection())
             {
                 conn.Execute(sql, new { chanId, skillId });
@@ -36,7 +36,7 @@ namespace DataAccessLayer
 
         public void RemoveAllSkillsFromChan(int chanId)
         {
-            const string sql = "DELETE FROM ChanSkills WHERE ChanId = @chanId";
+            const string sql = "DELETE FROM SkillChans WHERE ChanId = @chanId";
             using (var conn = CreateConnection())
             {
                 conn.Execute(sql, new { chanId });
@@ -45,7 +45,7 @@ namespace DataAccessLayer
 
         public void RemoveAllChansFromSkill(int skillId)
         {
-            const string sql = "DELETE FROM ChanSkills WHERE SkillId = @skillId";
+            const string sql = "DELETE FROM SkillChans WHERE SkillId = @skillId";
             using (var conn = CreateConnection())
             {
                 conn.Execute(sql, new { skillId });
@@ -56,8 +56,8 @@ namespace DataAccessLayer
         {
             const string sql = @"
             SELECT s.* FROM Skills s
-            INNER JOIN ChanSkills cs ON s.Id = cs.SkillId
-            WHERE cs.ChanId = @chanId";
+            INNER JOIN SkillChans cs ON s.Id = cs.SkillId
+            WHERE cs.AnimeChanRepoId = @chanId";
             using (var conn = CreateConnection())
             {
                 return conn.Query<SkillRepo>(sql, new { chanId }).ToList();
@@ -68,7 +68,7 @@ namespace DataAccessLayer
         {
             const string sql = @"
             SELECT c.* FROM Chan c
-            INNER JOIN ChanSkills cs ON c.Id = cs.ChanId
+            INNER JOIN SkillChans cs ON c.Id = cs.ChanId
             WHERE cs.SkillId = @skillId";
 
             using (var conn = CreateConnection())

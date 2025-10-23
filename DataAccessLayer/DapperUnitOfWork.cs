@@ -10,12 +10,14 @@ namespace DataAccessLayer
     {
         public IRepository<AnimeChanRepo> AnimeChanRepos { get; }
         public ISkillRepository SkillRepos { get; }
+        public IChanSkillRepository ChanSkillRepos { get; }
 
         public DapperUnitOfWork()
         {
             var context = new DataContext();
             AnimeChanRepos = new DapperAnimeChanRepository();
             SkillRepos = new DapperSkillRepository();
+            ChanSkillRepos = new DapperChanSkillRepository();
         }
     }
 }

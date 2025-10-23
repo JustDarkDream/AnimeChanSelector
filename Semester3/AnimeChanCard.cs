@@ -23,12 +23,9 @@ namespace ViewForms
 
             listView1.Clear();
 
-            foreach (var skill in animeChan.Skills) //Перечисляет навыки тянки
+            foreach (var skill in logic.GetChanSkills(animeChanId)) //Перечисляет навыки тянки
             {
-                ListViewItem item = new ListViewItem(skill.Name);
-                item.Tag = skill;
-
-                listView1.Items.Add(item);
+                this.listView1.Items.Add(skill.Name);
             }
             //Редактирует состояние кнопок в зависимости от выбора
             addChan.Visible = false;
@@ -109,7 +106,6 @@ namespace ViewForms
                 foreach (Skill skill2 in skills) //Отображаем в ListView сохраненные навыки с той формы
                 {
                     ListViewItem newItem = new ListViewItem(skill2.Name);
-                    newItem.Tag = skill2;
                     listView1.Items.Add(newItem);
                 }
             }
@@ -256,6 +252,11 @@ namespace ViewForms
         }
 
         private void AnimeChanCard_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

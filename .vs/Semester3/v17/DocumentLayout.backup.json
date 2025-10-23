@@ -1,14 +1,77 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\",
+  "WorkspaceRootPath": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\dataaccesslayer\\entityanimechanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|c:\\users\\sedmi\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\animechanselector\\semester3\\animechancard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|solutionrelative:semester3\\animechancard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|c:\\users\\sedmi\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\animechanselector\\semester3\\skillssetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|solutionrelative:semester3\\skillssetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\semester3\\skillssetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|solutionrelative:semester3\\skillssetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6BCE398-55B5-4595-8176-B292AB1819ED}|Model\\Model.csproj|c:\\users\\sedmi\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\animechanselector\\model\\bourgeoislogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6BCE398-55B5-4595-8176-B292AB1819ED}|Model\\Model.csproj|solutionrelative:model\\bourgeoislogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\sedmi\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\animechanselector\\dataaccesslayer\\dapperchanskillrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\dapperchanskillrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\sedmi\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\animechanselector\\dataaccesslayer\\dapperunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\dapperunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\sedmi\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\animechanselector\\dataaccesslayer\\ichanskillrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\ichanskillrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\semester3\\animechancard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|solutionrelative:semester3\\animechancard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\sedmi\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\animechanselector\\dataaccesslayer\\dapperanimechanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\dapperanimechanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\sedmi\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\animechanselector\\dataaccesslayer\\animechanrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\animechanrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\sedmi\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\animechanselector\\dataaccesslayer\\dapperskillrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\dapperskillrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\sedmi\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\animechanselector\\dataaccesslayer\\iskillrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\iskillrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6BCE398-55B5-4595-8176-B292AB1819ED}|Model\\Model.csproj|c:\\users\\sedmi\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\animechanselector\\model\\skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6BCE398-55B5-4595-8176-B292AB1819ED}|Model\\Model.csproj|solutionrelative:model\\skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/C__USERS_SEDMI_ONEDRIVE_\u0420\u0410\u0411\u041E\u0427\u0418\u0419_\u0421\u0422\u041E\u041B_ANIMECHANSELECTOR_DATAACCESSLAYER_ANIMECHANDATABASE.MDF/True/SqlTable/dbo.SkillChans.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\sedmi\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\animechanselector\\dataaccesslayer\\entityskillrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entityskillrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\sedmi\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\animechanselector\\dataaccesslayer\\entityanimechanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entityanimechanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6BCE398-55B5-4595-8176-B292AB1819ED}|Model\\Model.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\model\\bourgeoislogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6BCE398-55B5-4595-8176-B292AB1819ED}|Model\\Model.csproj|solutionrelative:model\\bourgeoislogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\sedmi\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\animechanselector\\dataaccesslayer\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\sedmi\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\animechanselector\\dataaccesslayer\\skillrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\skillrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_NUBIK_DOCUMENTS_ILOVEGIT_ANIMECHANSELECTOR_DATAACCESSLAYER_ANIMECHANDATABASE.MDF/True/SqlTable/dbo.SkillChans.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
@@ -17,152 +80,101 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_NUBIK_DOCUMENTS_ILOVEGIT_ANIMECHANSELECTOR_DATAACCESSLAYER_ANIMECHANDATABASE.MDF/True/SqlTable/dbo.Skills.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_NUBIK_DOCUMENTS_ILOVEGIT_ANIMECHANSELECTOR_DATAACCESSLAYER_ANIMECHANDATABASE.MDF/True/SqlTable/dbo.AnimeChans.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\dataaccesslayer\\entityskillrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entityskillrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\dataaccesslayer\\entityunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\sedmi\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\animechanselector\\dataaccesslayer\\entityunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entityunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\dataaccesslayer\\enumskillsrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\sedmi\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\animechanselector\\dataaccesslayer\\enumskillsrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\enumskillsrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\dataaccesslayer\\ichanskillrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\ichanskillrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\dataaccesslayer\\idomainobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\sedmi\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\animechanselector\\dataaccesslayer\\idomainobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\idomainobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\dataaccesslayer\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\sedmi\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\animechanselector\\dataaccesslayer\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\dataaccesslayer\\iskillrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\iskillrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\dataaccesslayer\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\sedmi\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\animechanselector\\dataaccesslayer\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\dataaccesslayer\\skillrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\skillrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\9.0.306\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\dataaccesslayer\\dapperskillrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\dapperskillrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\dataaccesslayer\\dapperchanskillrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\dapperchanskillrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\dataaccesslayer\\dapperanimechanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\dapperanimechanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\dataaccesslayer\\animechanrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\animechanrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\dataaccesslayer\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\dataaccesslayer\\dataaccesslayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\sedmi\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\animechanselector\\dataaccesslayer\\dataaccesslayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\dataaccesslayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\DataAccessLayer\\DapperRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\DataAccessLayer\\DapperRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DataAccessLayer\\DapperRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6BCE398-55B5-4595-8176-B292AB1819ED}|Model\\Model.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\model\\skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6BCE398-55B5-4595-8176-B292AB1819ED}|Model\\Model.csproj|solutionrelative:model\\skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F6BCE398-55B5-4595-8176-B292AB1819ED}|Model\\Model.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\model\\saves.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F6BCE398-55B5-4595-8176-B292AB1819ED}|Model\\Model.csproj|c:\\users\\sedmi\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\animechanselector\\model\\saves.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F6BCE398-55B5-4595-8176-B292AB1819ED}|Model\\Model.csproj|solutionrelative:model\\saves.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\semester3\\registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\semester3\\registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|solutionrelative:semester3\\registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\semester3\\animechancard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|solutionrelative:semester3\\animechancard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\semester3\\conclution.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\semester3\\conclution.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|solutionrelative:semester3\\conclution.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\semester3\\filterchan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\semester3\\filterchan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|solutionrelative:semester3\\filterchan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\semester3\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\semester3\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|solutionrelative:semester3\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\semester3\\skillssetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|solutionrelative:semester3\\skillssetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\semester3\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|c:\\users\\sedmi\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\animechanselector\\semester3\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|solutionrelative:semester3\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\semester3\\errorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\semester3\\errorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|solutionrelative:semester3\\errorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\semester3\\registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|c:\\users\\sedmi\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\animechanselector\\semester3\\registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|solutionrelative:semester3\\registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\semester3\\filterchan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|c:\\users\\sedmi\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\animechanselector\\semester3\\filterchan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|solutionrelative:semester3\\filterchan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6BCE398-55B5-4595-8176-B292AB1819ED}|Model\\Model.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\model\\mainperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F6BCE398-55B5-4595-8176-B292AB1819ED}|Model\\Model.csproj|c:\\users\\sedmi\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\animechanselector\\model\\mainperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F6BCE398-55B5-4595-8176-B292AB1819ED}|Model\\Model.csproj|solutionrelative:model\\mainperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6BCE398-55B5-4595-8176-B292AB1819ED}|Model\\Model.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\model\\animechan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F6BCE398-55B5-4595-8176-B292AB1819ED}|Model\\Model.csproj|c:\\users\\sedmi\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\animechanselector\\model\\animechan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F6BCE398-55B5-4595-8176-B292AB1819ED}|Model\\Model.csproj|solutionrelative:model\\animechan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6BCE398-55B5-4595-8176-B292AB1819ED}|Model\\Model.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\model\\animechanname.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F6BCE398-55B5-4595-8176-B292AB1819ED}|Model\\Model.csproj|c:\\users\\sedmi\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\animechanselector\\model\\animechanname.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F6BCE398-55B5-4595-8176-B292AB1819ED}|Model\\Model.csproj|solutionrelative:model\\animechanname.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6BCE398-55B5-4595-8176-B292AB1819ED}|Model\\Model.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\model\\enumskills.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F6BCE398-55B5-4595-8176-B292AB1819ED}|Model\\Model.csproj|c:\\users\\sedmi\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\animechanselector\\model\\enumskills.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F6BCE398-55B5-4595-8176-B292AB1819ED}|Model\\Model.csproj|solutionrelative:model\\enumskills.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6BCE398-55B5-4595-8176-B292AB1819ED}|Model\\Model.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\model\\filterstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F6BCE398-55B5-4595-8176-B292AB1819ED}|Model\\Model.csproj|c:\\users\\sedmi\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\animechanselector\\model\\filterstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F6BCE398-55B5-4595-8176-B292AB1819ED}|Model\\Model.csproj|solutionrelative:model\\filterstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\semester3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|c:\\users\\sedmi\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\animechanselector\\semester3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|solutionrelative:semester3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\DataAccessLayer\\EntityRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DataAccessLayer\\EntityRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\DataAccessLayer\\EntityRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\dataaccesslayer\\migrations\\20251023141739_initialfix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\sedmi\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\animechanselector\\dataaccesslayer\\migrations\\20251023141739_initialfix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\migrations\\20251023141739_initialfix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -173,262 +185,94 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 10,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "dbo.SkillChans [\u0414\u0430\u043D\u043D\u044B\u0435]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_NUBIK_DOCUMENTS_ILOVEGIT_ANIMECHANSELECTOR_DATAACCESSLAYER_ANIMECHANDATABASE.MDF/True/SqlTable/dbo.SkillChans.sql",
-              "ToolTip": "dbo.SkillChans [\u0414\u0430\u043D\u043D\u044B\u0435]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-10-23T16:33:23.731Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "IDoMainObject.cs",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\DataAccessLayer\\IDoMainObject.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\IDoMainObject.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\DataAccessLayer\\IDoMainObject.cs",
-              "RelativeToolTip": "DataAccessLayer\\IDoMainObject.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T14:27:52.172Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IChanSkillRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\DataAccessLayer\\IChanSkillRepository.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\IChanSkillRepository.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\DataAccessLayer\\IChanSkillRepository.cs",
-              "RelativeToolTip": "DataAccessLayer\\IChanSkillRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T12:44:26.658Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "EnumSkillsRepo.cs",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\DataAccessLayer\\EnumSkillsRepo.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\EnumSkillsRepo.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\DataAccessLayer\\EnumSkillsRepo.cs",
-              "RelativeToolTip": "DataAccessLayer\\EnumSkillsRepo.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAiwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T05:18:40.774Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "EntityUnitOfWork.cs",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\DataAccessLayer\\EntityUnitOfWork.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\EntityUnitOfWork.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\DataAccessLayer\\EntityUnitOfWork.cs",
-              "RelativeToolTip": "DataAccessLayer\\EntityUnitOfWork.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T15:25:07.246Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "EntitySkillRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\DataAccessLayer\\EntitySkillRepository.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\EntitySkillRepository.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\DataAccessLayer\\EntitySkillRepository.cs",
-              "RelativeToolTip": "DataAccessLayer\\EntitySkillRepository.cs",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAiwG4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T15:31:26.09Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "SkillsSetting.cs",
+              "DocumentMoniker": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\Semester3\\SkillsSetting.cs",
+              "RelativeDocumentMoniker": "Semester3\\SkillsSetting.cs",
+              "ToolTip": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\Semester3\\SkillsSetting.cs",
+              "RelativeToolTip": "Semester3\\SkillsSetting.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T21:18:04.808Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DapperSkillRepository.cs",
+              "DocumentMoniker": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\DataAccessLayer\\DapperSkillRepository.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\DapperSkillRepository.cs",
+              "ToolTip": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\DataAccessLayer\\DapperSkillRepository.cs",
+              "RelativeToolTip": "DataAccessLayer\\DapperSkillRepository.cs",
+              "ViewState": "AgIAAJEAAAAAAAAAAAAIwKgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T12:18:50.803Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DapperUnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\DataAccessLayer\\DapperUnitOfWork.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\DapperUnitOfWork.cs",
+              "ToolTip": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\DataAccessLayer\\DapperUnitOfWork.cs",
+              "RelativeToolTip": "DataAccessLayer\\DapperUnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T17:22:33.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "EntitySkillRepository.cs",
+              "DocumentMoniker": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\DataAccessLayer\\EntitySkillRepository.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\EntitySkillRepository.cs",
+              "ToolTip": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\DataAccessLayer\\EntitySkillRepository.cs",
+              "RelativeToolTip": "DataAccessLayer\\EntitySkillRepository.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAADwvzkAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T15:31:26.09Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DataContext.cs",
+              "DocumentMoniker": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\DataAccessLayer\\DataContext.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\DataContext.cs",
+              "ToolTip": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\DataAccessLayer\\DataContext.cs",
+              "RelativeToolTip": "DataAccessLayer\\DataContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAACGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T05:18:42.18Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "BourgeoisLogic.cs",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Model\\BourgeoisLogic.cs",
+              "DocumentMoniker": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\Model\\BourgeoisLogic.cs",
               "RelativeDocumentMoniker": "Model\\BourgeoisLogic.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Model\\BourgeoisLogic.cs*",
-              "RelativeToolTip": "Model\\BourgeoisLogic.cs*",
-              "ViewState": "AgIAAIwAAAAAAAAAAAAQwIQAAAAnAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\Model\\BourgeoisLogic.cs",
+              "RelativeToolTip": "Model\\BourgeoisLogic.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAIAwwG8AAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-21T04:48:42.831Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "EntityAnimeChanRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\DataAccessLayer\\EntityAnimeChanRepository.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\EntityAnimeChanRepository.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\DataAccessLayer\\EntityAnimeChanRepository.cs*",
-              "RelativeToolTip": "DataAccessLayer\\EntityAnimeChanRepository.cs*",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAAwEkAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T15:31:51.416Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "IRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\DataAccessLayer\\IRepository.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\IRepository.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\DataAccessLayer\\IRepository.cs",
-              "RelativeToolTip": "DataAccessLayer\\IRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T05:18:24.072Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "dbo.Skills [\u0414\u0430\u043D\u043D\u044B\u0435]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_NUBIK_DOCUMENTS_ILOVEGIT_ANIMECHANSELECTOR_DATAACCESSLAYER_ANIMECHANDATABASE.MDF/True/SqlTable/dbo.Skills.sql",
-              "ToolTip": "dbo.Skills [\u0414\u0430\u043D\u043D\u044B\u0435]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-10-23T16:29:46.384Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "dbo.AnimeChans [\u0414\u0430\u043D\u043D\u044B\u0435]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_NUBIK_DOCUMENTS_ILOVEGIT_ANIMECHANSELECTOR_DATAACCESSLAYER_ANIMECHANDATABASE.MDF/True/SqlTable/dbo.AnimeChans.sql",
-              "ToolTip": "dbo.AnimeChans [\u0414\u0430\u043D\u043D\u044B\u0435]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-10-23T16:29:40.759Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ISkillRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\DataAccessLayer\\ISkillRepository.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\ISkillRepository.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\DataAccessLayer\\ISkillRepository.cs",
-              "RelativeToolTip": "DataAccessLayer\\ISkillRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T15:35:55.904Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "IUnitOfWork.cs",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\DataAccessLayer\\IUnitOfWork.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\IUnitOfWork.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\DataAccessLayer\\IUnitOfWork.cs",
-              "RelativeToolTip": "DataAccessLayer\\IUnitOfWork.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T15:35:53.579Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "SkillRepo.cs",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\DataAccessLayer\\SkillRepo.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\SkillRepo.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\DataAccessLayer\\SkillRepo.cs",
-              "RelativeToolTip": "DataAccessLayer\\SkillRepo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T05:18:36.614Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Microsoft.PackageDependencyResolution.targets",
-              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.306\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.306\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
-              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\9.0.306\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.306\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
-              "ViewState": "AgIAAPUAAAAAAAAAAADwvwkBAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2025-10-23T16:19:28.429Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "DapperChanSkillRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\DataAccessLayer\\DapperChanSkillRepository.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\DapperChanSkillRepository.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\DataAccessLayer\\DapperChanSkillRepository.cs",
-              "RelativeToolTip": "DataAccessLayer\\DapperChanSkillRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T15:40:04.178Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "DapperAnimeChanRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\DataAccessLayer\\DapperAnimeChanRepository.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\DapperAnimeChanRepository.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\DataAccessLayer\\DapperAnimeChanRepository.cs",
-              "RelativeToolTip": "DataAccessLayer\\DapperAnimeChanRepository.cs",
-              "ViewState": "AgIAAKIAAAAAAAAAAAAQwAYAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T12:18:22.91Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "AnimeChanRepo.cs",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\DataAccessLayer\\AnimeChanRepo.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\AnimeChanRepo.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\DataAccessLayer\\AnimeChanRepo.cs",
-              "RelativeToolTip": "DataAccessLayer\\AnimeChanRepo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T14:28:28.633Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "DapperSkillRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\DataAccessLayer\\DapperSkillRepository.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\DapperSkillRepository.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\DataAccessLayer\\DapperSkillRepository.cs",
-              "RelativeToolTip": "DataAccessLayer\\DapperSkillRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T12:18:50.803Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "DataContext.cs",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\DataAccessLayer\\DataContext.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\DataContext.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\DataAccessLayer\\DataContext.cs",
-              "RelativeToolTip": "DataAccessLayer\\DataContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T05:18:42.18Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
               "Title": "Skill.cs",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Model\\Skill.cs",
+              "DocumentMoniker": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\Model\\Skill.cs",
               "RelativeDocumentMoniker": "Model\\Skill.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Model\\Skill.cs",
+              "ToolTip": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\Model\\Skill.cs",
               "RelativeToolTip": "Model\\Skill.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -436,24 +280,245 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "DataAccessLayer.csproj",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\DataAccessLayer\\DataAccessLayer.csproj",
-              "RelativeDocumentMoniker": "DataAccessLayer\\DataAccessLayer.csproj",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\DataAccessLayer\\DataAccessLayer.csproj",
-              "RelativeToolTip": "DataAccessLayer\\DataAccessLayer.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-23T14:06:33.621Z",
+              "DocumentIndex": 11,
+              "Title": "ISkillRepository.cs",
+              "DocumentMoniker": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\DataAccessLayer\\ISkillRepository.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\ISkillRepository.cs",
+              "ToolTip": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\DataAccessLayer\\ISkillRepository.cs",
+              "RelativeToolTip": "DataAccessLayer\\ISkillRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAswAoAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T15:35:55.904Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IChanSkillRepository.cs",
+              "DocumentMoniker": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\DataAccessLayer\\IChanSkillRepository.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\IChanSkillRepository.cs",
+              "ToolTip": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\DataAccessLayer\\IChanSkillRepository.cs",
+              "RelativeToolTip": "DataAccessLayer\\IChanSkillRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T12:44:26.658Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 0,
+              "Title": "AnimeChanCard.cs",
+              "DocumentMoniker": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\Semester3\\AnimeChanCard.cs",
+              "RelativeDocumentMoniker": "Semester3\\AnimeChanCard.cs",
+              "ToolTip": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\Semester3\\AnimeChanCard.cs",
+              "RelativeToolTip": "Semester3\\AnimeChanCard.cs",
+              "ViewState": "AgIAANAAAAAAAAAAAAAiwFUAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T21:09:27.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DapperChanSkillRepository.cs",
+              "DocumentMoniker": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\DataAccessLayer\\DapperChanSkillRepository.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\DapperChanSkillRepository.cs",
+              "ToolTip": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\DataAccessLayer\\DapperChanSkillRepository.cs",
+              "RelativeToolTip": "DataAccessLayer\\DapperChanSkillRepository.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAowDcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T15:40:04.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SkillsSetting.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentMoniker": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\Semester3\\SkillsSetting.cs",
+              "RelativeDocumentMoniker": "Semester3\\SkillsSetting.cs",
+              "ToolTip": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\Semester3\\SkillsSetting.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "RelativeToolTip": "Semester3\\SkillsSetting.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T04:06:08.738Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DapperAnimeChanRepository.cs",
+              "DocumentMoniker": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\DataAccessLayer\\DapperAnimeChanRepository.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\DapperAnimeChanRepository.cs",
+              "ToolTip": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\DataAccessLayer\\DapperAnimeChanRepository.cs",
+              "RelativeToolTip": "DataAccessLayer\\DapperAnimeChanRepository.cs",
+              "ViewState": "AgIAAIgAAAAAAAAAAADwvyUAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T12:18:22.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AnimeChanCard.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentMoniker": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\Semester3\\AnimeChanCard.cs",
+              "RelativeDocumentMoniker": "Semester3\\AnimeChanCard.cs",
+              "ToolTip": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\Semester3\\AnimeChanCard.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "RelativeToolTip": "Semester3\\AnimeChanCard.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T04:04:53.181Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AnimeChanRepo.cs",
+              "DocumentMoniker": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\DataAccessLayer\\AnimeChanRepo.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\AnimeChanRepo.cs",
+              "ToolTip": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\DataAccessLayer\\AnimeChanRepo.cs",
+              "RelativeToolTip": "DataAccessLayer\\AnimeChanRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T14:28:28.633Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\DataAccessLayer\\IRepository.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\IRepository.cs",
+              "ToolTip": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\DataAccessLayer\\IRepository.cs",
+              "RelativeToolTip": "DataAccessLayer\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T05:18:24.072Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "dbo.SkillChans.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/C__USERS_SEDMI_ONEDRIVE_\u0420\u0410\u0411\u041E\u0427\u0418\u0419_\u0421\u0422\u041E\u041B_ANIMECHANSELECTOR_DATAACCESSLAYER_ANIMECHANDATABASE.MDF/True/SqlTable/dbo.SkillChans.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/C__USERS_SEDMI_ONEDRIVE_\u0420\u0410\u0411\u041E\u0427\u0418\u0419_\u0421\u0422\u041E\u041B_ANIMECHANSELECTOR_DATAACCESSLAYER_ANIMECHANDATABASE.MDF/True/SqlTable/dbo.SkillChans.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-10-23T20:37:02.063Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "EntityAnimeChanRepository.cs",
+              "DocumentMoniker": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\DataAccessLayer\\EntityAnimeChanRepository.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\EntityAnimeChanRepository.cs",
+              "ToolTip": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\DataAccessLayer\\EntityAnimeChanRepository.cs",
+              "RelativeToolTip": "DataAccessLayer\\EntityAnimeChanRepository.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAcwGcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T15:31:51.416Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "EntityUnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\DataAccessLayer\\EntityUnitOfWork.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\EntityUnitOfWork.cs",
+              "ToolTip": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\DataAccessLayer\\EntityUnitOfWork.cs",
+              "RelativeToolTip": "DataAccessLayer\\EntityUnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T15:25:07.246Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "SkillRepo.cs",
+              "DocumentMoniker": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\DataAccessLayer\\SkillRepo.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\SkillRepo.cs",
+              "ToolTip": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\DataAccessLayer\\SkillRepo.cs",
+              "RelativeToolTip": "DataAccessLayer\\SkillRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T05:18:36.614Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "EnumSkillsRepo.cs",
+              "DocumentMoniker": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\DataAccessLayer\\EnumSkillsRepo.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\EnumSkillsRepo.cs",
+              "ToolTip": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\DataAccessLayer\\EnumSkillsRepo.cs",
+              "RelativeToolTip": "DataAccessLayer\\EnumSkillsRepo.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAiwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T05:18:40.774Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "IDomainObject.cs",
+              "DocumentMoniker": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\DataAccessLayer\\IDomainObject.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\IDomainObject.cs",
+              "ToolTip": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\DataAccessLayer\\IDomainObject.cs",
+              "RelativeToolTip": "DataAccessLayer\\IDomainObject.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T14:27:52.172Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "dbo.SkillChans.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_NUBIK_DOCUMENTS_ILOVEGIT_ANIMECHANSELECTOR_DATAACCESSLAYER_ANIMECHANDATABASE.MDF/True/SqlTable/dbo.SkillChans.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_NUBIK_DOCUMENTS_ILOVEGIT_ANIMECHANSELECTOR_DATAACCESSLAYER_ANIMECHANDATABASE.MDF/True/SqlTable/dbo.SkillChans.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-10-23T16:33:23.731Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "dbo.Skills.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_NUBIK_DOCUMENTS_ILOVEGIT_ANIMECHANSELECTOR_DATAACCESSLAYER_ANIMECHANDATABASE.MDF/True/SqlTable/dbo.Skills.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_NUBIK_DOCUMENTS_ILOVEGIT_ANIMECHANSELECTOR_DATAACCESSLAYER_ANIMECHANDATABASE.MDF/True/SqlTable/dbo.Skills.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-10-23T16:29:46.384Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\DataAccessLayer\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\IUnitOfWork.cs",
+              "ToolTip": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\DataAccessLayer\\IUnitOfWork.cs",
+              "RelativeToolTip": "DataAccessLayer\\IUnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T15:35:53.579Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Microsoft.PackageDependencyResolution.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.306\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.306\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\9.0.306\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.306\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-10-23T16:19:28.429Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "DataAccessLayer.csproj",
+              "DocumentMoniker": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\DataAccessLayer\\DataAccessLayer.csproj",
+              "RelativeDocumentMoniker": "DataAccessLayer\\DataAccessLayer.csproj",
+              "ToolTip": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\DataAccessLayer\\DataAccessLayer.csproj",
+              "RelativeToolTip": "DataAccessLayer\\DataAccessLayer.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-23T14:06:33.621Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
               "Title": "20251023141739_InitialFix.cs",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\DataAccessLayer\\Migrations\\20251023141739_InitialFix.cs",
+              "DocumentMoniker": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\DataAccessLayer\\Migrations\\20251023141739_InitialFix.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Migrations\\20251023141739_InitialFix.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\DataAccessLayer\\Migrations\\20251023141739_InitialFix.cs",
+              "ToolTip": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\DataAccessLayer\\Migrations\\20251023141739_InitialFix.cs",
               "RelativeToolTip": "DataAccessLayer\\Migrations\\20251023141739_InitialFix.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -461,22 +526,22 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 43,
               "Title": "EntityRepository.cs",
               "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\DataAccessLayer\\EntityRepository.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\EntityRepository.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\DataAccessLayer\\EntityRepository.cs",
               "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\DataAccessLayer\\EntityRepository.cs",
-              "RelativeToolTip": "DataAccessLayer\\EntityRepository.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\DataAccessLayer\\EntityRepository.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-21T05:19:39.476Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 28,
               "Title": "Saves.cs",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Model\\Saves.cs",
+              "DocumentMoniker": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\Model\\Saves.cs",
               "RelativeDocumentMoniker": "Model\\Saves.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Model\\Saves.cs",
+              "ToolTip": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\Model\\Saves.cs",
               "RelativeToolTip": "Model\\Saves.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -484,33 +549,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 27,
               "Title": "DapperRepository.cs",
               "DocumentMoniker": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\DataAccessLayer\\DapperRepository.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\DataAccessLayer\\DapperRepository.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\DapperRepository.cs",
               "ToolTip": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\DataAccessLayer\\DapperRepository.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\DataAccessLayer\\DapperRepository.cs",
+              "RelativeToolTip": "DataAccessLayer\\DapperRepository.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-21T05:19:01.585Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Registration.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\Registration.cs",
+              "DocumentIndex": 29,
+              "Title": "Registration.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentMoniker": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\Semester3\\Registration.cs",
               "RelativeDocumentMoniker": "Semester3\\Registration.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\Registration.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "Semester3\\Registration.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "ToolTip": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\Semester3\\Registration.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "RelativeToolTip": "Semester3\\Registration.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-21T04:06:00.214Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 33,
               "Title": "MainForm.cs",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\Semester3\\MainForm.cs",
               "RelativeDocumentMoniker": "Semester3\\MainForm.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\MainForm.cs",
+              "ToolTip": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\Semester3\\MainForm.cs",
               "RelativeToolTip": "Semester3\\MainForm.cs",
               "ViewState": "AgIAAMsAAAAAAAAAAAAEwN8AAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -519,78 +584,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "AnimeChanCard.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\AnimeChanCard.cs",
-              "RelativeDocumentMoniker": "Semester3\\AnimeChanCard.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\AnimeChanCard.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "Semester3\\AnimeChanCard.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T04:04:53.181Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "Conclution.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\Conclution.cs",
+              "DocumentIndex": 30,
+              "Title": "Conclution.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentMoniker": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\Semester3\\Conclution.cs",
               "RelativeDocumentMoniker": "Semester3\\Conclution.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\Conclution.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "Semester3\\Conclution.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "ToolTip": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\Semester3\\Conclution.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "RelativeToolTip": "Semester3\\Conclution.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-21T04:05:50.68Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "FilterChan.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\FilterChan.cs",
+              "DocumentIndex": 31,
+              "Title": "FilterChan.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentMoniker": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\Semester3\\FilterChan.cs",
               "RelativeDocumentMoniker": "Semester3\\FilterChan.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\FilterChan.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "Semester3\\FilterChan.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "ToolTip": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\Semester3\\FilterChan.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "RelativeToolTip": "Semester3\\FilterChan.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-21T04:05:56.372Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "SkillsSetting.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\SkillsSetting.cs",
-              "RelativeDocumentMoniker": "Semester3\\SkillsSetting.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\SkillsSetting.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "Semester3\\SkillsSetting.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T04:06:08.738Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "MainForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\MainForm.cs",
+              "DocumentIndex": 32,
+              "Title": "MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentMoniker": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\Semester3\\MainForm.cs",
               "RelativeDocumentMoniker": "Semester3\\MainForm.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\MainForm.cs [Design]",
-              "RelativeToolTip": "Semester3\\MainForm.cs [Design]",
+              "ToolTip": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\Semester3\\MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "RelativeToolTip": "Semester3\\MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T17:52:26.262Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-10-22T17:52:26.262Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "ErrorForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\ErrorForm.cs",
+              "DocumentIndex": 34,
+              "Title": "ErrorForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentMoniker": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\Semester3\\ErrorForm.cs",
               "RelativeDocumentMoniker": "Semester3\\ErrorForm.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\ErrorForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "Semester3\\ErrorForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "ToolTip": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\Semester3\\ErrorForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "RelativeToolTip": "Semester3\\ErrorForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-21T04:05:54.054Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 39,
               "Title": "AnimeChanName.cs",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Model\\AnimeChanName.cs",
+              "DocumentMoniker": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\Model\\AnimeChanName.cs",
               "RelativeDocumentMoniker": "Model\\AnimeChanName.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Model\\AnimeChanName.cs",
+              "ToolTip": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\Model\\AnimeChanName.cs",
               "RelativeToolTip": "Model\\AnimeChanName.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -598,11 +640,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 40,
               "Title": "EnumSkills.cs",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Model\\EnumSkills.cs",
+              "DocumentMoniker": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\Model\\EnumSkills.cs",
               "RelativeDocumentMoniker": "Model\\EnumSkills.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Model\\EnumSkills.cs",
+              "ToolTip": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\Model\\EnumSkills.cs",
               "RelativeToolTip": "Model\\EnumSkills.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAkwAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -610,11 +652,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 38,
               "Title": "AnimeChan.cs",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Model\\AnimeChan.cs",
+              "DocumentMoniker": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\Model\\AnimeChan.cs",
               "RelativeDocumentMoniker": "Model\\AnimeChan.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Model\\AnimeChan.cs",
+              "ToolTip": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\Model\\AnimeChan.cs",
               "RelativeToolTip": "Model\\AnimeChan.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -622,11 +664,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 35,
               "Title": "Registration.cs",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\Registration.cs",
+              "DocumentMoniker": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\Semester3\\Registration.cs",
               "RelativeDocumentMoniker": "Semester3\\Registration.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\Registration.cs",
+              "ToolTip": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\Semester3\\Registration.cs",
               "RelativeToolTip": "Semester3\\Registration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAABrAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -634,11 +676,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 36,
               "Title": "FilterChan.cs",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\FilterChan.cs",
+              "DocumentMoniker": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\Semester3\\FilterChan.cs",
               "RelativeDocumentMoniker": "Semester3\\FilterChan.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\FilterChan.cs",
+              "ToolTip": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\Semester3\\FilterChan.cs",
               "RelativeToolTip": "Semester3\\FilterChan.cs",
               "ViewState": "AgIAADwAAAAAAAAAAAAEwLwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -646,11 +688,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 37,
               "Title": "MainPerson.cs",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Model\\MainPerson.cs",
+              "DocumentMoniker": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\Model\\MainPerson.cs",
               "RelativeDocumentMoniker": "Model\\MainPerson.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Model\\MainPerson.cs",
+              "ToolTip": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\Model\\MainPerson.cs",
               "RelativeToolTip": "Model\\MainPerson.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -658,11 +700,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 41,
               "Title": "FilterStats.cs",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Model\\FilterStats.cs",
+              "DocumentMoniker": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\Model\\FilterStats.cs",
               "RelativeDocumentMoniker": "Model\\FilterStats.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Model\\FilterStats.cs",
+              "ToolTip": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\Model\\FilterStats.cs",
               "RelativeToolTip": "Model\\FilterStats.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -670,11 +712,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 42,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\Semester3\\Program.cs",
               "RelativeDocumentMoniker": "Semester3\\Program.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\Program.cs",
+              "ToolTip": "C:\\Users\\SeDMI\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\AnimeChanSelector\\Semester3\\Program.cs",
               "RelativeToolTip": "Semester3\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

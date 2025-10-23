@@ -179,7 +179,7 @@ anime.Id + "|| ".ToString().PadLeft(40 - anime.Id.ToString().Length, ' ')); //П
                             Console.WriteLine("\nВведите ID Тянки, которую хотите редактировать");
                             if (int.TryParse(Console.ReadLine(), out int id))
                             {
-                                AnimeChan animeChan = logic.FindForId(id); //Проверяет на существование тян с таким id
+                                AnimeChan animeChan = logic.FindById(id); //Проверяет на существование тян с таким id
                                 if (animeChan == null)
                                 {
                                     Console.WriteLine("\nТянки с таким ID не существует!");
@@ -198,7 +198,7 @@ anime.Id + "|| ".ToString().PadLeft(40 - anime.Id.ToString().Length, ' ')); //П
                             Console.WriteLine("\nВведите ID Тянки, которую хотите удалить");
                             if (int.TryParse(Console.ReadLine(), out int id2))
                             {
-                                AnimeChan animeChan = logic.FindForId(id2);//Проверяет на существование тян с таким id
+                                AnimeChan animeChan = logic.FindById(id2);//Проверяет на существование тян с таким id
                                 if (animeChan == null)
                                 {
                                     Console.WriteLine("\nТянки с таким ID не существует!");
@@ -218,7 +218,7 @@ anime.Id + "|| ".ToString().PadLeft(40 - anime.Id.ToString().Length, ' ')); //П
                             Console.WriteLine("\nВведите ID Тянки, которую хотите увидеть");
                             if (int.TryParse(Console.ReadLine(), out int id3))
                             {
-                                AnimeChan animeChan = logic.FindForId(id3);//Проверяет на существование тян с таким id
+                                AnimeChan animeChan = logic.FindById(id3);//Проверяет на существование тян с таким id
                                 if (animeChan == null)
                                 {
                                     Console.WriteLine("\nТянки с таким ID не существует!");

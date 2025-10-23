@@ -1,5 +1,6 @@
 ﻿using DataAccessLayer;
 using System.Diagnostics;
+using System.Xml.Linq;
 
 
 namespace Model
@@ -32,7 +33,7 @@ namespace Model
                 Skills = unitOfWork.SkillRepos.GetByNames(new[] {Skills.Cleaning.ToString(),
                                                                  Skills.Cooking.ToString(),
                                                                  Skills.Dancing.ToString()
-                                                                }).ToList()
+                                                                  }).ToList()
             };
             unitOfWork.AnimeChanRepos.Create(anime);
 
@@ -84,7 +85,7 @@ namespace Model
         ///<summary>Ищет в общем списке нужную тянку по её id</summary>
         /// <param name="id">Айди, по которую ищется тянка</param>
         /// <returns>Возвращает найденную тянку (или же null, если ничего не нашел)</returns>
-        public AnimeChan FindForId(int id)
+        public AnimeChan FindById(int id)
         {
             return new AnimeChan(unitOfWork.AnimeChanRepos.ReadById(id));
         }
@@ -106,6 +107,16 @@ namespace Model
         public List<Skill> LoadSkills()
         {
             return new List<Skill>(Saves.skills);
+        }
+
+        public List<Skill> GetChanSkills(int id)
+        {
+            List<Skill> skills = new List<Skill>();
+            foreach (var skill in unitOfWork.ChanSkillRepos.GetSkillsByChanId(id))
+            {
+                skills.Add(new Skill(skill));
+            }
+            return skills;  
         }
 
         ///<summary>Добавляет новую тянку в общий список</summary>
@@ -267,7 +278,7 @@ namespace Model
                         Name = s.Name
                     }).ToList()
                 })
-    .ToList();
+                .ToList();
         }
 
         ///<summary>Сбрасывает значения фильтра до первоначальных</summary>
@@ -347,8 +358,7 @@ namespace Model
             };
 
 
-            //repository.Create(animeChan);
-            //return animeChan;
+            unitOfWork.AnimeChanRepos.Create(animeChan);
             return new AnimeChan(animeChan);
         }
 

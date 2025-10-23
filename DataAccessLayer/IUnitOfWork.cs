@@ -10,5 +10,6 @@ namespace DataAccessLayer
     {
         IRepository<AnimeChanRepo> AnimeChanRepos { get; }
         ISkillRepository SkillRepos { get; }
+        IChanSkillRepository ChanSkillRepos { get; }
     }
 }

@@ -8,7 +8,7 @@ namespace DataAccessLayer
 {
     public class DapperSkillRepository : IRepository<SkillRepo>, ISkillRepository
     {
-        private readonly string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Nubik\Documents\IloveGit\AnimeChanSelector\DataAccessLayer\AnimeChanDataBase.mdf;Integrated Security=True";
+        private readonly string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\SeDMI\OneDrive\Рабочий стол\AnimeChanSelector\DataAccessLayer\AnimeChanDataBase.mdf;Integrated Security=True";
 
         private IDbConnection CreateConnection() => new SqlConnection(connectionString);
 
@@ -87,15 +87,10 @@ namespace DataAccessLayer
                 {
                     try
                     {
-                        //Обновляем тянку
+                        //Обновляем скилл
                         const string sqlUpdateChan = @"
-                        UPDATE AnimeChans
-                        SET FirstName = @FirstName,
-                            LastName  = @LastName,
-                            Age       = @Age,
-                            Height    = @Height,
-                            Weight    = @Weight,
-                            Size      = @Size
+                        UPDATE Skills
+                        SET Name = @Name
                         WHERE Id = @Id;";
 
                         conn.Execute(sqlUpdateChan, skill, tx);
@@ -125,7 +120,7 @@ namespace DataAccessLayer
                 {
                     try
                     {
-                        //Находим нужную тянку
+                        //Находим нужный скилл
                         const string sqlDeleteChan = @"DELETE FROM Skills WHERE Id = @Id;";
 
                         conn.Execute(sqlDeleteChan, new { Id = skill.Id }, tx);
@@ -168,7 +163,14 @@ namespace DataAccessLayer
 
         public IEnumerable<SkillRepo> GetByNames(IEnumerable<string> names)
         {
-            return new List<SkillRepo>();
+            const string sql = @"
+            SELECT * FROM Skills 
+            WHERE Name IN @names";
+
+            using (var conn = CreateConnection())
+            {
+                return conn.Query<SkillRepo>(sql, new { names });
+            }
         }
     }
 }

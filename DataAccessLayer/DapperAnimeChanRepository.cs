@@ -6,75 +6,99 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 public class DapperAnimeChanRepository : IRepository<AnimeChanRepo>
 {
-    private readonly string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Nubik\Documents\IloveGit\AnimeChanSelector\DataAccessLayer\AnimeChanDataBase.mdf;Integrated Security=True";
+    private readonly string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\SeDMI\OneDrive\Рабочий стол\AnimeChanSelector\DataAccessLayer\AnimeChanDataBase.mdf;Integrated Security=True";
 
     private IDbConnection CreateConnection() => new SqlConnection(connectionString);
 
 
     public void Create(AnimeChanRepo chan)
     {
-            using (var conn = CreateConnection())
+        using (var conn = CreateConnection())
+        {
+            conn.Open();
+            using (var tx = conn.BeginTransaction())
             {
-                conn.Open();
-                using (var tx = conn.BeginTransaction())
+                try
                 {
-                    try
-                    { //Добавляем тянку
-                        const string sqlChan = @" 
-                        INSERT INTO AnimeChans (FirstName, LastName, Age, Height, Weight, Size)
-                        VALUES (@FirstName, @LastName, @Age, @Height, @Weight, @Size);
-                        SELECT CAST(SCOPE_IDENTITY() AS int);";
+                    const string sqlChan = @" 
+                    INSERT INTO AnimeChans (FirstName, LastName, Age, Height, Weight, Size)
+                    VALUES (@FirstName, @LastName, @Age, @Height, @Weight, @Size);
+                    SELECT CAST(SCOPE_IDENTITY() AS int);";
 
-                        chan.Id = conn.QuerySingle<int>(sqlChan, chan, tx); //Присваиваем id для тянки (экземплярам класса)
+                    chan.Id = conn.QuerySingle<int>(sqlChan, chan, tx);
 
-                        tx.Commit(); //Если всё ок
-                    }
-                    catch
+                    if (chan.Skills != null && chan.Skills.Any())
                     {
-                        tx.Rollback(); //Если не ок
-                        throw;
+                        foreach (var skill in chan.Skills)
+                        {
+                            const string sqlCheck = "SELECT Id FROM Skills WHERE Name = @Name";
+                            var existingSkillId = conn.QueryFirstOrDefault<int?>(sqlCheck, new { skill.Name }, tx);
+
+                            if (existingSkillId == null)
+                            {
+                                const string sqlInsertSkill = @"
+                                INSERT INTO Skills (Name)
+                                VALUES (@Name);
+                                SELECT CAST(SCOPE_IDENTITY() AS int);";
+
+                                skill.Id = conn.QuerySingle<int>(sqlInsertSkill, skill, tx);
+                            }
+                            else
+                            {
+                                skill.Id = existingSkillId.Value;
+                            }
+
+                            const string sqlLink = @"INSERT INTO SkillChans (AnimeChanRepoId, SkillId) VALUES (@ChanId, @SkillId);";
+                            conn.Execute(sqlLink, new { ChanId = chan.Id, SkillId = skill.Id }, tx);
+                        }
                     }
+
+                    tx.Commit();
+                }
+                catch
+                {
+                    tx.Rollback();
+                    throw;
                 }
             }
-
-            return;
+        }
     }
 
     ///<summary>Читает все записи в БД</summary>
     /// <returns>Возвращает все записи из БД</returns>
     public IEnumerable<AnimeChanRepo> ReadAll()
     {
-            //Выбирает тянку вместе с её скиллами
-            const string sql = @" 
-            SELECT a.Id, a.FirstName, a.LastName, a.Age, a.Height, a.Weight, a.Size,
-                   s.Id, s.Name, s.AnimeChanRepoId
-            FROM AnimeChans a
-            LEFT JOIN Skills s ON s.AnimeChanRepoId = a.Id;";
+        //Выбирает тянку вместе с её скиллами
+        const string sql = @" 
+        SELECT a.Id, a.FirstName, a.LastName, a.Age, a.Height, a.Weight, a.Size,
+        s.Id, s.Name
+        FROM AnimeChans a
+        LEFT JOIN SkillChans sc ON a.Id = sc.AnimeChanRepoId
+        LEFT JOIN Skills s ON s.Id = sc.SkillId;";
 
-            using (var conn = CreateConnection())
-            {
-                var dict = new Dictionary<int, AnimeChanRepo>();
+        using (var conn = CreateConnection())
+        {
+            var dict = new Dictionary<int, AnimeChanRepo>();
 
-                conn.Query<AnimeChanRepo, SkillRepo, AnimeChanRepo>(
-                    sql,
-                    (chan, skill) =>
+            conn.Query<AnimeChanRepo, SkillRepo, AnimeChanRepo>(
+                sql,
+                (chan, skill) =>
+                {
+                    if (!dict.TryGetValue(chan.Id, out var current))
                     {
-                        if (!dict.TryGetValue(chan.Id, out var current))
-                        {
-                            current = chan;
-                            current.Skills = new List<SkillRepo>();
-                            dict.Add(current.Id, current);
-                        }
+                        current = chan;
+                        current.Skills = new List<SkillRepo>();
+                        dict.Add(current.Id, current);
+                    }
 
-                        if (skill != null && skill.Id != 0)
-                            current.Skills.Add(skill);
+                    if (skill != null && skill.Id != 0)
+                        current.Skills.Add(skill);
 
-                        return current;
-                    },
-                    splitOn: "Id"
-                );
-
-                return dict.Values.ToList();
+                    return current;
+                },
+                splitOn: "Id"
+            );
+            return dict.Values.ToList();
         }
     }
 
@@ -172,7 +196,7 @@ public class DapperAnimeChanRepository : IRepository<AnimeChanRepo>
                 try
                 {
                     //Хана всем тянкам 
-                    conn.Execute("DELETE FROM AnimeChans;", transaction: tx);
+                    conn.Execute("DELETE FROM SkillChans;", transaction: tx);
                     tx.Commit();
                 }
                 catch
