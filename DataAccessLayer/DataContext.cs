@@ -29,9 +29,8 @@ namespace DataAccessLayer
         {
             modelBuilder.Entity<AnimeChanRepo>()
                 .HasMany(a => a.Skills)
-                .WithOne(s => s.AnimeChanRepo)
-                .HasForeignKey(s => s.AnimeChanRepoId)
-                .OnDelete(DeleteBehavior.Cascade);
+                .WithMany(s => s.AnimeChansRepo)
+                .UsingEntity(j => j.ToTable("SkillChans"));
         }
     }
 }

@@ -4,8 +4,7 @@
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public AnimeChanRepo AnimeChanRepo { get; set; }
-        public int AnimeChanRepoId { get; set; }
+        public List<AnimeChanRepo> AnimeChansRepo { get; set; } = new List<AnimeChanRepo>();
 
     }
 }

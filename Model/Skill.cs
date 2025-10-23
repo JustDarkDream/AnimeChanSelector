@@ -6,7 +6,6 @@ namespace Model
     {
         public int Id { get; set; }
         public string Name { get; internal set; }
-        public int AnimeChanId { get; internal set; }
 
         /// <summary>
         /// Конструктор объекта класса Skill
@@ -16,7 +15,6 @@ namespace Model
         {
             Id = repo.Id;
             Name = repo.Name;
-            AnimeChanId = repo.AnimeChanRepoId;
         }
         public Skill()
         {
