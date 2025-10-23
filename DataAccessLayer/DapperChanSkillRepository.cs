@@ -12,7 +12,7 @@ namespace DataAccessLayer
 {
     public class DapperChanSkillRepository : IChanSkillRepository
     {
-        private readonly string connectionString = @"Server=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\SeDMI\OneDrive\Рабочий стол\AnimeChanSelector\DataAccessLayer\AnimeChanDataBase.mdf;Integrated Security = True";
+        private readonly string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Nubik\Documents\IloveGit\AnimeChanSelector\DataAccessLayer\AnimeChanDataBase.mdf;Integrated Security=True";
 
         private IDbConnection CreateConnection() => new SqlConnection(connectionString);
 

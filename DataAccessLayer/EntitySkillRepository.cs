@@ -50,39 +50,6 @@ namespace DataAccessLayer
         /// <param name="obj">объект с измененными свойствами</param>
         public void Update(SkillRepo obj)
         {
-
-            //var existing = _context.Skills
-            //    .Include(a => a.AnimeChansRepo)
-            //    .FirstOrDefault(a => a.Id == obj.Id);
-
-            //if (existing == null)
-            //{
-            //    return;
-            //}
-
-            //existing.Name = obj.Name;
-
-            //// Обновляем скилы
-            //foreach (var chan in obj.AnimeChansRepo)
-            //{
-            //    var existingChan = existing.AnimeChansRepo.FirstOrDefault(s => s.Id == chan.Id);
-            //    if (existingChan != null)
-            //    {
-            //        // изменяем существующие
-            //        existingChan.Name = chan.;
-            //    }
-            //    else
-            //    {
-            //        // добавляем новый, прикреплённый к контексту
-            //        var newSkill = new SkillRepo
-            //        {
-            //            Name = skill.Name,
-            //        };
-            //        _context.Skills.Add(newSkill);
-            //        existing.Skills.Add(newSkill);
-            //    }
-            //}
-
             _context.SaveChanges();
         }
 

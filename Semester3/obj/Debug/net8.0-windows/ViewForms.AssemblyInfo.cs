@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ViewForms")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d4b78ea49763e5a704f74fba65671cd1baabe9b3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+175eff1b1020d7d2c95089653224b5e8b0624c2b")]
 [assembly: System.Reflection.AssemblyProductAttribute("ViewForms")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ViewForms")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

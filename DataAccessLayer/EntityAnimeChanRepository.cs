@@ -74,21 +74,19 @@ namespace DataAccessLayer
             // Обновляем скилы
             foreach (var skill in obj.Skills)
             {
-                var existingSkill = existing.Skills.FirstOrDefault(s => s.Id == skill.Id);
+                var existingSkill = _context.Skills.Find(skill.Id);
+
                 if (existingSkill != null)
                 {
-                    // изменяем существующие
-                    existingSkill.Name = skill.Name;
-                }
-                else
-                {
-                    // добавляем новый, прикреплённый к контексту
-                    var newSkill = new SkillRepo
+                    // Навык существует - проверяем есть ли уже связь
+                    var hasSkill = existing.Skills.Any(s => s.Id == existingSkill.Id);
+
+                    if (!hasSkill)
                     {
-                        Name = skill.Name,
-                    };
-                    _context.Skills.Add(newSkill);
-                    existing.Skills.Add(newSkill);
+                        // Добавляем связь с существующим навыком
+                        existing.Skills.Add(existingSkill);
+                    }
+                    // Если связь уже есть - ничего не делаем
                 }
             }
 
@@ -99,8 +97,12 @@ namespace DataAccessLayer
         /// <param name="obj">объект, который нужно удалить из БД</param>
         public void Delete(AnimeChanRepo obj)
         {
-            _context.Set<AnimeChanRepo>().Remove(obj);
-            _context.SaveChanges();
+            var existing = _context.Set<AnimeChanRepo>().Find(obj.Id);
+            if (existing != null)
+            {
+                _context.Set<AnimeChanRepo>().Remove(existing);
+                _context.SaveChanges();
+            }
         }
 
         ///<summary>Удаляет ВСЕ записи в БД </summary>

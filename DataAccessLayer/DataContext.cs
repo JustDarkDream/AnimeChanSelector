@@ -30,7 +30,19 @@ namespace DataAccessLayer
             modelBuilder.Entity<AnimeChanRepo>()
                 .HasMany(a => a.Skills)
                 .WithMany(s => s.AnimeChansRepo)
-                .UsingEntity(j => j.ToTable("SkillChans"));
+                .UsingEntity<Dictionary<string, object>>(
+                    "SkillChans",
+                    j => j
+                        .HasOne<SkillRepo>()
+                        .WithMany()
+                        .HasForeignKey("SkillsId")
+                        .OnDelete(DeleteBehavior.Cascade),  // Каскад при удалении навыка
+                    j => j
+                        .HasOne<AnimeChanRepo>()
+                        .WithMany()
+                        .HasForeignKey("AnimeChansRepoId")
+                        .OnDelete(DeleteBehavior.Cascade)   // Каскад при удалении персонажа
+                );
         }
     }
 }

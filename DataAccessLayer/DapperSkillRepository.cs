@@ -1,13 +1,14 @@
 ﻿using Dapper;
 using DataAccessLayer;
 using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore;
 using System.Data;
 
 namespace DataAccessLayer
 {
-    public class DapperSkillRepository : IRepository<SkillRepo>
+    public class DapperSkillRepository : IRepository<SkillRepo>, ISkillRepository
     {
-        private readonly string connectionString = @"Server=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\SeDMI\OneDrive\Рабочий стол\AnimeChanSelector\DataAccessLayer\AnimeChanDataBase.mdf;Integrated Security = True";
+        private readonly string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Nubik\Documents\IloveGit\AnimeChanSelector\DataAccessLayer\AnimeChanDataBase.mdf;Integrated Security=True";
 
         private IDbConnection CreateConnection() => new SqlConnection(connectionString);
 
@@ -163,6 +164,11 @@ namespace DataAccessLayer
                 }
             }
             return;
+        }
+
+        public IEnumerable<SkillRepo> GetByNames(IEnumerable<string> names)
+        {
+            return new List<SkillRepo>();
         }
     }
 }

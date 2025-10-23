@@ -1,13 +1,14 @@
 ﻿using DataAccessLayer;
+using System.Diagnostics;
 
 
 namespace Model
 {
     public class BourgeoisLogic
     {
-        //readonly IRepository<AnimeChanRepo> repository = new EntityRepository<AnimeChanRepo>(new DataContext());
         //readonly IRepository<AnimeChanRepo> repository = new AnimeChanRepository();
-        readonly IUnitOfWork unitOfWork = new EntityUnitOfWork();
+        //readonly IUnitOfWork unitOfWork = new EntityUnitOfWork();
+        readonly IUnitOfWork unitOfWork = new DapperUnitOfWork();
 
         ///<summary>Создает три НЕслучаных аниме-тянок</summary>
         public void CreateAnimeChan()
@@ -126,7 +127,7 @@ namespace Model
                 Height = height,
                 Weight = weight,
                 Size = size,
-                Skills = skills.Select(x => new SkillRepo { Id = x.Id, Name = x.Name }).ToList()
+                Skills = unitOfWork.SkillRepos.GetByNames(skills.Select(x => x.Name)).ToList()
 
             };
             //repository.Create(anime);
@@ -138,7 +139,7 @@ namespace Model
         /// <param name="id">Айди, по которому удаляется тянка</param>
         public void DeleteAnimeChan(int id)
         {
-            //repository.Delete(repository.ReadById(id));
+            unitOfWork.AnimeChanRepos.Delete(unitOfWork.AnimeChanRepos.ReadById(id));
         }
 
         ///<summary>Сохраняет изменения характеристик тянки</summary>
@@ -159,7 +160,11 @@ namespace Model
             animeChan.FirstName = firstName;
             animeChan.LastName = lastName;
             animeChan.Size = size;
-            animeChan.Skills = skills.Select(x => new SkillRepo { Id = x.Id, Name = x.Name }).ToList();
+            animeChan.Skills = unitOfWork.SkillRepos.GetByNames(skills.Select(x => x.Name)).ToList();
+            foreach (SkillRepo skill in animeChan.Skills)
+            {
+                Debug.WriteLine(skill.Name);
+            }
             unitOfWork.AnimeChanRepos.Update(animeChan);
             Saves.temporaryID = animeChan.Id;
         }
