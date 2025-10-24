@@ -166,8 +166,6 @@ namespace ViewForms
             {
                 listView1.Items.Clear();
 
-                skillsSetting.ShowDialog();
-
                 skills.Clear();
 
                 foreach (Skill skill in logic.LoadSkills())

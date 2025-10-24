@@ -72,23 +72,12 @@ namespace DataAccessLayer
             existing.Size = obj.Size;
 
             // Обновляем скилы
-            foreach (var skill in obj.Skills)
-            {
-                var existingSkill = _context.Skills.Find(skill.Id);
+            var newSkillIds = obj.Skills.Select(s => s.Id).ToList();
 
-                if (existingSkill != null)
-                {
-                    // Навык существует - проверяем есть ли уже связь
-                    var hasSkill = existing.Skills.Any(s => s.Id == existingSkill.Id);
+            var skillsToAdd = _context.Skills.Where(s => newSkillIds.Contains(s.Id))
+                                             .ToList();
 
-                    if (!hasSkill)
-                    {
-                        // Добавляем связь с существующим навыком
-                        existing.Skills.Add(existingSkill);
-                    }
-                    // Если связь уже есть - ничего не делаем
-                }
-            }
+            existing.Skills = skillsToAdd;
 
             _context.SaveChanges();
         }

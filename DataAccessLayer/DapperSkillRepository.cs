@@ -3,12 +3,19 @@ using DataAccessLayer;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using System.Data;
+using System.Diagnostics;
 
 namespace DataAccessLayer
 {
     public class DapperSkillRepository : IRepository<SkillRepo>, ISkillRepository
     {
-        private readonly string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\SeDMI\OneDrive\Рабочий стол\AnimeChanSelector\DataAccessLayer\AnimeChanDataBase.mdf;Integrated Security=True";
+        private readonly string connectionString;
+
+
+        internal DapperSkillRepository(string connectionString)
+        {
+            this.connectionString = connectionString;
+        }
 
         private IDbConnection CreateConnection() => new SqlConnection(connectionString);
 
@@ -163,13 +170,21 @@ namespace DataAccessLayer
 
         public IEnumerable<SkillRepo> GetByNames(IEnumerable<string> names)
         {
-            const string sql = @"
-            SELECT * FROM Skills 
-            WHERE Name IN @names";
+            var nameList = names?.ToList() ?? new List<string>();
+            Debug.WriteLine($"=== GetByNames ===");
+            Debug.WriteLine($"Ищем навыки: {string.Join(", ", nameList)}");
+
+            const string sql = "SELECT * FROM Skills WHERE Name IN @Names";
 
             using (var conn = CreateConnection())
             {
-                return conn.Query<SkillRepo>(sql, new { names });
+                var result = conn.Query<SkillRepo>(sql, new { Names = nameList }).ToList();
+                Debug.WriteLine($"Найдено навыков: {result.Count}");
+                foreach (var skill in result)
+                {
+                    Debug.WriteLine($"  Навык: ID={skill.Id}, Name={skill.Name}");
+                }
+                return result;
             }
         }
     }

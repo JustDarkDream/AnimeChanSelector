@@ -14,10 +14,10 @@ namespace DataAccessLayer
 
         public DapperUnitOfWork()
         {
-            var context = new DataContext();
-            AnimeChanRepos = new DapperAnimeChanRepository();
-            SkillRepos = new DapperSkillRepository();
-            ChanSkillRepos = new DapperChanSkillRepository();
+            string str = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Nubik\Documents\IloveGit\AnimeChanSelector\DataAccessLayer\AnimeChanDataBase.mdf;Integrated Security=True";
+            AnimeChanRepos = new DapperAnimeChanRepository(str);
+            SkillRepos = new DapperSkillRepository(str);
+            ChanSkillRepos = new DapperChanSkillRepository(str);
         }
     }
 }

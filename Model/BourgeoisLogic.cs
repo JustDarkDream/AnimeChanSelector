@@ -109,15 +109,15 @@ namespace Model
             return new List<Skill>(Saves.skills);
         }
 
-        public List<Skill> GetChanSkills(int id)
-        {
-            List<Skill> skills = new List<Skill>();
-            foreach (var skill in unitOfWork.ChanSkillRepos.GetSkillsByChanId(id))
-            {
-                skills.Add(new Skill(skill));
-            }
-            return skills;  
-        }
+        //public List<Skill> GetChanSkills(int id)
+        //{
+        //    List<Skill> skills = new List<Skill>();
+        //    foreach (var skill in unitOfWork.ChanSkillRepos.GetSkillsByChanId(id))
+        //    {
+        //        skills.Add(new Skill(skill));
+        //    }
+        //    return skills;  
+        //}
 
         ///<summary>Добавляет новую тянку в общий список</summary>
         /// <param name="firstName">Имя тянки</param>
@@ -129,7 +129,6 @@ namespace Model
         /// <param name="skills">Навыки тянки</param>
         public void AddAnimeChan(string firstName, string lastName, int age, int height, int weight, int size, List<Skill> skills)
         {
-            //animeChanList.Add(new AnimeChan(firstName, lastName, age, id, height, weight, size, skills));
             AnimeChanRepo anime = new AnimeChanRepo()
             {
                 FirstName = firstName,
@@ -141,7 +140,12 @@ namespace Model
                 Skills = unitOfWork.SkillRepos.GetByNames(skills.Select(x => x.Name)).ToList()
 
             };
-            //repository.Create(anime);
+            Debug.WriteLine("skill.Name");
+            foreach (SkillRepo skill in anime.Skills)
+            {
+                Debug.WriteLine(skill.Name);
+            }
+            unitOfWork.AnimeChanRepos.Create(anime);
 
             Saves.temporaryID = anime.Id;
         }
@@ -297,6 +301,16 @@ namespace Model
         }
         public IEnumerable<AnimeChan> LoadAnimeChanList()
         {
+            foreach(AnimeChan a in unitOfWork.AnimeChanRepos.ReadAll()
+                                                                .Select(x => new AnimeChan(x))
+                                                                .ToList())
+            {
+                Debug.WriteLine("skill.Name");
+                foreach (Skill skill in a.Skills)
+                {
+                    Debug.WriteLine(skill.Name);
+                }
+            }
             return unitOfWork.AnimeChanRepos.ReadAll()
                 .Select(x => new AnimeChan(x))
                 .ToList();
@@ -354,7 +368,7 @@ namespace Model
                 Height = height,
                 Weight = weight,
                 Size = size,
-                Skills = skills.Select(s => new SkillRepo { Name = s.Name }).ToList()
+                Skills = unitOfWork.SkillRepos.GetByNames(skills.Select(x => x.Name)).ToList()
             };
 
 
