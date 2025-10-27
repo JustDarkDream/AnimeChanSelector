@@ -7,9 +7,8 @@ namespace Model
 {
     public class BourgeoisLogic
     {
-        //readonly IRepository<AnimeChanRepo> repository = new AnimeChanRepository();
-        //readonly IUnitOfWork unitOfWork = new EntityUnitOfWork();
-        readonly IUnitOfWork unitOfWork = new DapperUnitOfWork();
+        readonly IUnitOfWork unitOfWork = new EntityUnitOfWork();
+        //readonly IUnitOfWork unitOfWork = new DapperUnitOfWork();
 
         ///<summary>Создает три НЕслучаных аниме-тянок</summary>
         public void CreateAnimeChan()
@@ -109,16 +108,6 @@ namespace Model
             return new List<Skill>(Saves.skills);
         }
 
-        //public List<Skill> GetChanSkills(int id)
-        //{
-        //    List<Skill> skills = new List<Skill>();
-        //    foreach (var skill in unitOfWork.ChanSkillRepos.GetSkillsByChanId(id))
-        //    {
-        //        skills.Add(new Skill(skill));
-        //    }
-        //    return skills;  
-        //}
-
         ///<summary>Добавляет новую тянку в общий список</summary>
         /// <param name="firstName">Имя тянки</param>
         /// <param name="lastName">Фамилия тянки</param>
@@ -140,7 +129,6 @@ namespace Model
                 Skills = unitOfWork.SkillRepos.GetByNames(skills.Select(x => x.Name)).ToList()
 
             };
-            Debug.WriteLine("skill.Name");
             foreach (SkillRepo skill in anime.Skills)
             {
                 Debug.WriteLine(skill.Name);
@@ -299,23 +287,19 @@ namespace Model
             Saves.filterStats.Skills.Clear();
             Saves.filterStats.isСonsiderAll = false;
         }
+
+        ///<summary>Загружает весь список аниме тянок со скиллами</summary>
+        /// <returns>Возвращает сам список тянок</returns>
         public IEnumerable<AnimeChan> LoadAnimeChanList()
         {
-            foreach(AnimeChan a in unitOfWork.AnimeChanRepos.ReadAll()
-                                                                .Select(x => new AnimeChan(x))
-                                                                .ToList())
-            {
-                Debug.WriteLine("skill.Name");
-                foreach (Skill skill in a.Skills)
-                {
-                    Debug.WriteLine(skill.Name);
-                }
-            }
             return unitOfWork.AnimeChanRepos.ReadAll()
                 .Select(x => new AnimeChan(x))
                 .ToList();
         }
 
+        ///<summary>Создает новый скилл</summary>
+        /// <param name="name">Имя, которое будет присвоено новосзданному скилу</param>
+        /// <returns>Возвращает сам скилл/returns>
         public Skill CreateSkill(string name)
         {
             return new Skill { Name = name };
@@ -376,6 +360,8 @@ namespace Model
             return new AnimeChan(animeChan);
         }
 
+        ///<summary>Сохраняет все веденные данные в регистрации</summary>
+        /// <returns>Сохраняет все веденные данные в регистрации</returns>
         public MainPerson GetMainPerson()
         {
             return Saves.mainPerson;
@@ -393,8 +379,6 @@ namespace Model
             string sizeString = ""; //Блок текста, связанный с размером
 
             AnimeChan animeChan = new AnimeChan(unitOfWork.AnimeChanRepos.ReadById(Saves.temporaryID));
-
-            //AnimeChan animeChan = animeChanList.Where(f => f.Id == temporaryID).FirstOrDefault(); //Ищем тянку по сохраненному временному id
 
             int agePoints = 25 - (int)Math.Abs((Saves.mainPerson.Age - animeChan.Age - 2) * 2.5); //Очки за разницу в возрасте
                                                                                                   //(чем меньше разница - тем больше очков,

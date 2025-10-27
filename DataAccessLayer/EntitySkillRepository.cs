@@ -13,16 +13,14 @@ namespace DataAccessLayer
             _context = context;
         }
 
-        ///<summary>Добавляет запись в БД </summary>
-        /// <param name="obj">объект, который добавится в БД</param>
+
         public void Create(SkillRepo obj)
         {
             _context.Set<SkillRepo>().Add(obj);
             _context.SaveChanges();
         }
 
-        ///<summary>Читает все записи в БД</summary>
-        /// <returns>Возвращает все записи из БД</returns>
+
         public IEnumerable<SkillRepo> ReadAll()
         {
 
@@ -32,9 +30,7 @@ namespace DataAccessLayer
 
         }
 
-        ///<summary>Читает запись по id</summary>
-        /// <param name="id">id, по которому ищут нужный объект</param>
-        /// /// <returns>Возвращает нужную запись из БД</returns>
+
         public SkillRepo ReadById(int id)
         {
 
@@ -46,22 +42,19 @@ namespace DataAccessLayer
 
         }
 
-        ///<summary>Изменяет данные у записи </summary>
-        /// <param name="obj">объект с измененными свойствами</param>
+
         public void Update(SkillRepo obj)
         {
             _context.SaveChanges();
         }
 
-        ///<summary>Удаляет запись в БД </summary>
-        /// <param name="obj">объект, который нужно удалить из БД</param>
+
         public void Delete(SkillRepo obj)
         {
             _context.Set<SkillRepo>().Remove(obj);
             _context.SaveChanges();
         }
 
-        ///<summary>Удаляет ВСЕ записи в БД </summary>
         public void DeleteAll()
         {    // Сначала удаляем все Skills
             var allSkills = _context.Skills.ToList();

@@ -10,7 +10,7 @@ namespace DataAccessLayer
 
         public DataContext()
         {
-            //Database.EnsureCreated();
+
         }
 
         ///<summary>Автоматически подключается к БД </summary>

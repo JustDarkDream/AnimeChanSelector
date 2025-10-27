@@ -19,8 +19,6 @@ public class DapperAnimeChanRepository : IRepository<AnimeChanRepo>
 
     public void Create(AnimeChanRepo chan)
     {
-
-
         using (var conn = CreateConnection())
         {
             conn.Open();
@@ -30,9 +28,9 @@ public class DapperAnimeChanRepository : IRepository<AnimeChanRepo>
                 {
                     // 1. Сначала создаём персонажа
                     const string sqlChan = @" 
-            INSERT INTO AnimeChans (FirstName, LastName, Age, Height, Weight, Size)
-            VALUES (@FirstName, @LastName, @Age, @Height, @Weight, @Size);
-            SELECT CAST(SCOPE_IDENTITY() AS int);";
+                    INSERT INTO AnimeChans (FirstName, LastName, Age, Height, Weight, Size)
+                    VALUES (@FirstName, @LastName, @Age, @Height, @Weight, @Size);
+                    SELECT CAST(SCOPE_IDENTITY() AS int);";
 
                     chan.Id = conn.QuerySingle<int>(sqlChan, chan, tx);
 
@@ -52,8 +50,8 @@ public class DapperAnimeChanRepository : IRepository<AnimeChanRepo>
                         foreach (var skillName in newSkillNames)
                         {
                             const string sqlInsertSkill = @"
-                    INSERT INTO Skills (Name) VALUES (@Name);
-                    SELECT CAST(SCOPE_IDENTITY() AS int);";
+                            INSERT INTO Skills (Name) VALUES (@Name);
+                            SELECT CAST(SCOPE_IDENTITY() AS int);";
 
                             var newSkillId = conn.QuerySingle<int>(sqlInsertSkill, new { Name = skillName }, tx);
                             existingSkills.Add(new SkillRepo { Id = newSkillId, Name = skillName });
@@ -66,13 +64,12 @@ public class DapperAnimeChanRepository : IRepository<AnimeChanRepo>
                             if (skillsDict.TryGetValue(skillName, out var skillId))
                             {
                                 const string sqlLink = @"INSERT INTO SkillChans (AnimeChansRepoId, SkillsId) 
-                                               VALUES (@ChanId, @SkillId);";
+                                VALUES (@ChanId, @SkillId);";
                                 conn.Execute(sqlLink, new { ChanId = chan.Id, SkillId = skillId }, tx);
                             }
 
                         }
                     }
-
                     tx.Commit();
                 }
                 catch (Exception ex)
@@ -84,21 +81,18 @@ public class DapperAnimeChanRepository : IRepository<AnimeChanRepo>
         }
     }
 
-    ///<summary>Читает все записи в БД</summary>
-    /// <returns>Возвращает все записи из БД</returns>
     public IEnumerable<AnimeChanRepo> ReadAll()
     {
         const string sql = @" 
-    SELECT 
-        a.Id as ChanId,
-        a.FirstName, a.LastName, a.Age, a.Height, a.Weight, a.Size,
-        s.Id as SkillId,
-        s.Name as SkillName
-    FROM AnimeChans a
-    LEFT JOIN SkillChans sc ON a.Id = sc.AnimeChansRepoId
-    LEFT JOIN Skills s ON s.Id = sc.SkillsId";
+        SELECT 
+            a.Id as ChanId,
+            a.FirstName, a.LastName, a.Age, a.Height, a.Weight, a.Size,
+            s.Id as SkillId,
+            s.Name as SkillName
+        FROM AnimeChans a
+        LEFT JOIN SkillChans sc ON a.Id = sc.AnimeChansRepoId
+        LEFT JOIN Skills s ON s.Id = sc.SkillsId";
 
-        Debug.WriteLine("=== READALL ВЫЗВАН ===");
 
         using (var conn = CreateConnection())
         {
@@ -143,9 +137,6 @@ public class DapperAnimeChanRepository : IRepository<AnimeChanRepo>
                 }
             }
 
-            Debug.WriteLine($"=== READALL ЗАВЕРШЕН ===");
-            Debug.WriteLine($"Итоговый результат: {dict.Count} персонажей");
-
             foreach (var chan in dict.Values)
             {
                 Debug.WriteLine($"Персонаж {chan.Id}: {chan.Skills.Count} навыков");
@@ -156,9 +147,6 @@ public class DapperAnimeChanRepository : IRepository<AnimeChanRepo>
     }
 
 
-    ///<summary>Читает запись по id</summary>
-    /// <param name="id">id, по которому ищут нужный объект</param>
-    /// /// <returns>Возвращает нужную запись из БД</returns>
     public AnimeChanRepo ReadById(int id)
     {
         ////Выбирает тянку вместе с её скиллами
@@ -173,15 +161,15 @@ public class DapperAnimeChanRepository : IRepository<AnimeChanRepo>
 
         {
             const string sql = @" 
-    SELECT 
-        a.Id as ChanId,
-        a.FirstName, a.LastName, a.Age, a.Height, a.Weight, a.Size,
-        s.Id as SkillId,
-        s.Name as SkillName
-    FROM AnimeChans a
-    LEFT JOIN SkillChans sc ON a.Id = sc.AnimeChansRepoId
-    LEFT JOIN Skills s ON s.Id = sc.SkillsId
-    WHERE a.Id = @Id";
+            SELECT 
+                a.Id as ChanId,
+                a.FirstName, a.LastName, a.Age, a.Height, a.Weight, a.Size,
+                s.Id as SkillId,
+                s.Name as SkillName
+            FROM AnimeChans a
+            LEFT JOIN SkillChans sc ON a.Id = sc.AnimeChansRepoId
+            LEFT JOIN Skills s ON s.Id = sc.SkillsId
+            WHERE a.Id = @Id";
 
             using (var conn = CreateConnection())
             {
@@ -227,40 +215,9 @@ public class DapperAnimeChanRepository : IRepository<AnimeChanRepo>
         }
     }
 
-    ///<summary>Изменяет данные у записи </summary>
-    /// <param name="obj">объект с измененными свойствами</param>
+
     public void Update(AnimeChanRepo chan)
     {
-        //using (var conn = CreateConnection())
-        //{
-        //    conn.Open();
-        //    using (var tx = conn.BeginTransaction())
-        //    {
-        //        try
-        //        {
-        //            //Обновляем тянку
-        //            const string sqlUpdateChan = @"
-        //            UPDATE AnimeChans
-        //            SET FirstName = @FirstName,
-        //                LastName  = @LastName,
-        //                Age       = @Age,
-        //                Height    = @Height,
-        //                Weight    = @Weight,
-        //                Size      = @Size
-        //            WHERE Id = @Id;";
-
-        //            conn.Execute(sqlUpdateChan, chan, tx);
-
-        //            tx.Commit();
-        //        }
-        //        catch
-        //        {
-        //            tx.Rollback();
-        //            throw;
-        //        }
-        //    }
-        //}
-        //return;
 
         using (var conn = CreateConnection())
         {
@@ -271,14 +228,14 @@ public class DapperAnimeChanRepository : IRepository<AnimeChanRepo>
                 {
                     // 1. Обновляем тянку
                     const string sqlUpdateChan = @"
-                UPDATE AnimeChans
-                SET FirstName = @FirstName,
-                    LastName  = @LastName,
-                    Age       = @Age,
-                    Height    = @Height,
-                    Weight    = @Weight,
-                    Size      = @Size
-                WHERE Id = @Id;";
+                    UPDATE AnimeChans
+                    SET FirstName = @FirstName,
+                        LastName  = @LastName,
+                        Age       = @Age,
+                        Height    = @Height,
+                        Weight    = @Weight,
+                        Size      = @Size
+                    WHERE Id = @Id;";
 
                     conn.Execute(sqlUpdateChan, chan, tx);
 
@@ -287,8 +244,8 @@ public class DapperAnimeChanRepository : IRepository<AnimeChanRepo>
                     {
                         // Удаляем все старые связи
                         const string sqlDeleteLinks = @"
-                    DELETE FROM SkillChans 
-                    WHERE AnimeChansRepoId = @ChanId";
+                        DELETE FROM SkillChans 
+                        WHERE AnimeChansRepoId = @ChanId";
 
                         conn.Execute(sqlDeleteLinks, new { ChanId = chan.Id }, tx);
 
@@ -296,8 +253,8 @@ public class DapperAnimeChanRepository : IRepository<AnimeChanRepo>
                         foreach (var skill in chan.Skills)
                         {
                             const string sqlInsertLink = @"
-                        INSERT INTO SkillChans (AnimeChansRepoId, SkillsId) 
-                        VALUES (@ChanId, @SkillId)";
+                            INSERT INTO SkillChans (AnimeChansRepoId, SkillsId) 
+                            VALUES (@ChanId, @SkillId)";
 
                             conn.Execute(sqlInsertLink, new
                             {
@@ -318,8 +275,6 @@ public class DapperAnimeChanRepository : IRepository<AnimeChanRepo>
         }
     }
 
-    ///<summary>Удаляет запись в БД </summary>
-    /// <param name="obj">объект, который нужно удалить из БД</param>
     public void Delete(AnimeChanRepo chan)
     {
         if (chan == null) return;
@@ -348,7 +303,6 @@ public class DapperAnimeChanRepository : IRepository<AnimeChanRepo>
             return;
     }
 
-    ///<summary>Удаляет ВСЕ записи в БД </summary>
     public void DeleteAll()
     {
         using (var conn = CreateConnection())
@@ -358,14 +312,7 @@ public class DapperAnimeChanRepository : IRepository<AnimeChanRepo>
             {
                 try
                 {
-                    // 1. Сначала удаляем связи
-                    conn.Execute("DELETE FROM SkillChans", transaction: tx);
-
-                    // 2. Затем удаляем персонажей
                     conn.Execute("DELETE FROM AnimeChans", transaction: tx);
-
-                    // 3. И навыки (если нужно)
-                    conn.Execute("DELETE FROM Skills", transaction: tx);
 
                     tx.Commit();
 

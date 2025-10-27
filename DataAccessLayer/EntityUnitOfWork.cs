@@ -16,7 +16,6 @@ namespace DataAccessLayer
             var context = new DataContext();
             AnimeChanRepos = new EntityAnimeChanRepository(context);
             SkillRepos = new EntitySkillRepository(context);
-            /////реализация EntitySkillChan
         }
     }
 }

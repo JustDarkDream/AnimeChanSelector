@@ -13,16 +13,13 @@ namespace DataAccessLayer
             _context = context;
         }
 
-        ///<summary>Добавляет запись в БД </summary>
-        /// <param name="obj">объект, который добавится в БД</param>
         public void Create(AnimeChanRepo obj)
         {
             _context.Set<AnimeChanRepo>().Add(obj);
             _context.SaveChanges();
         }
 
-        ///<summary>Читает все записи в БД</summary>
-        /// <returns>Возвращает все записи из БД</returns>
+
         public IEnumerable<AnimeChanRepo> ReadAll()
         {
             return _context.Set<AnimeChanRepo>()
@@ -32,9 +29,7 @@ namespace DataAccessLayer
 
         }
 
-        ///<summary>Читает запись по id</summary>
-        /// <param name="id">id, по которому ищут нужный объект</param>
-        /// /// <returns>Возвращает нужную запись из БД</returns>
+
         public AnimeChanRepo ReadById(int id)
         {
             using (var context = new DataContext())
@@ -49,8 +44,6 @@ namespace DataAccessLayer
             }
         }
 
-        ///<summary>Изменяет данные у записи </summary>
-        /// <param name="obj">объект с измененными свойствами</param>
         public void Update(AnimeChanRepo obj)
         {
 
@@ -82,8 +75,6 @@ namespace DataAccessLayer
             _context.SaveChanges();
         }
 
-        ///<summary>Удаляет запись в БД </summary>
-        /// <param name="obj">объект, который нужно удалить из БД</param>
         public void Delete(AnimeChanRepo obj)
         {
             var existing = _context.Set<AnimeChanRepo>().Find(obj.Id);
@@ -94,10 +85,8 @@ namespace DataAccessLayer
             }
         }
 
-        ///<summary>Удаляет ВСЕ записи в БД </summary>
         public void DeleteAll()
         {    
-            // Затем удаляем AnimeChansRepo
             var allAnimeChans = _context.AnimeChans.ToList();
             _context.AnimeChans.RemoveRange(allAnimeChans);
             _context.SaveChanges(); // Сохраняем удаление AnimeChans

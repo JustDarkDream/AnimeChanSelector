@@ -19,10 +19,7 @@ namespace DataAccessLayer
 
         private IDbConnection CreateConnection() => new SqlConnection(connectionString);
 
-        /// <summary>
-        /// Метод создания записи скила в БД
-        /// </summary>
-        /// <param name="skill">Передаваемый объект для записи</param>
+
         public void Create(SkillRepo skill)
         {
             using (var conn = CreateConnection())
@@ -52,8 +49,6 @@ namespace DataAccessLayer
             return;
         }
 
-        ///<summary>Читает все записи в БД</summary>
-        ///<returns>Возвращает все записи из БД</returns>
         public IEnumerable<SkillRepo> ReadAll()
         {
             //Выбирает скилл
@@ -67,9 +62,6 @@ namespace DataAccessLayer
             }
         }
 
-        ///<summary>Читает запись по id</summary>
-        /// <param name="id">id, по которому ищут нужный объект</param>
-        /// /// <returns>Возвращает нужную запись из БД</returns>
         public SkillRepo ReadById(int id)
         {
             //Выбирает тянку вместе с её скиллами
@@ -83,8 +75,6 @@ namespace DataAccessLayer
             }
         }
 
-        ///<summary>Изменяет данные у записи </summary>
-        /// <param name="obj">объект с измененными свойствами</param>
         public void Update(SkillRepo skill)
         {
             using (var conn = CreateConnection())
@@ -114,8 +104,6 @@ namespace DataAccessLayer
             return;
         }
 
-        ///<summary>Удаляет запись в БД </summary>
-        /// <param name="obj">объект, который нужно удалить из БД</param>
         public void Delete(SkillRepo skill)
         {
             if (skill == null) return;
@@ -144,7 +132,6 @@ namespace DataAccessLayer
             return;
         }
 
-        ///<summary>Удаляет ВСЕ записи в БД </summary>
         public void DeleteAll()
         {
             using (var conn = CreateConnection())
