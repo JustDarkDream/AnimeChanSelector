@@ -10,7 +10,6 @@ namespace DataAccessLayer
     {
         public IRepository<AnimeChanRepo> AnimeChanRepos { get; }
         public ISkillRepository SkillRepos { get; }
-        public IChanSkillRepository ChanSkillRepos { get; }
         public EntityUnitOfWork()
         {
             var context = new DataContext();

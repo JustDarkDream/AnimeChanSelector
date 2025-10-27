@@ -7,7 +7,6 @@ namespace DataAccessLayer
 
         private readonly DataContext _context;
 
-
         public EntitySkillRepository(DataContext context)
         {
             _context = context;
