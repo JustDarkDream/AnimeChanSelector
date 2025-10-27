@@ -5,6 +5,10 @@ namespace ViewForms
     public partial class Registration : Form
     {
         BourgeoisLogic logic = new BourgeoisLogic();
+        
+        /// <summary>
+        /// Конструктор формы регистрации
+        /// </summary>
         public Registration()
         {
             InitializeComponent();
@@ -72,6 +76,11 @@ namespace ViewForms
             }
         }
 
+        /// <summary>
+        /// Событие нажатия кнопки автозаполнения
+        /// </summary>
+        /// <param name="sender">Кнопка автозаполнения</param>
+        /// <param name="e">Контейнер аргументов</param>
         private void btnAutoInput_Click(object sender, EventArgs e)
         {
             this.firstName.Text = "Фогель";
@@ -82,11 +91,11 @@ namespace ViewForms
             this.weightValue.Text = "46";
         }
 
-        private void lastName_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
+        /// <summary>
+        /// Событие загрузки формы регистрации
+        /// </summary>
+        /// <param name="sender">Форма регистрации</param>
+        /// <param name="e">Контейнер аргументов</param>
         private void Registration_Load(object sender, EventArgs e)
         {
 

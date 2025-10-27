@@ -6,6 +6,10 @@ namespace ViewForms
     public partial class FilterChan : Form
     {
         BourgeoisLogic logic = new BourgeoisLogic();
+        
+        /// <summary>
+        /// Конструктор формы фильтра
+        /// </summary>
         public FilterChan()
         {
             InitializeComponent();
@@ -147,7 +151,6 @@ namespace ViewForms
         ///<summary>Вызывается при нажатии на кнопку редактора скиллов. Открывает форму редакторов скиллов и сохраняет изменения</summary>
         private void skillsSettung_Click(object sender, EventArgs e)
         {
-
             List<Skill> skills = new List<Skill>();
 
             foreach (ListViewItem item in listView1.Items) //Считывает информацию с ListView и закидывает в список
@@ -157,8 +160,6 @@ namespace ViewForms
                     skills.Add(skill);
                 }
             }
-
-
 
             SkillsSetting skillsSetting = new SkillsSetting(skills); //Создаём форму для редактирования навыков
 
@@ -182,6 +183,11 @@ namespace ViewForms
             }
         }
 
+        /// <summary>
+        /// Событие загрузки формы фильтра
+        /// </summary>
+        /// <param name="sender">Форма фильтра</param>
+        /// <param name="e">Контейнер аргументов</param>
         private void FilterChan_Load(object sender, EventArgs e)
         {
 

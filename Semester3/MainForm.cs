@@ -9,6 +9,10 @@ namespace ViewForms
 
         DataGridView table;
         BourgeoisLogic logic = new BourgeoisLogic();
+        
+        /// <summary>
+        /// Конструктор главной формы
+        /// </summary>
         public MainForm()
         {
             InitializeComponent();
@@ -243,16 +247,6 @@ namespace ViewForms
             this.lblHeight.Text = mainPerson.Height.ToString();
             this.lblWeight.Text = mainPerson.Weight.ToString();
             this.lblSize.Text = mainPerson.Size.ToString();
-        }
-
-        private void tableLayoutPanel7_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel6_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

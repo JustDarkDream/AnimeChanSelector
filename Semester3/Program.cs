@@ -8,8 +8,6 @@ namespace ViewForms
         [STAThread]
         static void Main()
         {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             //Сначало запускает окно регистрации, потом главное окно, а после окно с результатами
             Registration registration = new Registration();

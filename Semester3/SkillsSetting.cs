@@ -18,7 +18,7 @@ namespace ViewForms
 
             skillsComboBox.DataSource = Enum.GetValues(typeof(Skills)); //Загружаем в комбо бокс все возможные навыки
 
-            foreach (var skill in skills) //Считывает информацию с списка навыков и закидываем в ListView
+            foreach (Skill skill in skills) //Считывает информацию с списка навыков и закидываем в ListView
             {
                 ListViewItem item = new ListViewItem(skill.Name);
 
@@ -99,6 +99,11 @@ namespace ViewForms
             Close();
         }
 
+        /// <summary>
+        /// Событие загрузки формы настроек скиллов
+        /// </summary>
+        /// <param name="sender">ФОрма настройки скиллов</param>
+        /// <param name="e">Контейнер аргументов</param>
         private void SkillsSetting_Load(object sender, EventArgs e)
         {
 

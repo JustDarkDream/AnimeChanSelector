@@ -53,6 +53,7 @@
             Margin = new Padding(5, 6, 5, 6);
             Name = "Conclution";
             Text = "Conclution";
+            Load += Conclution_Load;
             ResumeLayout(false);
         }
 

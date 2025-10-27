@@ -16,7 +16,6 @@ public class DapperAnimeChanRepository : IRepository<AnimeChanRepo>
 
     private IDbConnection CreateConnection() => new SqlConnection(connectionString);
 
-
     public void Create(AnimeChanRepo chan)
     {
         using (var conn = CreateConnection())
@@ -54,7 +53,7 @@ public class DapperAnimeChanRepository : IRepository<AnimeChanRepo>
                             SELECT CAST(SCOPE_IDENTITY() AS int);";
 
                             var newSkillId = conn.QuerySingle<int>(sqlInsertSkill, new { Name = skillName }, tx);
-                            existingSkills.Add(new SkillRepo { Id = newSkillId, Name = skillName });
+                            existingSkills.Add(new SkillRepo(newSkillId, skillName));
                         }
 
                         var skillsDict = existingSkills.ToDictionary(s => s.Name, s => s.Id);
@@ -93,7 +92,6 @@ public class DapperAnimeChanRepository : IRepository<AnimeChanRepo>
         LEFT JOIN SkillChans sc ON a.Id = sc.AnimeChansRepoId
         LEFT JOIN Skills s ON s.Id = sc.SkillsId";
 
-
         using (var conn = CreateConnection())
         {
             var results = conn.Query(sql).ToList();
@@ -123,11 +121,7 @@ public class DapperAnimeChanRepository : IRepository<AnimeChanRepo>
                 // Добавляем навык если он есть
                 if (row.SkillId != null && row.SkillId != 0)
                 {
-                    var skill = new SkillRepo
-                    {
-                        Id = row.SkillId,
-                        Name = row.SkillName
-                    };
+                    var skill = new SkillRepo(row.SkillId, row.SkillName);
 
                     if (!animeChan.Skills.Any(s => s.Id == skill.Id))
                     {
@@ -146,19 +140,8 @@ public class DapperAnimeChanRepository : IRepository<AnimeChanRepo>
         }
     }
 
-
     public AnimeChanRepo ReadById(int id)
     {
-        ////Выбирает тянку вместе с её скиллами
-        //const string sqlChan = @"SELECT * FROM AnimeChans WHERE Id = @Id;";
-
-        //using (var conn = CreateConnection())
-        //{
-        //    var chan = conn.QuerySingleOrDefault<AnimeChanRepo>(sqlChan, new { Id = id });
-
-        //    return chan;
-        //}
-
         {
             const string sql = @" 
             SELECT 
@@ -209,7 +192,6 @@ public class DapperAnimeChanRepository : IRepository<AnimeChanRepo>
                         }
                     }
                 }
-
                 return animeChan;
             }
         }

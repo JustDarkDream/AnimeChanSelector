@@ -292,7 +292,6 @@
             tableLayoutPanel6.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel6.Size = new Size(1359, 252);
             tableLayoutPanel6.TabIndex = 1;
-            tableLayoutPanel6.Paint += tableLayoutPanel6_Paint;
             // 
             // tableLayoutPanel7
             // 
@@ -310,7 +309,6 @@
             tableLayoutPanel7.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel7.Size = new Size(762, 246);
             tableLayoutPanel7.TabIndex = 3;
-            tableLayoutPanel7.Paint += tableLayoutPanel7_Paint;
             // 
             // pictureBox1
             // 

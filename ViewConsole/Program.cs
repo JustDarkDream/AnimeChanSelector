@@ -137,8 +137,8 @@ namespace ViewConsole
                     foreach (AnimeChan anime in chan)
                     {
                         Console.WriteLine("|| " + anime.FirstName + "|| ".PadLeft(40 - anime.FirstName.Length - 1, ' ') + anime.LastName +
-"|| ".PadLeft(40 - anime.LastName.Length - 5, ' ') + anime.Age + "|| ".ToString().PadLeft(40 - anime.Age.ToString().Length - 5, ' ') +
-anime.Id + "|| ".ToString().PadLeft(40 - anime.Id.ToString().Length, ' ')); //Пишет характеристики из отфильтрованного листа с Аниме Тян
+                        "|| ".PadLeft(40 - anime.LastName.Length - 5, ' ') + anime.Age + "|| ".ToString().PadLeft(40 - anime.Age.ToString().Length - 5, ' ') +
+                        anime.Id + "|| ".ToString().PadLeft(40 - anime.Id.ToString().Length, ' ')); //Пишет характеристики из отфильтрованного листа с Аниме Тян
                         Console.WriteLine("".PadLeft(151, '_')); //Создаёт линию под характеристиками тян
                     }
                 }
@@ -149,8 +149,8 @@ anime.Id + "|| ".ToString().PadLeft(40 - anime.Id.ToString().Length, ' ')); //П
                     foreach (AnimeChan anime in chan)
                     {
                         Console.WriteLine("|| " + anime.FirstName + "|| ".PadLeft(40 - anime.FirstName.Length - 1, ' ') + anime.LastName +
-"|| ".PadLeft(40 - anime.LastName.Length - 5, ' ') + anime.Age + "|| ".ToString().PadLeft(40 - anime.Age.ToString().Length - 5, ' ') +
-anime.Id + "|| ".ToString().PadLeft(40 - anime.Id.ToString().Length, ' ')); //Пишет характеристики из отфильтрованного листа с Аниме Тян
+                        "|| ".PadLeft(40 - anime.LastName.Length - 5, ' ') + anime.Age + "|| ".ToString().PadLeft(40 - anime.Age.ToString().Length - 5, ' ') +
+                        anime.Id + "|| ".ToString().PadLeft(40 - anime.Id.ToString().Length, ' ')); //Пишет характеристики из отфильтрованного листа с Аниме Тян
                         Console.WriteLine("".PadLeft(151, '_')); //Создаёт линию под характеристиками тян
 
                     }

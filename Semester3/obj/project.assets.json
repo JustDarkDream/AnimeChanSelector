@@ -4027,37 +4027,34 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Nubik\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\SeDMI\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\ViewForms.csproj",
+      "projectUniqueName": "C:\\Users\\SeDMI\\OneDrive\\Рабочий стол\\AnimeChanSelector\\Semester3\\ViewForms.csproj",
       "projectName": "ViewForms",
-      "projectPath": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\ViewForms.csproj",
-      "packagesPath": "C:\\Users\\Nubik\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\obj\\",
+      "projectPath": "C:\\Users\\SeDMI\\OneDrive\\Рабочий стол\\AnimeChanSelector\\Semester3\\ViewForms.csproj",
+      "packagesPath": "C:\\Users\\SeDMI\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\SeDMI\\OneDrive\\Рабочий стол\\AnimeChanSelector\\Semester3\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Nubik\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config"
+        "C:\\Users\\SeDMI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0-windows"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Model\\Model.csproj": {
-              "projectPath": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Model\\Model.csproj"
+            "C:\\Users\\SeDMI\\OneDrive\\Рабочий стол\\AnimeChanSelector\\Model\\Model.csproj": {
+              "projectPath": "C:\\Users\\SeDMI\\OneDrive\\Рабочий стол\\AnimeChanSelector\\Model\\Model.csproj"
             }
           }
         }
@@ -4071,8 +4068,7 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.300"
+      }
     },
     "frameworks": {
       "net8.0-windows7.0": {
@@ -4104,7 +4100,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

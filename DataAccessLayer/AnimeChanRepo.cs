@@ -15,6 +15,9 @@
 
         public List<SkillRepo> Skills { get; set; } = new List<SkillRepo>();
 
+        /// <summary>
+        /// Конструктор объекта тянка
+        /// </summary>
         public AnimeChanRepo()
         {
 

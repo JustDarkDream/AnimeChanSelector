@@ -16,6 +16,9 @@ namespace Model
             Id = repo.Id;
             Name = repo.Name;
         }
+        /// <summary>
+        /// Констурктор объекта класса скилл без аргументов
+        /// </summary>
         public Skill()
         {
         }

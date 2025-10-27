@@ -68,6 +68,7 @@
             Name = "ErrorForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Error";
+            Load += ErrorForm_Load;
             ResumeLayout(false);
             PerformLayout();
         }

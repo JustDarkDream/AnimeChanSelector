@@ -8,6 +8,11 @@ namespace ViewForms
         BourgeoisLogic logic = new BourgeoisLogic();
         int animeChanId = 0;
 
+        /// <summary>
+        /// Конструктор формы "Инфа о тянке"
+        /// </summary>
+        /// <param name="animeChan">Аниме тянка</param>
+        /// <param name="isEditable">Переключение между режимом редактирвоания тянки и просмотром</param>
         public AnimeChanCard(AnimeChan animeChan, bool isEditable) //Вызывается, если пользователь хочет редактировать или посмотреть на тянку
         {
             InitializeComponent();
@@ -254,14 +259,14 @@ namespace ViewForms
             Close();
         }
 
+        /// <summary>
+        /// Событие загрузки формы "Инфа о тянке"
+        /// </summary>
+        /// <param name="sender">Форма "Инфа о тянке"</param>
+        /// <param name="e">Контейнер аргументов</param>
         private void AnimeChanCard_Load(object sender, EventArgs e)
         {
             
-        }
-
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
