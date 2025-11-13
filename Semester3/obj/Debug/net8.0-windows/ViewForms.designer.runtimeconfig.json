@@ -12,10 +12,11 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\Nubik\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Nubik\\.nuget\\packages"
+      "C:\\Users\\SeDMI\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\SeDMI\\.nuget\\packages"
     ],
     "configProperties": {
+      "System.Reflection.NullabilityInfoContext.IsSupported": true,
       "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": true,
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true
     }

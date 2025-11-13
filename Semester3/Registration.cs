@@ -1,21 +1,14 @@
-﻿using Microsoft.VisualBasic.Logging;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using Model;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+﻿using Model;
 
 namespace ViewForms
 {
     public partial class Registration : Form
     {
         BourgeoisLogic logic = new BourgeoisLogic();
+        
+        /// <summary>
+        /// Конструктор формы регистрации
+        /// </summary>
         public Registration()
         {
             InitializeComponent();
@@ -48,39 +41,64 @@ namespace ViewForms
                                 }
                                 else
                                 {
-                                    Error error = new Error("Ничего не введено в строку \"Фамилия\". Введите что-нибудь");
+                                    ErrorForm error = new ErrorForm("Ничего не введено в строку \"Фамилия\"");
                                     error.ShowDialog();
                                 }
                             }
                             else
                             {
-                                Error error = new Error("Ничего не введено в строку \"Имя\". Введите что-нибудь");
+                                ErrorForm error = new ErrorForm("Ничего не введено в строку \"Имя\"");
                                 error.ShowDialog();
                             }
                         }
                         else
                         {
-                            Error error = new Error("Введено некорректное значение в \"Размер\". Введите неотрицательно число");
+                            ErrorForm error = new ErrorForm("Введено некорректное значение в \"Размер\"");
                             error.ShowDialog();
                         }
                     }
                     else
                     {
-                        Error error = new Error("Введено некорректное значение в \"Вес\". Введите неотрицательно число");
+                        ErrorForm error = new ErrorForm("Введено некорректное значение в \"Вес\"");
                         error.ShowDialog();
                     }
                 }
                 else
                 {
-                    Error error = new Error("Введено некорректное значение в \"Рост\". Введите неотрицательно число");
+                    ErrorForm error = new ErrorForm("Введено некорректное значение в \"Рост\"");
                     error.ShowDialog();
                 }
             }
             else
             {
-                Error error = new Error("Введено некорректное значение в \"Возраст\". Введите неотрицательно число");
+                ErrorForm error = new ErrorForm("Введено некорректное значение в \"Возраст\"");
                 error.ShowDialog();
             }
+        }
+
+        /// <summary>
+        /// Событие нажатия кнопки автозаполнения
+        /// </summary>
+        /// <param name="sender">Кнопка автозаполнения</param>
+        /// <param name="e">Контейнер аргументов</param>
+        private void btnAutoInput_Click(object sender, EventArgs e)
+        {
+            this.firstName.Text = "Фогель";
+            this.lastName.Text = "Мактрахер";
+            this.ageValue.Text = "25";
+            this.sizeValue.Text = "15";
+            this.heightValue.Text = "171";
+            this.weightValue.Text = "46";
+        }
+
+        /// <summary>
+        /// Событие загрузки формы регистрации
+        /// </summary>
+        /// <param name="sender">Форма регистрации</param>
+        /// <param name="e">Контейнер аргументов</param>
+        private void Registration_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

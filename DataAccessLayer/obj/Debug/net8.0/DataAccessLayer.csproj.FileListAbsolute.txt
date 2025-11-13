@@ -1,0 +1,43 @@
+C:\Users\Nubik\Documents\IloveGit\Chans\DataAccessLayer\bin\Debug\net8.0\DataAccessLayer.deps.json
+C:\Users\Nubik\Documents\IloveGit\Chans\DataAccessLayer\bin\Debug\net8.0\DataAccessLayer.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\DataAccessLayer\bin\Debug\net8.0\DataAccessLayer.pdb
+C:\Users\Nubik\Documents\IloveGit\Chans\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\Nubik\Documents\IloveGit\Chans\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nubik\Documents\IloveGit\Chans\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\Nubik\Documents\IloveGit\Chans\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.AssemblyInfo.cs
+C:\Users\Nubik\Documents\IloveGit\Chans\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\Nubik\Documents\IloveGit\Chans\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.sourcelink.json
+C:\Users\Nubik\Documents\IloveGit\Chans\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\DataAccessLayer\obj\Debug\net8.0\refint\DataAccessLayer.dll
+C:\Users\Nubik\Documents\IloveGit\Chans\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.pdb
+C:\Users\Nubik\Documents\IloveGit\Chans\DataAccessLayer\obj\Debug\net8.0\ref\DataAccessLayer.dll
+C:\Users\SeDMI\OneDrive\Рабочий стол\AnimeChanSelector\DataAccessLayer\bin\Debug\net8.0\DataAccessLayer.deps.json
+C:\Users\SeDMI\OneDrive\Рабочий стол\AnimeChanSelector\DataAccessLayer\bin\Debug\net8.0\DataAccessLayer.dll
+C:\Users\SeDMI\OneDrive\Рабочий стол\AnimeChanSelector\DataAccessLayer\bin\Debug\net8.0\DataAccessLayer.pdb
+C:\Users\SeDMI\OneDrive\Рабочий стол\AnimeChanSelector\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\SeDMI\OneDrive\Рабочий стол\AnimeChanSelector\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SeDMI\OneDrive\Рабочий стол\AnimeChanSelector\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\SeDMI\OneDrive\Рабочий стол\AnimeChanSelector\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.AssemblyInfo.cs
+C:\Users\SeDMI\OneDrive\Рабочий стол\AnimeChanSelector\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\SeDMI\OneDrive\Рабочий стол\AnimeChanSelector\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.sourcelink.json
+C:\Users\SeDMI\OneDrive\Рабочий стол\AnimeChanSelector\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.dll
+C:\Users\SeDMI\OneDrive\Рабочий стол\AnimeChanSelector\DataAccessLayer\obj\Debug\net8.0\refint\DataAccessLayer.dll
+C:\Users\SeDMI\OneDrive\Рабочий стол\AnimeChanSelector\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.pdb
+C:\Users\SeDMI\OneDrive\Рабочий стол\AnimeChanSelector\DataAccessLayer\obj\Debug\net8.0\ref\DataAccessLayer.dll
+C:\Users\Nubik\Documents\IloveGit\AnimeChanSelector\DataAccessLayer\bin\Debug\net8.0\DataAccessLayer.deps.json
+C:\Users\Nubik\Documents\IloveGit\AnimeChanSelector\DataAccessLayer\bin\Debug\net8.0\DataAccessLayer.dll
+C:\Users\Nubik\Documents\IloveGit\AnimeChanSelector\DataAccessLayer\bin\Debug\net8.0\DataAccessLayer.pdb
+C:\Users\Nubik\Documents\IloveGit\AnimeChanSelector\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\Nubik\Documents\IloveGit\AnimeChanSelector\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nubik\Documents\IloveGit\AnimeChanSelector\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\Nubik\Documents\IloveGit\AnimeChanSelector\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.AssemblyInfo.cs
+C:\Users\Nubik\Documents\IloveGit\AnimeChanSelector\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\Nubik\Documents\IloveGit\AnimeChanSelector\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.sourcelink.json
+C:\Users\Nubik\Documents\IloveGit\AnimeChanSelector\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.dll
+C:\Users\Nubik\Documents\IloveGit\AnimeChanSelector\DataAccessLayer\obj\Debug\net8.0\refint\DataAccessLayer.dll
+C:\Users\Nubik\Documents\IloveGit\AnimeChanSelector\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.pdb
+C:\Users\Nubik\Documents\IloveGit\AnimeChanSelector\DataAccessLayer\obj\Debug\net8.0\ref\DataAccessLayer.dll
+C:\Users\Nubik\Documents\IloveGit\AnimeChanSelector\DataAccessLayer\bin\Debug\net8.0\DataAccessLayer.runtimeconfig.json
+C:\Users\Nubik\Documents\IloveGit\AnimeChanSelector\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.genruntimeconfig.cache
+C:\Users\SeDMI\OneDrive\Рабочий стол\AnimeChanSelector\DataAccessLayer\bin\Debug\net8.0\DataAccessLayer.runtimeconfig.json
+C:\Users\SeDMI\OneDrive\Рабочий стол\AnimeChanSelector\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.genruntimeconfig.cache

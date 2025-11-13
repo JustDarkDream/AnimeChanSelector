@@ -1,21 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+﻿using Model;
 using System.Diagnostics;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using Model;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.ScrollBar;
 
 namespace ViewForms
 {
     public partial class FilterChan : Form
     {
         BourgeoisLogic logic = new BourgeoisLogic();
+        
+        /// <summary>
+        /// Конструктор формы фильтра
+        /// </summary>
         public FilterChan()
         {
             InitializeComponent();
@@ -34,7 +28,7 @@ namespace ViewForms
 
             foreach (var skill in filterStats.Skills)
             {
-                ListViewItem item = new ListViewItem(skill.ToString());
+                ListViewItem item = new ListViewItem(skill.Name);
                 item.Tag = skill;
 
                 listView1.Items.Add(item);
@@ -68,11 +62,11 @@ namespace ViewForms
                                                     {
                                                         if (sizefrom < sizeto)
                                                         {
-                                                            List<Skills> skills = new List<Skills>();
+                                                            List<Skill> skills = new List<Skill>();
 
                                                             foreach (ListViewItem item in listView1.Items) //Считывает информацию с ListView и закидывает в список
                                                             {
-                                                                if (item.Tag is Skills skill)
+                                                                if (item.Tag is Skill skill)
                                                                 {
                                                                     skills.Add(skill);
                                                                 }
@@ -83,73 +77,73 @@ namespace ViewForms
                                                         }
                                                         else
                                                         {
-                                                            Error error = new Error("Значение \"Размер ОТ\" не может быть больше значения \"Размер ДО\"");
+                                                            ErrorForm error = new ErrorForm("Значение \"Размер ОТ\" не может быть больше значения \"Размер ДО\"");
                                                             error.ShowDialog();
                                                         }
                                                     }
                                                     else
                                                     {
-                                                        Error error = new Error("Значение \"Вес ОТ\" не может быть больше значения \"Вес ДО\"");
+                                                        ErrorForm error = new ErrorForm("Значение \"Вес ОТ\" не может быть больше значения \"Вес ДО\"");
                                                         error.ShowDialog();
                                                     }
                                                 }
                                                 else
                                                 {
-                                                    Error error = new Error("Значение \"Рост ОТ\" не может быть больше значения \"Рост ДО\"");
+                                                    ErrorForm error = new ErrorForm("Значение \"Рост ОТ\" не может быть больше значения \"Рост ДО\"");
                                                     error.ShowDialog();
                                                 }
                                             }
                                             else
                                             {
-                                                Error error = new Error("Значение \"Возраст ОТ\" не может быть больше значения \"Возраст ДО\"");
+                                                ErrorForm error = new ErrorForm("Значение \"Возраст ОТ\" не может быть больше значения \"Возраст ДО\"");
                                                 error.ShowDialog();
                                             }
                                         }
                                         else
                                         {
-                                            Error error = new Error("Введено некорректное значение в \"Размер ДО\". Введите неотрицательно число");
+                                            ErrorForm error = new ErrorForm("Введено некорректное значение в \"Размер ДО\". Введите неотрицательно число");
                                             error.ShowDialog();
                                         }
                                     }
                                     else
                                     {
-                                        Error error = new Error("Введено некорректное значение в \"Размер ОТ\". Введите неотрицательно число");
+                                        ErrorForm error = new ErrorForm("Введено некорректное значение в \"Размер ОТ\". Введите неотрицательно число");
                                         error.ShowDialog();
                                     }
                                 }
                                 else
                                 {
-                                    Error error = new Error("Введено некорректное значение в \"Вес ДО\". Введите неотрицательно число");
+                                    ErrorForm error = new ErrorForm("Введено некорректное значение в \"Вес ДО\". Введите неотрицательно число");
                                     error.ShowDialog();
                                 }
                             }
                             else
                             {
-                                Error error = new Error("Введено некорректное значение в \"Вес ОТ\". Введите неотрицательно число");
+                                ErrorForm error = new ErrorForm("Введено некорректное значение в \"Вес ОТ\". Введите неотрицательно число");
                                 error.ShowDialog();
                             }
                         }
                         else
                         {
-                            Error error = new Error("Введено некорректное значение в \"Рост ДО\". Введите неотрицательно число");
+                            ErrorForm error = new ErrorForm("Введено некорректное значение в \"Рост ДО\". Введите неотрицательно число");
                             error.ShowDialog();
                         }
                     }
                     else
                     {
-                        Error error = new Error("Введено некорректное значение в \"Рост ОТ\". Введите неотрицательно число");
+                        ErrorForm error = new ErrorForm("Введено некорректное значение в \"Рост ОТ\". Введите неотрицательно число");
                         error.ShowDialog();
                     }
                 }
                 else
                 {
-                    Error error = new Error("Введено некорректное значение в \"Возраст ДО\". Введите неотрицательно число");
+                    ErrorForm error = new ErrorForm("Введено некорректное значение в \"Возраст ДО\". Введите неотрицательно число");
                     error.ShowDialog();
                 }
             }
             else
             {
-                Error error = new Error("Введено некорректное значение в \"Возраст ОТ\". Введите неотрицательно число");
+                ErrorForm error = new ErrorForm("Введено некорректное значение в \"Возраст ОТ\". Введите неотрицательно число");
                 error.ShowDialog();
             }
         }
@@ -157,11 +151,11 @@ namespace ViewForms
         ///<summary>Вызывается при нажатии на кнопку редактора скиллов. Открывает форму редакторов скиллов и сохраняет изменения</summary>
         private void skillsSettung_Click(object sender, EventArgs e)
         {
-            List<Skills> skills = new List<Skills>();
+            List<Skill> skills = new List<Skill>();
 
             foreach (ListViewItem item in listView1.Items) //Считывает информацию с ListView и закидывает в список
             {
-                if (item.Tag is Skills skill)
+                if (item.Tag is Skill skill)
                 {
                     skills.Add(skill);
                 }
@@ -169,17 +163,34 @@ namespace ViewForms
 
             SkillsSetting skillsSetting = new SkillsSetting(skills); //Создаём форму для редактирования навыков
 
-            listView1.Items.Clear();
-
-            skillsSetting.ShowDialog();
-            Debug.WriteLine(logic.LoadSkills().Count); //Подгружаем сохраненные навыки с той формы
-
-            foreach (Skills skill in logic.LoadSkills()) //Отображаем в ListView сохраненные навыки с той формы
+            if (skillsSetting.ShowDialog() == DialogResult.OK)
             {
-                ListViewItem newItem = new ListViewItem(skill.ToString()); 
-                newItem.Tag = skill;
-                listView1.Items.Add(newItem);
+                listView1.Items.Clear();
+
+                skills.Clear();
+
+                foreach (Skill skill in logic.LoadSkills())
+                {
+                    skills.Add(skill);
+                }
+
+                foreach (Skill skill2 in skills) //Отображаем в ListView сохраненные навыки с той формы
+                {
+                    ListViewItem newItem = new ListViewItem(skill2.Name);
+                    newItem.Tag = skill2;
+                    listView1.Items.Add(newItem);
+                }
             }
+        }
+
+        /// <summary>
+        /// Событие загрузки формы фильтра
+        /// </summary>
+        /// <param name="sender">Форма фильтра</param>
+        /// <param name="e">Контейнер аргументов</param>
+        private void FilterChan_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Model
+﻿namespace Model
 {
     public class FilterStats
     {
@@ -16,7 +10,7 @@ namespace Model
         public int WeightTo { get; internal set; } = 100;
         public int SizeFrom { get; internal set; } = 0;
         public int SizeTo { get; internal set; } = 10;
-        public List<Skills> Skills { get; internal set; } = new List<Skills>();
+        public List<Skill> Skills { get; internal set; } = new List<Skill>();
         public bool isСonsiderAll { get; internal set; } = false;
     }
 }

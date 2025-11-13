@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Nubik\\Documents\\IloveGit\\Semester3\\Model\\Model.csproj": {}
+    "C:\\Users\\SeDMI\\OneDrive\\Рабочий стол\\AnimeChanSelector\\Model\\Model.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Nubik\\Documents\\IloveGit\\Semester3\\Model\\Model.csproj": {
+    "C:\\Users\\SeDMI\\OneDrive\\Рабочий стол\\AnimeChanSelector\\DataAccessLayer\\DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nubik\\Documents\\IloveGit\\Semester3\\Model\\Model.csproj",
-        "projectName": "Model",
-        "projectPath": "C:\\Users\\Nubik\\Documents\\IloveGit\\Semester3\\Model\\Model.csproj",
-        "packagesPath": "C:\\Users\\Nubik\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nubik\\Documents\\IloveGit\\Semester3\\Model\\obj\\",
+        "projectUniqueName": "C:\\Users\\SeDMI\\OneDrive\\Рабочий стол\\AnimeChanSelector\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectName": "DataAccessLayer",
+        "projectPath": "C:\\Users\\SeDMI\\OneDrive\\Рабочий стол\\AnimeChanSelector\\DataAccessLayer\\DataAccessLayer.csproj",
+        "packagesPath": "C:\\Users\\SeDMI\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\SeDMI\\OneDrive\\Рабочий стол\\AnimeChanSelector\\DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Nubik\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\SeDMI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -42,6 +44,102 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.66, )"
+            },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[6.1.2, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\SeDMI\\OneDrive\\Рабочий стол\\AnimeChanSelector\\Model\\Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\SeDMI\\OneDrive\\Рабочий стол\\AnimeChanSelector\\Model\\Model.csproj",
+        "projectName": "Model",
+        "projectPath": "C:\\Users\\SeDMI\\OneDrive\\Рабочий стол\\AnimeChanSelector\\Model\\Model.csproj",
+        "packagesPath": "C:\\Users\\SeDMI\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\SeDMI\\OneDrive\\Рабочий стол\\AnimeChanSelector\\Model\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\SeDMI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\SeDMI\\OneDrive\\Рабочий стол\\AnimeChanSelector\\DataAccessLayer\\DataAccessLayer.csproj": {
+                "projectPath": "C:\\Users\\SeDMI\\OneDrive\\Рабочий стол\\AnimeChanSelector\\DataAccessLayer\\DataAccessLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.9, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

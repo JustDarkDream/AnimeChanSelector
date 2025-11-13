@@ -1,25 +1,18 @@
-﻿using Microsoft.VisualBasic.Logging;
-using Model;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+﻿using Model;
 using System.Diagnostics;
-using System.Drawing;
-using System.Linq;
-using System.Security.Policy;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace ViewForms
 {
     public partial class AnimeChanCard : Form
     {
         BourgeoisLogic logic = new BourgeoisLogic();
-        int animeChanId = 0; 
+        int animeChanId = 0;
 
+        /// <summary>
+        /// Конструктор формы "Инфа о тянке"
+        /// </summary>
+        /// <param name="animeChan">Аниме тянка</param>
+        /// <param name="isEditable">Переключение между режимом редактирвоания тянки и просмотром</param>
         public AnimeChanCard(AnimeChan animeChan, bool isEditable) //Вызывается, если пользователь хочет редактировать или посмотреть на тянку
         {
             InitializeComponent();
@@ -37,11 +30,11 @@ namespace ViewForms
 
             foreach (var skill in animeChan.Skills) //Перечисляет навыки тянки
             {
-                ListViewItem item = new ListViewItem(skill.ToString());
+                var item = new ListViewItem(skill.Name);
                 item.Tag = skill;
-
                 listView1.Items.Add(item);
             }
+
             //Редактирует состояние кнопок в зависимости от выбора
             addChan.Visible = false;
             addChan.Enabled = false;
@@ -94,28 +87,35 @@ namespace ViewForms
         ///<summary>Вызывается при нажатии на кнопку редактора скиллов. Открывает форму редакторов скиллов и сохраняет изменения</summary>
         private void skillsSettung_Click(object sender, EventArgs e)
         {
-            List<Skills> skills = new List<Skills>();
-
+            List<Skill> skills = new List<Skill>();
             foreach (ListViewItem item in listView1.Items) //Считывает информацию с ListView и закидывает в список
             {
-                if (item.Tag is Skills skill)
+                if (item.Tag is Skill skill3)
                 {
-                    skills.Add(skill);
+                    skills.Add(skill3);
                 }
             }
 
             SkillsSetting skillsSetting = new SkillsSetting(skills); //Создаём форму для редактирования навыков
 
-            listView1.Items.Clear(); 
-
-            skillsSetting.ShowDialog();
-            Debug.WriteLine(logic.LoadSkills().Count); //Подгружаем сохраненные навыки с той формы
-
-            foreach (Skills skill in logic.LoadSkills()) //Отображаем в ListView сохраненные навыки с той формы
+            if (skillsSetting.ShowDialog() == DialogResult.OK)
             {
-                ListViewItem newItem = new ListViewItem(skill.ToString());
-                newItem.Tag = skill;
-                listView1.Items.Add(newItem);
+
+                listView1.Items.Clear();
+
+                skills.Clear();
+
+                foreach (Skill skill in logic.LoadSkills())
+                {
+                    skills.Add(skill);
+                }
+
+                foreach (Skill skill2 in skills) //Отображаем в ListView сохраненные навыки с той формы
+                {
+                    var item = new ListViewItem(skill2.Name);
+                    item.Tag = skill2;
+                    listView1.Items.Add(item);
+                }
             }
         }
 
@@ -135,11 +135,11 @@ namespace ViewForms
                                 {
                                     if (lastName.Text.Length > 0)
                                     {
-                                        List<Skills> skills = new List<Skills>();
+                                        List<Skill> skills = new List<Skill>();
 
                                         foreach (ListViewItem item in listView1.Items) //Считывает информацию с ListView и закидывает в список
                                         {
-                                            if (item.Tag is Skills skill)
+                                            if (item.Tag is Skill skill)
                                             {
                                                 skills.Add(skill);
                                             }
@@ -150,37 +150,37 @@ namespace ViewForms
                                     }
                                     else
                                     {
-                                        Error error = new Error("Ничего не введено в строку \"Фамилия\". Введите что-нибудь");
+                                        ErrorForm error = new ErrorForm("Ничего не введено в строку \"Фамилия\". Введите что-нибудь");
                                         error.ShowDialog();
                                     }
                                 }
                                 else
                                 {
-                                    Error error = new Error("Ничего не введено в строку \"Имя\". Введите что-нибудь");
+                                    ErrorForm error = new ErrorForm("Ничего не введено в строку \"Имя\". Введите что-нибудь");
                                     error.ShowDialog();
                                 }
                             }
                             else
                             {
-                                Error error = new Error("Введено некорректное значение в \"Размер\". Введите неотрицательно число");
+                                ErrorForm error = new ErrorForm("Введено некорректное значение в \"Размер\". Введите неотрицательно число");
                                 error.ShowDialog();
                             }
                         }
                         else
                         {
-                            Error error = new Error("Введено некорректное значение в \"Вес\". Введите неотрицательно число");
+                            ErrorForm error = new ErrorForm("Введено некорректное значение в \"Вес\". Введите неотрицательно число");
                             error.ShowDialog();
                         }
                     }
                     else
                     {
-                        Error error = new Error("Введено некорректное значение в \"Рост\". Введите неотрицательно число");
+                        ErrorForm error = new ErrorForm("Введено некорректное значение в \"Рост\". Введите неотрицательно число");
                         error.ShowDialog();
                     }
                 }
                 else
                 {
-                    Error error = new Error("Введено некорректное значение в \"Возраст\". Введите неотрицательно число");
+                    ErrorForm error = new ErrorForm("Введено некорректное значение в \"Возраст\". Введите неотрицательно число");
                     error.ShowDialog();
                 }
             }
@@ -201,11 +201,11 @@ namespace ViewForms
                             {
                                 if (lastName.Text.Length > 0)
                                 {
-                                    List<Skills> skills = new List<Skills>();
+                                    List<Skill> skills = new List<Skill>();
 
                                     foreach (ListViewItem item in listView1.Items) //Считывает информацию с ListView и закидывает в список
                                     {
-                                        if (item.Tag is Skills skill)
+                                        if (item.Tag is Skill skill)
                                         {
                                             skills.Add(skill);
                                         }
@@ -216,37 +216,37 @@ namespace ViewForms
                                 }
                                 else
                                 {
-                                    Error error = new Error("Ничего не введено в строку \"Фамилия\". Введите что-нибудь");
+                                    ErrorForm error = new ErrorForm("Ничего не введено в строку \"Фамилия\". Введите что-нибудь");
                                     error.ShowDialog();
                                 }
                             }
                             else
                             {
-                                Error error = new Error("Ничего не введено в строку \"Имя\". Введите что-нибудь");
+                                ErrorForm error = new ErrorForm("Ничего не введено в строку \"Имя\". Введите что-нибудь");
                                 error.ShowDialog();
                             }
                         }
                         else
                         {
-                            Error error = new Error("Введено некорректное значение в \"Размер\". Введите число");
+                            ErrorForm error = new ErrorForm("Введено некорректное значение в \"Размер\". Введите число");
                             error.ShowDialog();
                         }
                     }
                     else
                     {
-                        Error error = new Error("Введено некорректное значение в \"Вес\". Введите число");
+                        ErrorForm error = new ErrorForm("Введено некорректное значение в \"Вес\". Введите число");
                         error.ShowDialog();
                     }
                 }
                 else
                 {
-                    Error error = new Error("Введено некорректное значение в \"Рост\". Введите число");
+                    ErrorForm error = new ErrorForm("Введено некорректное значение в \"Рост\". Введите число");
                     error.ShowDialog();
                 }
             }
             else
             {
-                Error error = new Error("Введено некорректное значение в \"Возраст\". Введите число");
+                ErrorForm error = new ErrorForm("Введено некорректное значение в \"Возраст\". Введите число");
                 error.ShowDialog();
             }
         }
@@ -257,6 +257,16 @@ namespace ViewForms
             logic.SaveId(animeChanId);
             this.DialogResult = DialogResult.OK; //Сообщаем, что изменения мы сохраняем
             Close();
+        }
+
+        /// <summary>
+        /// Событие загрузки формы "Инфа о тянке"
+        /// </summary>
+        /// <param name="sender">Форма "Инфа о тянке"</param>
+        /// <param name="e">Контейнер аргументов</param>
+        private void AnimeChanCard_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }

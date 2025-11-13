@@ -1,23 +1,28 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using Model;
+﻿using Model;
 
 namespace ViewForms
 {
     public partial class Conclution : Form
     {
         BourgeoisLogic logic = new BourgeoisLogic();
+        
+        /// <summary>
+        /// Конструктор формы заключения
+        /// </summary>
         public Conclution()
         {
             InitializeComponent();
             richTextBox1.Text = logic.Conclution();
+        }
+
+        /// <summary>
+        /// Событие загрузки формы заключения
+        /// </summary>
+        /// <param name="sender">Форма заключения</param>
+        /// <param name="e">Контейнер аргументов</param>
+        private void Conclution_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
