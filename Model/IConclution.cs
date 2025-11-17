@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Model
 {
-    internal interface IConclution
+    public interface IConclution
     {
         ///<summary>Создаёт результат отношений с выбранной тянкой</summary>
         /// <returns>Возвращает результат отношений с выбранной тянкой</returns>

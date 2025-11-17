@@ -42,7 +42,7 @@ namespace ViewForms
                             {
                                 if (lastName.Text.Length > 0)
                                 {
-                                    logic.SaveMainPerson(firstName.Text, lastName.Text, age, height, weight, size);
+                                    logic.MainPersonLogic.SaveMainPerson(firstName.Text, lastName.Text, age, height, weight, size);
                                     this.DialogResult = DialogResult.OK; //Сообщаем, что изменения мы сохраняем
                                     Close();
                                 }

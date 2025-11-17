@@ -55,7 +55,7 @@ namespace ViewForms
 
                 if (existingItem != null)
                 {
-                    Skill newSkill = logic.CreateSkill(selected.ToString());
+                    Skill newSkill = logic.SkillLogic.CreateSkill(selected.ToString());
 
                     skillsView.Items.Remove(existingItem);
                 }
@@ -74,7 +74,7 @@ namespace ViewForms
 
                 if (existingItem == null)
                 {
-                    Skill newSkill = logic.CreateSkill(selected.ToString());
+                    Skill newSkill = logic.SkillLogic.CreateSkill(selected.ToString());
 
                     ListViewItem newItem = skillsView.Items.Add(newSkill.Name);
                     newItem.Tag = newSkill;
@@ -94,10 +94,10 @@ namespace ViewForms
                     skills.Add(skill);
                 }
             }
-            logic.ClearSkills();
+            logic.SkillLogic.ClearSkills();
             foreach (Skill skill in skills)
             {
-                logic.SaveSkills(skill); //Сохраняет навыки
+                logic.SkillLogic.SaveSkill(skill); //Сохраняет навыки
             }
             this.DialogResult = DialogResult.OK;
             Close();

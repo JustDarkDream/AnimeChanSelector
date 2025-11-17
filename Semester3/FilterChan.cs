@@ -19,7 +19,7 @@ namespace ViewForms
             logic = ninjectKernel.Get<BourgeoisLogic>();
 
             InitializeComponent();
-            FilterStats filterStats = logic.LoadFilterStats();
+            FilterStats filterStats = logic.FilterLogic.LoadFilterStats();
 
             ageFrom.Text = filterStats.AgeFrom.ToString();
             ageTo.Text = filterStats.AgeTo.ToString();
@@ -77,7 +77,7 @@ namespace ViewForms
                                                                     skills.Add(skill);
                                                                 }
                                                             }
-                                                            logic.FilterAnimeChanList(agefrom, ageto, heightfrom, heightto, weightfrom, weightto, sizefrom, sizeto, skills, checkBox1.Checked);
+                                                            logic.FilterLogic.FilterAnimeChanList(agefrom, ageto, heightfrom, heightto, weightfrom, weightto, sizefrom, sizeto, skills, checkBox1.Checked);
                                                             this.DialogResult = DialogResult.OK; //Сообщаем, что изменения мы сохраняем
                                                             Close();
                                                         }
@@ -175,7 +175,7 @@ namespace ViewForms
 
                 skills.Clear();
 
-                foreach (Skill skill in logic.LoadSkills())
+                foreach (Skill skill in logic.SkillLogic.LoadSkills())
                 {
                     skills.Add(skill);
                 }

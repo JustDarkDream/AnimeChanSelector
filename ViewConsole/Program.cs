@@ -1,14 +1,18 @@
 ﻿using Model;
+using Ninject;
 
 namespace ViewConsole
 {
     internal class Program
     {
-        static BourgeoisLogic logic = new BourgeoisLogic();
+        static IKernel ninjectKernel;
+        static BourgeoisLogic logic;
         static bool isFiltered = false;
 
         static void Main(string[] args)
         {
+            ninjectKernel = new StandardKernel(new SimpleConfigModule());
+            logic = ninjectKernel.Get<BourgeoisLogic>();
             Registration();
             MainMenu();
         }
@@ -114,15 +118,16 @@ namespace ViewConsole
             }
             Console.WriteLine("\nРегистрация прошла успешно!");
             Console.ReadKey();
-            logic.SaveMainPerson(firstName, lastName, age, height, weight, size);
+            logic.MainPersonLogic.SaveMainPerson(firstName, lastName, age, height, weight, size);
         }
 
         ///<summary>Главное меню, которое выводит таблицу с тянками и дает возможность что-либо делать с этой таблицей</summary>
         static void MainMenu()
         {
-            logic.DeleteAll();
-            logic.CreateAnimeChans();
-            logic.CreateAnimeChansInDB();
+            logic.AnimeChanLogic.DeleteAnimeChans();
+            logic.SkillLogic.DeleteSkills();
+            logic.AnimeChanLogic.CreateAnimeChans();
+            logic.AnimeChanLogic.CreateAnimeChansInDB();
             while (true)
             {
                 Console.Clear();
@@ -134,7 +139,7 @@ namespace ViewConsole
                 Console.WriteLine("".PadLeft(151, '_')); //Создаёт линию под названиями колонок
                 if (isFiltered)
                 {
-                    List<AnimeChan> chan = logic.LoadFilterAnimeChanList();
+                    List<AnimeChan> chan = logic.FilterLogic.LoadFilterAnimeChanList();
                     int i = 0;
                     foreach (AnimeChan anime in chan)
                     {
@@ -146,7 +151,7 @@ namespace ViewConsole
                 }
                 else
                 {
-                    List<AnimeChan> chan = logic.LoadAnimeChanList().ToList();
+                    List<AnimeChan> chan = logic.AnimeChanLogic.LoadAnimeChanList().ToList();
                     int i = 0;
                     foreach (AnimeChan anime in chan)
                     {
@@ -174,14 +179,14 @@ namespace ViewConsole
                             CreateOrChangeAnimeChan(null);
                             break;
                         case 2: //Создаёт тян автоматически
-                            logic.FindAnimeChan();
+                            logic.AnimeChanLogic.FindAnimeChan();
                             Console.WriteLine("\nТян была найдена!!!");
                             break;
                         case 3: //Позволяет пользователю редактировать тян с определенным id
                             Console.WriteLine("\nВведите ID Тянки, которую хотите редактировать");
                             if (int.TryParse(Console.ReadLine(), out int id))
                             {
-                                AnimeChan animeChan = logic.FindById(id); //Проверяет на существование тян с таким id
+                                AnimeChan animeChan = logic.AnimeChanLogic.FindById(id); //Проверяет на существование тян с таким id
                                 if (animeChan == null)
                                 {
                                     Console.WriteLine("\nТянки с таким ID не существует!");
@@ -200,14 +205,14 @@ namespace ViewConsole
                             Console.WriteLine("\nВведите ID Тянки, которую хотите удалить");
                             if (int.TryParse(Console.ReadLine(), out int id2))
                             {
-                                AnimeChan animeChan = logic.FindById(id2);//Проверяет на существование тян с таким id
+                                AnimeChan animeChan = logic.AnimeChanLogic.FindById(id2);//Проверяет на существование тян с таким id
                                 if (animeChan == null)
                                 {
                                     Console.WriteLine("\nТянки с таким ID не существует!");
                                 }
                                 else
                                 {
-                                    logic.DeleteAnimeChan(id2);
+                                    logic.AnimeChanLogic.DeleteAnimeChan(id2);
                                     Console.WriteLine("\nУдаление прошло успешно!");
                                 }
                             }
@@ -220,7 +225,7 @@ namespace ViewConsole
                             Console.WriteLine("\nВведите ID Тянки, которую хотите увидеть");
                             if (int.TryParse(Console.ReadLine(), out int id3))
                             {
-                                AnimeChan animeChan = logic.FindById(id3);//Проверяет на существование тян с таким id
+                                AnimeChan animeChan = logic.AnimeChanLogic.FindById(id3);//Проверяет на существование тян с таким id
                                 if (animeChan == null)
                                 {
                                     Console.WriteLine("\nТянки с таким ID не существует!");
@@ -236,11 +241,11 @@ namespace ViewConsole
                             }
                             break;
                         case 6://Отфильтровывает таблицу с тянками
-                            Filter(logic.LoadFilterStats());
+                            Filter(logic.FilterLogic.LoadFilterStats());
                             break;
                         case 7://Убирает фильтрацию таблицы с тянками
                             isFiltered = false;
-                            logic.DestroyFilter();
+                            logic.FilterLogic.DestroyFilter();
                             Console.WriteLine("\nФильтр отключен!");
                             break;
                         default:
@@ -404,7 +409,7 @@ namespace ViewConsole
                     {
                         case 1: //Позволяет пользователю изменить содержание списка с элементами Skills
                             ChooseSkills(skills);
-                            List<Skill> skill = logic.LoadSkills();
+                            List<Skill> skill = logic.SkillLogic.LoadSkills();
                             break;
                         case 2: //Завершает создание/редактирование тянки
                             Console.WriteLine("\nСохранение прошло успешно!");
@@ -426,11 +431,11 @@ namespace ViewConsole
             }
             if (animeChan == null) //Проверка, создает ли он тян или редактирует
             {
-                logic.AddAnimeChan(firstName, lastName, age, height, weight, size, skills); //Создаёт новую тян
+                logic.AnimeChanLogic.AddAnimeChan(firstName, lastName, age, height, weight, size, skills); //Создаёт новую тян
             }
             else
             {
-                logic.SaveChangeAnimeChan(firstName, lastName, age, height, weight, size, skills, animeChan.Id); //Редактирует тян с определенным id
+                logic.AnimeChanLogic.SaveChangeAnimeChan(firstName, lastName, age, height, weight, size, skills, animeChan.Id); //Редактирует тян с определенным id
             }
         }
 
@@ -482,7 +487,7 @@ namespace ViewConsole
                                     string skillName = ((Skills)Enum.GetValues(typeof(Skills)).GetValue(n - 1)).ToString();
                                     if (!skills.Any(x => x.Name == skillName))
                                     {
-                                        skills.Add(logic.CreateSkill(skillName));
+                                        skills.Add(logic.SkillLogic.CreateSkill(skillName));
                                         Console.WriteLine("\n\nНавык успешно добавлен!");
                                     }
                                     else
@@ -535,7 +540,7 @@ namespace ViewConsole
 
             foreach (Skill skill in skills)
             {
-                logic.SaveSkills(skill); //Сохраняет навыки
+                logic.SkillLogic.SaveSkill(skill); //Сохраняет навыки
             }
         }
 
@@ -579,7 +584,7 @@ namespace ViewConsole
                     switch (n)
                     {
                         case 1: //Выбирает её и пишет результат
-                            logic.SaveId(animeChan.Id);
+                            logic.AnimeChanLogic.SaveId(animeChan.Id);
                             Conclution();
                             break;
                         case 2: //Прекращает просмотр этой тянки
@@ -606,7 +611,7 @@ namespace ViewConsole
         static void Conclution()
         {
             Console.Clear();
-            Console.WriteLine(logic.Conclution()); //Выходит огромный текст с итогом
+            Console.WriteLine(logic.ConclutionLogic.Conclution()); //Выходит огромный текст с итогом
             Console.ReadKey();
             Environment.Exit(0); //Закрывает консольку
         }
@@ -851,7 +856,7 @@ namespace ViewConsole
                         {
                             case 1: //Если пользователь выбрал редактировать навыки
                                 ChooseSkills(skills);
-                                List<Skill> skill = logic.LoadSkills();
+                                List<Skill> skill = logic.SkillLogic.LoadSkills();
                                 skillsChange = -1;
                                 break;
                             case 2: //Если пользователь выбрал НЕТ
@@ -872,10 +877,10 @@ namespace ViewConsole
                             switch (n)
                             {
                                 case 1: //Если навыки должны полностью совпадать
-                                    logic.FilterAnimeChanList(ageFrom, ageTo, heightFrom, heightTo, weightFrom, weightTo, sizeFrom, sizeTo, skills, true);
+                                    logic.FilterLogic.FilterAnimeChanList(ageFrom, ageTo, heightFrom, heightTo, weightFrom, weightTo, sizeFrom, sizeTo, skills, true);
                                     break;
                                 case 2: //Если хотя бы один навык должен совпадать
-                                    logic.FilterAnimeChanList(ageFrom, ageTo, heightFrom, heightTo, weightFrom, weightTo, sizeFrom, sizeTo, skills, false);
+                                    logic.FilterLogic.FilterAnimeChanList(ageFrom, ageTo, heightFrom, heightTo, weightFrom, weightTo, sizeFrom, sizeTo, skills, false);
                                     break;
                                 default:
                                     Console.WriteLine("\nНекорректная запись. Выбери подходящее число, чтобы заработало)");
@@ -935,7 +940,7 @@ namespace ViewConsole
                     sizeTo = filterStats.SizeTo;
                 }
                 isFiltered = true;
-                logic.FilterAnimeChanList(ageFrom, ageTo, heightFrom, heightTo, weightFrom, weightTo, sizeFrom, sizeTo, skills, false);
+                logic.FilterLogic.FilterAnimeChanList(ageFrom, ageTo, heightFrom, heightTo, weightFrom, weightTo, sizeFrom, sizeTo, skills, false);
             }
         }
     }

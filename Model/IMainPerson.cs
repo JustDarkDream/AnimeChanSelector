@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Model
 {
-    internal interface IMainPerson
+    public interface IMainPerson
     {
         ///<summary>Сохраняет все веденные данные в регистрации</summary>
         /// <returns>Сохраняет все веденные данные в регистрации</returns>

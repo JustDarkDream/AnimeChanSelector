@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Model
 {
-    internal interface IFilterable
+    public interface IFilterable
     {
         ///<summary>Сбрасывает значения фильтра до первоначальных</summary>
         public void DestroyFilter();

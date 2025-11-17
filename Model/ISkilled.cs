@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Model
 {
-    internal interface ISkilled
+    public interface ISkilled
     {
         ///<summary>Сохраняет навык в список навыков</summary>
         /// <param name="skill">Навык, который сохраняется</param>
@@ -23,5 +23,11 @@ namespace Model
         /// <param name="name">Имя, которое будет присвоено новосозданному скилу</param>
         /// <returns>Возвращает сам скилл/returns>
         public Skill CreateSkill(string name);
+
+        ///<summary>Чистит ВСЕ данные в БД</summary>
+        public void DeleteSkills();
+
+        ///<summary>Загружает все возможные скилы в БД</summary>
+        public void LoadAllSkillsInDB();
     }
 }

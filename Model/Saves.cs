@@ -1,6 +1,6 @@
 ﻿namespace Model
 {
-    internal class Saves
+    public class Saves
     {
 
         internal List<Skill> Skills { get; set; } = new List<Skill>();

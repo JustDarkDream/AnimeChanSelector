@@ -17,7 +17,7 @@ namespace ViewForms
             ninjectKernel = new StandardKernel(new SimpleConfigModule());
             logic = ninjectKernel.Get<BourgeoisLogic>();
             InitializeComponent();
-            richTextBox1.Text = logic.Conclution();
+            richTextBox1.Text = logic.ConclutionLogic.Conclution();
         }
 
         /// <summary>
