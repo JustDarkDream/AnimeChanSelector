@@ -1,11 +1,14 @@
 ﻿using Model;
+using Ninject;
 using System.Diagnostics;
 
 namespace ViewForms
 {
     public partial class AnimeChanCard : Form
     {
-        BourgeoisLogic logic = new BourgeoisLogic();
+        IKernel ninjectKernel;
+        BourgeoisLogic logic;
+        //BourgeoisLogic logic = new BourgeoisLogic();
         int animeChanId = 0;
 
         /// <summary>
@@ -15,6 +18,9 @@ namespace ViewForms
         /// <param name="isEditable">Переключение между режимом редактирвоания тянки и просмотром</param>
         public AnimeChanCard(AnimeChan animeChan, bool isEditable) //Вызывается, если пользователь хочет редактировать или посмотреть на тянку
         {
+            ninjectKernel = new StandardKernel(new SimpleConfigModule());
+            logic = ninjectKernel.Get<BourgeoisLogic>();
+
             InitializeComponent();
             firstName.Text = animeChan.FirstName;
             lastName.Text = animeChan.LastName;
@@ -56,6 +62,10 @@ namespace ViewForms
         }
         public AnimeChanCard() //Вызывается, если пользователь хочет создать новую тянку
         {
+
+            ninjectKernel = new StandardKernel(new SimpleConfigModule());
+            logic = ninjectKernel.Get<BourgeoisLogic>();
+
             InitializeComponent();
             firstName.Text = "";
             lastName.Text = "";

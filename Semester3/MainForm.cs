@@ -1,4 +1,5 @@
 using Model;
+using Ninject;
 using System.Data;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
@@ -8,13 +9,17 @@ namespace ViewForms
     {
 
         DataGridView table;
-        BourgeoisLogic logic = new BourgeoisLogic();
+        IKernel ninjectKernel;
+        BourgeoisLogic logic;
         
         /// <summary>
         /// Конструктор главной формы
         /// </summary>
         public MainForm()
         {
+            ninjectKernel = new StandardKernel(new SimpleConfigModule());
+            logic = ninjectKernel.Get<BourgeoisLogic>();
+
             InitializeComponent();
 
             table = dgwTabel;
@@ -56,7 +61,9 @@ namespace ViewForms
                 AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
             });
 
-            logic.CreateAnimeChan();
+            logic.DeleteAll();
+            logic.CreateAnimeChans();
+            logic.CreateAnimeChansInDB();
             foreach (var i in logic.LoadAnimeChanList())
             {
                 table.Rows.Add(i.FirstName, i.LastName, i.Age, i.Id);

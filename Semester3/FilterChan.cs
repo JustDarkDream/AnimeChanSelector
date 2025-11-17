@@ -1,17 +1,23 @@
 ﻿using Model;
+using Ninject;
 using System.Diagnostics;
 
 namespace ViewForms
 {
     public partial class FilterChan : Form
     {
-        BourgeoisLogic logic = new BourgeoisLogic();
+        IKernel ninjectKernel;
+        BourgeoisLogic logic;
         
         /// <summary>
         /// Конструктор формы фильтра
         /// </summary>
         public FilterChan()
         {
+
+            ninjectKernel = new StandardKernel(new SimpleConfigModule());
+            logic = ninjectKernel.Get<BourgeoisLogic>();
+
             InitializeComponent();
             FilterStats filterStats = logic.LoadFilterStats();
 

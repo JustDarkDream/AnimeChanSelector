@@ -1,16 +1,23 @@
 ﻿using Model;
+using Ninject;
 
 namespace ViewForms
 {
     public partial class Registration : Form
     {
-        BourgeoisLogic logic = new BourgeoisLogic();
+
+
+        IKernel ninjectKernel = new StandardKernel(new SimpleConfigModule());
+        BourgeoisLogic logic;
+        //BourgeoisLogic logic = new BourgeoisLogic();
         
         /// <summary>
         /// Конструктор формы регистрации
         /// </summary>
         public Registration()
         {
+            ninjectKernel = new StandardKernel(new SimpleConfigModule());
+            logic = ninjectKernel.Get<BourgeoisLogic>();
             InitializeComponent();
             firstName.Text = "";
             lastName.Text = "";

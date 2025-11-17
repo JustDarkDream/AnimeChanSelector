@@ -120,7 +120,9 @@ namespace ViewConsole
         ///<summary>Главное меню, которое выводит таблицу с тянками и дает возможность что-либо делать с этой таблицей</summary>
         static void MainMenu()
         {
-            logic.CreateAnimeChan();
+            logic.DeleteAll();
+            logic.CreateAnimeChans();
+            logic.CreateAnimeChansInDB();
             while (true)
             {
                 Console.Clear();

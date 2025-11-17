@@ -1,12 +1,13 @@
 ﻿using Model;
+using Ninject;
 using System.Data;
 
 namespace ViewForms
 {
     public partial class SkillsSetting : Form
     {
-
-        BourgeoisLogic logic = new BourgeoisLogic();
+        IKernel ninjectKernel;
+        BourgeoisLogic logic;
 
         /// <summary>
         /// Конструктор формы "настройка скиллов".
@@ -14,6 +15,9 @@ namespace ViewForms
         /// <param name="skills">Коллекция объектов класса Skill</param>
         public SkillsSetting(List<Skill> skills)
         {
+            ninjectKernel = new StandardKernel(new SimpleConfigModule());
+            logic = ninjectKernel.Get<BourgeoisLogic>();
+
             InitializeComponent();
 
             skillsComboBox.DataSource = Enum.GetValues(typeof(Skills)); //Загружаем в комбо бокс все возможные навыки

@@ -158,19 +158,13 @@ namespace DataAccessLayer
         public IEnumerable<SkillRepo> GetByNames(IEnumerable<string> names)
         {
             var nameList = names?.ToList() ?? new List<string>();
-            Debug.WriteLine($"=== GetByNames ===");
-            Debug.WriteLine($"Ищем навыки: {string.Join(", ", nameList)}");
 
             const string sql = "SELECT * FROM Skills WHERE Name IN @Names";
 
             using (var conn = CreateConnection())
             {
                 var result = conn.Query<SkillRepo>(sql, new { Names = nameList }).ToList();
-                Debug.WriteLine($"Найдено навыков: {result.Count}");
-                foreach (var skill in result)
-                {
-                    Debug.WriteLine($"  Навык: ID={skill.Id}, Name={skill.Name}");
-                }
+
                 return result;
             }
         }

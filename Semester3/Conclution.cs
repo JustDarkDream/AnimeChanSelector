@@ -1,16 +1,21 @@
 ﻿using Model;
+using Ninject;
 
 namespace ViewForms
 {
     public partial class Conclution : Form
     {
-        BourgeoisLogic logic = new BourgeoisLogic();
+        IKernel ninjectKernel;
+        BourgeoisLogic logic;
+        //BourgeoisLogic logic = new BourgeoisLogic();
         
         /// <summary>
         /// Конструктор формы заключения
         /// </summary>
         public Conclution()
         {
+            ninjectKernel = new StandardKernel(new SimpleConfigModule());
+            logic = ninjectKernel.Get<BourgeoisLogic>();
             InitializeComponent();
             richTextBox1.Text = logic.Conclution();
         }
