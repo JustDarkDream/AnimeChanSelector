@@ -611,7 +611,7 @@ namespace ViewConsole
         static void Conclution()
         {
             Console.Clear();
-            Console.WriteLine(logic.ConclutionLogic.Conclution()); //Выходит огромный текст с итогом
+            Console.WriteLine(logic.ConclutionLogic.MakeConclution()); //Выходит огромный текст с итогом
             Console.ReadKey();
             Environment.Exit(0); //Закрывает консольку
         }

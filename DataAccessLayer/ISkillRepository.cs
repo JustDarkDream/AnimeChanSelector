@@ -10,7 +10,7 @@ namespace DataAccessLayer
     {
         ///<summary>Выводит списки скиллов, указанных по имени</summary>
         /// <param name="names">содержит имена каждого нужного скилла</param>
-        /// <returns>Возвращает сам список скиллов</returns>
+        /// <returns>Возвращает колллекцию скиллов</returns>
         IEnumerable<SkillRepo> GetByNames(IEnumerable<string> names);
     }
 }

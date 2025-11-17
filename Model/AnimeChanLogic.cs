@@ -9,8 +9,8 @@ namespace Model
 {
     public class AnimeChanLogic: IAnimeChan
     {
-        private Saves saves { get; set; }
-        private IUnitOfWork unitOfWork { get; set; }
+        private Saves saves;
+        private IUnitOfWork unitOfWork;
 
         public AnimeChanLogic(Saves savess, IUnitOfWork unitOfWorkk)
         {

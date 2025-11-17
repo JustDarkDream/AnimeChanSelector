@@ -8,8 +8,8 @@ namespace Model
 {
     public class BourgeoisLogic: IEveryLogic
     {
-        Saves Save { get; set; }
-        IUnitOfWork unitOfWork { get; set; }
+        Saves Save;
+        IUnitOfWork unitOfWork;
 
         public IAnimeChan AnimeChanLogic { get; }
         public ISkilled SkillLogic { get; }

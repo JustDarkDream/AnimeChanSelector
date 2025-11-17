@@ -7,7 +7,6 @@ namespace ViewForms
     {
         IKernel ninjectKernel;
         BourgeoisLogic logic;
-        //BourgeoisLogic logic = new BourgeoisLogic();
         
         /// <summary>
         /// Конструктор формы заключения
@@ -17,7 +16,7 @@ namespace ViewForms
             ninjectKernel = new StandardKernel(new SimpleConfigModule());
             logic = ninjectKernel.Get<BourgeoisLogic>();
             InitializeComponent();
-            richTextBox1.Text = logic.ConclutionLogic.Conclution();
+            richTextBox1.Text = logic.ConclutionLogic.MakeConclution();
         }
 
         /// <summary>

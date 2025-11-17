@@ -9,8 +9,8 @@ namespace Model
 {
     public class FilterLogic: IFilterable
     {
-        private Saves saves { get; set; }
-        private IUnitOfWork unitOfWork { get; set; }
+        private Saves saves;
+        private IUnitOfWork unitOfWork;
 
         public FilterLogic(Saves savess, IUnitOfWork unitOfWorkk)
         {
@@ -42,6 +42,7 @@ namespace Model
             a.Height >= heightFrom && a.Age <= heightTo &&
             a.Weight >= weightFrom && a.Weight <= weightTo &&
             a.Size >= sizeFrom && a.Size <= sizeTo).ToList();
+
             if (skills.Count != 0)
             {
                 // Собираем список имён навыков, по которым фильтруем
@@ -70,7 +71,7 @@ namespace Model
 
         public List<AnimeChan> LoadFilterAnimeChanList()
         {
-            return saves.FilterAnimeChanList
+            List<AnimeChan> FilteredAnimeChanList = saves.FilterAnimeChanList
                 .Select(a => new AnimeChan
                 {
                     Id = a.Id,
@@ -87,6 +88,8 @@ namespace Model
                     }).ToList()
                 })
                 .ToList();
+
+            return FilteredAnimeChanList;
         }
 
         public void DestroyFilter()

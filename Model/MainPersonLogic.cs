@@ -9,8 +9,8 @@ namespace Model
 {
     public class MainPersonLogic: IMainPerson
     {
-        private Saves saves { get; set; }
-        private IUnitOfWork unitOfWork { get; set; }
+        private Saves saves;
+        private IUnitOfWork unitOfWork;
 
         public MainPersonLogic(Saves savess, IUnitOfWork unitOfWorkk)
         {

@@ -9,57 +9,30 @@ namespace Model
 {
     public class ConclutionLogic: IConclution
     {
-        private Saves saves { get; set; }
-        private IUnitOfWork unitOfWork { get; set; }
+        private Saves saves;
+        private IUnitOfWork unitOfWork;
 
         public ConclutionLogic(Saves savess, IUnitOfWork unitOfWorkk)
         {
             saves = savess;
             unitOfWork = unitOfWorkk;
         }
-        public string Conclution()
+        
+        public string MakeConclution()
         {
-
-            int points = 0; //Очки, от которых будет зависеть продолжительность встречи
+            AnimeChan animeChan = new AnimeChan(unitOfWork.AnimeChanRepos.ReadById(saves.TemporaryID));
 
             string ageString = ""; //Блок текста, связанный с возрастом
             string heightString = ""; //Блок текста, связанный с ростом
             string weightString = ""; //Блок текста, связанный с весом
             string sizeString = ""; //Блок текста, связанный с размером
 
-            AnimeChan animeChan = new AnimeChan(unitOfWork.AnimeChanRepos.ReadById(saves.TemporaryID));
-
-            int agePoints = 25 - (int)Math.Abs((saves.MainPerson.Age - animeChan.Age - 2) * 2.5); //Очки за разницу в возрасте
-                                                                                                  //(чем меньше разница - тем больше очков,
-                                                                                                  //в идеале тянка должна быть на 2 года младше пользователя)
-            if (agePoints < 0)
-            {
-                agePoints = 0;
-            }
-            int heightPoints = 25 - (int)Math.Abs((saves.MainPerson.Height - animeChan.Height - 10) * 25 / 30); //Очки за разницу в росте
-                                                                                                                //(чем меньше разница - тем больше очков,
-                                                                                                                //в идеале тянка должна быть ниже пользователя на 10)
-            if (heightPoints < 0)
-            {
-                heightPoints = 0;
-            }
-            int weightPoints = 25 - (int)Math.Abs((saves.MainPerson.Weight - animeChan.Weight - 15)); //Очки за разницу в весе
-                                                                                                      //(чем меньше разница - тем больше очков,
-                                                                                                      //в идеале тянка должна легче пользователя на 15)
-            if (weightPoints < 0)
-            {
-                weightPoints = 0;
-            }
-            int sizePoints = (saves.MainPerson.Size - (animeChan.Size * 2) + 2) * 5; //Очки за разницу в размере
-                                                                                     //(чем больше у пользователя - тем больше очков)
-            if (sizePoints < 0)
-            {
-                sizePoints = 0;
-            }
-            if (sizePoints > 25)
-            {
-                sizePoints = 25;
-            }
+            int points = 0; //Очки, от которых будет зависеть продолжительность встречи
+            int agePoints = GetAgePoints(animeChan);
+            int heightPoints = GetHeightPoints(animeChan);
+            int weightPoints = GetWeightPoints(animeChan);
+            int sizePoints = GetSizePoints(animeChan);
+            points = agePoints + heightPoints + weightPoints + sizePoints; //Суммируем в общее значение
 
             //Все возможные тексты, зависящие от набранных очков за каждый критерий
             if (agePoints <= 5)
@@ -169,7 +142,22 @@ namespace Model
                 sizeString = "Ваша разница в размере идеальна! Вы чувствуете, что вы идеально подходите друг другу в этом плане. Вам приносит это безумное удовольствие и не у кого из вас нет комплексов по этому поводу!";
             }
 
-            points = agePoints + heightPoints + weightPoints + sizePoints; //Суммируем в общее значение
+            string yearsStr = GetYearsString(points);
+
+            string str = "ВЫ ВСТРЕЧАЛИСЬ ЦЕЛЫХ " + yearsStr + " лет!\n\n\n\n" + ageString + "\n\n" + heightString + "\n\n" + weightString; //Клепаем результат в один огромным текст
+            if (saves.MainPerson.Age >= 16 && animeChan.Age >= 16)
+            {
+                str += "\n\n" + sizeString;
+            }
+            return str;
+        }
+        /// <summary>
+        /// Метод подсчета длительности отношений
+        /// </summary>
+        /// <param name="points">КОбщее кол-во набранных очков</param>
+        /// <returns>Строка, представляющая продолжительность отношений</returns>
+        private string GetYearsString(int points)
+        {
             double years = Math.Pow(points / 100.0, 3) * 50; //Конвертируем очки в годы
 
             string yearsStr = "";
@@ -193,14 +181,78 @@ namespace Model
                     count = 0;
                 }
             }
-
-
-            string str = "ВЫ ВСТРЕЧАЛИСЬ ЦЕЛЫХ " + yearsStr + " лет!\n\n\n\n" + ageString + "\n\n" + heightString + "\n\n" + weightString; //Клепаем результат в один огромным текст
-            if (saves.MainPerson.Age >= 16 && animeChan.Age >= 16)
+            return yearsStr;
+        }
+        /// <summary>
+        /// Метод подсчета очков соотношения возраста
+        /// </summary>
+        /// <param name="animechan">Экземпляр тянки</param>
+        /// <returns>Целое число очков</returns>
+        private int GetAgePoints(AnimeChan animechan)
+        {
+            int agePoints = 25 - (int)Math.Abs((saves.MainPerson.Age - animechan.Age - 2) * 2.5); //Очки за разницу в возрасте
+                                                                                                  //(чем меньше разница - тем больше очков,
+                                                                                                  //в идеале тянка должна быть на 2 года младше пользователя)
+            if (agePoints < 0)
             {
-                str += "\n\n" + sizeString;
+                agePoints = 0;
             }
-            return str;
+            int heightPoints = 25 - (int)Math.Abs((saves.MainPerson.Height - animechan.Height - 10) * 25 / 30); //Очки за разницу в росте
+                                                                                                                //(чем меньше разница - тем больше очков,
+                                                                                                                //в идеале тянка должна быть ниже пользователя на 10)
+            return agePoints;
+        }
+        /// <summary>
+        /// Метод подсчета очков соотношения роста
+        /// </summary>
+        /// <param name="animechan">Экземпляр тянки</param>
+        /// <returns>Целое число очков</returns>
+        private int GetHeightPoints(AnimeChan animechan)
+        {
+            int heightPoints = 25 - (int)Math.Abs((saves.MainPerson.Height - animechan.Height - 10) * 25 / 30); //Очки за разницу в росте
+                                                                                                                //(чем меньше разница - тем больше очков,
+                                                                                                                //в идеале тянка должна быть ниже пользователя на 10)
+
+            if (heightPoints < 0)
+            {
+                heightPoints = 0;
+            }
+            return heightPoints;
+        }
+        /// <summary>
+        /// Метод подсчета очков соотношения веса
+        /// </summary>
+        /// <param name="animechan">Экземпляр тянки</param>
+        /// <returns>Целое число очков</returns>
+        private int GetWeightPoints(AnimeChan animechan)
+        {
+            int weightPoints = 25 - (int)Math.Abs((saves.MainPerson.Weight - animechan.Weight - 15)); //Очки за разницу в весе
+                                                                                                      //(чем меньше разница - тем больше очков,
+                                                                                                      //в идеале тянка должна легче пользователя на 15)
+            if (weightPoints < 0)
+            {
+                weightPoints = 0;
+            }
+            return weightPoints;
+        }
+        /// <summary>
+        /// Метод подсчета очков размера
+        /// </summary>
+        /// <param name="animechan">Экземпляр тянки</param>
+        /// <returns>Целое число очков</returns>
+        private int GetSizePoints(AnimeChan animechan)
+        {
+            int sizePoints = (saves.MainPerson.Size - (animechan.Size * 2) + 2) * 5; //Очки за разницу в размере
+                                                                                     //(чем больше у пользователя - тем больше очков)
+            if (sizePoints < 0)
+            {
+                sizePoints = 0;
+            }
+            if (sizePoints > 25)
+            {
+                sizePoints = 25;
+            }
+            return sizePoints;
         }
     }
 }

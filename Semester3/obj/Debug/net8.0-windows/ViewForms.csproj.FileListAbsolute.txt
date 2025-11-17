@@ -431,3 +431,4 @@ C:\Users\SeDMI\OneDrive\Рабочий стол\AnimeChanSelector\Semester3\bin\
 C:\Users\SeDMI\OneDrive\Рабочий стол\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\SeDMI\OneDrive\Рабочий стол\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\Nubik\Documents\IloveGit\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\Ninject.dll
+C:\Users\SeDMI\OneDrive\Рабочий стол\AnimeChanSelector\Semester3\bin\Debug\net8.0-windows\Ninject.dll
