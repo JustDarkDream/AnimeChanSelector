@@ -28,5 +28,10 @@ namespace Model
             ConclutionLogic = concl;
             FilterLogic = filter;
         }
+
+
+
+
+
     }
 }

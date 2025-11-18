@@ -61,10 +61,6 @@ namespace ViewForms
                 AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
             });
 
-            logic.AnimeChanLogic.DeleteAnimeChans();
-            logic.SkillLogic.DeleteSkills();
-            logic.AnimeChanLogic.CreateAnimeChans();
-            logic.AnimeChanLogic.CreateAnimeChansInDB();
             foreach (var i in logic.AnimeChanLogic.LoadAnimeChanList())
             {
                 table.Rows.Add(i.FirstName, i.LastName, i.Age, i.Id);

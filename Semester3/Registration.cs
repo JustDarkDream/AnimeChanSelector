@@ -10,7 +10,7 @@ namespace ViewForms
         IKernel ninjectKernel = new StandardKernel(new SimpleConfigModule());
         BourgeoisLogic logic;
         //BourgeoisLogic logic = new BourgeoisLogic();
-        
+
         /// <summary>
         /// Конструктор формы регистрации
         /// </summary>
@@ -43,6 +43,14 @@ namespace ViewForms
                                 if (lastName.Text.Length > 0)
                                 {
                                     logic.MainPersonLogic.SaveMainPerson(firstName.Text, lastName.Text, age, height, weight, size);
+                                    if (CheckAutoDel.Checked)
+                                    {
+                                        logic.AnimeChanLogic.DeleteAnimeChans();
+                                        logic.SkillLogic.DeleteSkills();
+                                        logic.SkillLogic.LoadAllSkillsInDB();
+                                        logic.AnimeChanLogic.CreateAnimeChans();
+                                        logic.AnimeChanLogic.CreateAnimeChansInDB();
+                                    }
                                     this.DialogResult = DialogResult.OK; //Сообщаем, что изменения мы сохраняем
                                     Close();
                                 }

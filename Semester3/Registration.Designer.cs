@@ -42,6 +42,7 @@
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             btnAutoInput = new Button();
+            CheckAutoDel = new CheckBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
@@ -162,7 +163,7 @@
             pictureBox1.Image = Properties.Resources.imag1;
             pictureBox1.ImageLocation = "";
             pictureBox1.Location = new Point(415, 34);
-            pictureBox1.Margin = new Padding(2, 2, 2, 2);
+            pictureBox1.Margin = new Padding(2);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(132, 118);
             pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
@@ -173,7 +174,7 @@
             // 
             pictureBox2.BackgroundImage = Properties.Resources.image2;
             pictureBox2.Location = new Point(21, 34);
-            pictureBox2.Margin = new Padding(2, 2, 2, 2);
+            pictureBox2.Margin = new Padding(2);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(128, 112);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -183,7 +184,7 @@
             // btnAutoInput
             // 
             btnAutoInput.Location = new Point(45, 464);
-            btnAutoInput.Margin = new Padding(2, 2, 2, 2);
+            btnAutoInput.Margin = new Padding(2);
             btnAutoInput.Name = "btnAutoInput";
             btnAutoInput.Size = new Size(150, 26);
             btnAutoInput.TabIndex = 13;
@@ -191,12 +192,23 @@
             btnAutoInput.UseVisualStyleBackColor = true;
             btnAutoInput.Click += btnAutoInput_Click;
             // 
+            // CheckAutoDel
+            // 
+            CheckAutoDel.AutoSize = true;
+            CheckAutoDel.Location = new Point(45, 495);
+            CheckAutoDel.Name = "CheckAutoDel";
+            CheckAutoDel.Size = new Size(186, 19);
+            CheckAutoDel.TabIndex = 15;
+            CheckAutoDel.Text = "Сбросить базу данных тянок ";
+            CheckAutoDel.UseVisualStyleBackColor = true;
+            // 
             // Registration
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImageLayout = ImageLayout.Zoom;
             ClientSize = new Size(577, 632);
+            Controls.Add(CheckAutoDel);
             Controls.Add(btnAutoInput);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
@@ -238,5 +250,6 @@
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private Button btnAutoInput;
+        private CheckBox CheckAutoDel;
     }
 }

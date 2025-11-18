@@ -22,9 +22,6 @@ namespace Model
             Bind<IMainPerson>().To<MainPersonLogic>().InTransientScope();
             Bind<IConclution>().To<ConclutionLogic>().InTransientScope();
             Bind<IFilterable>().To<FilterLogic>().InTransientScope();
-
-            // BourgeoisLogic
-            Bind<BourgeoisLogic>().ToSelf().InTransientScope();
         }
     }
 }

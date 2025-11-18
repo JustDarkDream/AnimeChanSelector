@@ -126,6 +126,7 @@ namespace ViewConsole
         {
             logic.AnimeChanLogic.DeleteAnimeChans();
             logic.SkillLogic.DeleteSkills();
+            logic.SkillLogic.LoadAllSkillsInDB();
             logic.AnimeChanLogic.CreateAnimeChans();
             logic.AnimeChanLogic.CreateAnimeChansInDB();
             while (true)
