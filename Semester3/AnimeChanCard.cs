@@ -1,11 +1,14 @@
 ﻿using Model;
+using Ninject;
 using System.Diagnostics;
 
 namespace ViewForms
 {
     public partial class AnimeChanCard : Form
     {
-        BourgeoisLogic logic = new BourgeoisLogic();
+        IKernel ninjectKernel;
+        BourgeoisLogic logic;
+        //BourgeoisLogic logic = new BourgeoisLogic();
         int animeChanId = 0;
 
         /// <summary>
@@ -15,6 +18,9 @@ namespace ViewForms
         /// <param name="isEditable">Переключение между режимом редактирвоания тянки и просмотром</param>
         public AnimeChanCard(AnimeChan animeChan, bool isEditable) //Вызывается, если пользователь хочет редактировать или посмотреть на тянку
         {
+            ninjectKernel = new StandardKernel(new SimpleConfigModule());
+            logic = ninjectKernel.Get<BourgeoisLogic>();
+
             InitializeComponent();
             firstName.Text = animeChan.FirstName;
             lastName.Text = animeChan.LastName;
@@ -56,6 +62,10 @@ namespace ViewForms
         }
         public AnimeChanCard() //Вызывается, если пользователь хочет создать новую тянку
         {
+
+            ninjectKernel = new StandardKernel(new SimpleConfigModule());
+            logic = ninjectKernel.Get<BourgeoisLogic>();
+
             InitializeComponent();
             firstName.Text = "";
             lastName.Text = "";
@@ -105,7 +115,7 @@ namespace ViewForms
 
                 skills.Clear();
 
-                foreach (Skill skill in logic.LoadSkills())
+                foreach (Skill skill in logic.SkillLogic.LoadSkills())
                 {
                     skills.Add(skill);
                 }
@@ -144,7 +154,7 @@ namespace ViewForms
                                                 skills.Add(skill);
                                             }
                                         }
-                                        logic.AddAnimeChan(firstName.Text, lastName.Text, age, height, weight, size, skills);
+                                        logic.AnimeChanLogic.AddAnimeChan(firstName.Text, lastName.Text, age, height, weight, size, skills);
                                         this.DialogResult = DialogResult.OK; //Сообщаем, что изменения мы сохраняем
                                         Close();
                                     }
@@ -210,7 +220,7 @@ namespace ViewForms
                                             skills.Add(skill);
                                         }
                                     }
-                                    logic.SaveChangeAnimeChan(firstName.Text, lastName.Text, age, height, weight, size, skills, animeChanId);
+                                    logic.AnimeChanLogic.SaveChangeAnimeChan(firstName.Text, lastName.Text, age, height, weight, size, skills, animeChanId);
                                     this.DialogResult = DialogResult.OK; //Сообщаем, что изменения мы сохраняем
                                     Close();
                                 }
@@ -254,7 +264,7 @@ namespace ViewForms
         ///<summary>Вызывается при нажатии на кнопку выбора её. Отрывает форму с итогом и закрывает все остальные</summary>
         private void chooseHer_Click(object sender, EventArgs e)
         {
-            logic.SaveId(animeChanId);
+            logic.AnimeChanLogic.SaveId(animeChanId);
             this.DialogResult = DialogResult.OK; //Сообщаем, что изменения мы сохраняем
             Close();
         }

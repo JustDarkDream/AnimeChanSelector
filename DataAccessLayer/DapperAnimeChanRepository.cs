@@ -25,7 +25,7 @@ public class DapperAnimeChanRepository : IRepository<AnimeChanRepo>
             {
                 try
                 {
-                    // 1. Сначала создаём персонажа
+                    //Создаём персонажа
                     const string sqlChan = @" 
                     INSERT INTO AnimeChans (FirstName, LastName, Age, Height, Weight, Size)
                     VALUES (@FirstName, @LastName, @Age, @Height, @Weight, @Size);
@@ -36,14 +36,14 @@ public class DapperAnimeChanRepository : IRepository<AnimeChanRepo>
                     if (chan.Skills != null && chan.Skills.Any())
                     {
 
-                        // 2. Получаем ВСЕ нужные навыки ОДНИМ запросом
+                        //Получаем все нужные навыки одним запросом
                         var skillNames = chan.Skills.Select(s => s.Name).Distinct().ToList();
 
                         const string sqlGetSkills = "SELECT Id, Name FROM Skills WHERE Name IN @Names";
                         var existingSkills = conn.Query<SkillRepo>(sqlGetSkills, new { Names = skillNames }, tx)
                                                 .ToList();
 
-                        // 3. Создаём недостающие навыки
+                        // Создаём недостающие навыки
                         var newSkillNames = skillNames.Except(existingSkills.Select(s => s.Name)).ToList();
 
                         foreach (var skillName in newSkillNames)
@@ -208,7 +208,7 @@ public class DapperAnimeChanRepository : IRepository<AnimeChanRepo>
             {
                 try
                 {
-                    // 1. Обновляем тянку
+                    // Обновляем тянку
                     const string sqlUpdateChan = @"
                     UPDATE AnimeChans
                     SET FirstName = @FirstName,
@@ -221,7 +221,7 @@ public class DapperAnimeChanRepository : IRepository<AnimeChanRepo>
 
                     conn.Execute(sqlUpdateChan, chan, tx);
 
-                    // 2. Обновляем навыки (если они есть)
+                    // Обновляем навыки (если они есть)
                     if (chan.Skills != null)
                     {
                         // Удаляем все старые связи

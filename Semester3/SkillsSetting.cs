@@ -1,12 +1,13 @@
 ﻿using Model;
+using Ninject;
 using System.Data;
 
 namespace ViewForms
 {
     public partial class SkillsSetting : Form
     {
-
-        BourgeoisLogic logic = new BourgeoisLogic();
+        IKernel ninjectKernel;
+        BourgeoisLogic logic;
 
         /// <summary>
         /// Конструктор формы "настройка скиллов".
@@ -14,6 +15,9 @@ namespace ViewForms
         /// <param name="skills">Коллекция объектов класса Skill</param>
         public SkillsSetting(List<Skill> skills)
         {
+            ninjectKernel = new StandardKernel(new SimpleConfigModule());
+            logic = ninjectKernel.Get<BourgeoisLogic>();
+
             InitializeComponent();
 
             skillsComboBox.DataSource = Enum.GetValues(typeof(Skills)); //Загружаем в комбо бокс все возможные навыки
@@ -51,7 +55,7 @@ namespace ViewForms
 
                 if (existingItem != null)
                 {
-                    Skill newSkill = logic.CreateSkill(selected.ToString());
+                    Skill newSkill = logic.SkillLogic.CreateSkill(selected.ToString());
 
                     skillsView.Items.Remove(existingItem);
                 }
@@ -70,7 +74,7 @@ namespace ViewForms
 
                 if (existingItem == null)
                 {
-                    Skill newSkill = logic.CreateSkill(selected.ToString());
+                    Skill newSkill = logic.SkillLogic.CreateSkill(selected.ToString());
 
                     ListViewItem newItem = skillsView.Items.Add(newSkill.Name);
                     newItem.Tag = newSkill;
@@ -90,10 +94,10 @@ namespace ViewForms
                     skills.Add(skill);
                 }
             }
-            logic.ClearSkills();
+            logic.SkillLogic.ClearSkills();
             foreach (Skill skill in skills)
             {
-                logic.SaveSkills(skill); //Сохраняет навыки
+                logic.SkillLogic.SaveSkill(skill); //Сохраняет навыки
             }
             this.DialogResult = DialogResult.OK;
             Close();

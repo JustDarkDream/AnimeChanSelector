@@ -1,4 +1,5 @@
 using Model;
+using Ninject;
 using System.Data;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
@@ -8,13 +9,17 @@ namespace ViewForms
     {
 
         DataGridView table;
-        BourgeoisLogic logic = new BourgeoisLogic();
+        IKernel ninjectKernel;
+        BourgeoisLogic logic;
         
         /// <summary>
         /// Конструктор главной формы
         /// </summary>
         public MainForm()
         {
+            ninjectKernel = new StandardKernel(new SimpleConfigModule());
+            logic = ninjectKernel.Get<BourgeoisLogic>();
+
             InitializeComponent();
 
             table = dgwTabel;
@@ -56,8 +61,11 @@ namespace ViewForms
                 AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
             });
 
-            logic.CreateAnimeChan();
-            foreach (var i in logic.LoadAnimeChanList())
+            logic.AnimeChanLogic.DeleteAnimeChans();
+            logic.SkillLogic.DeleteSkills();
+            logic.AnimeChanLogic.CreateAnimeChans();
+            logic.AnimeChanLogic.CreateAnimeChansInDB();
+            foreach (var i in logic.AnimeChanLogic.LoadAnimeChanList())
             {
                 table.Rows.Add(i.FirstName, i.LastName, i.Age, i.Id);
             }
@@ -72,7 +80,7 @@ namespace ViewForms
                 {
                     int id = Convert.ToInt32(table.CurrentRow.Cells["ColumnId"].Value); //Считываем значение id этой строки
 
-                    AnimeChanCard animeChanCard = new AnimeChanCard(logic.FindById(id), false); //Создаем новую форму
+                    AnimeChanCard animeChanCard = new AnimeChanCard(logic.AnimeChanLogic.FindById(id), false); //Создаем новую форму
                     if (animeChanCard.ShowDialog() == DialogResult.OK) //Если изменения сохранены, то закрывает эту форму и открывает итоговое окно
                     {
                         this.DialogResult = DialogResult.OK;
@@ -101,8 +109,8 @@ namespace ViewForms
             AnimeChanCard animeChanCard = new AnimeChanCard(); //Создаем новую форму
             if (animeChanCard.ShowDialog() == DialogResult.OK) //Если изменения сохранены, то добавляет в таблицу новую тян
             {
-                int id = logic.LoadId();
-                table.Rows.Add(logic.FindById(id).FirstName, logic.FindById(id).LastName, logic.FindById(id).Age, logic.FindById(id).Id);
+                int id = logic.AnimeChanLogic.LoadId();
+                table.Rows.Add(logic.AnimeChanLogic.FindById(id).FirstName, logic.AnimeChanLogic.FindById(id).LastName, logic.AnimeChanLogic.FindById(id).Age, logic.AnimeChanLogic.FindById(id).Id);
             }
         }
 
@@ -113,7 +121,7 @@ namespace ViewForms
             {
                 int id = Convert.ToInt32(table.CurrentRow.Cells["ColumnId"].Value); //Считываем значение id этой строки
 
-                logic.DeleteAnimeChan(id); //Удаляет тян из общего списка
+                logic.AnimeChanLogic.DeleteAnimeChan(id); //Удаляет тян из общего списка
                 table.Rows.Remove(table.Rows[table.CurrentCell.RowIndex]); //Удаляет тян из таблицы
             }
             else
@@ -138,14 +146,14 @@ namespace ViewForms
             {
                 int id = Convert.ToInt32(table.Rows[table.CurrentCell.RowIndex].Cells["ColumnId"].Value); //Считываем значение id этой строки
 
-                AnimeChanCard animeChanCard = new AnimeChanCard(logic.FindById(id), true); //Создаем новую форму
+                AnimeChanCard animeChanCard = new AnimeChanCard(logic.AnimeChanLogic.FindById(id), true); //Создаем новую форму
                 if (animeChanCard.ShowDialog() == DialogResult.OK) //Если изменения сохранены, то находит нужную строку по id и обновляет её
                 {
                     DataGridViewRow foundRows = table.Rows.Cast<DataGridViewRow>()
                                                           .FirstOrDefault(row => Convert.ToInt32(row.Cells["ColumnId"].Value) == id);
-                    foundRows.Cells["ColumnFirstName"].Value = logic.FindById(id).FirstName;
-                    foundRows.Cells["ColumnLastName"].Value = logic.FindById(id).LastName;
-                    foundRows.Cells["ColumnAge"].Value = logic.FindById(id).Age;
+                    foundRows.Cells["ColumnFirstName"].Value = logic.AnimeChanLogic.FindById(id).FirstName;
+                    foundRows.Cells["ColumnLastName"].Value = logic.AnimeChanLogic.FindById(id).LastName;
+                    foundRows.Cells["ColumnAge"].Value = logic.AnimeChanLogic.FindById(id).Age;
                 }
             }
             else
@@ -171,7 +179,7 @@ namespace ViewForms
             {
                 table.Rows.Clear();
 
-                foreach (var i in logic.LoadFilterAnimeChanList())
+                foreach (var i in logic.FilterLogic.LoadFilterAnimeChanList())
                 {
                     table.Rows.Add(i.FirstName, i.LastName, i.Age, i.Id);
                 }
@@ -182,10 +190,10 @@ namespace ViewForms
         ///<summary>Вызывается при нажатии на кнопку удаления фильтрации. Приводит таблицу без фильтрации</summary>
         private void btnFilterOff_Click(object sender, EventArgs e)
         {
-            logic.DestroyFilter();
+            logic.FilterLogic.DestroyFilter();
             table.Rows.Clear();
 
-            foreach (var i in logic.LoadAnimeChanList()) //Загружает строки с аниме тянками из полного списка в таблицу
+            foreach (var i in logic.AnimeChanLogic.LoadAnimeChanList()) //Загружает строки с аниме тянками из полного списка в таблицу
             {
                 table.Rows.Add(i.FirstName, i.LastName, i.Age, i.Id);
             }
@@ -195,7 +203,7 @@ namespace ViewForms
         ///<summary>Вызывается при нажатии на кнопку нахождения тянки. Добавляет в таблицу новую сгенерированную тянку</summary>
         private void button2_Click(object sender, EventArgs e)
         {
-            AnimeChan animeChan = logic.FindAnimeChan();
+            AnimeChan animeChan = logic.AnimeChanLogic.FindAnimeChan();
             table.Rows.Add(animeChan.FirstName, animeChan.LastName, animeChan.Age, animeChan.Id);
         }
 
@@ -240,7 +248,7 @@ namespace ViewForms
         /// <param name="e">Контейнер аргументов события</param>
         private void MainForm_Load(object sender, EventArgs e)
         {
-            MainPerson mainPerson = logic.GetMainPerson();
+            MainPerson mainPerson = logic.MainPersonLogic.GetMainPerson();
             this.lblFirstName.Text = mainPerson.FirstName;
             this.lblLstName.Text = mainPerson.LastName;
             this.lblAge.Text = mainPerson.Age.ToString();

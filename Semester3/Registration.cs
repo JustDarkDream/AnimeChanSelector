@@ -1,16 +1,23 @@
 ﻿using Model;
+using Ninject;
 
 namespace ViewForms
 {
     public partial class Registration : Form
     {
-        BourgeoisLogic logic = new BourgeoisLogic();
+
+
+        IKernel ninjectKernel = new StandardKernel(new SimpleConfigModule());
+        BourgeoisLogic logic;
+        //BourgeoisLogic logic = new BourgeoisLogic();
         
         /// <summary>
         /// Конструктор формы регистрации
         /// </summary>
         public Registration()
         {
+            ninjectKernel = new StandardKernel(new SimpleConfigModule());
+            logic = ninjectKernel.Get<BourgeoisLogic>();
             InitializeComponent();
             firstName.Text = "";
             lastName.Text = "";
@@ -35,7 +42,7 @@ namespace ViewForms
                             {
                                 if (lastName.Text.Length > 0)
                                 {
-                                    logic.SaveMainPerson(firstName.Text, lastName.Text, age, height, weight, size);
+                                    logic.MainPersonLogic.SaveMainPerson(firstName.Text, lastName.Text, age, height, weight, size);
                                     this.DialogResult = DialogResult.OK; //Сообщаем, что изменения мы сохраняем
                                     Close();
                                 }
