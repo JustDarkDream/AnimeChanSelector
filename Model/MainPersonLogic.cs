@@ -10,12 +10,10 @@ namespace Model
     public class MainPersonLogic: IMainPerson
     {
         private Saves saves;
-        private IUnitOfWork unitOfWork;
 
         public MainPersonLogic(Saves savess, IUnitOfWork unitOfWorkk)
         {
             saves = savess;
-            unitOfWork = unitOfWorkk;
         }
 
         public void SaveMainPerson(string firstName, string lastName, int age, int height, int weight, int size)

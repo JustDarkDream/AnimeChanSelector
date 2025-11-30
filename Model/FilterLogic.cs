@@ -11,6 +11,15 @@ namespace Model
     {
         private Saves saves;
         private IUnitOfWork unitOfWork;
+        private int AgeFromStart = 0;
+        private int AgeToStart = 100;
+        private int HeightFromStart = 0;
+        private int HeightToStart = 200;
+        private int WeightFromStart = 0;
+        private int WeightToStart = 100;
+        private int SizeFromStart = 0;
+        private int SizeToStart = 10;
+        private bool isСonsiderAllStart = false;
 
         public FilterLogic(Saves savess, IUnitOfWork unitOfWorkk)
         {
@@ -94,16 +103,16 @@ namespace Model
 
         public void DestroyFilter()
         {
-            saves.FilterStats.AgeFrom = 0;
-            saves.FilterStats.AgeTo = 100;
-            saves.FilterStats.HeightFrom = 0;
-            saves.FilterStats.HeightTo = 200;
-            saves.FilterStats.WeightFrom = 0;
-            saves.FilterStats.WeightTo = 100;
-            saves.FilterStats.SizeFrom = 0;
-            saves.FilterStats.SizeTo = 10;
+            saves.FilterStats.AgeFrom = AgeFromStart;
+            saves.FilterStats.AgeTo = AgeToStart;
+            saves.FilterStats.HeightFrom = HeightFromStart;
+            saves.FilterStats.HeightTo = HeightToStart;
+            saves.FilterStats.WeightFrom = WeightFromStart;
+            saves.FilterStats.WeightTo = WeightToStart;
+            saves.FilterStats.SizeFrom = SizeFromStart;
+            saves.FilterStats.SizeTo = SizeToStart;
             saves.FilterStats.Skills.Clear();
-            saves.FilterStats.isСonsiderAll = false;
+            saves.FilterStats.isСonsiderAll = isСonsiderAllStart;
         }
     }
 }

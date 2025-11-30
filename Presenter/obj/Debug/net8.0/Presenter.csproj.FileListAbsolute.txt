@@ -1,0 +1,15 @@
+C:\Users\Nubik\Documents\IloveGit\AnimeChanSelector\Presenter\bin\Debug\net8.0\Presenter.exe
+C:\Users\Nubik\Documents\IloveGit\AnimeChanSelector\Presenter\bin\Debug\net8.0\Presenter.deps.json
+C:\Users\Nubik\Documents\IloveGit\AnimeChanSelector\Presenter\bin\Debug\net8.0\Presenter.runtimeconfig.json
+C:\Users\Nubik\Documents\IloveGit\AnimeChanSelector\Presenter\bin\Debug\net8.0\Presenter.dll
+C:\Users\Nubik\Documents\IloveGit\AnimeChanSelector\Presenter\bin\Debug\net8.0\Presenter.pdb
+C:\Users\Nubik\Documents\IloveGit\AnimeChanSelector\Presenter\obj\Debug\net8.0\Presenter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nubik\Documents\IloveGit\AnimeChanSelector\Presenter\obj\Debug\net8.0\Presenter.AssemblyInfoInputs.cache
+C:\Users\Nubik\Documents\IloveGit\AnimeChanSelector\Presenter\obj\Debug\net8.0\Presenter.AssemblyInfo.cs
+C:\Users\Nubik\Documents\IloveGit\AnimeChanSelector\Presenter\obj\Debug\net8.0\Presenter.csproj.CoreCompileInputs.cache
+C:\Users\Nubik\Documents\IloveGit\AnimeChanSelector\Presenter\obj\Debug\net8.0\Presenter.sourcelink.json
+C:\Users\Nubik\Documents\IloveGit\AnimeChanSelector\Presenter\obj\Debug\net8.0\Presenter.dll
+C:\Users\Nubik\Documents\IloveGit\AnimeChanSelector\Presenter\obj\Debug\net8.0\refint\Presenter.dll
+C:\Users\Nubik\Documents\IloveGit\AnimeChanSelector\Presenter\obj\Debug\net8.0\Presenter.pdb
+C:\Users\Nubik\Documents\IloveGit\AnimeChanSelector\Presenter\obj\Debug\net8.0\Presenter.genruntimeconfig.cache
+C:\Users\Nubik\Documents\IloveGit\AnimeChanSelector\Presenter\obj\Debug\net8.0\ref\Presenter.dll

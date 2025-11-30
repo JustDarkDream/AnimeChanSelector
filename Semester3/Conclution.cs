@@ -1,22 +1,22 @@
-﻿using Model;
-using Ninject;
+﻿using Shared;
 
 namespace ViewForms
 {
-    public partial class Conclution : Form
+    public partial class Conclution : Form, IViewConclution
     {
-        IKernel ninjectKernel;
-        BourgeoisLogic logic;
-        
+        public event Action MakeConclutionEvent;
         /// <summary>
         /// Конструктор формы заключения
         /// </summary>
         public Conclution()
         {
-            ninjectKernel = new StandardKernel(new SimpleConfigModule());
-            logic = ninjectKernel.Get<BourgeoisLogic>();
             InitializeComponent();
-            richTextBox1.Text = logic.ConclutionLogic.MakeConclution();
+            MakeConclutionEvent.Invoke();
+        }
+
+        public void WriteConclution(string str)
+        {
+            richTextBox1.Text = str;
         }
 
         /// <summary>
@@ -25,6 +25,11 @@ namespace ViewForms
         /// <param name="sender">Форма заключения</param>
         /// <param name="e">Контейнер аргументов</param>
         private void Conclution_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
 
         }

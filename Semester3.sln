@@ -11,6 +11,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ViewConsole", "ViewConsole\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{73721D8C-C17D-4E59-BBE3-346DAED76254}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controller", "Presenter\Controller.csproj", "{ACACB5D6-B735-4688-B422-9A32A4AC00E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{2161AE3E-9170-4E55-8BCC-7D60229DCEFF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{73721D8C-C17D-4E59-BBE3-346DAED76254}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73721D8C-C17D-4E59-BBE3-346DAED76254}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{73721D8C-C17D-4E59-BBE3-346DAED76254}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACACB5D6-B735-4688-B422-9A32A4AC00E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACACB5D6-B735-4688-B422-9A32A4AC00E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACACB5D6-B735-4688-B422-9A32A4AC00E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACACB5D6-B735-4688-B422-9A32A4AC00E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2161AE3E-9170-4E55-8BCC-7D60229DCEFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2161AE3E-9170-4E55-8BCC-7D60229DCEFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2161AE3E-9170-4E55-8BCC-7D60229DCEFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2161AE3E-9170-4E55-8BCC-7D60229DCEFF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

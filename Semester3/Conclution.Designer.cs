@@ -37,20 +37,19 @@
             richTextBox1.Dock = DockStyle.Fill;
             richTextBox1.Font = new Font("Segoe UI", 20F);
             richTextBox1.Location = new Point(0, 0);
-            richTextBox1.Margin = new Padding(5, 6, 5, 6);
             richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(1371, 900);
+            richTextBox1.Size = new Size(800, 450);
             richTextBox1.TabIndex = 0;
             richTextBox1.Text = "";
+            richTextBox1.TextChanged += richTextBox1_TextChanged;
             // 
             // Conclution
             // 
-            AutoScaleDimensions = new SizeF(12F, 30F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1371, 900);
+            ClientSize = new Size(800, 450);
             Controls.Add(richTextBox1);
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Margin = new Padding(5, 6, 5, 6);
             Name = "Conclution";
             Text = "Conclution";
             Load += Conclution_Load;

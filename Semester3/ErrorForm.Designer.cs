@@ -36,35 +36,33 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 30F);
-            label1.Location = new Point(256, 9);
-            label1.Margin = new Padding(5, 0, 5, 0);
+            label1.Location = new Point(149, 4);
             label1.Name = "label1";
-            label1.Size = new Size(357, 93);
+            label1.Size = new Size(204, 54);
             label1.TabIndex = 0;
             label1.Text = "ОШИБКА!";
             // 
             // label2
             // 
             label2.Font = new Font("Segoe UI", 12F);
-            label2.Location = new Point(54, 118);
-            label2.Margin = new Padding(5, 0, 5, 0);
+            label2.Location = new Point(31, 59);
             label2.Name = "label2";
-            label2.Size = new Size(760, 62);
+            label2.Size = new Size(443, 31);
             label2.TabIndex = 1;
             label2.Text = "label2";
             label2.TextAlign = ContentAlignment.MiddleCenter;
+            label2.Click += label2_Click;
             // 
             // ErrorForm
             // 
-            AutoScaleDimensions = new SizeF(12F, 30F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.angry;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(850, 384);
+            ClientSize = new Size(496, 192);
             Controls.Add(label2);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
-            Margin = new Padding(5, 6, 5, 6);
             Name = "ErrorForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Error";

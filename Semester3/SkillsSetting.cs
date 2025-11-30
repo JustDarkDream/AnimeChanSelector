@@ -1,28 +1,29 @@
-﻿using Model;
-using Ninject;
+﻿using Ninject;
 using System.Data;
+using Shared;
 
 namespace ViewForms
 {
-    public partial class SkillsSetting : Form
+    public partial class SkillsSetting : Form, IViewSkillSetting
     {
-        IKernel ninjectKernel;
-        BourgeoisLogic logic;
+        public event Action<string> CreateSkillEvent;
+        public event Action ClearSkillsEvent;
+        public event Action<SkillDTO> SaveSkillEvent;
+
+        SkillDTO skillDTO;
 
         /// <summary>
         /// Конструктор формы "настройка скиллов".
         /// </summary>
         /// <param name="skills">Коллекция объектов класса Skill</param>
-        public SkillsSetting(List<Skill> skills)
+        public SkillsSetting(List<SkillDTO> skills)
         {
-            ninjectKernel = new StandardKernel(new SimpleConfigModule());
-            logic = ninjectKernel.Get<BourgeoisLogic>();
 
             InitializeComponent();
 
-            skillsComboBox.DataSource = Enum.GetValues(typeof(Skills)); //Загружаем в комбо бокс все возможные навыки
+            skillsComboBox.DataSource = Enum.GetValues(typeof(SkillsDTO)); //Загружаем в комбо бокс все возможные навыки
 
-            foreach (Skill skill in skills) //Считывает информацию с списка навыков и закидываем в ListView
+            foreach (SkillDTO skill in skills) //Считывает информацию с списка навыков и закидываем в ListView
             {
                 ListViewItem item = new ListViewItem(skill.Name);
 
@@ -34,11 +35,11 @@ namespace ViewForms
         ///<summary>Вызывается при нажатии на кнопку удалении навыка. Удаляет навык из ListView</summary>
         private void deleteButton_Click(object sender, EventArgs e)
         {
-            if (skillsComboBox.SelectedItem is Skill selectedSkill)
+            if (skillsComboBox.SelectedItem is SkillDTO selectedSkill)
             {
                 var item = skillsView.Items //Проверяет на наличие ListView этого элемента
                     .Cast<ListViewItem>()
-                    .FirstOrDefault(i => i.Tag is Skill s && s.Equals(selectedSkill));
+                    .FirstOrDefault(i => i.Tag is SkillDTO s && s.Equals(selectedSkill));
 
                 if (item != null) //Если он есть
                 {
@@ -46,7 +47,7 @@ namespace ViewForms
                 }
             }
 
-            if (skillsComboBox.SelectedItem is Skills selected)
+            if (skillsComboBox.SelectedItem is SkillsDTO selected)
             {
                 // Проверяем, нет ли уже такого навыка
                 var existingItem = skillsView.Items
@@ -55,7 +56,8 @@ namespace ViewForms
 
                 if (existingItem != null)
                 {
-                    Skill newSkill = logic.SkillLogic.CreateSkill(selected.ToString());
+                    CreateSkillEvent.Invoke(selected.ToString());
+                    SkillDTO newSkill = skillDTO;
 
                     skillsView.Items.Remove(existingItem);
                 }
@@ -65,7 +67,7 @@ namespace ViewForms
         ///<summary>Вызывается при нажатии на кнопку добавлении навыка. Добавляем навык в ListView</summary>
         private void addButton_Click(object sender, EventArgs e)
         {
-            if (skillsComboBox.SelectedItem is Skills selected)
+            if (skillsComboBox.SelectedItem is SkillsDTO selected)
             {
                 // Проверяем, нет ли уже такого навыка
                 var existingItem = skillsView.Items
@@ -74,7 +76,8 @@ namespace ViewForms
 
                 if (existingItem == null)
                 {
-                    Skill newSkill = logic.SkillLogic.CreateSkill(selected.ToString());
+                    CreateSkillEvent.Invoke(selected.ToString());
+                    SkillDTO newSkill = skillDTO;
 
                     ListViewItem newItem = skillsView.Items.Add(newSkill.Name);
                     newItem.Tag = newSkill;
@@ -86,18 +89,19 @@ namespace ViewForms
         private void saveButton_Click(object sender, EventArgs e)
         {
 
-            List<Skill> skills = new List<Skill>();
+            List<SkillDTO> skills = new List<SkillDTO>();
             foreach (ListViewItem item in skillsView.Items) //Считывает информацию с ListView и закидывает в список
             {
-                if (item.Tag is Skill skill)
+                if (item.Tag is SkillDTO skill)
                 {
                     skills.Add(skill);
                 }
             }
-            logic.SkillLogic.ClearSkills();
-            foreach (Skill skill in skills)
+            ClearSkillsEvent.Invoke();
+
+            foreach (SkillDTO skill in skills)
             {
-                logic.SkillLogic.SaveSkill(skill); //Сохраняет навыки
+                SaveSkillEvent.Invoke(skill); //Сохраняет навыки
             }
             this.DialogResult = DialogResult.OK;
             Close();
@@ -111,6 +115,11 @@ namespace ViewForms
         private void SkillsSetting_Load(object sender, EventArgs e)
         {
 
+        }
+
+        public void CreateSkill(SkillDTO skill)
+        {
+            skillDTO = skill;
         }
     }
 }

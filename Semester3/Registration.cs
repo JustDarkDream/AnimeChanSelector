@@ -1,23 +1,23 @@
-﻿using Model;
+﻿using Shared;
 using Ninject;
 
 namespace ViewForms
 {
-    public partial class Registration : Form
+    public partial class Registration : Form, IViewRegistration
     {
+        public event Action<string, string, int, int, int, int> SaveMainPersonEvent;
+        public event Action DeleteAnimeChansEvent;
+        public event Action DeleteSkillsEvent;
+        public event Action LoadAllSkillsInDBEvent;
+        public event Action CreateAnimeChansEvent;
+        public event Action CreateAnimeChansInDBEvent;
 
-
-        IKernel ninjectKernel = new StandardKernel(new SimpleConfigModule());
-        BourgeoisLogic logic;
-        //BourgeoisLogic logic = new BourgeoisLogic();
 
         /// <summary>
         /// Конструктор формы регистрации
         /// </summary>
         public Registration()
         {
-            ninjectKernel = new StandardKernel(new SimpleConfigModule());
-            logic = ninjectKernel.Get<BourgeoisLogic>();
             InitializeComponent();
             firstName.Text = "";
             lastName.Text = "";
@@ -42,14 +42,14 @@ namespace ViewForms
                             {
                                 if (lastName.Text.Length > 0)
                                 {
-                                    logic.MainPersonLogic.SaveMainPerson(firstName.Text, lastName.Text, age, height, weight, size);
+                                    SaveMainPersonEvent.Invoke(firstName.Text, lastName.Text, age, height, weight, size);
                                     if (CheckAutoDel.Checked)
                                     {
-                                        logic.AnimeChanLogic.DeleteAnimeChans();
-                                        logic.SkillLogic.DeleteSkills();
-                                        logic.SkillLogic.LoadAllSkillsInDB();
-                                        logic.AnimeChanLogic.CreateAnimeChans();
-                                        logic.AnimeChanLogic.CreateAnimeChansInDB();
+                                        DeleteAnimeChansEvent.Invoke();
+                                        DeleteSkillsEvent.Invoke();
+                                        LoadAllSkillsInDBEvent.Invoke();
+                                        CreateAnimeChansEvent.Invoke();
+                                        CreateAnimeChansInDBEvent.Invoke();
                                     }
                                     this.DialogResult = DialogResult.OK; //Сообщаем, что изменения мы сохраняем
                                     Close();

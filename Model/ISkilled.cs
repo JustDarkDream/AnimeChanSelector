@@ -15,8 +15,7 @@ namespace Model
         ///<summary>Очищает список навыков</summary>
         public void ClearSkills();
 
-        ///<summary>Загружает список навыков</summary>
-        /// <returns>Возвращает список навыков, который был сохранен ранее</returns>
+        ///<summary>Загружает список навыков во вьюху</summary>
         public List<Skill> LoadSkills();
 
         ///<summary>Создает новый скилл</summary>

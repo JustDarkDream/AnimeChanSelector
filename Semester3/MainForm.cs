@@ -1,24 +1,35 @@
-using Model;
+using Shared;
 using Ninject;
 using System.Data;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace ViewForms
 {
-    public partial class MainForm : Form
+    public partial class MainForm : Form, IViewMainForm
     {
+        public event Action LoadAnimeChanListEvent;
+        public event Action<int> FindByIdEvent;
+        public event Action LoadIdEvent;
+        public event Action<int> DeleteAnimeChanEvent;
+        public event Action LoadFilterAnimeChanListEvent;
+        public event Action DestroyFilterEvent;
+        public event Action FindAnimeChanEvent;
+        public event Action GetMainPersonEvent;
+
+        List<AnimeChanDTO> listChanDTO;
+        List<AnimeChanDTO> filterListChanDTO;
+        AnimeChanDTO findByIdChanDTO;
+        AnimeChanDTO findChanDTO;
+        MainPersonDTO mainPersonDTO;
+        int loadId;
 
         DataGridView table;
-        IKernel ninjectKernel;
-        BourgeoisLogic logic;
         
         /// <summary>
         /// Конструктор главной формы
         /// </summary>
         public MainForm()
         {
-            ninjectKernel = new StandardKernel(new SimpleConfigModule());
-            logic = ninjectKernel.Get<BourgeoisLogic>();
 
             InitializeComponent();
 
@@ -61,7 +72,8 @@ namespace ViewForms
                 AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
             });
 
-            foreach (var i in logic.AnimeChanLogic.LoadAnimeChanList())
+            LoadAnimeChanListEvent.Invoke();
+            foreach (var i in listChanDTO)
             {
                 table.Rows.Add(i.FirstName, i.LastName, i.Age, i.Id);
             }
@@ -76,7 +88,8 @@ namespace ViewForms
                 {
                     int id = Convert.ToInt32(table.CurrentRow.Cells["ColumnId"].Value); //Считываем значение id этой строки
 
-                    AnimeChanCard animeChanCard = new AnimeChanCard(logic.AnimeChanLogic.FindById(id), false); //Создаем новую форму
+                    FindByIdEvent.Invoke(id);
+                    AnimeChanCard animeChanCard = new AnimeChanCard(findByIdChanDTO, false ); //Создаем новую форму
                     if (animeChanCard.ShowDialog() == DialogResult.OK) //Если изменения сохранены, то закрывает эту форму и открывает итоговое окно
                     {
                         this.DialogResult = DialogResult.OK;
@@ -105,8 +118,10 @@ namespace ViewForms
             AnimeChanCard animeChanCard = new AnimeChanCard(); //Создаем новую форму
             if (animeChanCard.ShowDialog() == DialogResult.OK) //Если изменения сохранены, то добавляет в таблицу новую тян
             {
-                int id = logic.AnimeChanLogic.LoadId();
-                table.Rows.Add(logic.AnimeChanLogic.FindById(id).FirstName, logic.AnimeChanLogic.FindById(id).LastName, logic.AnimeChanLogic.FindById(id).Age, logic.AnimeChanLogic.FindById(id).Id);
+                LoadIdEvent.Invoke();
+                int id = loadId;
+                FindByIdEvent.Invoke(id);
+                table.Rows.Add(findByIdChanDTO.FirstName, findByIdChanDTO.LastName, findByIdChanDTO.Age, findByIdChanDTO.Id);
             }
         }
 
@@ -117,7 +132,7 @@ namespace ViewForms
             {
                 int id = Convert.ToInt32(table.CurrentRow.Cells["ColumnId"].Value); //Считываем значение id этой строки
 
-                logic.AnimeChanLogic.DeleteAnimeChan(id); //Удаляет тян из общего списка
+                DeleteAnimeChanEvent.Invoke(id); //Удаляет тян из общего списка
                 table.Rows.Remove(table.Rows[table.CurrentCell.RowIndex]); //Удаляет тян из таблицы
             }
             else
@@ -141,15 +156,16 @@ namespace ViewForms
             if (dgwTabel.CurrentRow != null && dgwTabel.SelectedRows.Count <= 1) //Проверяет, выбрана ли лишь одна строка
             {
                 int id = Convert.ToInt32(table.Rows[table.CurrentCell.RowIndex].Cells["ColumnId"].Value); //Считываем значение id этой строки
-
-                AnimeChanCard animeChanCard = new AnimeChanCard(logic.AnimeChanLogic.FindById(id), true); //Создаем новую форму
+                FindByIdEvent.Invoke(id);
+                AnimeChanCard animeChanCard = new AnimeChanCard(findByIdChanDTO, true); //Создаем новую форму
                 if (animeChanCard.ShowDialog() == DialogResult.OK) //Если изменения сохранены, то находит нужную строку по id и обновляет её
                 {
                     DataGridViewRow foundRows = table.Rows.Cast<DataGridViewRow>()
                                                           .FirstOrDefault(row => Convert.ToInt32(row.Cells["ColumnId"].Value) == id);
-                    foundRows.Cells["ColumnFirstName"].Value = logic.AnimeChanLogic.FindById(id).FirstName;
-                    foundRows.Cells["ColumnLastName"].Value = logic.AnimeChanLogic.FindById(id).LastName;
-                    foundRows.Cells["ColumnAge"].Value = logic.AnimeChanLogic.FindById(id).Age;
+                    FindByIdEvent.Invoke(id);
+                    foundRows.Cells["ColumnFirstName"].Value = findByIdChanDTO.FirstName;
+                    foundRows.Cells["ColumnLastName"].Value = findByIdChanDTO.LastName;
+                    foundRows.Cells["ColumnAge"].Value = findByIdChanDTO.Age;
                 }
             }
             else
@@ -175,7 +191,9 @@ namespace ViewForms
             {
                 table.Rows.Clear();
 
-                foreach (var i in logic.FilterLogic.LoadFilterAnimeChanList())
+                LoadFilterAnimeChanListEvent.Invoke();
+
+                foreach (var i in filterListChanDTO)
                 {
                     table.Rows.Add(i.FirstName, i.LastName, i.Age, i.Id);
                 }
@@ -186,10 +204,11 @@ namespace ViewForms
         ///<summary>Вызывается при нажатии на кнопку удаления фильтрации. Приводит таблицу без фильтрации</summary>
         private void btnFilterOff_Click(object sender, EventArgs e)
         {
-            logic.FilterLogic.DestroyFilter();
+            DestroyFilterEvent.Invoke();
             table.Rows.Clear();
 
-            foreach (var i in logic.AnimeChanLogic.LoadAnimeChanList()) //Загружает строки с аниме тянками из полного списка в таблицу
+            LoadAnimeChanListEvent.Invoke();
+            foreach (var i in listChanDTO) //Загружает строки с аниме тянками из полного списка в таблицу
             {
                 table.Rows.Add(i.FirstName, i.LastName, i.Age, i.Id);
             }
@@ -199,7 +218,8 @@ namespace ViewForms
         ///<summary>Вызывается при нажатии на кнопку нахождения тянки. Добавляет в таблицу новую сгенерированную тянку</summary>
         private void button2_Click(object sender, EventArgs e)
         {
-            AnimeChan animeChan = logic.AnimeChanLogic.FindAnimeChan();
+            FindAnimeChanEvent.Invoke();
+            AnimeChanDTO animeChan = findChanDTO;
             table.Rows.Add(animeChan.FirstName, animeChan.LastName, animeChan.Age, animeChan.Id);
         }
 
@@ -244,13 +264,44 @@ namespace ViewForms
         /// <param name="e">Контейнер аргументов события</param>
         private void MainForm_Load(object sender, EventArgs e)
         {
-            MainPerson mainPerson = logic.MainPersonLogic.GetMainPerson();
+            GetMainPersonEvent.Invoke();
+            MainPersonDTO mainPerson = mainPersonDTO;
             this.lblFirstName.Text = mainPerson.FirstName;
             this.lblLstName.Text = mainPerson.LastName;
             this.lblAge.Text = mainPerson.Age.ToString();
             this.lblHeight.Text = mainPerson.Height.ToString();
             this.lblWeight.Text = mainPerson.Weight.ToString();
             this.lblSize.Text = mainPerson.Size.ToString();
+        }
+
+        public void LoadAnimeChanList(List<AnimeChanDTO> list)
+        {
+            listChanDTO = list;
+        }
+
+        public void FindById(AnimeChanDTO chan)
+        {
+            findByIdChanDTO = chan;
+        }
+
+        public void LoadId(int id)
+        {
+            loadId = id;
+        }
+
+        public void FilterAnimeChanList(List<AnimeChanDTO> chans)
+        {
+            filterListChanDTO = chans;
+        }
+
+        public void FindAnimeChan(AnimeChanDTO chan)
+        {
+            findChanDTO = chan;
+        }
+
+        public void GetMainPerson(MainPersonDTO main)
+        {
+            mainPersonDTO = main;
         }
     }
 }

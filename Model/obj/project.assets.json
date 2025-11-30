@@ -1578,6 +1578,16 @@
         "runtime": {
           "bin/placeholder/DataAccessLayer.dll": {}
         }
+      },
+      "Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.dll": {}
+        }
       }
     }
   },
@@ -4732,13 +4742,19 @@
       "type": "project",
       "path": "../DataAccessLayer/DataAccessLayer.csproj",
       "msbuildProject": "../DataAccessLayer/DataAccessLayer.csproj"
+    },
+    "Shared/1.0.0": {
+      "type": "project",
+      "path": "../Shared/Shared.csproj",
+      "msbuildProject": "../Shared/Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "DataAccessLayer >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.9",
-      "Ninject >= 3.3.6"
+      "Ninject >= 3.3.6",
+      "Shared >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -4773,6 +4789,9 @@
           "projectReferences": {
             "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\DataAccessLayer\\DataAccessLayer.csproj": {
               "projectPath": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\DataAccessLayer\\DataAccessLayer.csproj"
+            },
+            "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Shared\\Shared.csproj": {
+              "projectPath": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Shared\\Shared.csproj"
             }
           }
         }

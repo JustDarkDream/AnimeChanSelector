@@ -1,25 +1,26 @@
-﻿using Model;
+﻿using Shared;
 using Ninject;
 using System.Diagnostics;
 
 namespace ViewForms
 {
-    public partial class FilterChan : Form
+    public partial class FilterChan : Form, IViewFilterChan
     {
-        IKernel ninjectKernel;
-        BourgeoisLogic logic;
-        
+        public event Action LoadFilterStatsEvent;
+        public event Action<int, int, int, int, int, int, int, int, List<SkillDTO>, bool> FilterAnimeChanListEvent;
+        public event Action LoadSkillsEvent;
+
+        FilterStatsDTO filterStats;
+        List<SkillDTO> listSkills = new List<SkillDTO>();
+
         /// <summary>
         /// Конструктор формы фильтра
         /// </summary>
         public FilterChan()
         {
 
-            ninjectKernel = new StandardKernel(new SimpleConfigModule());
-            logic = ninjectKernel.Get<BourgeoisLogic>();
-
             InitializeComponent();
-            FilterStats filterStats = logic.FilterLogic.LoadFilterStats();
+            
 
             ageFrom.Text = filterStats.AgeFrom.ToString();
             ageTo.Text = filterStats.AgeTo.ToString();
@@ -68,16 +69,16 @@ namespace ViewForms
                                                     {
                                                         if (sizefrom < sizeto)
                                                         {
-                                                            List<Skill> skills = new List<Skill>();
+                                                            List<SkillDTO> skills = new List<SkillDTO>();
 
                                                             foreach (ListViewItem item in listView1.Items) //Считывает информацию с ListView и закидывает в список
                                                             {
-                                                                if (item.Tag is Skill skill)
+                                                                if (item.Tag is SkillDTO skill)
                                                                 {
                                                                     skills.Add(skill);
                                                                 }
                                                             }
-                                                            logic.FilterLogic.FilterAnimeChanList(agefrom, ageto, heightfrom, heightto, weightfrom, weightto, sizefrom, sizeto, skills, checkBox1.Checked);
+                                                            FilterAnimeChanListEvent.Invoke(agefrom, ageto, heightfrom, heightto, weightfrom, weightto, sizefrom, sizeto, skills, checkBox1.Checked);
                                                             this.DialogResult = DialogResult.OK; //Сообщаем, что изменения мы сохраняем
                                                             Close();
                                                         }
@@ -157,11 +158,11 @@ namespace ViewForms
         ///<summary>Вызывается при нажатии на кнопку редактора скиллов. Открывает форму редакторов скиллов и сохраняет изменения</summary>
         private void skillsSettung_Click(object sender, EventArgs e)
         {
-            List<Skill> skills = new List<Skill>();
+            List<SkillDTO> skills = new List<SkillDTO>();
 
             foreach (ListViewItem item in listView1.Items) //Считывает информацию с ListView и закидывает в список
             {
-                if (item.Tag is Skill skill)
+                if (item.Tag is SkillDTO skill)
                 {
                     skills.Add(skill);
                 }
@@ -175,12 +176,12 @@ namespace ViewForms
 
                 skills.Clear();
 
-                foreach (Skill skill in logic.SkillLogic.LoadSkills())
+                foreach (SkillDTO skill in listSkills)
                 {
                     skills.Add(skill);
                 }
 
-                foreach (Skill skill2 in skills) //Отображаем в ListView сохраненные навыки с той формы
+                foreach (SkillDTO skill2 in skills) //Отображаем в ListView сохраненные навыки с той формы
                 {
                     ListViewItem newItem = new ListViewItem(skill2.Name);
                     newItem.Tag = skill2;
@@ -197,6 +198,16 @@ namespace ViewForms
         private void FilterChan_Load(object sender, EventArgs e)
         {
 
+        }
+
+        public void LoadFilterStats(FilterStatsDTO filter)
+        {
+            filterStats = filter;
+        }
+
+        public void LoadSkills(List<SkillDTO> list)
+        {
+            listSkills = list;
         }
     }
 }

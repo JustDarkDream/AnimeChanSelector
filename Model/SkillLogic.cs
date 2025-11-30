@@ -4,11 +4,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Shared;
 
 namespace Model
 {
     public class SkillLogic: ISkilled
     {
+        event Action<List<SkillDTO>> LoadSkillsInViewEvent;
         private Saves saves { get; set; }
         private IUnitOfWork unitOfWork { get; set; }
 

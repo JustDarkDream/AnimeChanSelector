@@ -1,26 +1,26 @@
-﻿using Model;
-using Ninject;
+﻿using Ninject;
 using System.Diagnostics;
+using Shared;
 
 namespace ViewForms
 {
-    public partial class AnimeChanCard : Form
+    public partial class AnimeChanCard : Form, IViewAnimeChanCard
     {
-        IKernel ninjectKernel;
-        BourgeoisLogic logic;
-        //BourgeoisLogic logic = new BourgeoisLogic();
+        public event Action LoadSkillsEvent;
+        public event Action<string, string, int, int, int, int, List<SkillDTO>> AddAnimeChanEvent;
+        public event Action<string, string, int, int, int, int, List<SkillDTO>, int> SaveChangeAnimeChanEvent;
+        public event Action<int> SaveIdEvent;
+
         int animeChanId = 0;
+        List<SkillDTO> listSkills = new List<SkillDTO>();
 
         /// <summary>
         /// Конструктор формы "Инфа о тянке"
         /// </summary>
         /// <param name="animeChan">Аниме тянка</param>
         /// <param name="isEditable">Переключение между режимом редактирвоания тянки и просмотром</param>
-        public AnimeChanCard(AnimeChan animeChan, bool isEditable) //Вызывается, если пользователь хочет редактировать или посмотреть на тянку
+        public AnimeChanCard(AnimeChanDTO animeChan, bool isEditable) //Вызывается, если пользователь хочет редактировать или посмотреть на тянку
         {
-            ninjectKernel = new StandardKernel(new SimpleConfigModule());
-            logic = ninjectKernel.Get<BourgeoisLogic>();
-
             InitializeComponent();
             firstName.Text = animeChan.FirstName;
             lastName.Text = animeChan.LastName;
@@ -62,10 +62,6 @@ namespace ViewForms
         }
         public AnimeChanCard() //Вызывается, если пользователь хочет создать новую тянку
         {
-
-            ninjectKernel = new StandardKernel(new SimpleConfigModule());
-            logic = ninjectKernel.Get<BourgeoisLogic>();
-
             InitializeComponent();
             firstName.Text = "";
             lastName.Text = "";
@@ -97,10 +93,10 @@ namespace ViewForms
         ///<summary>Вызывается при нажатии на кнопку редактора скиллов. Открывает форму редакторов скиллов и сохраняет изменения</summary>
         private void skillsSettung_Click(object sender, EventArgs e)
         {
-            List<Skill> skills = new List<Skill>();
+            List<SkillDTO> skills = new List<SkillDTO>();
             foreach (ListViewItem item in listView1.Items) //Считывает информацию с ListView и закидывает в список
             {
-                if (item.Tag is Skill skill3)
+                if (item.Tag is SkillDTO skill3)
                 {
                     skills.Add(skill3);
                 }
@@ -115,12 +111,12 @@ namespace ViewForms
 
                 skills.Clear();
 
-                foreach (Skill skill in logic.SkillLogic.LoadSkills())
+                foreach (SkillDTO skill in listSkills)
                 {
                     skills.Add(skill);
                 }
 
-                foreach (Skill skill2 in skills) //Отображаем в ListView сохраненные навыки с той формы
+                foreach (SkillDTO skill2 in skills) //Отображаем в ListView сохраненные навыки с той формы
                 {
                     var item = new ListViewItem(skill2.Name);
                     item.Tag = skill2;
@@ -145,16 +141,16 @@ namespace ViewForms
                                 {
                                     if (lastName.Text.Length > 0)
                                     {
-                                        List<Skill> skills = new List<Skill>();
+                                        List<SkillDTO> skills = new List<SkillDTO>();
 
                                         foreach (ListViewItem item in listView1.Items) //Считывает информацию с ListView и закидывает в список
                                         {
-                                            if (item.Tag is Skill skill)
+                                            if (item.Tag is SkillDTO skill)
                                             {
                                                 skills.Add(skill);
                                             }
                                         }
-                                        logic.AnimeChanLogic.AddAnimeChan(firstName.Text, lastName.Text, age, height, weight, size, skills);
+                                        AddAnimeChanEvent.Invoke(firstName.Text, lastName.Text, age, height, weight, size, skills);
                                         this.DialogResult = DialogResult.OK; //Сообщаем, что изменения мы сохраняем
                                         Close();
                                     }
@@ -211,16 +207,16 @@ namespace ViewForms
                             {
                                 if (lastName.Text.Length > 0)
                                 {
-                                    List<Skill> skills = new List<Skill>();
+                                    List<SkillDTO> skills = new List<SkillDTO>();
 
                                     foreach (ListViewItem item in listView1.Items) //Считывает информацию с ListView и закидывает в список
                                     {
-                                        if (item.Tag is Skill skill)
+                                        if (item.Tag is SkillDTO skill)
                                         {
                                             skills.Add(skill);
                                         }
                                     }
-                                    logic.AnimeChanLogic.SaveChangeAnimeChan(firstName.Text, lastName.Text, age, height, weight, size, skills, animeChanId);
+                                    SaveChangeAnimeChanEvent.Invoke(firstName.Text, lastName.Text, age, height, weight, size, skills, animeChanId);
                                     this.DialogResult = DialogResult.OK; //Сообщаем, что изменения мы сохраняем
                                     Close();
                                 }
@@ -264,7 +260,7 @@ namespace ViewForms
         ///<summary>Вызывается при нажатии на кнопку выбора её. Отрывает форму с итогом и закрывает все остальные</summary>
         private void chooseHer_Click(object sender, EventArgs e)
         {
-            logic.AnimeChanLogic.SaveId(animeChanId);
+            SaveIdEvent.Invoke(animeChanId);
             this.DialogResult = DialogResult.OK; //Сообщаем, что изменения мы сохраняем
             Close();
         }
@@ -277,6 +273,11 @@ namespace ViewForms
         private void AnimeChanCard_Load(object sender, EventArgs e)
         {
             
+        }
+
+        public void LoadSkills(List<SkillDTO> list)
+        {
+            listSkills = list;
         }
     }
 }

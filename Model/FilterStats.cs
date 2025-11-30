@@ -1,6 +1,6 @@
 ﻿namespace Model
 {
-    public class FilterStats
+    public sealed class FilterStats
     {
         public int AgeFrom { get; internal set; } = 0;
         public int AgeTo { get; internal set; } = 100;
@@ -12,5 +12,6 @@
         public int SizeTo { get; internal set; } = 10;
         public List<Skill> Skills { get; internal set; } = new List<Skill>();
         public bool isСonsiderAll { get; internal set; } = false;
+
     }
 }
