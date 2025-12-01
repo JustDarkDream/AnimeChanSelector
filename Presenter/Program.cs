@@ -8,22 +8,33 @@ namespace Controller
 {
     internal class Program
     {
-        static IKernel ninjectKernel;
-        static BourgeoisLogic logic;
+        //static Registration registration;
+        //static MainForm main;
+        //static Conclution conc;
+        //static AnimeChanCard animeChanCard;
+        //static FilterChan filterChan;
+        //static SkillsSetting skillSetting;
         static void Main(string[] args)
         {
-            ninjectKernel = new StandardKernel(new SimpleConfigModule());
-            logic = ninjectKernel.Get<BourgeoisLogic>();
+            FormsSaverAndLoader.ninjectKernel = new StandardKernel(new SimpleConfigModule());
+            FormsSaverAndLoader.logic = FormsSaverAndLoader.ninjectKernel.Get<BourgeoisLogic>();
 
-            var registration = new Registration();
-            var main = new MainForm();
-            var conc = new Conclution();
+            FormsSaverAndLoader.registration = new Registration();
+            FormsSaverAndLoader.main = new MainForm();
+            FormsSaverAndLoader.conc = new Conclution();
+            
+            
+            
 
-            RegistrationPresenter presenter = new RegistrationPresenter(registration, logic);
-            MainFormPresenter presenter2 = new MainFormPresenter(main, logic);
-            ConclutionPresenter presenter3 = new ConclutionPresenter(conc, logic);
+            RegistrationPresenter presenter = new RegistrationPresenter(FormsSaverAndLoader.registration, FormsSaverAndLoader.logic);
+            MainFormPresenter presenter2 = new MainFormPresenter(FormsSaverAndLoader.main, FormsSaverAndLoader.logic);
+            ConclutionPresenter presenter3 = new ConclutionPresenter(FormsSaverAndLoader.conc, FormsSaverAndLoader.logic);
+            
+            
 
-            Starter.StartForm(registration, main, conc);
+            FormsSaverAndLoader.main.WriteAnimeChanTable();
+
+            Starter.StartForm(FormsSaverAndLoader.registration, FormsSaverAndLoader.main, FormsSaverAndLoader.conc);
 
         }
     }

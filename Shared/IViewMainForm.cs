@@ -16,5 +16,17 @@ namespace Shared
         event Action DestroyFilterEvent;
         event Action FindAnimeChanEvent;
         event Action GetMainPersonEvent;
+
+        event Func<IViewAnimeChanCard> GetIViewAnimeChanCardEvent;
+        event Func<IViewFilterChan> GetIViewFilterChanEvent;
+
+        void LoadAnimeChanList(IEnumerable<AnimeChanDTO> list);
+        void GetMainPerson(MainPersonDTO main);
+
+        void FindById(AnimeChanDTO chan);
+        void FilterAnimeChanList(List<AnimeChanDTO> chans);
+        void LoadId(int id);
+        void FindAnimeChan(AnimeChanDTO chan);
+        void LoadAnimeChanList(List<AnimeChanDTO> list);
     }
 }

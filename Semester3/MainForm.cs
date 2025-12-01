@@ -2,6 +2,7 @@ using Shared;
 using Ninject;
 using System.Data;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.Diagnostics;
 
 namespace ViewForms
 {
@@ -15,6 +16,9 @@ namespace ViewForms
         public event Action DestroyFilterEvent;
         public event Action FindAnimeChanEvent;
         public event Action GetMainPersonEvent;
+
+        public event Func<IViewAnimeChanCard> GetIViewAnimeChanCardEvent;
+        public event Func<IViewFilterChan> GetIViewFilterChanEvent;
 
         List<AnimeChanDTO> listChanDTO;
         List<AnimeChanDTO> filterListChanDTO;
@@ -71,13 +75,15 @@ namespace ViewForms
                 HeaderText = "Id",
                 AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
             });
+        }
 
+        public void WriteAnimeChanTable()
+        {
             LoadAnimeChanListEvent.Invoke();
             foreach (var i in listChanDTO)
             {
                 table.Rows.Add(i.FirstName, i.LastName, i.Age, i.Id);
             }
-            ;
         }
 
         ///<summary>Вызывается при нажатии на кнопку просмотра тянки. Позволяет выбрать тян, открывая для этого специальную форму</summary>
@@ -89,8 +95,9 @@ namespace ViewForms
                     int id = Convert.ToInt32(table.CurrentRow.Cells["ColumnId"].Value); //Считываем значение id этой строки
 
                     FindByIdEvent.Invoke(id);
-                    AnimeChanCard animeChanCard = new AnimeChanCard(findByIdChanDTO, false ); //Создаем новую форму
-                    if (animeChanCard.ShowDialog() == DialogResult.OK) //Если изменения сохранены, то закрывает эту форму и открывает итоговое окно
+                    IViewAnimeChanCard animeChanCard = GetIViewAnimeChanCardEvent.Invoke(); //Создаем новую форму
+
+                    if (animeChanCard.CorrectWork(findByIdChanDTO, false)) //Если изменения сохранены, то закрывает эту форму и открывает итоговое окно
                     {
                         this.DialogResult = DialogResult.OK;
                         Close();
@@ -115,8 +122,9 @@ namespace ViewForms
         ///<summary>Вызывается при нажатии на кнопку создании тянки. Позволяет создать тянку, открывая для этого специальную форму</summary>
         private void btnCreateChan_Click(object sender, EventArgs e)
         {
-            AnimeChanCard animeChanCard = new AnimeChanCard(); //Создаем новую форму
-            if (animeChanCard.ShowDialog() == DialogResult.OK) //Если изменения сохранены, то добавляет в таблицу новую тян
+            IViewAnimeChanCard animeChanCard = GetIViewAnimeChanCardEvent.Invoke(); //Создаем новую форму
+
+            if (animeChanCard.CorrectWork()) //Если изменения сохранены, то добавляет в таблицу новую тян
             {
                 LoadIdEvent.Invoke();
                 int id = loadId;
@@ -157,8 +165,9 @@ namespace ViewForms
             {
                 int id = Convert.ToInt32(table.Rows[table.CurrentCell.RowIndex].Cells["ColumnId"].Value); //Считываем значение id этой строки
                 FindByIdEvent.Invoke(id);
-                AnimeChanCard animeChanCard = new AnimeChanCard(findByIdChanDTO, true); //Создаем новую форму
-                if (animeChanCard.ShowDialog() == DialogResult.OK) //Если изменения сохранены, то находит нужную строку по id и обновляет её
+                IViewAnimeChanCard animeChanCard = GetIViewAnimeChanCardEvent.Invoke(); //Создаем новую форму
+
+                if (animeChanCard.CorrectWork(findByIdChanDTO, true)) //Если изменения сохранены, то находит нужную строку по id и обновляет её DialogResult.OK
                 {
                     DataGridViewRow foundRows = table.Rows.Cast<DataGridViewRow>()
                                                           .FirstOrDefault(row => Convert.ToInt32(row.Cells["ColumnId"].Value) == id);
@@ -186,8 +195,9 @@ namespace ViewForms
         ///<summary>Вызывается при нажатии на кнопку фильтрации. Фильтрует таблицу, открывая для этого специальную форму</summary>
         private void btnfilter_Click(object sender, EventArgs e)
         {
-            FilterChan filterChan = new FilterChan(); //Создаем новую форму
-            if (filterChan.ShowDialog() == DialogResult.OK) //Если изменения сохранены, то очищает таблицу и загружает значения из отфильтрованного списка
+            IViewFilterChan filterChan = GetIViewFilterChanEvent.Invoke(); //Создаем новую форму
+
+            if (filterChan.CorrectWork()) //Если изменения сохранены, то очищает таблицу и загружает значения из отфильтрованного списка
             {
                 table.Rows.Clear();
 
@@ -274,9 +284,9 @@ namespace ViewForms
             this.lblSize.Text = mainPerson.Size.ToString();
         }
 
-        public void LoadAnimeChanList(List<AnimeChanDTO> list)
+        public void LoadAnimeChanList(IEnumerable<AnimeChanDTO> list)
         {
-            listChanDTO = list;
+            listChanDTO = list.ToList();
         }
 
         public void FindById(AnimeChanDTO chan)
@@ -302,6 +312,11 @@ namespace ViewForms
         public void GetMainPerson(MainPersonDTO main)
         {
             mainPersonDTO = main;
+        }
+
+        public void LoadAnimeChanList(List<AnimeChanDTO> list)
+        {
+            listChanDTO = list;
         }
     }
 }

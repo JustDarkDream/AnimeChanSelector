@@ -10,6 +10,8 @@ namespace ViewForms
         public event Action<int, int, int, int, int, int, int, int, List<SkillDTO>, bool> FilterAnimeChanListEvent;
         public event Action LoadSkillsEvent;
 
+        public event Func<IViewSkillSetting> GetIViewSkillSettingEvent;
+
         FilterStatsDTO filterStats;
         List<SkillDTO> listSkills = new List<SkillDTO>();
 
@@ -18,28 +20,6 @@ namespace ViewForms
         /// </summary>
         public FilterChan()
         {
-
-            InitializeComponent();
-            
-
-            ageFrom.Text = filterStats.AgeFrom.ToString();
-            ageTo.Text = filterStats.AgeTo.ToString();
-            heightFrom.Text = filterStats.HeightFrom.ToString();
-            heightTo.Text = filterStats.HeightTo.ToString();
-            sizeFrom.Text = filterStats.SizeFrom.ToString();
-            sizeTo.Text = filterStats.SizeTo.ToString();
-            weightFrom.Text = filterStats.WeightFrom.ToString();
-            weightTo.Text = filterStats.WeightTo.ToString();
-
-            checkBox1.Checked = filterStats.isСonsiderAll;
-
-            foreach (var skill in filterStats.Skills)
-            {
-                ListViewItem item = new ListViewItem(skill.Name);
-                item.Tag = skill;
-
-                listView1.Items.Add(item);
-            }
         }
 
         ///<summary>Вызывается при нажатии на кнопку сохранения. Сохраняем все данные фильтрации введенные пользователем</summary>
@@ -61,13 +41,13 @@ namespace ViewForms
                                     {
                                         if (int.TryParse(sizeTo.Text, out int sizeto) && sizeto >= 0)
                                         {
-                                            if (agefrom < ageto)
+                                            if (agefrom <= ageto)
                                             {
-                                                if (heightfrom < heightto)
+                                                if (heightfrom <= heightto)
                                                 {
-                                                    if (weightfrom < weightto)
+                                                    if (weightfrom <= weightto)
                                                     {
-                                                        if (sizefrom < sizeto)
+                                                        if (sizefrom <= sizeto)
                                                         {
                                                             List<SkillDTO> skills = new List<SkillDTO>();
 
@@ -168,13 +148,15 @@ namespace ViewForms
                 }
             }
 
-            SkillsSetting skillsSetting = new SkillsSetting(skills); //Создаём форму для редактирования навыков
+            IViewSkillSetting skillSetting = GetIViewSkillSettingEvent.Invoke();//Создаём форму для редактирования навыков
 
-            if (skillsSetting.ShowDialog() == DialogResult.OK)
+            if (skillSetting.CorrectWork(skills))
             {
                 listView1.Items.Clear();
 
                 skills.Clear();
+
+                LoadSkillsEvent.Invoke();
 
                 foreach (SkillDTO skill in listSkills)
                 {
@@ -208,6 +190,41 @@ namespace ViewForms
         public void LoadSkills(List<SkillDTO> list)
         {
             listSkills = list;
+        }
+
+        public bool CorrectWork()
+        {
+            InitializeComponent();
+
+            LoadFilterStatsEvent.Invoke();
+
+            // Показываем форму и возвращаем результат
+            this.Load += FilterChanLoad;
+            DialogResult result = this.ShowDialog();
+            this.Load -= FilterChanLoad;
+            return result == DialogResult.OK;
+        }
+
+        private void FilterChanLoad(object sender, EventArgs e)
+        {
+            ageFrom.Text = filterStats.AgeFrom.ToString();
+            ageTo.Text = filterStats.AgeTo.ToString();
+            heightFrom.Text = filterStats.HeightFrom.ToString();
+            heightTo.Text = filterStats.HeightTo.ToString();
+            sizeFrom.Text = filterStats.SizeFrom.ToString();
+            sizeTo.Text = filterStats.SizeTo.ToString();
+            weightFrom.Text = filterStats.WeightFrom.ToString();
+            weightTo.Text = filterStats.WeightTo.ToString();
+
+            checkBox1.Checked = filterStats.isСonsiderAll;
+
+            foreach (var skill in filterStats.Skills)
+            {
+                ListViewItem item = new ListViewItem(skill.Name);
+                item.Tag = skill;
+
+                listView1.Items.Add(item);
+            }
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using Ninject;
-using System.Data;
 using Shared;
+using System.Data;
+using System.Diagnostics;
 
 namespace ViewForms
 {
@@ -11,25 +12,20 @@ namespace ViewForms
         public event Action<SkillDTO> SaveSkillEvent;
 
         SkillDTO skillDTO;
+        List<SkillDTO> skills;
 
         /// <summary>
         /// Конструктор формы "настройка скиллов".
         /// </summary>
         /// <param name="skills">Коллекция объектов класса Skill</param>
-        public SkillsSetting(List<SkillDTO> skills)
+        public SkillsSetting()
+        {
+        }
+
+
+        public void WriteSkills(List<SkillDTO> skills)
         {
 
-            InitializeComponent();
-
-            skillsComboBox.DataSource = Enum.GetValues(typeof(SkillsDTO)); //Загружаем в комбо бокс все возможные навыки
-
-            foreach (SkillDTO skill in skills) //Считывает информацию с списка навыков и закидываем в ListView
-            {
-                ListViewItem item = new ListViewItem(skill.Name);
-
-                skillsView.Items.Add(item);
-                item.Tag = skill;
-            }
         }
 
         ///<summary>Вызывается при нажатии на кнопку удалении навыка. Удаляет навык из ListView</summary>
@@ -120,6 +116,31 @@ namespace ViewForms
         public void CreateSkill(SkillDTO skill)
         {
             skillDTO = skill;
+        }
+
+        public bool CorrectWork(List<SkillDTO> _skills)
+        {
+            InitializeComponent();
+
+            skills = _skills;
+            // Показываем форму и возвращаем результат
+            this.Load += SkillSettingLoad;
+            DialogResult result = this.ShowDialog();
+            this.Load -= SkillSettingLoad;
+            return result == DialogResult.OK;
+        }
+
+        private void SkillSettingLoad(object sender, EventArgs e)
+        {
+            skillsComboBox.DataSource = Enum.GetValues(typeof(SkillsDTO)); //Загружаем в комбо бокс все возможные навыки
+
+            foreach (SkillDTO skill in skills) //Считывает информацию с списка навыков и закидываем в ListView
+            {
+                ListViewItem item = new ListViewItem(skill.Name);
+
+                skillsView.Items.Add(item);
+                item.Tag = skill;
+            }
         }
     }
 }

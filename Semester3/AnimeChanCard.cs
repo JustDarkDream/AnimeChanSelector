@@ -11,7 +11,12 @@ namespace ViewForms
         public event Action<string, string, int, int, int, int, List<SkillDTO>, int> SaveChangeAnimeChanEvent;
         public event Action<int> SaveIdEvent;
 
+        public event Func<IViewSkillSetting> GetIViewSkillSettingEvent;
+
         int animeChanId = 0;
+        AnimeChanDTO animeChan;
+        bool isEditable;
+
         List<SkillDTO> listSkills = new List<SkillDTO>();
 
         /// <summary>
@@ -21,73 +26,11 @@ namespace ViewForms
         /// <param name="isEditable">Переключение между режимом редактирвоания тянки и просмотром</param>
         public AnimeChanCard(AnimeChanDTO animeChan, bool isEditable) //Вызывается, если пользователь хочет редактировать или посмотреть на тянку
         {
-            InitializeComponent();
-            firstName.Text = animeChan.FirstName;
-            lastName.Text = animeChan.LastName;
-
-            ageValue.Text = animeChan.Age.ToString();
-            heightValue.Text = animeChan.Height.ToString();
-            weightValue.Text = animeChan.Weight.ToString();
-            sizeValue.Text = animeChan.Size.ToString();
-
-            animeChanId = animeChan.Id;
-
-            listView1.Clear();
-
-            foreach (var skill in animeChan.Skills) //Перечисляет навыки тянки
-            {
-                var item = new ListViewItem(skill.Name);
-                item.Tag = skill;
-                listView1.Items.Add(item);
-            }
-
-            //Редактирует состояние кнопок в зависимости от выбора
-            addChan.Visible = false;
-            addChan.Enabled = false;
-            chooseHer.Visible = !isEditable;
-            chooseHer.Enabled = !isEditable;
-            skillsSettung.Visible = isEditable;
-            skillsSettung.Enabled = isEditable;
-            saveChanges.Enabled = isEditable;
-            saveChanges.Visible = isEditable;
-
-            //Редактирует состояние TextBox в зависимости от выбора
-            firstName.Enabled = isEditable;
-            lastName.Enabled = isEditable;
-            ageValue.Enabled = isEditable;
-            heightValue.Enabled = isEditable;
-            weightValue.Enabled = isEditable;
-            sizeValue.Enabled = isEditable;
 
         }
         public AnimeChanCard() //Вызывается, если пользователь хочет создать новую тянку
         {
-            InitializeComponent();
-            firstName.Text = "";
-            lastName.Text = "";
-            ageValue.Text = "";
-            heightValue.Text = "";
-            weightValue.Text = "";
-            sizeValue.Text = "";
-            listView1.Clear();
 
-            //Редактирует состояние кнопок в для создания тянки
-            addChan.Visible = true;
-            addChan.Enabled = true;
-            chooseHer.Visible = false;
-            chooseHer.Enabled = false;
-            skillsSettung.Visible = true;
-            skillsSettung.Enabled = true;
-            saveChanges.Enabled = false;
-            saveChanges.Visible = false;
-
-            //Редактирует состояние TextBox для создания тянки
-            firstName.Enabled = true;
-            lastName.Enabled = true;
-            ageValue.Enabled = true;
-            heightValue.Enabled = true;
-            weightValue.Enabled = true;
-            sizeValue.Enabled = true;
         }
 
         ///<summary>Вызывается при нажатии на кнопку редактора скиллов. Открывает форму редакторов скиллов и сохраняет изменения</summary>
@@ -101,15 +44,16 @@ namespace ViewForms
                     skills.Add(skill3);
                 }
             }
+            IViewSkillSetting skillSetting = GetIViewSkillSettingEvent.Invoke();//Создаём форму для редактирования навыков
 
-            SkillsSetting skillsSetting = new SkillsSetting(skills); //Создаём форму для редактирования навыков
-
-            if (skillsSetting.ShowDialog() == DialogResult.OK)
+            if (skillSetting.CorrectWork(skills))
             {
 
                 listView1.Items.Clear();
 
                 skills.Clear();
+
+                LoadSkillsEvent.Invoke();
 
                 foreach (SkillDTO skill in listSkills)
                 {
@@ -272,12 +216,107 @@ namespace ViewForms
         /// <param name="e">Контейнер аргументов</param>
         private void AnimeChanCard_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         public void LoadSkills(List<SkillDTO> list)
         {
             listSkills = list;
+        }
+
+        public bool CorrectWork(AnimeChanDTO _animeChan, bool _isEditable)
+        {
+            InitializeComponent();
+            animeChan = _animeChan;
+            isEditable = _isEditable;
+
+            // Показываем форму и возвращаем результат
+            this.Load += AnimeChanCardLoad;
+            DialogResult result = this.ShowDialog();
+            this.Load -= AnimeChanCardLoad;
+            return result == DialogResult.OK;
+        }
+
+        public bool CorrectWork()
+        {
+            InitializeComponent();
+
+            // Показываем форму и возвращаем результат
+            this.Load += AnimeChanCardLoadWithoutParam;
+            DialogResult result = this.ShowDialog();
+            this.Load -= AnimeChanCardLoadWithoutParam;
+            return result == DialogResult.OK;
+        }
+
+        private void AnimeChanCardLoad(object sender, EventArgs e)
+        {
+            firstName.Text = animeChan.FirstName;
+            lastName.Text = animeChan.LastName;
+
+            ageValue.Text = animeChan.Age.ToString();
+            heightValue.Text = animeChan.Height.ToString();
+            weightValue.Text = animeChan.Weight.ToString();
+            sizeValue.Text = animeChan.Size.ToString();
+
+            animeChanId = animeChan.Id;
+
+            listView1.Clear();
+
+            foreach (var skill in animeChan.Skills) //Перечисляет навыки тянки
+            {
+                var item = new ListViewItem(skill.Name);
+                item.Tag = skill;
+                listView1.Items.Add(item);
+            }
+
+            //Редактирует состояние кнопок в зависимости от выбора
+            addChan.Visible = false;
+            addChan.Enabled = false;
+            chooseHer.Visible = !isEditable;
+            chooseHer.Enabled = !isEditable;
+            skillsSettung.Visible = isEditable;
+            skillsSettung.Enabled = isEditable;
+            saveChanges.Enabled = isEditable;
+            saveChanges.Visible = isEditable;
+
+            //Редактирует состояние TextBox в зависимости от выбора
+            firstName.Enabled = isEditable;
+            lastName.Enabled = isEditable;
+            ageValue.Enabled = isEditable;
+            heightValue.Enabled = isEditable;
+            weightValue.Enabled = isEditable;
+            sizeValue.Enabled = isEditable;
+
+
+        }
+
+        private void AnimeChanCardLoadWithoutParam(object sender, EventArgs e)
+        {
+            firstName.Text = "";
+            lastName.Text = "";
+            ageValue.Text = "";
+            heightValue.Text = "";
+            weightValue.Text = "";
+            sizeValue.Text = "";
+            listView1.Clear();
+
+            //Редактирует состояние кнопок в для создания тянки
+            addChan.Visible = true;
+            addChan.Enabled = true;
+            chooseHer.Visible = false;
+            chooseHer.Enabled = false;
+            skillsSettung.Visible = true;
+            skillsSettung.Enabled = true;
+            saveChanges.Enabled = false;
+            saveChanges.Visible = false;
+
+            //Редактирует состояние TextBox для создания тянки
+            firstName.Enabled = true;
+            lastName.Enabled = true;
+            ageValue.Enabled = true;
+            heightValue.Enabled = true;
+            weightValue.Enabled = true;
+            sizeValue.Enabled = true;
         }
     }
 }

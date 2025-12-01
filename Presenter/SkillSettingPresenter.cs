@@ -17,7 +17,9 @@ namespace Controller
             view.ClearSkillsEvent += logic.ClearSkills;
             view.SaveSkillEvent += logic.SaveSkill;
 
+
+            logic.CreateSkillEvent += view.CreateSkill;
             //public event Action<SkillDTO> CreateSkillEvent;
-    }
+        }
     }
 }

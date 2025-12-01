@@ -9,6 +9,11 @@ namespace Shared
         event Action<string, string, int, int, int, int, List<SkillDTO>, int> SaveChangeAnimeChanEvent;
         event Action<int> SaveIdEvent;
 
+        event Func<IViewSkillSetting> GetIViewSkillSettingEvent;
+
         void LoadSkills(List<SkillDTO> list);
+
+        bool CorrectWork(AnimeChanDTO animeChan, bool isEditable);
+        bool CorrectWork();
     }
 }

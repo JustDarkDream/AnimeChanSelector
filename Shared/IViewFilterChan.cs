@@ -12,6 +12,8 @@ namespace Shared
         event Action<int, int, int, int, int, int, int, int, List<SkillDTO>, bool> FilterAnimeChanListEvent;
         event Action LoadSkillsEvent;
 
+        event Func<IViewSkillSetting> GetIViewSkillSettingEvent;
+        bool CorrectWork();
         void LoadFilterStats(FilterStatsDTO filter);
         void LoadSkills(List<SkillDTO> list);
     }

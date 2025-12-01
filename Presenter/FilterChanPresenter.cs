@@ -17,6 +17,8 @@ namespace Controller
             view.FilterAnimeChanListEvent += logic.FilterAnimeChanList;
             view.LoadSkillsEvent += logic.LoadSkills;
 
+            view.GetIViewSkillSettingEvent += FormsSaverAndLoader.GetSkillSetting;
+
             logic.LoadSkillsInViewEvent += view.LoadSkills;
             logic.FilterStatsLoadedEvent += view.LoadFilterStats;
         }

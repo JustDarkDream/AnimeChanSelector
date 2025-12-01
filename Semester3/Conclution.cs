@@ -11,7 +11,6 @@ namespace ViewForms
         public Conclution()
         {
             InitializeComponent();
-            MakeConclutionEvent.Invoke();
         }
 
         public void WriteConclution(string str)
@@ -26,7 +25,7 @@ namespace ViewForms
         /// <param name="e">Контейнер аргументов</param>
         private void Conclution_Load(object sender, EventArgs e)
         {
-
+            MakeConclutionEvent.Invoke();
         }
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)

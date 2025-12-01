@@ -240,7 +240,6 @@
             Name = "AnimeChanCard";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Инфа о тянке";
-            Load += AnimeChanCard_Load;
             tableLayoutPanel1.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();

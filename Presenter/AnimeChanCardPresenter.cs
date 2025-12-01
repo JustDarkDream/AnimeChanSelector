@@ -18,6 +18,9 @@ namespace Controller
             view.SaveChangeAnimeChanEvent += logic.SaveChangeAnimeChan;
             view.LoadSkillsEvent += logic.LoadSkills;
 
+
+            view.GetIViewSkillSettingEvent += FormsSaverAndLoader.GetSkillSetting;
+
             logic.LoadSkillsInViewEvent += view.LoadSkills;
         }
     }

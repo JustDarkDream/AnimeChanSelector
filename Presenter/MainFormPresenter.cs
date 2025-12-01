@@ -22,14 +22,15 @@ namespace Controller
             view.FindAnimeChanEvent += logic.FindAnimeChan;
             view.GetMainPersonEvent += logic.GetMainPerson;
 
+            view.GetIViewAnimeChanCardEvent += FormsSaverAndLoader.GetAnimeChanCard;
+            view.GetIViewFilterChanEvent += FormsSaverAndLoader.GetFilterChan;
 
-
-        //            public event Action<IEnumerable<AnimeChanDTO>> LoadAnimeChanListEvent;
-        //public event Action<AnimeChanDTO> FindByIdEvent;
-        //public event Action<int> LoadIdEvent;
-        //public event Action<List<AnimeChanDTO>> LoadFilterAnimeChanListEvent;
-        //public event Action<AnimeChanDTO> FindAnimeChanEvent;
-        //public event Action<MainPersonDTO> GetMainPersonEvent;
-    }
+            logic.LoadAnimeChanListEvent += view.LoadAnimeChanList;
+            logic.GetMainPersonEvent += view.GetMainPerson;
+            logic.FindByIdEvent += view.FindById;
+            logic.LoadIdEvent += view.LoadId;
+            logic.FindAnimeChanEvent += view.FindAnimeChan;
+            logic.LoadFilterAnimeChanListEvent += view.FilterAnimeChanList;
+        }
     }
 }
