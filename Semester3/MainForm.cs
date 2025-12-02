@@ -35,11 +35,6 @@ namespace ViewForms
         public MainForm()
         {
 
-            InitializeComponent();
-
-            table = dgwTabel;
-
-            CreateDataGridView();
         }
 
         ///<summary>Создаёт начальную таблицу с аниме тянками</summary>
@@ -75,15 +70,18 @@ namespace ViewForms
                 HeaderText = "Id",
                 AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
             });
-        }
 
-        public void WriteAnimeChanTable()
-        {
             LoadAnimeChanListEvent.Invoke();
+
             foreach (var i in listChanDTO)
             {
                 table.Rows.Add(i.FirstName, i.LastName, i.Age, i.Id);
             }
+        }
+
+        public void WriteAnimeChanTable()
+        {
+
         }
 
         ///<summary>Вызывается при нажатии на кнопку просмотра тянки. Позволяет выбрать тян, открывая для этого специальную форму</summary>
@@ -267,6 +265,15 @@ namespace ViewForms
             }
         }
 
+        public bool CorrectWork()
+        {
+            InitializeComponent();
+
+            // Показываем форму и возвращаем результат
+            DialogResult result = this.ShowDialog();
+            return result == DialogResult.OK;
+        }
+
         /// <summary>
         /// Событие загрузки формы
         /// </summary>
@@ -274,6 +281,10 @@ namespace ViewForms
         /// <param name="e">Контейнер аргументов события</param>
         private void MainForm_Load(object sender, EventArgs e)
         {
+            table = dgwTabel;
+
+            CreateDataGridView();
+
             GetMainPersonEvent.Invoke();
             MainPersonDTO mainPerson = mainPersonDTO;
             this.lblFirstName.Text = mainPerson.FirstName;

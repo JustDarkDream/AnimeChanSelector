@@ -10,5 +10,7 @@ namespace Shared
     {
         event Action MakeConclutionEvent;
         public void WriteConclution(string str);
+
+        bool CorrectWork();
     }
 }

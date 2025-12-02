@@ -8,5 +8,7 @@
         event Action LoadAllSkillsInDBEvent;
         event Action CreateAnimeChansEvent;
         event Action CreateAnimeChansInDBEvent;
+
+        bool CorrectWork();
     }
 }

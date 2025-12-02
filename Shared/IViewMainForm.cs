@@ -28,5 +28,7 @@ namespace Shared
         void LoadId(int id);
         void FindAnimeChan(AnimeChanDTO chan);
         void LoadAnimeChanList(List<AnimeChanDTO> list);
+
+        bool CorrectWork();
     }
 }

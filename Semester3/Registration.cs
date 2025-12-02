@@ -18,13 +18,22 @@ namespace ViewForms
         /// </summary>
         public Registration()
         {
+        }
+
+        public bool CorrectWork()
+        {
             InitializeComponent();
+
             firstName.Text = "";
             lastName.Text = "";
             ageValue.Text = "";
             heightValue.Text = "";
             weightValue.Text = "";
             sizeValue.Text = "";
+
+            // Показываем форму и возвращаем результат
+            DialogResult result = this.ShowDialog();
+            return result == DialogResult.OK;
         }
 
         ///<summary>Вызывается при нажатии на кнопку зарегестрироваться. Регистрирует пользователя в специальный класс (MainPerson)</summary>

@@ -3,22 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\semester3\\registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|solutionrelative:semester3\\registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\semester3\\registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|solutionrelative:semester3\\registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\semester3\\animechancard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|solutionrelative:semester3\\animechancard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\semester3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|solutionrelative:semester3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\semester3\\conclution.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|solutionrelative:semester3\\conclution.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -27,36 +11,128 @@
       "RelativeMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|solutionrelative:semester3\\conclution.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\semester3\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|solutionrelative:semester3\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\semester3\\registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|solutionrelative:semester3\\registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\semester3\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\semester3\\registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|solutionrelative:semester3\\registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\semester3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|solutionrelative:semester3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2161AE3E-9170-4E55-8BCC-7D60229DCEFF}|Shared\\Shared.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\shared\\iviewconclution.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2161AE3E-9170-4E55-8BCC-7D60229DCEFF}|Shared\\Shared.csproj|solutionrelative:shared\\iviewconclution.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2161AE3E-9170-4E55-8BCC-7D60229DCEFF}|Shared\\Shared.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\shared\\iviewfilterchan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2161AE3E-9170-4E55-8BCC-7D60229DCEFF}|Shared\\Shared.csproj|solutionrelative:shared\\iviewfilterchan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2161AE3E-9170-4E55-8BCC-7D60229DCEFF}|Shared\\Shared.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\shared\\iviewmainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2161AE3E-9170-4E55-8BCC-7D60229DCEFF}|Shared\\Shared.csproj|solutionrelative:shared\\iviewmainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2161AE3E-9170-4E55-8BCC-7D60229DCEFF}|Shared\\Shared.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\shared\\iviewregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2161AE3E-9170-4E55-8BCC-7D60229DCEFF}|Shared\\Shared.csproj|solutionrelative:shared\\iviewregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2161AE3E-9170-4E55-8BCC-7D60229DCEFF}|Shared\\Shared.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\shared\\mainpersondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2161AE3E-9170-4E55-8BCC-7D60229DCEFF}|Shared\\Shared.csproj|solutionrelative:shared\\mainpersondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\semester3\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|solutionrelative:semester3\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\semester3\\filterchan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|solutionrelative:semester3\\filterchan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\semester3\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|solutionrelative:semester3\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\semester3\\filterchan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|solutionrelative:semester3\\filterchan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\semester3\\errorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|solutionrelative:semester3\\errorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\semester3\\animechancard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|solutionrelative:semester3\\animechancard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\semester3\\animechancard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|solutionrelative:semester3\\animechancard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6BCE398-55B5-4595-8176-B292AB1819ED}|Model\\Model.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\model\\ifilterable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6BCE398-55B5-4595-8176-B292AB1819ED}|Model\\Model.csproj|solutionrelative:model\\ifilterable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\semester3\\registration.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|solutionrelative:semester3\\registration.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\semester3\\skillssetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|solutionrelative:semester3\\skillssetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6BCE398-55B5-4595-8176-B292AB1819ED}|Model\\Model.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\model\\bourgeoislogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6BCE398-55B5-4595-8176-B292AB1819ED}|Model\\Model.csproj|solutionrelative:model\\bourgeoislogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACACB5D6-B735-4688-B422-9A32A4AC00E1}|Presenter\\Controller.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\presenter\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACACB5D6-B735-4688-B422-9A32A4AC00E1}|Presenter\\Controller.csproj|solutionrelative:presenter\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACACB5D6-B735-4688-B422-9A32A4AC00E1}|Presenter\\Controller.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\presenter\\formssaverandloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACACB5D6-B735-4688-B422-9A32A4AC00E1}|Presenter\\Controller.csproj|solutionrelative:presenter\\formssaverandloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ACACB5D6-B735-4688-B422-9A32A4AC00E1}|Presenter\\Controller.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\presenter\\filterchanpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ACACB5D6-B735-4688-B422-9A32A4AC00E1}|Presenter\\Controller.csproj|solutionrelative:presenter\\filterchanpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{ACACB5D6-B735-4688-B422-9A32A4AC00E1}|Presenter\\Controller.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\presenter\\mainformpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACACB5D6-B735-4688-B422-9A32A4AC00E1}|Presenter\\Controller.csproj|solutionrelative:presenter\\mainformpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACACB5D6-B735-4688-B422-9A32A4AC00E1}|Presenter\\Controller.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\presenter\\registrationpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACACB5D6-B735-4688-B422-9A32A4AC00E1}|Presenter\\Controller.csproj|solutionrelative:presenter\\registrationpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACACB5D6-B735-4688-B422-9A32A4AC00E1}|Presenter\\Controller.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\presenter\\conclutionpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACACB5D6-B735-4688-B422-9A32A4AC00E1}|Presenter\\Controller.csproj|solutionrelative:presenter\\conclutionpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACACB5D6-B735-4688-B422-9A32A4AC00E1}|Presenter\\Controller.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\presenter\\skillsettingpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACACB5D6-B735-4688-B422-9A32A4AC00E1}|Presenter\\Controller.csproj|solutionrelative:presenter\\skillsettingpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{ACACB5D6-B735-4688-B422-9A32A4AC00E1}|Presenter\\Controller.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\presenter\\animechancardpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ACACB5D6-B735-4688-B422-9A32A4AC00E1}|Presenter\\Controller.csproj|solutionrelative:presenter\\animechancardpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2161AE3E-9170-4E55-8BCC-7D60229DCEFF}|Shared\\Shared.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\shared\\iviewfilterchan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2161AE3E-9170-4E55-8BCC-7D60229DCEFF}|Shared\\Shared.csproj|solutionrelative:shared\\iviewfilterchan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F6BCE398-55B5-4595-8176-B292AB1819ED}|Model\\Model.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\model\\ilogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6BCE398-55B5-4595-8176-B292AB1819ED}|Model\\Model.csproj|solutionrelative:model\\ilogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\semester3\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|solutionrelative:semester3\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\semester3\\conclution.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|solutionrelative:semester3\\conclution.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46D11C99-9C65-4A5A-970B-D8395E90D07C}|ViewConsole\\ViewConsole.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\viewconsole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46D11C99-9C65-4A5A-970B-D8395E90D07C}|ViewConsole\\ViewConsole.csproj|solutionrelative:viewconsole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\semester3\\filterchan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|solutionrelative:semester3\\filterchan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\semester3\\animechancard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -67,28 +143,8 @@
       "RelativeMoniker": "D:0:0:{73721D8C-C17D-4E59-BBE3-346DAED76254}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\animechanrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ACACB5D6-B735-4688-B422-9A32A4AC00E1}|Presenter\\Controller.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\presenter\\mainformpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ACACB5D6-B735-4688-B422-9A32A4AC00E1}|Presenter\\Controller.csproj|solutionrelative:presenter\\mainformpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ACACB5D6-B735-4688-B422-9A32A4AC00E1}|Presenter\\Controller.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\presenter\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ACACB5D6-B735-4688-B422-9A32A4AC00E1}|Presenter\\Controller.csproj|solutionrelative:presenter\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2161AE3E-9170-4E55-8BCC-7D60229DCEFF}|Shared\\Shared.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\shared\\iviewmainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2161AE3E-9170-4E55-8BCC-7D60229DCEFF}|Shared\\Shared.csproj|solutionrelative:shared\\iviewmainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F6BCE398-55B5-4595-8176-B292AB1819ED}|Model\\Model.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\model\\bourgeoislogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6BCE398-55B5-4595-8176-B292AB1819ED}|Model\\Model.csproj|solutionrelative:model\\bourgeoislogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F6BCE398-55B5-4595-8176-B292AB1819ED}|Model\\Model.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\model\\mainpersonlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F6BCE398-55B5-4595-8176-B292AB1819ED}|Model\\Model.csproj|solutionrelative:model\\mainpersonlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ACACB5D6-B735-4688-B422-9A32A4AC00E1}|Presenter\\Controller.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\presenter\\formssaverandloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ACACB5D6-B735-4688-B422-9A32A4AC00E1}|Presenter\\Controller.csproj|solutionrelative:presenter\\formssaverandloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2161AE3E-9170-4E55-8BCC-7D60229DCEFF}|Shared\\Shared.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\shared\\iviewanimechancard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -103,52 +159,16 @@
       "RelativeMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|solutionrelative:semester3\\skillssetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\semester3\\skillssetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|solutionrelative:semester3\\skillssetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2161AE3E-9170-4E55-8BCC-7D60229DCEFF}|Shared\\Shared.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\shared\\iviewskillsetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2161AE3E-9170-4E55-8BCC-7D60229DCEFF}|Shared\\Shared.csproj|solutionrelative:shared\\iviewskillsetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ACACB5D6-B735-4688-B422-9A32A4AC00E1}|Presenter\\Controller.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\presenter\\skillsettingpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ACACB5D6-B735-4688-B422-9A32A4AC00E1}|Presenter\\Controller.csproj|solutionrelative:presenter\\skillsettingpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2161AE3E-9170-4E55-8BCC-7D60229DCEFF}|Shared\\Shared.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\shared\\skillsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2161AE3E-9170-4E55-8BCC-7D60229DCEFF}|Shared\\Shared.csproj|solutionrelative:shared\\skillsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2161AE3E-9170-4E55-8BCC-7D60229DCEFF}|Shared\\Shared.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\shared\\iviewregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2161AE3E-9170-4E55-8BCC-7D60229DCEFF}|Shared\\Shared.csproj|solutionrelative:shared\\iviewregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2161AE3E-9170-4E55-8BCC-7D60229DCEFF}|Shared\\Shared.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\shared\\iviewconclution.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2161AE3E-9170-4E55-8BCC-7D60229DCEFF}|Shared\\Shared.csproj|solutionrelative:shared\\iviewconclution.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2161AE3E-9170-4E55-8BCC-7D60229DCEFF}|Shared\\Shared.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\shared\\mainpersondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2161AE3E-9170-4E55-8BCC-7D60229DCEFF}|Shared\\Shared.csproj|solutionrelative:shared\\mainpersondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2161AE3E-9170-4E55-8BCC-7D60229DCEFF}|Shared\\Shared.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\shared\\viewresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2161AE3E-9170-4E55-8BCC-7D60229DCEFF}|Shared\\Shared.csproj|solutionrelative:shared\\viewresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F6BCE398-55B5-4595-8176-B292AB1819ED}|Model\\Model.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\model\\ifilterable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6BCE398-55B5-4595-8176-B292AB1819ED}|Model\\Model.csproj|solutionrelative:model\\ifilterable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ACACB5D6-B735-4688-B422-9A32A4AC00E1}|Presenter\\Controller.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\presenter\\conclutionpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ACACB5D6-B735-4688-B422-9A32A4AC00E1}|Presenter\\Controller.csproj|solutionrelative:presenter\\conclutionpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ACACB5D6-B735-4688-B422-9A32A4AC00E1}|Presenter\\Controller.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\presenter\\registrationpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ACACB5D6-B735-4688-B422-9A32A4AC00E1}|Presenter\\Controller.csproj|solutionrelative:presenter\\registrationpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F6BCE398-55B5-4595-8176-B292AB1819ED}|Model\\Model.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\model\\ilogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6BCE398-55B5-4595-8176-B292AB1819ED}|Model\\Model.csproj|solutionrelative:model\\ilogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F6BCE398-55B5-4595-8176-B292AB1819ED}|Model\\Model.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\model\\filterlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -165,10 +185,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{2161AE3E-9170-4E55-8BCC-7D60229DCEFF}|Shared\\Shared.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\shared\\skilldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2161AE3E-9170-4E55-8BCC-7D60229DCEFF}|Shared\\Shared.csproj|solutionrelative:shared\\skilldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46D11C99-9C65-4A5A-970B-D8395E90D07C}|ViewConsole\\ViewConsole.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\viewconsole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46D11C99-9C65-4A5A-970B-D8395E90D07C}|ViewConsole\\ViewConsole.csproj|solutionrelative:viewconsole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2161AE3E-9170-4E55-8BCC-7D60229DCEFF}|Shared\\Shared.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\shared\\filterstatsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -212,10 +228,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{F6BCE398-55B5-4595-8176-B292AB1819ED}|Model\\Model.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\model\\animechan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F6BCE398-55B5-4595-8176-B292AB1819ED}|Model\\Model.csproj|solutionrelative:model\\animechan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\semester3\\errorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F27DFA16-ED76-4C92-BAC0-3B0EFAA337AF}|Semester3\\ViewForms.csproj|solutionrelative:semester3\\errorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F6BCE398-55B5-4595-8176-B292AB1819ED}|Model\\Model.csproj|c:\\users\\nubik\\documents\\ilovegit\\animechanselector\\model\\conclutionlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -293,408 +305,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MainForm.cs",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\MainForm.cs",
-              "RelativeDocumentMoniker": "Semester3\\MainForm.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\MainForm.cs",
-              "RelativeToolTip": "Semester3\\MainForm.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAuwGUAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T05:38:37.335Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Conclution.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\Conclution.cs",
-              "RelativeDocumentMoniker": "Semester3\\Conclution.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\Conclution.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "Semester3\\Conclution.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T16:40:33.018Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Conclution.cs",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\Conclution.cs",
-              "RelativeDocumentMoniker": "Semester3\\Conclution.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\Conclution.cs",
-              "RelativeToolTip": "Semester3\\Conclution.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T07:40:04.642Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Registration.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\Registration.cs",
-              "RelativeDocumentMoniker": "Semester3\\Registration.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\Registration.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "Semester3\\Registration.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T05:29:30.546Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Registration.cs",
               "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\Registration.cs",
               "RelativeDocumentMoniker": "Semester3\\Registration.cs",
               "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\Registration.cs",
               "RelativeToolTip": "Semester3\\Registration.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAzwDIAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBwAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-18T05:30:36.072Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "FilterChanPresenter.cs",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Presenter\\FilterChanPresenter.cs",
-              "RelativeDocumentMoniker": "Presenter\\FilterChanPresenter.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Presenter\\FilterChanPresenter.cs",
-              "RelativeToolTip": "Presenter\\FilterChanPresenter.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAABSAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T11:33:14.318Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\Program.cs",
-              "RelativeDocumentMoniker": "Semester3\\Program.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\Program.cs",
-              "RelativeToolTip": "Semester3\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T13:21:20.54Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AnimeChanCard.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\AnimeChanCard.cs",
-              "RelativeDocumentMoniker": "Semester3\\AnimeChanCard.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\AnimeChanCard.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "Semester3\\AnimeChanCard.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T05:23:32.375Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\MainForm.cs",
-              "RelativeDocumentMoniker": "Semester3\\MainForm.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "Semester3\\MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T05:38:35.607Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "FilterChan.cs",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\FilterChan.cs",
-              "RelativeDocumentMoniker": "Semester3\\FilterChan.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\FilterChan.cs",
-              "RelativeToolTip": "Semester3\\FilterChan.cs",
-              "ViewState": "AgIAAIUAAAAAAAAAAAAAwJ4AAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T07:39:47.482Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "AnimeChanCardPresenter.cs",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Presenter\\AnimeChanCardPresenter.cs",
-              "RelativeDocumentMoniker": "Presenter\\AnimeChanCardPresenter.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Presenter\\AnimeChanCardPresenter.cs",
-              "RelativeToolTip": "Presenter\\AnimeChanCardPresenter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T16:23:59.109Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Presenter\\Program.cs",
-              "RelativeDocumentMoniker": "Presenter\\Program.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Presenter\\Program.cs",
-              "RelativeToolTip": "Presenter\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAawCAAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T12:40:45.178Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "IViewFilterChan.cs",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Shared\\IViewFilterChan.cs",
-              "RelativeDocumentMoniker": "Shared\\IViewFilterChan.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Shared\\IViewFilterChan.cs",
-              "RelativeToolTip": "Shared\\IViewFilterChan.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T08:51:40.103Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "FilterChan.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\FilterChan.cs",
-              "RelativeDocumentMoniker": "Semester3\\FilterChan.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\FilterChan.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "Semester3\\FilterChan.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T07:39:46.064Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AnimeChanCard.cs",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\AnimeChanCard.cs",
-              "RelativeDocumentMoniker": "Semester3\\AnimeChanCard.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\AnimeChanCard.cs",
-              "RelativeToolTip": "Semester3\\AnimeChanCard.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAuwDcAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T05:23:36.239Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "AnimeChanCard.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\AnimeChanCard.Designer.cs",
-              "RelativeDocumentMoniker": "Semester3\\AnimeChanCard.Designer.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\AnimeChanCard.Designer.cs",
-              "RelativeToolTip": "Semester3\\AnimeChanCard.Designer.cs",
-              "ViewState": "AgIAAK0AAAAAAAAAAAAowPUAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T13:13:44.07Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "AnimeChanRepo.cs",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\DataAccessLayer\\AnimeChanRepo.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\AnimeChanRepo.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\DataAccessLayer\\AnimeChanRepo.cs",
-              "RelativeToolTip": "DataAccessLayer\\AnimeChanRepo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T15:32:25.963Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "MainFormPresenter.cs",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Presenter\\MainFormPresenter.cs",
-              "RelativeDocumentMoniker": "Presenter\\MainFormPresenter.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Presenter\\MainFormPresenter.cs",
-              "RelativeToolTip": "Presenter\\MainFormPresenter.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAewCAAAABLAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T08:41:31.769Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "IViewMainForm.cs",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Shared\\IViewMainForm.cs",
-              "RelativeDocumentMoniker": "Shared\\IViewMainForm.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Shared\\IViewMainForm.cs",
-              "RelativeToolTip": "Shared\\IViewMainForm.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBoAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T08:25:58.187Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "BourgeoisLogic.cs",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Model\\BourgeoisLogic.cs",
-              "RelativeDocumentMoniker": "Model\\BourgeoisLogic.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Model\\BourgeoisLogic.cs",
-              "RelativeToolTip": "Model\\BourgeoisLogic.cs",
-              "ViewState": "AgIAAPUAAAAAAAAAAAAowAkBAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T05:13:07.067Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "MainPersonLogic.cs",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Model\\MainPersonLogic.cs",
-              "RelativeDocumentMoniker": "Model\\MainPersonLogic.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Model\\MainPersonLogic.cs",
-              "RelativeToolTip": "Model\\MainPersonLogic.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T05:26:04.463Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "SkillsSetting.cs",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\SkillsSetting.cs",
-              "RelativeDocumentMoniker": "Semester3\\SkillsSetting.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\SkillsSetting.cs",
-              "RelativeToolTip": "Semester3\\SkillsSetting.cs",
-              "ViewState": "AgIAAGsAAAAAAAAAAAAswCEAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T07:39:23.368Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "IViewAnimeChanCard.cs",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Shared\\IViewAnimeChanCard.cs",
-              "RelativeDocumentMoniker": "Shared\\IViewAnimeChanCard.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Shared\\IViewAnimeChanCard.cs",
-              "RelativeToolTip": "Shared\\IViewAnimeChanCard.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T16:27:04.801Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "AnimeChanDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Shared\\AnimeChanDTO.cs",
-              "RelativeDocumentMoniker": "Shared\\AnimeChanDTO.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Shared\\AnimeChanDTO.cs",
-              "RelativeToolTip": "Shared\\AnimeChanDTO.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T15:31:54.335Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "FormsSaverAndLoader.cs",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Presenter\\FormsSaverAndLoader.cs",
-              "RelativeDocumentMoniker": "Presenter\\FormsSaverAndLoader.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Presenter\\FormsSaverAndLoader.cs",
-              "RelativeToolTip": "Presenter\\FormsSaverAndLoader.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T10:46:40.668Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "SkillsSetting.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\SkillsSetting.cs",
-              "RelativeDocumentMoniker": "Semester3\\SkillsSetting.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\SkillsSetting.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "Semester3\\SkillsSetting.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T07:38:57.13Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "IViewSkillSetting.cs",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Shared\\IViewSkillSetting.cs",
-              "RelativeDocumentMoniker": "Shared\\IViewSkillSetting.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Shared\\IViewSkillSetting.cs",
-              "RelativeToolTip": "Shared\\IViewSkillSetting.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T08:11:47.166Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "SkillSettingPresenter.cs",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Presenter\\SkillSettingPresenter.cs",
-              "RelativeDocumentMoniker": "Presenter\\SkillSettingPresenter.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Presenter\\SkillSettingPresenter.cs",
-              "RelativeToolTip": "Presenter\\SkillSettingPresenter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T08:24:15.431Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "SkillsDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Shared\\SkillsDTO.cs",
-              "RelativeDocumentMoniker": "Shared\\SkillsDTO.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Shared\\SkillsDTO.cs",
-              "RelativeToolTip": "Shared\\SkillsDTO.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T08:13:21.477Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "IFilterable.cs",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Model\\IFilterable.cs",
-              "RelativeDocumentMoniker": "Model\\IFilterable.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Model\\IFilterable.cs",
-              "RelativeToolTip": "Model\\IFilterable.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAqwB8AAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T04:50:06.43Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "IViewRegistration.cs",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Shared\\IViewRegistration.cs",
-              "RelativeDocumentMoniker": "Shared\\IViewRegistration.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Shared\\IViewRegistration.cs",
-              "RelativeToolTip": "Shared\\IViewRegistration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T12:23:05.085Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
               "Title": "MainPersonDTO.cs",
               "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Shared\\MainPersonDTO.cs",
               "RelativeDocumentMoniker": "Shared\\MainPersonDTO.cs",
@@ -707,46 +335,275 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "ViewResult.cs",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Shared\\ViewResult.cs",
-              "RelativeDocumentMoniker": "Shared\\ViewResult.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Shared\\ViewResult.cs",
-              "RelativeToolTip": "Shared\\ViewResult.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAIAAAAHAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "IViewRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Shared\\IViewRegistration.cs",
+              "RelativeDocumentMoniker": "Shared\\IViewRegistration.cs",
+              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Shared\\IViewRegistration.cs",
+              "RelativeToolTip": "Shared\\IViewRegistration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T11:25:20.189Z",
+              "WhenOpened": "2025-11-29T12:23:05.085Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 7,
+              "Title": "IViewMainForm.cs",
+              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Shared\\IViewMainForm.cs",
+              "RelativeDocumentMoniker": "Shared\\IViewMainForm.cs",
+              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Shared\\IViewMainForm.cs",
+              "RelativeToolTip": "Shared\\IViewMainForm.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwB8AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T08:25:58.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IViewFilterChan.cs",
+              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Shared\\IViewFilterChan.cs",
+              "RelativeDocumentMoniker": "Shared\\IViewFilterChan.cs",
+              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Shared\\IViewFilterChan.cs",
+              "RelativeToolTip": "Shared\\IViewFilterChan.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T08:51:40.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "IViewConclution.cs",
               "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Shared\\IViewConclution.cs",
               "RelativeDocumentMoniker": "Shared\\IViewConclution.cs",
               "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Shared\\IViewConclution.cs",
               "RelativeToolTip": "Shared\\IViewConclution.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-29T08:48:10.26Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "ConclutionPresenter.cs",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Presenter\\ConclutionPresenter.cs",
-              "RelativeDocumentMoniker": "Presenter\\ConclutionPresenter.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Presenter\\ConclutionPresenter.cs",
-              "RelativeToolTip": "Presenter\\ConclutionPresenter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\Program.cs",
+              "RelativeDocumentMoniker": "Semester3\\Program.cs",
+              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\Program.cs",
+              "RelativeToolTip": "Semester3\\Program.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAEwBsAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T08:49:43.872Z",
+              "WhenOpened": "2025-11-25T13:21:20.54Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 1,
+              "Title": "Conclution.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\Conclution.cs",
+              "RelativeDocumentMoniker": "Semester3\\Conclution.cs",
+              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\Conclution.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Semester3\\Conclution.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T16:40:33.018Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Conclution.cs",
+              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\Conclution.cs",
+              "RelativeDocumentMoniker": "Semester3\\Conclution.cs",
+              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\Conclution.cs",
+              "RelativeToolTip": "Semester3\\Conclution.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAwwCgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T07:40:04.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Registration.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\Registration.cs",
+              "RelativeDocumentMoniker": "Semester3\\Registration.cs",
+              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\Registration.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Semester3\\Registration.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T05:29:30.546Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MainForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\MainForm.cs",
+              "RelativeDocumentMoniker": "Semester3\\MainForm.cs",
+              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\MainForm.cs [Design]",
+              "RelativeToolTip": "Semester3\\MainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T05:38:35.607Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FilterChan.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\FilterChan.cs",
+              "RelativeDocumentMoniker": "Semester3\\FilterChan.cs",
+              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\FilterChan.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Semester3\\FilterChan.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T07:39:46.064Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ErrorForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\ErrorForm.cs",
+              "RelativeDocumentMoniker": "Semester3\\ErrorForm.cs",
+              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\ErrorForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Semester3\\ErrorForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T07:39:51.131Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\MainForm.cs",
+              "RelativeDocumentMoniker": "Semester3\\MainForm.cs",
+              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\MainForm.cs",
+              "RelativeToolTip": "Semester3\\MainForm.cs",
+              "ViewState": "AgIAALoAAAAAAAAAAAAcwCQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T05:38:37.335Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AnimeChanCard.cs",
+              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\AnimeChanCard.cs",
+              "RelativeDocumentMoniker": "Semester3\\AnimeChanCard.cs",
+              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\AnimeChanCard.cs",
+              "RelativeToolTip": "Semester3\\AnimeChanCard.cs",
+              "ViewState": "AgIAANcAAAAAAAAAAAAkwOIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T05:42:44.362Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AnimeChanCard.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\AnimeChanCard.cs",
+              "RelativeDocumentMoniker": "Semester3\\AnimeChanCard.cs",
+              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\AnimeChanCard.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Semester3\\AnimeChanCard.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T05:23:32.375Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Registration.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\Registration.Designer.cs",
+              "RelativeDocumentMoniker": "Semester3\\Registration.Designer.cs",
+              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\Registration.Designer.cs",
+              "RelativeToolTip": "Semester3\\Registration.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T05:42:07.651Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "SkillsSetting.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\SkillsSetting.cs",
+              "RelativeDocumentMoniker": "Semester3\\SkillsSetting.cs",
+              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\SkillsSetting.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Semester3\\SkillsSetting.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T07:38:57.13Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "BourgeoisLogic.cs",
+              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Model\\BourgeoisLogic.cs",
+              "RelativeDocumentMoniker": "Model\\BourgeoisLogic.cs",
+              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Model\\BourgeoisLogic.cs",
+              "RelativeToolTip": "Model\\BourgeoisLogic.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAADwv24AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T05:13:07.067Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Presenter\\Program.cs",
+              "RelativeDocumentMoniker": "Presenter\\Program.cs",
+              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Presenter\\Program.cs",
+              "RelativeToolTip": "Presenter\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T12:40:45.178Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IFilterable.cs",
+              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Model\\IFilterable.cs",
+              "RelativeDocumentMoniker": "Model\\IFilterable.cs",
+              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Model\\IFilterable.cs",
+              "RelativeToolTip": "Model\\IFilterable.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA6wB8AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T04:50:06.43Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "FormsSaverAndLoader.cs",
+              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Presenter\\FormsSaverAndLoader.cs",
+              "RelativeDocumentMoniker": "Presenter\\FormsSaverAndLoader.cs",
+              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Presenter\\FormsSaverAndLoader.cs",
+              "RelativeToolTip": "Presenter\\FormsSaverAndLoader.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T10:46:40.668Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "FilterChanPresenter.cs",
+              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Presenter\\FilterChanPresenter.cs",
+              "RelativeDocumentMoniker": "Presenter\\FilterChanPresenter.cs",
+              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Presenter\\FilterChanPresenter.cs",
+              "RelativeToolTip": "Presenter\\FilterChanPresenter.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T11:33:14.318Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "MainFormPresenter.cs",
+              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Presenter\\MainFormPresenter.cs",
+              "RelativeDocumentMoniker": "Presenter\\MainFormPresenter.cs",
+              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Presenter\\MainFormPresenter.cs",
+              "RelativeToolTip": "Presenter\\MainFormPresenter.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAIAwwBsAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T08:41:31.769Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
               "Title": "RegistrationPresenter.cs",
               "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Presenter\\RegistrationPresenter.cs",
               "RelativeDocumentMoniker": "Presenter\\RegistrationPresenter.cs",
@@ -754,12 +611,216 @@
               "RelativeToolTip": "Presenter\\RegistrationPresenter.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-30T16:03:57.862Z",
+              "WhenOpened": "2025-11-30T16:03:57.862Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ConclutionPresenter.cs",
+              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Presenter\\ConclutionPresenter.cs",
+              "RelativeDocumentMoniker": "Presenter\\ConclutionPresenter.cs",
+              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Presenter\\ConclutionPresenter.cs",
+              "RelativeToolTip": "Presenter\\ConclutionPresenter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T08:49:43.872Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "SkillSettingPresenter.cs",
+              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Presenter\\SkillSettingPresenter.cs",
+              "RelativeDocumentMoniker": "Presenter\\SkillSettingPresenter.cs",
+              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Presenter\\SkillSettingPresenter.cs",
+              "RelativeToolTip": "Presenter\\SkillSettingPresenter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T08:24:15.431Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "AnimeChanCardPresenter.cs",
+              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Presenter\\AnimeChanCardPresenter.cs",
+              "RelativeDocumentMoniker": "Presenter\\AnimeChanCardPresenter.cs",
+              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Presenter\\AnimeChanCardPresenter.cs",
+              "RelativeToolTip": "Presenter\\AnimeChanCardPresenter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T16:23:59.109Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ILogic.cs",
+              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Model\\ILogic.cs",
+              "RelativeDocumentMoniker": "Model\\ILogic.cs",
+              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Model\\ILogic.cs",
+              "RelativeToolTip": "Model\\ILogic.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAYwEAAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T05:14:46.881Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\ViewConsole\\Program.cs",
+              "RelativeDocumentMoniker": "ViewConsole\\Program.cs",
+              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\ViewConsole\\Program.cs",
+              "RelativeToolTip": "ViewConsole\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T13:17:41.082Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "MainForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\MainForm.Designer.cs",
+              "RelativeDocumentMoniker": "Semester3\\MainForm.Designer.cs",
+              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\MainForm.Designer.cs",
+              "RelativeToolTip": "Semester3\\MainForm.Designer.cs",
+              "ViewState": "AgIAAI8BAAAAAAAAAAAowAUCAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T05:13:11.882Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Conclution.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\Conclution.Designer.cs",
+              "RelativeDocumentMoniker": "Semester3\\Conclution.Designer.cs",
+              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\Conclution.Designer.cs",
+              "RelativeToolTip": "Semester3\\Conclution.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T05:15:38.279Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "FilterChan.cs",
+              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\FilterChan.cs",
+              "RelativeDocumentMoniker": "Semester3\\FilterChan.cs",
+              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\FilterChan.cs",
+              "RelativeToolTip": "Semester3\\FilterChan.cs",
+              "ViewState": "AgIAAIUAAAAAAAAAAAAAwJ4AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T07:39:47.482Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "AnimeChanCard.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\AnimeChanCard.Designer.cs",
+              "RelativeDocumentMoniker": "Semester3\\AnimeChanCard.Designer.cs",
+              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\AnimeChanCard.Designer.cs",
+              "RelativeToolTip": "Semester3\\AnimeChanCard.Designer.cs",
+              "ViewState": "AgIAAK0AAAAAAAAAAAAowPUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T13:13:44.07Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "AnimeChanRepo.cs",
+              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\DataAccessLayer\\AnimeChanRepo.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\AnimeChanRepo.cs",
+              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\DataAccessLayer\\AnimeChanRepo.cs",
+              "RelativeToolTip": "DataAccessLayer\\AnimeChanRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T15:32:25.963Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "MainPersonLogic.cs",
+              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Model\\MainPersonLogic.cs",
+              "RelativeDocumentMoniker": "Model\\MainPersonLogic.cs",
+              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Model\\MainPersonLogic.cs",
+              "RelativeToolTip": "Model\\MainPersonLogic.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T05:26:04.463Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 38,
+              "Title": "SkillsSetting.cs",
+              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\SkillsSetting.cs",
+              "RelativeDocumentMoniker": "Semester3\\SkillsSetting.cs",
+              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\SkillsSetting.cs",
+              "RelativeToolTip": "Semester3\\SkillsSetting.cs",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAswCEAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T07:39:23.368Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "IViewAnimeChanCard.cs",
+              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Shared\\IViewAnimeChanCard.cs",
+              "RelativeDocumentMoniker": "Shared\\IViewAnimeChanCard.cs",
+              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Shared\\IViewAnimeChanCard.cs",
+              "RelativeToolTip": "Shared\\IViewAnimeChanCard.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T16:27:04.801Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "AnimeChanDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Shared\\AnimeChanDTO.cs",
+              "RelativeDocumentMoniker": "Shared\\AnimeChanDTO.cs",
+              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Shared\\AnimeChanDTO.cs",
+              "RelativeToolTip": "Shared\\AnimeChanDTO.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T15:31:54.335Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "IViewSkillSetting.cs",
+              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Shared\\IViewSkillSetting.cs",
+              "RelativeDocumentMoniker": "Shared\\IViewSkillSetting.cs",
+              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Shared\\IViewSkillSetting.cs",
+              "RelativeToolTip": "Shared\\IViewSkillSetting.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T08:11:47.166Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "SkillsDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Shared\\SkillsDTO.cs",
+              "RelativeDocumentMoniker": "Shared\\SkillsDTO.cs",
+              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Shared\\SkillsDTO.cs",
+              "RelativeToolTip": "Shared\\SkillsDTO.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T08:13:21.477Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "ViewResult.cs",
+              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Shared\\ViewResult.cs",
+              "RelativeDocumentMoniker": "Shared\\ViewResult.cs",
+              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Shared\\ViewResult.cs",
+              "RelativeToolTip": "Shared\\ViewResult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAIAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T11:25:20.189Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
               "Title": "FilterStats.cs",
               "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Model\\FilterStats.cs",
               "RelativeDocumentMoniker": "Model\\FilterStats.cs",
@@ -771,19 +832,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "ILogic.cs",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Model\\ILogic.cs",
-              "RelativeDocumentMoniker": "Model\\ILogic.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Model\\ILogic.cs",
-              "RelativeToolTip": "Model\\ILogic.cs",
-              "ViewState": "AgIAAFkAAAAAAAAAAAAqwGUAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T05:14:46.881Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 42,
               "Title": "FilterLogic.cs",
               "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Model\\FilterLogic.cs",
               "RelativeDocumentMoniker": "Model\\FilterLogic.cs",
@@ -795,7 +844,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 44,
               "Title": "Saves.cs",
               "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Model\\Saves.cs",
               "RelativeDocumentMoniker": "Model\\Saves.cs",
@@ -807,7 +856,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 45,
               "Title": "SkillDTO.cs",
               "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Shared\\SkillDTO.cs",
               "RelativeDocumentMoniker": "Shared\\SkillDTO.cs",
@@ -819,19 +868,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\ViewConsole\\Program.cs",
-              "RelativeDocumentMoniker": "ViewConsole\\Program.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\ViewConsole\\Program.cs",
-              "RelativeToolTip": "ViewConsole\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T13:17:41.082Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 46,
               "Title": "FilterStatsDTO.cs",
               "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Shared\\FilterStatsDTO.cs",
               "RelativeDocumentMoniker": "Shared\\FilterStatsDTO.cs",
@@ -843,7 +880,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 47,
               "Title": "Controller.csproj",
               "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Presenter\\Controller.csproj",
               "RelativeDocumentMoniker": "Presenter\\Controller.csproj",
@@ -855,7 +892,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 48,
               "Title": "AnimeChanLogic.cs",
               "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Model\\AnimeChanLogic.cs",
               "RelativeDocumentMoniker": "Model\\AnimeChanLogic.cs",
@@ -867,7 +904,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 49,
               "Title": "AnimeChanName.cs",
               "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Model\\AnimeChanName.cs",
               "RelativeDocumentMoniker": "Model\\AnimeChanName.cs",
@@ -879,7 +916,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 50,
               "Title": "DataContext.cs",
               "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\DataAccessLayer\\DataContext.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\DataContext.cs",
@@ -891,7 +928,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 53,
               "Title": "ViewConsole.csproj",
               "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\ViewConsole\\ViewConsole.csproj",
               "RelativeDocumentMoniker": "ViewConsole\\ViewConsole.csproj",
@@ -903,7 +940,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 51,
               "Title": "ViewForms.csproj",
               "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\ViewForms.csproj",
               "RelativeDocumentMoniker": "Semester3\\ViewForms.csproj",
@@ -915,7 +952,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 52,
               "Title": "ApplicationConfiguration.g.cs",
               "DocumentMoniker": "C:\\Users\\Nubik\\AppData\\Local\\Temp\\.vsdbgsrc\\ac2045dcfcaa28462c5706de86243b7b4f16dfbe\\ApplicationConfiguration.g.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\ac2045dcfcaa28462c5706de86243b7b4f16dfbe\\ApplicationConfiguration.g.cs",
@@ -928,7 +965,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 54,
               "Title": "Skill.cs",
               "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Model\\Skill.cs",
               "RelativeDocumentMoniker": "Model\\Skill.cs",
@@ -940,7 +977,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 55,
               "Title": "SkillLogic.cs",
               "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Model\\SkillLogic.cs",
               "RelativeDocumentMoniker": "Model\\SkillLogic.cs",
@@ -952,7 +989,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 56,
               "Title": "AnimeChan.cs",
               "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Model\\AnimeChan.cs",
               "RelativeDocumentMoniker": "Model\\AnimeChan.cs",
@@ -964,18 +1001,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
-              "Title": "ErrorForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\ErrorForm.cs",
-              "RelativeDocumentMoniker": "Semester3\\ErrorForm.cs",
-              "ToolTip": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\ErrorForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "Semester3\\ErrorForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T07:39:51.131Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 57,
               "Title": "ConclutionLogic.cs",
               "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Model\\ConclutionLogic.cs",
               "RelativeDocumentMoniker": "Model\\ConclutionLogic.cs",
@@ -987,7 +1013,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 58,
               "Title": "EnumSkills.cs",
               "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Model\\EnumSkills.cs",
               "RelativeDocumentMoniker": "Model\\EnumSkills.cs",
@@ -999,7 +1025,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 59,
               "Title": "ConclutionText.cs",
               "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Model\\ConclutionText.cs",
               "RelativeDocumentMoniker": "Model\\ConclutionText.cs",
@@ -1011,7 +1037,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 60,
               "Title": "IConclution.cs",
               "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Model\\IConclution.cs",
               "RelativeDocumentMoniker": "Model\\IConclution.cs",
@@ -1023,7 +1049,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 61,
               "Title": "IAnimeChan.cs",
               "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Model\\IAnimeChan.cs",
               "RelativeDocumentMoniker": "Model\\IAnimeChan.cs",
@@ -1035,7 +1061,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 62,
               "Title": "ISkilled.cs",
               "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Model\\ISkilled.cs",
               "RelativeDocumentMoniker": "Model\\ISkilled.cs",
@@ -1047,7 +1073,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 63,
               "Title": "IMainPerson.cs",
               "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Model\\IMainPerson.cs",
               "RelativeDocumentMoniker": "Model\\IMainPerson.cs",
@@ -1059,7 +1085,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 64,
               "Title": "ErrorForm.cs",
               "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Semester3\\ErrorForm.cs",
               "RelativeDocumentMoniker": "Semester3\\ErrorForm.cs",
@@ -1071,7 +1097,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 65,
               "Title": "MainPerson.cs",
               "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Model\\MainPerson.cs",
               "RelativeDocumentMoniker": "Model\\MainPerson.cs",
@@ -1083,7 +1109,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 66,
               "Title": "SkillRepo.cs",
               "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\DataAccessLayer\\SkillRepo.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\SkillRepo.cs",
@@ -1095,7 +1121,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 67,
               "Title": "Model.csproj",
               "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Model\\Model.csproj",
               "RelativeDocumentMoniker": "Model\\Model.csproj",
@@ -1107,7 +1133,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 68,
               "Title": "ISkillRepository.cs",
               "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\DataAccessLayer\\ISkillRepository.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\ISkillRepository.cs",
@@ -1119,7 +1145,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 69,
               "Title": "IUnitOfWork.cs",
               "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\DataAccessLayer\\IUnitOfWork.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\IUnitOfWork.cs",
@@ -1131,7 +1157,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 70,
               "Title": "IRepository.cs",
               "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\DataAccessLayer\\IRepository.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\IRepository.cs",
@@ -1143,7 +1169,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 71,
               "Title": "SimpleConfigModule.cs",
               "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\Model\\SimpleConfigModule.cs",
               "RelativeDocumentMoniker": "Model\\SimpleConfigModule.cs",
@@ -1155,7 +1181,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 72,
               "Title": "EntitySkillRepository.cs",
               "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\DataAccessLayer\\EntitySkillRepository.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\EntitySkillRepository.cs",
@@ -1167,7 +1193,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 73,
               "Title": "DataAccessLayer.csproj",
               "DocumentMoniker": "C:\\Users\\Nubik\\Documents\\IloveGit\\AnimeChanSelector\\DataAccessLayer\\DataAccessLayer.csproj",
               "RelativeDocumentMoniker": "DataAccessLayer\\DataAccessLayer.csproj",

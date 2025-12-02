@@ -10,7 +10,15 @@ namespace ViewForms
         /// </summary>
         public Conclution()
         {
+        }
+
+        public bool CorrectWork()
+        {
             InitializeComponent();
+
+            // Показываем форму и возвращаем результат
+            DialogResult result = this.ShowDialog();
+            return result == DialogResult.OK;
         }
 
         public void WriteConclution(string str)

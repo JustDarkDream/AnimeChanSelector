@@ -1,3 +1,4 @@
+using Shared;
 using System.Windows.Forms;
 
 namespace ViewForms
@@ -16,13 +17,14 @@ namespace ViewForms
 
     public static class Starter 
     {
-        public static void StartForm(Form form, Form form2, Form form3)
+        public static void StartForm(IViewRegistration form, IViewMainForm form2, IViewConclution form3)
         {
-            if (form.ShowDialog() == DialogResult.OK)
+
+            if (form.CorrectWork())
             {
-                if (form2.ShowDialog() == DialogResult.OK)
+                if (form2.CorrectWork())
                 {
-                    Application.Run(form3);
+                    form3.CorrectWork();
                 }
             }
         }

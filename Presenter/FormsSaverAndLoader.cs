@@ -13,14 +13,35 @@ namespace Controller
     public static class FormsSaverAndLoader
     {
         internal static IKernel ninjectKernel;
-        internal static BourgeoisLogic logic;
-        internal static Registration registration;
-        internal static MainForm main;
-        internal static Conclution conc;
-        internal static AnimeChanCard animeChanCard;
-        internal static FilterChan filterChan;
-        internal static SkillsSetting skillSetting;
+        internal static ILogic logic;
 
+        internal static IViewRegistration registration;
+        internal static IViewMainForm main;
+        internal static IViewConclution conc;
+        internal static IViewAnimeChanCard animeChanCard;
+        internal static IViewFilterChan filterChan;
+        internal static IViewSkillSetting skillSetting;
+
+        public static IViewRegistration GetRegistration()
+        {
+            registration = new Registration();
+            RegistrationPresenter presenter = new RegistrationPresenter(registration, logic);
+            return registration;
+        }
+
+        public static IViewMainForm GetMainForm()
+        {
+            main = new MainForm();
+            MainFormPresenter presenter2 = new MainFormPresenter(main, logic);
+            return main;
+        }
+
+        public static IViewConclution GetConclution()
+        {
+            conc = new Conclution();
+            ConclutionPresenter presenter3 = new ConclutionPresenter(conc, logic);
+            return conc;
+        }
         public static IViewAnimeChanCard GetAnimeChanCard()
         {
             animeChanCard = new AnimeChanCard();
