@@ -1,0 +1,36 @@
+﻿<Window x:Class="ViewWPF.Registration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ViewWPF"
+        mc:Ignorable="d"
+        Title="Зарегайся позязя" Height="589" Width="408">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="295*"/>
+            <RowDefinition Height="278*"/>
+        </Grid.RowDefinitions>
+        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="160" FontSize="28" Margin="0,91,0,0"><Run Language="ru-ru" Text="Регистрация"/></TextBlock>
+        <TextBlock HorizontalAlignment="Center" Margin="0,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="108" Text="Имя-фамилия" FontSize="16" FontWeight="SemiBold"/>
+        <TextBox HorizontalAlignment="Center" Margin="0,187,0,0" TextWrapping="Wrap" Text="Имя" VerticalAlignment="Top" Width="312" Height="24"/>
+        <TextBox HorizontalAlignment="Center" Margin="0,216,0,0" TextWrapping="Wrap" Text="Фамилия" VerticalAlignment="Top" Width="312" Height="24"/>
+        <TextBlock
+        HorizontalAlignment="Center" Margin="0,262,0,0" Width="63" VerticalAlignment="Top" TextWrapping="Wrap" Height="20" FontSize="16" FontWeight="SemiBold"><Run
+        Language="ru-ru" Text="Данные"/></TextBlock>
+        <TextBox HorizontalAlignment="Left" Margin="150,288,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="210" Height="24" Grid.RowSpan="2" TextChanged="TextBox_TextChanged"/>
+        <TextBox HorizontalAlignment="Left" Margin="150,22,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="210" Height="24" Grid.Row="1"/>
+        <TextBox HorizontalAlignment="Left" Margin="150,51,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="210" Height="24" Grid.Row="1"/>
+        <TextBox HorizontalAlignment="Left" Margin="150,80,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="210" Height="24" Grid.Row="1"/>
+        <Button Content="Зарегистрироваться" HorizontalAlignment="Center" Margin="0,155,0,0" Grid.Row="1" VerticalAlignment="Top" Height="74" Width="312" FontSize="18"/>
+        <TextBlock
+            HorizontalAlignment="Left" Margin="82,289,0,0" Width="63" VerticalAlignment="Top" TextWrapping="Wrap" Height="20" FontSize="16" Grid.RowSpan="2"><Run Language="ru-ru" Text="Возраст"/></TextBlock>
+        <TextBlock
+            HorizontalAlignment="Left" Margin="82,23,0,0" Width="63" VerticalAlignment="Top" TextWrapping="Wrap" Height="20" FontSize="16" Grid.Row="1"><Run Language="ru-ru" Text="Рост"/></TextBlock>
+        <TextBlock
+            HorizontalAlignment="Left" Margin="82,51,0,0" Width="63" VerticalAlignment="Top" TextWrapping="Wrap" Height="20" FontSize="16" Grid.Row="1"><Run Language="ru-ru" Text="Вес"/></TextBlock>
+        <TextBlock
+            HorizontalAlignment="Left" Margin="82,80,0,0" Width="63" VerticalAlignment="Top" TextWrapping="Wrap" Height="20" FontSize="16" Grid.Row="1"><Run Language="ru-ru" Text="Размер"/></TextBlock>
+
+    </Grid>
+</Window>
