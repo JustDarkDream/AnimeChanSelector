@@ -4,6 +4,8 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ViewWPF"
+        ResizeMode="NoResize"
+        WindowStyle="SingleBorderWindow"
         mc:Ignorable="d"
         Title="Инфа о тянке" Height="720" Width="524">
     <Grid Height="710" VerticalAlignment="Top">

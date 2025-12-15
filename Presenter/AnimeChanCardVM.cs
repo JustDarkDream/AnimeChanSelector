@@ -77,6 +77,11 @@ namespace Controller
             set => shared.Update(size: value);
         }
 
+        /// <summary>
+        /// Конструктор объекта AnimeChanCard ViewModel
+        /// </summary>
+        /// <param name="sharedAnimeChan">Объект тян</param>
+        /// <param name="isEditable">Редактируема ли информация</param>
         public AnimeChanCardVM(SharedAnimeChan sharedAnimeChan, bool isEditable)
         {
             ninjectKernel = new StandardKernel(new SimpleConfigModule());
@@ -120,6 +125,9 @@ namespace Controller
             OnPropertyChanged(nameof(IsReadOnly));
         }
 
+        /// <summary>
+        /// Конструктор объекта AnimeChanCard ViewModel
+        /// </summary>
         public AnimeChanCardVM()
         {
             ninjectKernel = new StandardKernel(new SimpleConfigModule());
@@ -142,6 +150,9 @@ namespace Controller
             OnPropertyChanged(nameof(IsReadOnly));
         }
 
+        /// <summary>
+        /// Метод, сообщающий о готовности к работе
+        /// </summary>
         public void Start()
         {
             SaveCommand = new RelayCommand(Save);
@@ -152,11 +163,18 @@ namespace Controller
             AnimeChanCardMVReadyEvent.Invoke(this);
         }
 
+        /// <summary>
+        /// Метод загрузки ID
+        /// </summary>
+        /// <param name="id">ID тянки</param>
         private void LoadId(int id)
         {
             newId = id;
         }
 
+        /// <summary>
+        /// Метод сохранения изменений
+        /// </summary>
         private void Save()
         {
             if (Age >= 0)
@@ -205,11 +223,17 @@ namespace Controller
             }
         }
 
+        /// <summary>
+        /// Метод активации события открытия окна итогов
+        /// </summary>
         private void Show()
         {
             OpenConclutionEvent.Invoke(shared.DTO);
         }
 
+        /// <summary>
+        /// Метод создания тянки
+        /// </summary>
         private void Create()
         {
             if (Age >= 0)
@@ -261,11 +285,15 @@ namespace Controller
             }
         }
 
+        /// <summary>
+        /// Метод изменения скиллов тянки
+        /// </summary>
         private void Change()
         {
 
             OpenSkillsSettingsEvent.Invoke(shared);
         }
+        
         protected void OnPropertyChanged(string propertyName) =>
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
     }

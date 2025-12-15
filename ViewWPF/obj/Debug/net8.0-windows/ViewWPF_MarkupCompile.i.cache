@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\Nubik\Documents\IloveGit\AnimeChanSelector\ViewWPF\obj\Debug\net8.0-windows\
+C:\Users\SeDMI\OneDrive\Рабочий стол\AnimeChanSelector\ViewWPF\obj\Debug\net8.0-windows\
 ViewWPF
 none
 false
-TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
-C:\Users\Nubik\Documents\IloveGit\AnimeChanSelector\ViewWPF\App.xaml
+TRACE;DEBUG;NET;NET8_0;NETCOREAPP
+C:\Users\SeDMI\OneDrive\Рабочий стол\AnimeChanSelector\ViewWPF\App.xaml
 7410642919
 
 13838774816
-245798160214
+245-2025194259
 AnimeChanCard.xaml;Conclution.xaml;Error.xaml;FilterChan.xaml;MainWindow.xaml;Registration.xaml;SkillsSettings.xaml;
 
 True

@@ -124,14 +124,20 @@ namespace Controller
             }
         }
 
+        /// <summary>
+        /// Конструктор объекта RegistrationVМ
+        /// </summary>
         public RegistrationVM()
         {
             ninjectKernel = new StandardKernel(new SimpleConfigModule());
             logic = ninjectKernel.Get<BourgeoisLogic>();
             personDTO = new MainPersonDTO("", "", 0, 0, 0, 0);
-            FinishRegistration = new RelayCommand(GetMainForm);
+            FinishRegistration = new RelayCommand(Save);
         }
 
+        /// <summary>
+        /// Метод, сообщающий о готовности к работе
+        /// </summary>
         public void Start()
         {
             //Какую подготовку?
@@ -143,8 +149,10 @@ namespace Controller
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
-
-        private void GetMainForm()
+        /// <summary>
+        /// Метод сохранения введеных значений
+        /// </summary>
+        private void Save()
         {
             if (Age >= 0)
             {

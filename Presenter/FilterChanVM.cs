@@ -148,6 +148,9 @@ namespace Controller
                 }
             }
         }
+        /// <summary>
+        /// Конструктор объекта FilterChanVM
+        /// </summary>
         public FilterChanVM()
         {
             SaveCommand = new RelayCommand(Save);
@@ -157,11 +160,18 @@ namespace Controller
             logic.LoadFilterStats();
         }
 
+        /// <summary>
+        /// Метод, сообщающирй о готовности к работе
+        /// </summary>
         public void Start()
         {
             filterChanMVReadyEvent.Invoke(this);
         }
 
+        /// <summary>
+        /// Метод загрузки отфильтрованных статистик
+        /// </summary>
+        /// <param name="stats">Контейнер статистик</param>
         private void FilterStatsLoaded(FilterStatsDTO stats)
         {
             SizeFrom = stats.SizeFrom;
@@ -174,6 +184,9 @@ namespace Controller
             HeightTo = stats.HeightTo;
         }
 
+        /// <summary>
+        /// Метод сохранения фильтра
+        /// </summary>
         private void Save()
         {
             logic.FilterAnimeChanList(AgeFrom, AgeTo, HeightFrom, HeightTo, WeightFrom, WeightTo, SizeFrom, SizeTo, new List<SkillDTO>(), true);

@@ -122,7 +122,5 @@ namespace Controller
         {
             VMReadyEvent.Invoke(viewModel);
         }
-
-
     }
 }

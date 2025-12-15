@@ -52,3 +52,5 @@ C:\Users\SeDMI\OneDrive\Рабочий стол\AnimeChanSelector\Model\bin\Debu
 C:\Users\SeDMI\OneDrive\Рабочий стол\AnimeChanSelector\Model\obj\Debug\net8.0\Model.genruntimeconfig.cache
 C:\Users\Nubik\Documents\IloveGit\AnimeChanSelector\Model\bin\Debug\net8.0\Shared.dll
 C:\Users\Nubik\Documents\IloveGit\AnimeChanSelector\Model\bin\Debug\net8.0\Shared.pdb
+C:\Users\SeDMI\OneDrive\Рабочий стол\AnimeChanSelector\Model\bin\Debug\net8.0\Shared.dll
+C:\Users\SeDMI\OneDrive\Рабочий стол\AnimeChanSelector\Model\bin\Debug\net8.0\Shared.pdb

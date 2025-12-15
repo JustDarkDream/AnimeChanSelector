@@ -40,6 +40,10 @@ public class SkillSettingsVM : ViewModel, INotifyPropertyChanged
     public event Action<ViewModel> SkillsSettingsMVReadyEvent;
     public event PropertyChangedEventHandler PropertyChanged;
 
+    /// <summary>
+    /// Конструктор объекта SkillSettingsVM
+    /// </summary>
+    /// <param name="sharedAnimeChan">Объект тянки</param>
     public SkillSettingsVM(SharedAnimeChan sharedAnimeChan)
     {
         shared = sharedAnimeChan;
@@ -57,6 +61,9 @@ public class SkillSettingsVM : ViewModel, INotifyPropertyChanged
 
     public void Start() => SkillsSettingsMVReadyEvent?.Invoke(this);
 
+    /// <summary>
+    /// Метод добавления скилла
+    /// </summary>
     private void AddSkill()
     {
         if (SelectedSkill == null)
@@ -68,6 +75,9 @@ public class SkillSettingsVM : ViewModel, INotifyPropertyChanged
         shared.Skills.Add(new SkillDTO(0, selectedSkill));
     }
 
+    /// <summary>
+    /// Метод удаления скилла
+    /// </summary>
     private void RemoveSkill()
     {
         if (SelectedCurrentSkill == null)
@@ -76,6 +86,9 @@ public class SkillSettingsVM : ViewModel, INotifyPropertyChanged
         shared.Skills.Remove(SelectedCurrentSkill);
     }
 
+    /// <summary>
+    /// Метод сохранения изменений
+    /// </summary>
     private void Save()
     {
         shared.Update(skills : CurrentSkills.ToList());

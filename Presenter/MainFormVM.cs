@@ -53,6 +53,9 @@ namespace Controller
 
         public event Action<ViewModel> MainformMVReadyEvent;
 
+        /// <summary>
+        /// Конструктор объекта MainFormVM
+        /// </summary>
         public MainFormVM()
         {
             DestroyFilters = new RelayCommand(DestroyAllFilter);
@@ -70,6 +73,9 @@ namespace Controller
             
         }
 
+        /// <summary>
+        /// Метод, сообщающий о готовности к работе
+        /// </summary>
         public void Start()
         {
             //Какую подготовку?
@@ -82,6 +88,10 @@ namespace Controller
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
+        /// <summary>
+        /// Метод загрузки листа тянок
+        /// </summary>
+        /// <param name="list"></param>
         private void LoadAnimeChanList(IEnumerable<AnimeChanDTO> list)
         {
             Chans.Clear();
@@ -89,6 +99,9 @@ namespace Controller
                 Chans.Add(chan);
         }
 
+        /// <summary>
+        /// Метод удаления выбранной тянки
+        /// </summary>
         private void DeleteThisChan()
         {
             if (SelectedChan != null)
@@ -101,6 +114,10 @@ namespace Controller
                 OpenErrorEvent.Invoke("Выберите строку, чтобы удалить Аниме-тян");
             }
         }
+
+        /// <summary>
+        /// Метод изменения выбранной тянки
+        /// </summary>
         private void ChangeThisChan()
         {
             if (SelectedChan != null)
@@ -113,6 +130,9 @@ namespace Controller
             }
         }
 
+        /// <summary>
+        /// Метод показа тянки
+        /// </summary>
         private void ShowThisChan()
         {
             if (SelectedChan != null)
@@ -124,31 +144,52 @@ namespace Controller
                 OpenErrorEvent.Invoke("Выберите строку, чтобы выбрять Аниме-тян");
             }
         }
+        /// <summary>
+        /// Метод создания тянки
+        /// </summary>
         private void CreateNewChan()
         {
             OpenAnimeChanCardCreateEvent.Invoke();
         }
+        
+        /// <summary>
+        /// Метод поиска новой тянки
+        /// </summary>
         private void FindNewChan()
         {
             logic.FindAnimeChan();
         }
 
+        /// <summary>
+        /// Метод вызывающий событие фильтрации листа тянок
+        /// </summary>
         private void FilterAllChan()
         {
             OpenFilterChanEvent.Invoke();
         }
 
+        /// <summary>
+        /// Метод случайного добавления тянки
+        /// </summary>
+        /// <param name="animeChanDTO">Объект тянки</param>
         public void FindAnimeChan(AnimeChanDTO animeChanDTO)
         {
             Chans.Add(animeChanDTO);
         }
 
+        /// <summary>
+        /// Метод загрузки критериев фильтра
+        /// </summary>
         public void LoadFilterList()
         {
             logic.LoadFilterAnimeChanListEvent += LoadFilterAnimeChanList;
             logic.LoadFilterAnimeChanList();
         }
 
+        /// <summary>
+        /// Метод загрузки отфильтрованного листа тянок
+        /// </summary>
+        /// <param name="list">Отфлильтрованнный лист</param>
         private void LoadFilterAnimeChanList(List<AnimeChanDTO> list)
         {
             Chans.Clear();
@@ -156,6 +197,9 @@ namespace Controller
                 Chans.Add(chan);
         }
 
+        /// <summary>
+        /// Метод отмены всех настроек фильтра
+        /// </summary>
         private void DestroyAllFilter()
         {
             logic.DestroyFilter();

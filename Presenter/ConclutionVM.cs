@@ -20,11 +20,19 @@ namespace Controller
         public string Text { get; set; }
         ILogic logic;
         IKernel ninjectKernel;
+
+        /// <summary>
+        /// Конструктор объекта Conclution ViewModel
+        /// </summary>
+        /// <param name="animeChanDTO">Объект тянки</param>
         public ConclutionVM(AnimeChanDTO animeChanDTO)
         {
             AnimeChanDTO = animeChanDTO;
         }
 
+        /// <summary>
+        /// Метод, сообщающий о готовнсти к работе
+        /// </summary>
         public void Start()
         {
             ninjectKernel = new StandardKernel(new SimpleConfigModule());
@@ -36,6 +44,10 @@ namespace Controller
             logic.MakeConclution();
         }
 
+        /// <summary>
+        /// Метод вывода заключения
+        /// </summary>
+        /// <param name="str">Строка для вывода</param>
         public void WriteConclution(string str)
         {
             Text = str;

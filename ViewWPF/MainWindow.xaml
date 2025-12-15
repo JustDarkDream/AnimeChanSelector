@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ViewWPF"
         mc:Ignorable="d"
-        Title="Подбор тяночки" Height="450" Width="777">
+        Title="Подбор тяночки" Height="487" Width="749">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="23*"/>
@@ -18,7 +18,7 @@
             <ColumnDefinition Width="469*"/>
             <ColumnDefinition Width="17*"/>
         </Grid.ColumnDefinitions>
-        
+
         <TextBlock HorizontalAlignment="Left" Margin="3,13,0,0" VerticalAlignment="Top" Width="179" Height="32" Text="Таблица с тянками" FontSize="20" TextWrapping="Wrap" Grid.Row="2" Grid.Column="1"/>
         <Separator HorizontalAlignment="Left" Margin="187,40,0,0" VerticalAlignment="Top" Height="0" RenderTransformOrigin="0.5,0.5" Width="7" Grid.Row="2" Grid.Column="1">
             <Separator.RenderTransform>
@@ -30,7 +30,7 @@
                 </TransformGroup>
             </Separator.RenderTransform>
         </Separator>
-        <DataGrid Margin="10,50,10,135" Grid.ColumnSpan="4" Grid.Row="2" AutoGenerateColumns="False" ItemsSource="{Binding Chans}" SelectedItem="{Binding SelectedChan}">
+        <DataGrid Margin="10,50,10,160" Grid.ColumnSpan="4" Grid.Row="2" AutoGenerateColumns="False" ItemsSource="{Binding Chans}" SelectedItem="{Binding SelectedChan}">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Фамилия" Binding="{Binding LastName}" Width="*"/>
                 <DataGridTextColumn Header="Имя" Binding="{Binding FirstName}" Width="*"/>
@@ -39,16 +39,35 @@
             </DataGrid.Columns>
         </DataGrid>
 
-        <Grid Grid.ColumnSpan="4" Margin="0,264,0,0" Grid.Row="2">
+        <Grid Grid.ColumnSpan="4" 
+      Grid.Row="2"
+      VerticalAlignment="Bottom"
+      Height="150" 
+      Margin="10">
 
-            <Button Content="Удалить тян" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="58" Width="170" Command="{Binding DeleteChan}"/>
-            <Button Content="Создать" HorizontalAlignment="Left" Margin="391,10,0,0" VerticalAlignment="Top" Height="58" Width="169" Command="{Binding CreateChan}"/>
-            <Button Content="Редактировать тян" HorizontalAlignment="Left" Margin="200,10,0,0" VerticalAlignment="Top" Height="58" Width="170" Command="{Binding ChangeChan}"/>
-            <Button Content="Найти" HorizontalAlignment="Left" Margin="580,10,0,0" VerticalAlignment="Top" Height="58" Width="170" Command="{Binding FindChan}"/>
-            <Button Content="Отфильтровать" HorizontalAlignment="Left" Margin="78,73,0,0" VerticalAlignment="Top" Height="58" Width="188" Command="{Binding FilterChan}"/>
-            <Button Content="Показать тян" HorizontalAlignment="Left" Margin="288,73,0,0" VerticalAlignment="Top" Height="58" Width="188" Command="{Binding ShowChan}"/>
-            <Button Content="Убрать фильтр" HorizontalAlignment="Left" Margin="498,73,0,0" VerticalAlignment="Top" Height="58" Width="188" Command="{Binding DestroyFilters}"/> 
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <UniformGrid Grid.Row="0" Columns="4" Margin="5">
+                <Button Command="{Binding DeleteChan}" Margin="3">
+                    <Button.Background>
+                        <ImageBrush ImageSource="/image3.jpg" Stretch="Fill"/>
+                    </Button.Background>
+                    <TextBlock Text="Удалить тян" FontWeight="Bold"/>
+                </Button>
+                <Button Command="{Binding ChangeChan}" Content="Редактировать тян" Margin="3"/>
+                <Button Command="{Binding CreateChan}" Content="Создать" Margin="3"/>
+                <Button Command="{Binding FindChan}" Content="Найти" Margin="3"/>
+            </UniformGrid>
+
+            <UniformGrid Grid.Row="1" Columns="3" Margin="5">
+                <Button Command="{Binding FilterChan}" Content="Отфильтровать" Margin="3"/>
+                <Button Command="{Binding ShowChan}" Content="Показать тян" Margin="3"/>
+                <Button Command="{Binding DestroyFilters}" Content="Убрать фильтр" Margin="3"/>
+            </UniformGrid>
+
         </Grid>
-
     </Grid>
 </Window>
