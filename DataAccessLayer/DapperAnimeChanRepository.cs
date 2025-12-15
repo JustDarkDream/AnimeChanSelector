@@ -115,7 +115,6 @@ public class DapperAnimeChanRepository : IRepository<AnimeChanRepo>
                         Skills = new List<SkillRepo>()
                     };
                     dict[chanId] = animeChan;
-                    Debug.WriteLine($"Создан персонаж: {chanId} - {row.FirstName} {row.LastName}");
                 }
 
                 // Добавляем навык если он есть
@@ -126,14 +125,8 @@ public class DapperAnimeChanRepository : IRepository<AnimeChanRepo>
                     if (!animeChan.Skills.Any(s => s.Id == skill.Id))
                     {
                         animeChan.Skills.Add(skill);
-                        Debug.WriteLine($"Добавлен навык: {skill.Name} к персонажу {chanId}");
                     }
                 }
-            }
-
-            foreach (var chan in dict.Values)
-            {
-                Debug.WriteLine($"Персонаж {chan.Id}: {chan.Skills.Count} навыков");
             }
 
             return dict.Values.ToList();

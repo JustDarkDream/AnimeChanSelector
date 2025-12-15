@@ -13,16 +13,16 @@
         </Grid.RowDefinitions>
         <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="160" FontSize="28" Margin="0,91,0,0"><Run Language="ru-ru" Text="Регистрация"/></TextBlock>
         <TextBlock HorizontalAlignment="Center" Margin="0,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="108" Text="Имя-фамилия" FontSize="16" FontWeight="SemiBold"/>
-        <TextBox HorizontalAlignment="Center" Margin="0,187,0,0" TextWrapping="Wrap" Text="Имя" VerticalAlignment="Top" Width="312" Height="24"/>
-        <TextBox HorizontalAlignment="Center" Margin="0,216,0,0" TextWrapping="Wrap" Text="Фамилия" VerticalAlignment="Top" Width="312" Height="24"/>
+        <TextBox HorizontalAlignment="Center" Margin="0,187,0,0" TextWrapping="Wrap" Text="{Binding FirstName}" VerticalAlignment="Top" Width="312" Height="24"/>
+        <TextBox HorizontalAlignment="Center" Margin="0,216,0,0" TextWrapping="Wrap" Text="{Binding LastName}" VerticalAlignment="Top" Width="312" Height="24"/>
         <TextBlock
         HorizontalAlignment="Center" Margin="0,262,0,0" Width="63" VerticalAlignment="Top" TextWrapping="Wrap" Height="20" FontSize="16" FontWeight="SemiBold"><Run
         Language="ru-ru" Text="Данные"/></TextBlock>
-        <TextBox HorizontalAlignment="Left" Margin="150,288,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="210" Height="24" Grid.RowSpan="2" TextChanged="TextBox_TextChanged"/>
-        <TextBox HorizontalAlignment="Left" Margin="150,22,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="210" Height="24" Grid.Row="1"/>
-        <TextBox HorizontalAlignment="Left" Margin="150,51,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="210" Height="24" Grid.Row="1"/>
-        <TextBox HorizontalAlignment="Left" Margin="150,80,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="210" Height="24" Grid.Row="1"/>
-        <Button Content="Зарегистрироваться" HorizontalAlignment="Center" Margin="0,155,0,0" Grid.Row="1" VerticalAlignment="Top" Height="74" Width="312" FontSize="18"/>
+        <TextBox HorizontalAlignment="Left" Margin="150,288,0,0" TextWrapping="Wrap" Text="{Binding Age}" VerticalAlignment="Top" Width="210" Height="24" Grid.RowSpan="2" TextChanged="TextBox_TextChanged"/>
+        <TextBox HorizontalAlignment="Left" Margin="150,22,0,0" TextWrapping="Wrap" Text="{Binding Height}" VerticalAlignment="Top" Width="210" Height="24" Grid.Row="1"/>
+        <TextBox HorizontalAlignment="Left" Margin="150,51,0,0" TextWrapping="Wrap" Text="{Binding Weight}" VerticalAlignment="Top" Width="210" Height="24" Grid.Row="1"/>
+        <TextBox HorizontalAlignment="Left" Margin="150,80,0,0" TextWrapping="Wrap" Text="{Binding Size}" VerticalAlignment="Top" Width="210" Height="24" Grid.Row="1"/>
+        <Button Content="Зарегистрироваться" HorizontalAlignment="Center" Margin="0,155,0,0" Grid.Row="1" VerticalAlignment="Top" Height="74" Width="312" FontSize="18" Command="{Binding FinishRegistration}"/>
         <TextBlock
             HorizontalAlignment="Left" Margin="82,289,0,0" Width="63" VerticalAlignment="Top" TextWrapping="Wrap" Height="20" FontSize="16" Grid.RowSpan="2"><Run Language="ru-ru" Text="Возраст"/></TextBlock>
         <TextBlock

@@ -18,6 +18,7 @@
             <ColumnDefinition Width="469*"/>
             <ColumnDefinition Width="17*"/>
         </Grid.ColumnDefinitions>
+        
         <TextBlock HorizontalAlignment="Left" Margin="3,13,0,0" VerticalAlignment="Top" Width="179" Height="32" Text="Таблица с тянками" FontSize="20" TextWrapping="Wrap" Grid.Row="2" Grid.Column="1"/>
         <Separator HorizontalAlignment="Left" Margin="187,40,0,0" VerticalAlignment="Top" Height="0" RenderTransformOrigin="0.5,0.5" Width="7" Grid.Row="2" Grid.Column="1">
             <Separator.RenderTransform>
@@ -29,16 +30,24 @@
                 </TransformGroup>
             </Separator.RenderTransform>
         </Separator>
-        <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,50,10,135" Grid.ColumnSpan="4" Grid.Row="2"/>
+        <DataGrid Margin="10,50,10,135" Grid.ColumnSpan="4" Grid.Row="2" AutoGenerateColumns="False" ItemsSource="{Binding Chans}" SelectedItem="{Binding SelectedChan}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Фамилия" Binding="{Binding LastName}" Width="*"/>
+                <DataGridTextColumn Header="Имя" Binding="{Binding FirstName}" Width="*"/>
+                <DataGridTextColumn Header="Возраст" Binding="{Binding Age}" Width="*"/>
+                <DataGridTextColumn Header="Id" Binding="{Binding Id}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
         <Grid Grid.ColumnSpan="4" Margin="0,264,0,0" Grid.Row="2">
-            <Button Content="Удалить тян" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="58" Width="170"/>
-            <Button Content="Создать" HorizontalAlignment="Left" Margin="391,10,0,0" VerticalAlignment="Top" Height="58" Width="169"/>
-            <Button Content="Редактировать тян" HorizontalAlignment="Left" Margin="200,10,0,0" VerticalAlignment="Top" Height="58" Width="170"/>
-            <Button Content="Найти" HorizontalAlignment="Left" Margin="580,10,0,0" VerticalAlignment="Top" Height="58" Width="170"/>
-            <Button Content="Отфильтровать" HorizontalAlignment="Left" Margin="78,73,0,0" VerticalAlignment="Top" Height="58" Width="188"/>
-            <Button Content="Показать тян" HorizontalAlignment="Left" Margin="288,73,0,0" VerticalAlignment="Top" Height="58" Width="188"/>
-            <Button Content="Убрать фильтр" HorizontalAlignment="Left" Margin="498,73,0,0" VerticalAlignment="Top" Height="58" Width="188"/>
-            <Button VerticalAlignment="Top" Margin="592,10,15,0" Height="58" Content="Найти"/>
+
+            <Button Content="Удалить тян" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="58" Width="170" Command="{Binding DeleteChan}"/>
+            <Button Content="Создать" HorizontalAlignment="Left" Margin="391,10,0,0" VerticalAlignment="Top" Height="58" Width="169" Command="{Binding CreateChan}"/>
+            <Button Content="Редактировать тян" HorizontalAlignment="Left" Margin="200,10,0,0" VerticalAlignment="Top" Height="58" Width="170" Command="{Binding ChangeChan}"/>
+            <Button Content="Найти" HorizontalAlignment="Left" Margin="580,10,0,0" VerticalAlignment="Top" Height="58" Width="170" Command="{Binding FindChan}"/>
+            <Button Content="Отфильтровать" HorizontalAlignment="Left" Margin="78,73,0,0" VerticalAlignment="Top" Height="58" Width="188" Command="{Binding FilterChan}"/>
+            <Button Content="Показать тян" HorizontalAlignment="Left" Margin="288,73,0,0" VerticalAlignment="Top" Height="58" Width="188" Command="{Binding ShowChan}"/>
+            <Button Content="Убрать фильтр" HorizontalAlignment="Left" Margin="498,73,0,0" VerticalAlignment="Top" Height="58" Width="188" Command="{Binding DestroyFilters}"/> 
         </Grid>
 
     </Grid>

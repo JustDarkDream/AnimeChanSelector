@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel;
 
 namespace Shared
 {
     public class MainPersonDTO
-    {
+{
         public string FirstName { get; }
         public string LastName { get; }
         public int Height { get; }
@@ -16,7 +17,6 @@ namespace Shared
 
         public int Age { get; }
         public int Size { get; }
-
 
         public MainPersonDTO(string firstName, string lastName, int height,
                              int weight,int age,int size)
@@ -28,5 +28,7 @@ namespace Shared
             Age = age;
             Size = size;
         }
+
+
     }
 }

@@ -13,7 +13,7 @@
             <ColumnDefinition Width="169*"/>
         </Grid.ColumnDefinitions>
         <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="100,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="191" FontSize="29" TextAlignment="Center"><Run Language="ru-ru" Text="ОШИБКА!"/></TextBlock>
-        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="100,89,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="191" Grid.ColumnSpan="2" TextAlignment="Center" FontSize="16"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="100,89,0,0" TextWrapping="Wrap" Text="{Binding Error}" VerticalAlignment="Top" Width="191" Grid.ColumnSpan="2" TextAlignment="Center" FontSize="16"/>
 
     </Grid>
 </Window>

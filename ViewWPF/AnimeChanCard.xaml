@@ -5,19 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ViewWPF"
         mc:Ignorable="d"
-        Title="Инфа о тянке" Height="586" Width="524">
-    <Grid>
+        Title="Инфа о тянке" Height="720" Width="524">
+    <Grid Height="710" VerticalAlignment="Top">
         <TextBlock HorizontalAlignment="Center" Margin="0,21,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="22" Width="114" Text="Имя-фамилия" FontSize="16" FontWeight="SemiBold"/>
-        <TextBox HorizontalAlignment="Center" Margin="0,65,0,0" TextWrapping="Wrap" Text="Имя" VerticalAlignment="Top" Width="330" Height="26"/>
-        <TextBox HorizontalAlignment="Center" Margin="0,98,0,0" TextWrapping="Wrap" Text="Фамилия" VerticalAlignment="Top" Width="330" Height="27"/>
+        <TextBox HorizontalAlignment="Center" Margin="0,65,0,0" TextWrapping="Wrap" Text="{Binding FirstName, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="330" Height="26" IsReadOnly="{Binding IsReadOnly}"/>
+        <TextBox HorizontalAlignment="Center" Margin="0,98,0,0" TextWrapping="Wrap" Text="{Binding LastName, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="330" Height="27" IsReadOnly="{Binding IsReadOnly}"/>
         <TextBlock
             HorizontalAlignment="Center" Margin="0,147,0,0" Width="66" VerticalAlignment="Top" TextWrapping="Wrap" Height="22" FontSize="16" FontWeight="SemiBold"><Run
                 Language="ru-ru" Text="Данные"/></TextBlock>
-        <TextBox HorizontalAlignment="Left" Margin="192,188,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="222" Height="27" TextChanged="TextBox_TextChanged"/>
-        <TextBox HorizontalAlignment="Left" Margin="192,220,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="222" Height="27"/>
-        <TextBox HorizontalAlignment="Left" Margin="192,253,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="222" Height="27"/>
-        <TextBox HorizontalAlignment="Left" Margin="192,285,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="222" Height="27"/>
-        <Button Content="Выбрать её" HorizontalAlignment="Center" Margin="0,501,0,0" VerticalAlignment="Top" Height="59" Width="330" FontSize="18" Click="Button_Click"/>
+        <TextBox HorizontalAlignment="Left" Margin="192,188,0,0" TextWrapping="Wrap" Text="{Binding Age, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="222" Height="27" TextChanged="TextBox_TextChanged" IsReadOnly="{Binding IsReadOnly}"/>
+        <TextBox HorizontalAlignment="Left" Margin="192,220,0,0" TextWrapping="Wrap" Text="{Binding Height, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="222" Height="27" IsReadOnly="{Binding IsReadOnly}"/>
+        <TextBox HorizontalAlignment="Left" Margin="192,253,0,0" TextWrapping="Wrap" Text="{Binding Weight, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="222" Height="27" IsReadOnly="{Binding IsReadOnly}"/>
+        <TextBox HorizontalAlignment="Left" Margin="192,285,0,0" TextWrapping="Wrap" Text="{Binding Size, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="222" Height="27" IsReadOnly="{Binding IsReadOnly}"/>
+        <Button Content="Сохранить" Command="{Binding SaveCommand}" HorizontalAlignment="Center" Margin="0,613,0,0" VerticalAlignment="Top" Height="59" Width="330" FontSize="18" Click="Button_Click" Visibility="{Binding SaveButtonStatus}"/>
+        <Button Content="Показать тян" Command="{Binding ShowCommand}" HorizontalAlignment="Center" Margin="0,613,0,0" VerticalAlignment="Top" Height="59" Width="330" FontSize="18" Click="Button_Click" Visibility="{Binding ShowButtonStatus}"/>
+        <Button Content="Создать тян" Command="{Binding CreateCommand}" HorizontalAlignment="Center" Margin="0,613,0,0" VerticalAlignment="Top" Height="59" Width="330" FontSize="18" Click="Button_Click" Visibility="{Binding CreateButtonStatus}"/>
+        <Button Content="Редактировать навыки" Command="{Binding ChangeSkillsCommand}" HorizontalAlignment="Center" Margin="0,537,0,0" VerticalAlignment="Top" Height="34" Width="330" FontSize="18" Click="Button_Click" Visibility="{Binding ChangeSkillsButtonStatus}"/>
         <TextBlock
             HorizontalAlignment="Left" Margin="120,189,0,0" Width="68" VerticalAlignment="Top" TextWrapping="Wrap" Height="23" FontSize="16"><Run Language="ru-ru" Text="Возраст"/></TextBlock>
         <TextBlock
@@ -26,8 +29,14 @@
             HorizontalAlignment="Left" Margin="120,253,0,0" Width="68" VerticalAlignment="Top" TextWrapping="Wrap" Height="22" FontSize="16"><Run Language="ru-ru" Text="Вес"/></TextBlock>
         <TextBlock
             HorizontalAlignment="Left" Margin="120,285,0,0" Width="68" VerticalAlignment="Top" TextWrapping="Wrap" Height="23" FontSize="16"><Run Language="ru-ru" Text="Размер"/></TextBlock>
-        <TextBlock HorizontalAlignment="Center" Margin="0,332,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Width="72"><Run Language="ru-ru" Text="Навыки:"/></TextBlock>
-        <TextBox HorizontalAlignment="Center" Margin="0,372,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="362" Height="107" RenderTransformOrigin="0.569,0.932"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,332,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Width="82"><Run Language="ru-ru" Text="Навыки:"/></TextBlock>
+        <ListBox Margin="81,375,81,180" Width="362" ItemsSource="{Binding Skills}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Name}" />
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
 
     </Grid>
 </Window>

@@ -12,15 +12,15 @@
             <ColumnDefinition Width="512*"/>
         </Grid.ColumnDefinitions>
         <TextBlock TextAlignment="Center" HorizontalAlignment="Left" Margin="71,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="35" Width="258" FontSize="18" Grid.Column="1" Text="Выбери навык"/>
-        <ComboBox HorizontalAlignment="Center" Margin="0,72,0,0" VerticalAlignment="Top" Width="561" Grid.ColumnSpan="2"/>
-        <ListView d:ItemsSource="{d:SampleData ItemCount=5}" Margin="82,161,83,116" Grid.ColumnSpan="2">
-            <ListView.View>
-                <GridView>
-                    <GridViewColumn/>
-                </GridView>
-            </ListView.View>
+        <ComboBox HorizontalAlignment="Center" Margin="0,72,0,0" VerticalAlignment="Top" Width="561" Grid.ColumnSpan="2" ItemsSource="{Binding AllSkills}" SelectedItem="{Binding SelectedSkill}"/>
+        <ListView ItemsSource="{Binding CurrentSkills}" Margin="82,161,83,116" Grid.ColumnSpan="2" SelectedItem="{Binding SelectedCurrentSkill}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Name}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
         </ListView>
-        <Button Content="Добавить" HorizontalAlignment="Left" Margin="31,343,0,0" VerticalAlignment="Top" Click="Button_Click" Grid.ColumnSpan="2" Height="60" Width="118" RenderTransformOrigin="0.565,0.642"/>
+        <Button Content="Добавить" HorizontalAlignment="Left" Margin="31,343,0,0" VerticalAlignment="Top" Click="Button_Click" Grid.ColumnSpan="2" Height="60" Width="118" RenderTransformOrigin="0.565,0.642" Command="{Binding AddSkillCommand}"/>
         <TextBlock TextAlignment="Center" HorizontalAlignment="Left" Margin="71,126,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="35" Width="258" FontSize="18" Grid.Column="1"><UIElement.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -29,8 +29,8 @@
                     <TranslateTransform/>
                 </TransformGroup>
             </UIElement.RenderTransform><Run Language="ru-ru" Text="Навыки"/></TextBlock>
-        <Button Content="Удалить" HorizontalAlignment="Left" Margin="141,343,0,0" VerticalAlignment="Top" Click="Button_Click" Height="60" Width="118" RenderTransformOrigin="0.565,0.642" Grid.Column="1"/>
-        <Button Content="Сохранить" HorizontalAlignment="Left" Margin="363,343,0,0" VerticalAlignment="Top" Click="Button_Click" Height="60" Width="118" RenderTransformOrigin="0.565,0.642" Grid.Column="1"/>
+        <Button Content="Удалить" HorizontalAlignment="Left" Margin="141,343,0,0" VerticalAlignment="Top" Click="Button_Click" Height="60" Width="118" RenderTransformOrigin="0.565,0.642" Grid.Column="1" Command="{Binding RemoveSkillCommand}"/>
+        <Button Content="Сохранить" HorizontalAlignment="Left" Margin="363,343,0,0" VerticalAlignment="Top" Click="Button_Click" Height="60" Width="118" RenderTransformOrigin="0.565,0.642" Grid.Column="1" Command="{Binding SaveCommand}"/>
 
     </Grid>
 </Window>

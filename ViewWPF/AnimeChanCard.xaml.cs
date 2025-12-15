@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Controller;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,12 +20,17 @@ namespace ViewWPF
     /// </summary>
     public partial class AnimeChanCard : Window
     {
-        public AnimeChanCard()
+        public AnimeChanCard(ViewModel vm)
         {
             InitializeComponent();
+            DataContext = vm;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
 
         }

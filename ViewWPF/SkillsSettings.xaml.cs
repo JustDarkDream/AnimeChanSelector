@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Controller;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +20,10 @@ namespace ViewWPF
     /// </summary>
     public partial class SkillsSettings : Window
     {
-        public SkillsSettings()
+        public SkillsSettings(ViewModel vm)
         {
             InitializeComponent();
+            DataContext = vm;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

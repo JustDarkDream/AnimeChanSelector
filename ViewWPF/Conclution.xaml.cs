@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Controller;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +20,10 @@ namespace ViewWPF
     /// </summary>
     public partial class Conclution : Window
     {
-        public Conclution()
+        public Conclution(ViewModel vm)
         {
             InitializeComponent();
+            DataContext = vm;
         }
     }
 }

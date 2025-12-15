@@ -11,6 +11,7 @@ namespace Controller
 {
     internal class AnimeChanCardPresenter
     {
+
         internal AnimeChanCardPresenter(IViewAnimeChanCard view, ILogic logic)
         {
             view.SaveIdEvent += logic.SaveId;

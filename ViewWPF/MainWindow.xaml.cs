@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using Controller;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -16,9 +17,11 @@ namespace ViewWPF
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
+        public MainWindow(MainFormVM vm)
         {
             InitializeComponent();
+            DataContext = vm;
+            vm.RequestClose += () => this.Close();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

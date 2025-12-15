@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Controller;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +20,11 @@ namespace ViewWPF
     /// </summary>
     public partial class Registration : Window
     {
-        public Registration()
+        public Registration(RegistrationVM vm)
         {
             InitializeComponent();
+            DataContext = vm;
+            vm.RequestClose += () => this.Close();
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
